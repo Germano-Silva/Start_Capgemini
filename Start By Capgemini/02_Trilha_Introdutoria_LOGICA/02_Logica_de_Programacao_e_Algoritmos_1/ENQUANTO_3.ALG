@@ -15,7 +15,7 @@ Inicio
    Escreval("Informe a quantidade de entrevistados: ")
    Leia(qtdPessoas)
    Enquanto qtdEntrevistados < qtdPessoas faça
-      Escreval("Informe sua idade: ")
+      Escreval("Informe a idade: ")
       Leia(idadeInformada)
       Se idadeInformada >= maisVelho entao
          maisVelho <- idadeInformada
