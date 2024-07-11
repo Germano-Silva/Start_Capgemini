@@ -4,11 +4,11 @@ Algoritmo "Matrizes Aula 1-F"
 // Data atual  : 11/07/2024
 Var
    cinema: vetor[1..10, 1..10] de caractere
-   i, j: inteiro
-   opcao, fila, poltrona: caractere
+   i, j, fila, poltrona: inteiro
+   opcao: caractere
 Inicio
    Para i de 1 Ate 10 Faça
-      Para j De 1 Ate 10 faca
+      Para j De 1 Ate 10 Faça
          cinema[i, j] <- "0"
       Fimpara
    Fimpara
@@ -32,17 +32,11 @@ Inicio
          Fimse
       Caso "2"
          Para i de 1 Ate 10 Faça
-            Para j De 1 Ate 10 faca
+            Para j De 1 Ate 10 Faça
                Escreva(" ", cinema[i, j], " ")
             Fimpara
             Escreval("")
          Fimpara
       Fimescolha
-
-
-
    Ate opcao = "3"
-
-
-
 Fimalgoritmo
