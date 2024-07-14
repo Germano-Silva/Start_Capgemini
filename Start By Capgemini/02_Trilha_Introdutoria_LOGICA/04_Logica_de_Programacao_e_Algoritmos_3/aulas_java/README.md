@@ -1,18 +1,66 @@
-## Getting Started
+Em Java, existem várias convenções de codificação que são amplamente seguidas pela comunidade para garantir consistência, legibilidade e manutenibilidade do código. Aqui estão algumas das principais convenções:
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+### Nomes de Classes e Interfaces:
 
-## Folder Structure
+- Usar substantivos e começar com letra maiúscula.
+- Utilizar camelCase para nomes compostos (exemplo: MinhaClasse, InterfaceExemplo).
 
-The workspace contains two folders by default, where:
+### Nomes de Métodos:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- Usar verbos ou frases verbais e começar com letra minúscula.
+- Utilizar camelCase para nomes compostos (exemplo: 'calcularValor(), processarPedido()).
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### Nomes de Variáveis:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- Usar nomes significativos que descrevam bem o propósito da variável.
+- Utilizar camelCase para nomes compostos (exemplo: idadeUsuario, nomeCompleto).
 
-## Dependency Management
+### Constantes:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- Usar letras maiúsculas separadas por underscore (_) para nomes de constantes.
+
+    Exemplo: MAXIMO_TENTATIVAS, PI.
+
+### Nomes de Pacotes:
+
+- Usar letras minúsculas e seguir uma estrutura de diretórios hierárquica.
+
+    Exemplo: com.example.projeto.utils.
+
+### Nomes de Métodos Getters e Setters:
+
+- Usar o nome do campo precedido por get, set ou is (para booleanos).
+
+    Exemplo: getId(), setNome(String nome), isAtivo().
+
+### Nomes de Parâmetros:
+
+- Usar nomes curtos e significativos.
+Utilizar camelCase para nomes compostos.
+    
+    Exemplo: calcularImposto(double valorBase, int anoReferencia).
+
+### Indentação:
+
+- Utilizar quatro espaços por nível de indentação (não utilizar tabulações).
+
+### Comentários:
+
+- Utilizar comentários para explicar trechos de código complexos ou não triviais.
+- Evitar comentários óbvios que apenas repetem o que o código já diz.
+
+### Documentação Javadoc:
+
+- Usar Javadoc para documentar classes, interfaces, métodos e variáveis públicas.
+Descrever o propósito e comportamento esperado de forma clara e concisa.
+
+### Uso de Constantes e Enums:
+
+- Preferir o uso de constantes e enums em vez de valores literais em strings ou números.
+
+### Convenções Específicas:
+
+- Para constantes que representam booleanos, evitar usar prefixos como is, a menos que seja um getter de booleano.
+  
+
+Estas são apenas algumas das convenções mais comuns em Java. Seguir essas práticas não apenas melhora a legibilidade do seu código, mas também facilita a colaboração com outros desenvolvedores que possam revisar ou dar manutenção no código no futuro.
