@@ -16,5 +16,24 @@ disponíveis com o usuário
   */
 
 public class Exercicio_08 {
+  public static void main(String[] args) throws Exception {
+    Scanner leitor = new Scanner(System.in);
+    System.out.println("Informe a quanto você tem de dinheiro: ");
+    float real = leitor.nexFloat();
+    System.out.println("Informe o valor do dólar: ");
+    float dolar = leitor.nexFloat();
+    float quantidadeDolar = real*dolar;
+    System.out.println("A quantidade em dólares é US$ " + quantidadeDolar);
+    leitor.close();
+
+  }
+
+  public static void clearScreen() throws IOException, InterruptedException {
+    try {
+      new ProcessBuilder("cmd", "/c", "cls", "clear").inheritIO().start().waitFor();
+      } catch (Exception e) {
+        System.err.println("Erro ao limpar o terminal: " + e.getMessage());
+      }
+  }
 
 }
