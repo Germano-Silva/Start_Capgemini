@@ -24,7 +24,7 @@ public class Exercicio_07 {
     System.out.println("Informe a temperatura: ");
     float c = leitor.nextFloat();
     float f = ((9*c)+160)/5;
-    System.out.println("A temperatura em Fahrenheit é: F" + c);
+    System.out.println("A temperatura em Fahrenheit é: F " + f);
     leitor.close();
 
   }
