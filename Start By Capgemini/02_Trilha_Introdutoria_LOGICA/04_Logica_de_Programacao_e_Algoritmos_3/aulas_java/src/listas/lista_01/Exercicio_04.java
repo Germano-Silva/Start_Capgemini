@@ -6,7 +6,10 @@ package listas.lista_01;
  * Todos os direitos autorais são reservados a Germano Silva.
  */
 
- /**
+import java.io.IOException;
+import java.util.Scanner;
+
+/**
   * Exercício: 04.
   * 
   * Escreva um algoritmo que leia o nome de um vendedor, o seu salário fixo e o total de vendas
