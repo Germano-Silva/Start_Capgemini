@@ -19,26 +19,26 @@ Em Java, existem várias convenções de codificação que são amplamente segui
 
 - Usar letras maiúsculas separadas por underscore (_) para nomes de constantes.
 
-    Exemplo: MAXIMO_TENTATIVAS, PI.
+  Exemplo: MAXIMO_TENTATIVAS, PI.
 
 ### 5. Nomes de Pacotes:
 
 - Usar letras minúsculas e seguir uma estrutura de diretórios hierárquica.
 
-    Exemplo: com.example.projeto.utils.
+  Exemplo: com.example.projeto.utils.
 
 ### 6. Nomes de Métodos Getters e Setters:
 
 - Usar o nome do campo precedido por get, set ou is (para booleanos).
 
-    Exemplo: getId(), setNome(String nome), isAtivo().
+  Exemplo: getId(), setNome(String nome), isAtivo().
 
 ### 7. Nomes de Parâmetros:
 
 - Usar nomes curtos e significativos.
-Utilizar camelCase para nomes compostos.
-    
-    Exemplo: calcularImposto(double valorBase, int anoReferencia).
+  Utilizar camelCase para nomes compostos.
+
+  Exemplo: calcularImposto(double valorBase, int anoReferencia).
 
 ### 8. Indentação:
 
@@ -52,7 +52,7 @@ Utilizar camelCase para nomes compostos.
 ### 10. Documentação Javadoc:
 
 - Usar Javadoc para documentar classes, interfaces, métodos e variáveis públicas.
-Descrever o propósito e comportamento esperado de forma clara e concisa.
+  Descrever o propósito e comportamento esperado de forma clara e concisa.
 
 ### 11. Uso de Constantes e Enums:
 
