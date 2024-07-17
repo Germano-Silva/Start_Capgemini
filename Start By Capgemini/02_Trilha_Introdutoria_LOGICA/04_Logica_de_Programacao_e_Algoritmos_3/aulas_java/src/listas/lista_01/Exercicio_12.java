@@ -16,5 +16,17 @@ package listas.lista_01;
  * informe o custo ao consumidor do mesmo
  */
 public class Exercicio_12 {
+    
+        Scanner leitor = new Scanner(System.in);
+
+        System.out.print("Informe o preço de custo do carro para a fabrica: R$ ");
+        double custoFabrica = leitor.nextDouble();
+        double imposto = custoFabrica*(45/100);
+        double percentualDistribuidor = custoFabrica*(28/100);
+        System.out.print("São 45% de impostos aplicados no valor de: R$" + imposto );
+        double percentualAcrescimo = leitor.nextDouble();
+        double valorVenda = precoCusto * (1 + percentualAcrescimo / 100);
+        System.out.println("O valor de venda do produto é: R$ " + valorVenda);
+        leitor.close();
 
 }
