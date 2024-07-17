@@ -31,8 +31,8 @@ public class Exercicio_16 {
     System.out.println("Informe a sua 3ª nota: ");
     double nota3 = leitor.nextDouble();
     double media = (nota1+nota2+nota3)/3;
+    System.out.println("Aluno(a): "+ nome + " nota: " + media);
     if (media>=5.1 && media<=6.9) {
-      System.out.println("Aluno(a): "+ nome + " nota: " + media);
       System.out.println("Recuperação!");
     } else if (media <=5) {
       System.out.println("Reprovado!");
