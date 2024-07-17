@@ -1,5 +1,8 @@
 package listas.lista_01;
 
+import java.io.IOException;
+import java.util.Scanner;
+
 /**
  * Códigos realizados por Germano Silva.
  * GitHub: {@literal https://github.com/Germano-Silva}
@@ -19,7 +22,7 @@ public class Exercicio_07 {
     clearScreen();
     Scanner leitor = new Scanner(System.in);
     System.out.println("Informe a temperatura: ");
-    float c = leitor.nexFloat();
+    float c = leitor.nextFloat();
     float f = ((9*c)+160)/5;
     System.out.println("A temperatura em Fahrenheit é: F" + c);
     leitor.close();
