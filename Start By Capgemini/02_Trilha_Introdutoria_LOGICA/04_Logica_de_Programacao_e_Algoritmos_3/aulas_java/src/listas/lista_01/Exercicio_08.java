@@ -1,5 +1,8 @@
 package listas.lista_01;
 
+import java.io.IOException;
+import java.util.Scanner;
+
 /**
  * Códigos realizados por Germano Silva.
  * GitHub: {@literal https://github.com/Germano-Silva}
@@ -19,9 +22,9 @@ public class Exercicio_08 {
   public static void main(String[] args) throws Exception {
     Scanner leitor = new Scanner(System.in);
     System.out.println("Informe a quanto você tem de dinheiro: ");
-    float real = leitor.nexFloat();
+    float real = leitor.nextFloat();
     System.out.println("Informe o valor do dólar: ");
-    float dolar = leitor.nexFloat();
+    float dolar = leitor.nextFloat();
     float quantidadeDolar = real*dolar;
     System.out.println("A quantidade em dólares é US$ " + quantidadeDolar);
     leitor.close();
