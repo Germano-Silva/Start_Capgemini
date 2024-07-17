@@ -16,5 +16,30 @@ package listas.lista_01;
 
 
 public class Exercicio_10 {
+    public static void main(String[] args) throws Exception {
+        Scanner leitor = new Scanner(System.in);
+
+        System.out.println("===================================");
+        System.out.println(" - - - Loja Mamão com Açúcar - - - ");
+        System.out.println("===================================");
+
+        System.out.print("Informe o valor total da compra: R$ ");
+        float valorTotal = leitor.nextFloat();
+
+        for (int i = 1; i <= 5; i++) {
+            float valorParcela = valorTotal / i;
+            System.out.printf("Para valor em " + i + " parcela o valor é: R$ %.2f\n", valorParcela);
+        }
+
+        leitor.close();
+    }
+    
+      public static void clearScreen() throws IOException, InterruptedException {
+        try {
+          new ProcessBuilder("cmd", "/c", "cls", "clear").inheritIO().start().waitFor();
+          } catch (Exception e) {
+            System.err.println("Erro ao limpar o terminal: " + e.getMessage());
+          }
+      }
 
 }
