@@ -10,8 +10,8 @@ package listas.lista_01;
  /**
   * Exercício: 07.
   * 
-  * Leia uma temperatura em graus Celsius e apresentá-la convertida em graus Fahrenheit. A fórmula de 
-conversão é:F=(9*C+160) / 5, sendo F a temperatura em Fahrenheit e C a temperatura em Celsius.
+  * Leia uma temperatura em graus Celsius e apresentá-la convertida em graus Fahrenheit. A fórmula de
+  * conversão é:F=(9*C+160) / 5, sendo F a temperatura em Fahrenheit e C a temperatura em Celsius.
   */
   
 public class Exercicio_07 {
