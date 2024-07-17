@@ -10,14 +10,19 @@ package listas.lista_01;
 /**
  * Exercício: 09.
  * 
- * Faça um algoritmo que receba um valor que foi depositado e exiba o valor com rendimento após um mês. Considere fixo o juro da poupança em 0,07% a. m.
+ * Faça um algoritmo que receba um valor que foi depositado e 
+ * exiba o valor com rendimento após um mês. Considere fixo o juro da poupança em 0,07% a. m.
  */
 
 public class Exercicio_09 {
     public static void main(String[] args) throws Exception {
         Scanner leitor = new Scanner(System.in);
-        
-        
+        System.out.print("Informe o valor que deseja depositar: R$");
+        double deposito = leitor.nextDouble();
+        double juros = (0.07/100);
+        double jurosMes = deposito *juros;
+        double rendimento = deposito + jurosMes;
+        System.out.print("Após um mês o valor vai ser: R$" + rendimento);
         leitor.close();
     
       }
