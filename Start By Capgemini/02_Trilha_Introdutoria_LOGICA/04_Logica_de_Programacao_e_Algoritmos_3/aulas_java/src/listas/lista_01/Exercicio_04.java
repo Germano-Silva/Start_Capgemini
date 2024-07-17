@@ -16,5 +16,30 @@ package listas.lista_01;
 
 
 public class Exercicio_04 {
+    public static void main(String[] args) throws Exception {
+    clearScreen();
+    Scanner leitor = new Scanner(System.in);
+    System.out.println("Informe a o nome do vendedor: ");
+    String nomeVendendor = leitor.nextLine();
+    System.out.println("Informe o salario fixo: ");
+    float salarioFixo = leitor.nextFloat();
+    System.out.println("Informe o total de vendas: ");
+    float totalvendas = leitor.nextFloat();
+    float comissao = totalvendas*(15/100);
+    float salarioMaisComissao = comissao + salarioFixo;
+    System.out.println("O funcionario: " + nomeVendendor + " recebe o salario: R$" + salarioFixo);
+    System.out.println("Este mês fez o total em vendas de " + totalvendas+ " e sua comissão é no valor de R$" + comissao);
+    System.out.println("O seu salario mais comissão fica no valor de R$" + salarioMaisComissao);
+    leitor.close();
+    
+  }
+
+  public static void clearScreen() throws IOException, InterruptedException {
+    try {
+      new ProcessBuilder("cmd", "/c", "cls", "clear").inheritIO().start().waitFor();
+    } catch (Exception e) {
+      System.err.println("Erro ao limpar o terminal: " + e.getMessage());
+    }
+  }
 
 }
