@@ -57,6 +57,7 @@ public class Exercicio_22 {
         }
         System.out.println("O média de preço de custo é de: R$" + (totalCusto/i));
         System.out.println("O média de preço de venda é de: R$" + (totalVenda/i));
+        
         leitor.close(); 
       }
       

@@ -1,5 +1,8 @@
 package listas.lista_01;
 
+import java.io.IOException;
+import java.util.Scanner;
+
 /**
  * Códigos realizados por Germano Silva.
  * GitHub: {@literal https://github.com/Germano-Silva}
