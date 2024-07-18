@@ -19,11 +19,15 @@ public class Exercicio_23 {
     public static void main(String[] args) throws Exception {
         clearScreen();
         Scanner leitor = new Scanner(System.in);
-  
-        
-  
+        System.out.println("Informe um número:");
+        int numero = leitor.nextInt();
+
+        if (numero>80 && numero<25 && numero==40) {
+            System.out.println("Cumpre com os requisitos!");
+        } else {
+            System.out.println("Não cumpre com os requisitos!");
+        }
         leitor.close();
-        
       }
       
     public static void clearScreen() throws IOException, InterruptedException {
