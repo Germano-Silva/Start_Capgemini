@@ -22,8 +22,7 @@ public class Exercicio_22 {
   
         
   
-        leitor.close();
-        
+        leitor.close(); 
       }
       
     public static void clearScreen() throws IOException, InterruptedException {
