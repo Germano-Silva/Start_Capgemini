@@ -1,5 +1,8 @@
 package listas.lista_01;
 
+import java.io.IOException;
+import java.util.Scanner;
+
 /**
  * Códigos realizados por Germano Silva.
  * GitHub: {@literal https://github.com/Germano-Silva}
@@ -19,10 +22,37 @@ public class Exercicio_22 {
     public static void main(String[] args) throws Exception {
         clearScreen();
         Scanner leitor = new Scanner(System.in);
-        
-  
-        
-  
+        String nomeProduto;
+        float precoCusto, precoVenda; totalCusto, totalVenda;
+        int i = 0;
+
+        for (i = 1; i<=40; i++) {
+            System.out.println("Digite o nome do produto:");
+            nomeProduto = leitor.next();
+            System.out.println("Informe o valor de custo:");
+            precoCusto = leitor.nextFloat();
+            System.out.println("Informe o preço de venda:");
+            precoVenda = leitor.nextFloat();
+            totalCusto = totalCusto + precoCusto;
+            totalVenda = totalVenda + precoVenda;
+
+            if (precoCusto==precoVenda) {
+                System.out.println("O preço de custo é o mesmo que o preço de venda!");
+                System.out.println("Empate no valor!");
+                
+            } else if(precoCusto>precoVenda){
+                System.out.println("O preço de custo é maior que o preço de venda!");
+                System.out.println("Prejuizo!");
+            }else{
+                System.out.println("O preço do custo é menor que preço de venda!");
+                System.out.println("Lucro!");
+            }
+            System.out.println("Nome do produto: " + nomeProduto);
+            System.out.println("Preço de custo: R$" + precoCusto);
+            System.out.println(" preço de venda: R$" + precoVenda);
+        }
+        System.out.println("O média de preço de custo é de: R$" + (totalCusto/i));
+        System.out.println("O média de preço de venda é de: R$" + (totalVenda/i));
         leitor.close(); 
       }
       
