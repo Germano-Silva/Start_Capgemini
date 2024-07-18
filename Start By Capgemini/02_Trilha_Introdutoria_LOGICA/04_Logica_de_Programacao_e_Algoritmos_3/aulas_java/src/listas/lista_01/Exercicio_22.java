@@ -22,8 +22,12 @@ public class Exercicio_22 {
     public static void main(String[] args) throws Exception {
         clearScreen();
         Scanner leitor = new Scanner(System.in);
+
         String nomeProduto;
-        float precoCusto, precoVenda; totalCusto, totalVenda;
+        float precoCusto;
+        float precoVenda; 
+        float totalCusto = 0;
+        float totalVenda = 0;
         int i = 0;
 
         for (i = 1; i<=40; i++) {
@@ -57,8 +61,7 @@ public class Exercicio_22 {
       }
       
     public static void clearScreen() throws IOException, InterruptedException {
-        try {
-        new ProcessBuilder("cmd", "/c", "cls", "clear").inheritIO().start().waitFor();
+        try {new ProcessBuilder("cmd", "/c", "cls", "clear").inheritIO().start().waitFor();
         } catch (Exception e) {
             System.err.println("Erro ao limpar o terminal: " + e.getMessage());
         }
