@@ -44,10 +44,10 @@ public class Exercicio_21 {
                 saude = leitor.next();
   
                 if (sexo.equalsIgnoreCase("M") && idade >= 18 && saude.equalsIgnoreCase("S")) {
-                    System.out.println("Apto para o serviço militar obrigatório");
+                    System.out.println(nome + "esta Apto para o serviço militar obrigatório");
                     totalAptas++;
                 } else {
-                System.out.println("Não apto para o serviço militar obrigatório");
+                System.out.println(nome + "esta Não apto para o serviço militar obrigatório");
                 totalNaoAptas++;
                 }
 
