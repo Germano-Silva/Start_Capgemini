@@ -13,5 +13,22 @@ package listas.lista_01;
  * Faça um algoritmo que receba um número e mostre uma mensagem caso este número sege maior que 80, menor que 25 ou igual a 40.
  */
 public class Exercicio_23 {
+    public static void main(String[] args) throws Exception {
+        clearScreen();
+        Scanner leitor = new Scanner(System.in);
+  
+        
+  
+        leitor.close();
+        
+      }
+      
+    public static void clearScreen() throws IOException, InterruptedException {
+        try {
+        new ProcessBuilder("cmd", "/c", "cls", "clear").inheritIO().start().waitFor();
+        } catch (Exception e) {
+            System.err.println("Erro ao limpar o terminal: " + e.getMessage());
+        }
+    }
 
 }

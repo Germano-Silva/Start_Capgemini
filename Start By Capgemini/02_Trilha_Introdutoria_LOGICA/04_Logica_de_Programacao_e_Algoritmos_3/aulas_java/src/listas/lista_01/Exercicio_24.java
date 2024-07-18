@@ -13,5 +13,22 @@ package listas.lista_01;
   * Faça um algoritmo que receba “N” números e mostre positivo, negativo ou zero para cada número.
   */
 public class Exercicio_24 {
+  public static void main(String[] args) throws Exception {
+    clearScreen();
+    Scanner leitor = new Scanner(System.in);
+
+    
+
+    leitor.close();
+    
+  }
+  
+  public static void clearScreen() throws IOException, InterruptedException {
+      try {
+      new ProcessBuilder("cmd", "/c", "cls", "clear").inheritIO().start().waitFor();
+      } catch (Exception e) {
+          System.err.println("Erro ao limpar o terminal: " + e.getMessage());
+      }
+  }
 
 }

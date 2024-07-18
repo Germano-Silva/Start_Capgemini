@@ -23,5 +23,22 @@ package listas.lista_01;
  * Calcule quanto à empresa vai aumentar sua folha de pagamento.
  */
 public class Exercicio_28 {
-
+    public static void main(String[] args) throws Exception {
+        clearScreen();
+        Scanner leitor = new Scanner(System.in);
+    
+        
+    
+        leitor.close();
+        
+      }
+      
+      public static void clearScreen() throws IOException, InterruptedException {
+          try {
+          new ProcessBuilder("cmd", "/c", "cls", "clear").inheritIO().start().waitFor();
+          } catch (Exception e) {
+              System.err.println("Erro ao limpar o terminal: " + e.getMessage());
+          }
+      }
+    
 }
