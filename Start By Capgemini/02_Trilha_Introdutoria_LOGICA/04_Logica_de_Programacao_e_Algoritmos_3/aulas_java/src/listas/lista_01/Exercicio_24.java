@@ -19,9 +19,16 @@ public class Exercicio_24 {
   public static void main(String[] args) throws Exception {
     clearScreen();
     Scanner leitor = new Scanner(System.in);
+    System.out.println("Informe qualquer número:");
+    float numero = leitor.nextFloat();
 
-    
-
+    if (numero<0) {
+      System.out.println("Número negativo!");      
+    } else if(numero==0){
+      System.out.println("Número igual a 0!");
+    }else{
+      System.out.println("Número positivo!");
+    }
     leitor.close();
     
   }
