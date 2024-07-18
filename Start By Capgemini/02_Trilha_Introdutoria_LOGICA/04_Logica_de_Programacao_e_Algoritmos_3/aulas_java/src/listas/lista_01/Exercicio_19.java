@@ -19,7 +19,7 @@ public class Exercicio_19 {
         int mulher = 0;
         int homem = 0;
 
-        for (int i = 1; i<=5 ; i++) {
+        for (int i = 1; i<=56 ; i++) {
 
           System.out.println("Informe o nome: ");
           String nome = leitor.nextLine();
