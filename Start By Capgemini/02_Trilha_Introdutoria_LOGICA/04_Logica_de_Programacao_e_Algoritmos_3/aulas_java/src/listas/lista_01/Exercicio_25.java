@@ -23,11 +23,26 @@ public class Exercicio_25 {
     public static void main(String[] args) throws Exception {
         clearScreen();
         Scanner leitor = new Scanner(System.in);
-    
+        System.out.println("Informe o primeiro número!");
+        int numero = leitor.nextInt();
+        System.out.println("Informe o 2 número!");
+        int numero2 = leitor.nextInt();
+
+        if (numero>numero2) {
+            System.out.println("O primeiro número é maior que o segundo.");
+            System.out.println("o primeiro número é: " + numero);
+            System.out.println("O segundo número é: " + numero2);
+        } else if(numero<numero2){
+            System.out.println("O segundo número é maior que o primeiro.");
+            System.out.println("O segundo número é: " + numero2);
+            System.out.println("o primeiro número é: " + numero);
+        }else{
+            System.out.println("Os numero são iguais!");
+            System.out.println("o primeiro número é: " + numero);
+            System.out.println("O segundo número é: " + numero2);
+        }
         
-    
         leitor.close();
-        
       }
       
       public static void clearScreen() throws IOException, InterruptedException {
