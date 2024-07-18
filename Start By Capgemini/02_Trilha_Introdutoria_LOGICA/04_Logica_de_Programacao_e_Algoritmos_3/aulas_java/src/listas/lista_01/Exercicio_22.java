@@ -19,6 +19,7 @@ public class Exercicio_22 {
     public static void main(String[] args) throws Exception {
         clearScreen();
         Scanner leitor = new Scanner(System.in);
+        
   
         
   
