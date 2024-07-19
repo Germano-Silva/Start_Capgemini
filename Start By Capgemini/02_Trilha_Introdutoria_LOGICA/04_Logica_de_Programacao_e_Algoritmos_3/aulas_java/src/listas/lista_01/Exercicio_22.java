@@ -1,7 +1,7 @@
 package listas.lista_01;
 
 import java.io.IOException;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * Códigos realizados por Germano Silva.
@@ -28,12 +28,14 @@ public class Exercicio_22 {
         float precoVenda = 0;
         float totalCusto = 0;
         float totalVenda = 0;
+
         int i = 1;
 
         for (; i<=40; i++) {
 
             System.out.println("Digite o nome do produto:");
             nomeProduto = leitor.next();
+            System.out.println();
             System.out.println("Informe o valor de custo:");
             precoCusto = leitor.nextFloat();
             System.out.println("Informe o preço de venda:");
@@ -60,8 +62,9 @@ public class Exercicio_22 {
 
         System.out.println("O média de preço de custo é de: R$" + (totalCusto/i));
         System.out.println("O média de preço de venda é de: R$" + (totalVenda/i));
-
+        
         leitor.close();
+
     }
       
     public static void clearScreen() throws IOException, InterruptedException {
