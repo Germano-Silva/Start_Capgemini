@@ -1,7 +1,7 @@
 package listas.lista_01;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.Scanner;
 
 /**
  * Códigos realizados por Germano Silva.
@@ -18,6 +18,7 @@ import java.util.*;
  * Informe o valor de custo de cada produto, o valor de venda de cada produto,
  * a média de preço de custo e do preço de venda.
  */
+
 public class Exercicio_22 {
     public static void main(String[] args) throws Exception {
         clearScreen();
@@ -62,16 +63,16 @@ public class Exercicio_22 {
 
         System.out.println("O média de preço de custo é de: R$" + (totalCusto/i));
         System.out.println("O média de preço de venda é de: R$" + (totalVenda/i));
-        
-        leitor.close();
 
+        leitor.close();
+        
     }
-      
+
     public static void clearScreen() throws IOException, InterruptedException {
-        try {new ProcessBuilder("cmd", "/c", "cls", "clear").inheritIO().start().waitFor();
+        try {
+            new ProcessBuilder("cmd", "/c", "cls", "clear").inheritIO().start().waitFor();
         } catch (Exception e) {
             System.err.println("Erro ao limpar o terminal: " + e.getMessage());
         }
     }
-
 }
