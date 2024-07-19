@@ -27,10 +27,41 @@ public class Exercicio_32 {
   public static void main(String[] args) throws Exception {
     clearScreen();
     Scanner leitor = new Scanner(System.in);
+        System.out.println("=======================================================");
+        System.out.println("           Digite os três lados do triângulo:          ");
+        System.out.println("=======================================================");
+        System.out.println();
+        System.out.print("Lado 1: ");
+        int l1 = leitor.nextInt();
+        System.out.print("Lado 2: ");
+        int l2 = leitor.nextInt();
+        System.out.print("Lado 3: ");
+        int l3 = leitor.nextInt();
 
-    
-
-    leitor.close();
+        
+        if ((l1 + l2 > l3) && (l1 + l3 > l2) && (l2 + l3 > l1)) {
+            System.out.println("=======================================================");
+            System.out.println("              Os lados formam um triângulo.            ");
+            System.out.println("=======================================================");
+            if (l1 == l2 && l1 == l3) {
+                System.out.println("=======================================================");
+                System.out.println("               É um triângulo Equilátero.              ");
+                System.out.println("=======================================================");
+            } else if (l1 == l2 || l1 == l3 || l2 == l3) {
+                System.out.println("=======================================================");
+                System.out.println("                É um triângulo Isóscele.               ");
+                System.out.println("=======================================================");
+            } else {
+                System.out.println("=======================================================");
+                System.out.println("                É um triângulo Escaleno.               ");
+                System.out.println("=======================================================");
+            }
+        } else {
+            System.out.println("=======================================================");
+            System.out.println("        Não forma um triângulo, tente novamente.       ");
+            System.out.println("=======================================================");
+        }
+        leitor.close();
     
   }
   
