@@ -23,20 +23,22 @@ public class Exercicio_22 {
         clearScreen();
         Scanner leitor = new Scanner(System.in);
 
-        String nomeProduto;
-        float precoCusto;
-        float precoVenda;
+        String nomeProduto = "";
+        float precoCusto = 0;
+        float precoVenda = 0;
         float totalCusto = 0;
         float totalVenda = 0;
-        int i = 0;
+        int i = 1;
 
-        for (i = 1; i<=40; i++) {
+        for (; i<=40; i++) {
+
             System.out.println("Digite o nome do produto:");
             nomeProduto = leitor.next();
             System.out.println("Informe o valor de custo:");
             precoCusto = leitor.nextFloat();
             System.out.println("Informe o preço de venda:");
             precoVenda = leitor.nextFloat();
+
             totalCusto = totalCusto + precoCusto;
             totalVenda = totalVenda + precoVenda;
 
@@ -55,11 +57,12 @@ public class Exercicio_22 {
             System.out.println("Preço de custo: R$" + precoCusto);
             System.out.println(" preço de venda: R$" + precoVenda);
         }
+
         System.out.println("O média de preço de custo é de: R$" + (totalCusto/i));
         System.out.println("O média de preço de venda é de: R$" + (totalVenda/i));
-        
-        leitor.close(); 
-      }
+
+        leitor.close();
+    }
       
     public static void clearScreen() throws IOException, InterruptedException {
         try {new ProcessBuilder("cmd", "/c", "cls", "clear").inheritIO().start().waitFor();
