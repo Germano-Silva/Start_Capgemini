@@ -22,11 +22,38 @@ public class Exercicio_31 {
     public static void main(String[] args) throws Exception {
         clearScreen();
         Scanner leitor = new Scanner(System.in);
-    
-        
-    
+
+        System.out.print("Digite o valor de A (número real): ");
+        double A = leitor.nextDouble();
+        System.out.print("Digite o valor de B (número real): ");
+        double B = leitor.nextDouble();
+        System.out.print("Digite o caractere C (operador aritmético [+][-][*][/]): ");
+        char C = leitor.next().charAt(0);
+
+        // Verificação e execução da operação
+        switch (C) {
+            case '+':
+                System.out.println("Soma A + B: " + (A + B));
+                break;
+            case '-':
+                System.out.println("Resultado da subtração A - B: " + (A - B));
+                break;
+            case '*':
+                System.out.println("Resultado da multiplicação A * B: " + (A * B));
+                break;
+            case '/':
+                if (B != 0) {
+                    System.out.println("Resultado da divisão A / B: " + (A / B));
+                } else {
+                    System.out.println("Erro: divisão por zero não é permitida.");
+                }
+                break;
+            default:
+                System.out.println("Operador aritmético não definido: " + C);
+                break;
+        }
+
         leitor.close();
-        
       }
       
       public static void clearScreen() throws IOException, InterruptedException {
