@@ -25,7 +25,7 @@ public class Exercicio_22 {
 
         String nomeProduto;
         float precoCusto;
-        float precoVenda; 
+        float precoVenda;
         float totalCusto = 0;
         float totalVenda = 0;
         int i = 0;
