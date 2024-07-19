@@ -29,9 +29,52 @@ public class Exercicio_28 {
     public static void main(String[] args) throws Exception {
         clearScreen();
         Scanner leitor = new Scanner(System.in);
-    
-        
-    
+        float aumentoTotalFolha = 0;
+
+        System.out.println("=======================================================");
+        System.out.println("      Reajuste Salarial dos Funcionários");
+        System.out.println("=======================================================");
+        System.out.println("Por favor, insira os dados para cada funcionário:\n");
+
+        for (int i = 1; i <= 584; i++) {
+            System.out.println("-------------------------------------------------------");
+            System.out.println("Funcionário #" + i);
+            System.out.println("-------------------------------------------------------");
+
+            System.out.print("Digite o nome do funcionário: ");
+            String nomeFuncionario = leitor.nextLine();
+
+            System.out.print("Digite o salário atual do funcionário: ");
+            float salarioAtual = leitor.nextFloat();
+
+            System.out.print("Digite o valor do salário mínimo: ");
+            float salarioMinimo = leitor.nextFloat();
+            System.out.println();
+
+            float novoSalario = salarioAtual;
+
+            if (salarioAtual < 3 * salarioMinimo) {
+                novoSalario *= 1.5;
+            } else if (salarioAtual >= 3 * salarioMinimo && salarioAtual <= 10 * salarioMinimo) {
+                novoSalario *= 1.2;
+            } else if (salarioAtual > 10 * salarioMinimo && salarioAtual <= 20 * salarioMinimo) {
+                novoSalario *= 1.15;
+            } else {
+                novoSalario *= 1.1;
+            }
+
+            float reajuste = novoSalario - salarioAtual;
+            aumentoTotalFolha += reajuste;
+
+            System.out.println("\nResumo do Reajuste:");
+            System.out.println("Nome do funcionário: " + nomeFuncionario);
+            System.out.println("Reajuste aplicado: R$" + reajuste);
+            System.out.println("Novo salário: R$" + novoSalario);
+        }
+
+        System.out.println("\n=======================================================");
+        System.out.println("Aumento total na folha de pagamento: R$" + aumentoTotalFolha);
+        System.out.println("\n=======================================================");
         leitor.close();
         
       }
