@@ -70,7 +70,7 @@ No HTML, **atributos** são usados para fornecer informações adicionais sobre 
 
 #### **Aula 3.B**
 
-[Documento HTML5](file:///C:/Users/Germano-Silva/Documents/GitHub/Start_Capgemini/Start%20By%20Capgemini/03_Trilha_Java/01_HTML5/03%20-%20Fundamentos%20de%20HTML5%20M%C3%B3dulo%203/Aula%2003%20-%20Estrutura%20b%C3%A1sica)
+[Documento HTML5](https://github.com/Germano-Silva/Start_Capgemini/blob/main/Start%20By%20Capgemini/03_Trilha_Java/01_HTML5/03%20-%20Fundamentos%20de%20HTML5%20M%C3%B3dulo%203/Aula%2003%20-%20Estrutura%20b%C3%A1sica/Aula-3_B.htmlfile:///C:/Users/Germano-Silva/Documents/GitHub/Start_Capgemini/Start%20By%20Capgemini/03_Trilha_Java/01_HTML5/03%20-%20Fundamentos%20de%20HTML5%20M%C3%B3dulo%203/Aula%2003%20-%20Estrutura%20b%C3%A1sic)
 
 #### **Aula 3.C**
 
