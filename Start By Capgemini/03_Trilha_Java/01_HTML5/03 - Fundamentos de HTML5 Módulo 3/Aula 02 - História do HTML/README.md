@@ -35,7 +35,6 @@ A história do HTML (HyperText Markup Language) é bastante interessante e refle
 
 * **Adaptação da Web:** A transição para o HTML5 foi um marco importante, pois atendeu às crescentes demandas da web moderna e facilitou o desenvolvimento de aplicações web mais sofisticadas e funcionais.
 * **Adoção Generalizada:** HTML5 foi amplamente adotado pelos navegadores e desenvolvedores, ajudando a criar uma web mais consistente e rica em recursos.
-
 * **HTML5 (2014):** Esta versão representa um marco significativo na evolução do HTML. HTML5 trouxe uma série de melhorias e novos recursos, incluindo:
 
   * **Semântica:** Novos elementos semânticos como`<header>`,`<footer>`,`<article>`, e`<section>` ajudam a descrever melhor o conteúdo.
@@ -53,11 +52,34 @@ Essa trajetória do HTML reflete como a web evoluiu de um simples sistema de doc
 
 #### **Aula 3.A**
 
+No HTML, uma "tag" (ou "etiqueta") é uma parte do código que define o início e o fim de um elemento. Esses elementos são usados para estruturar e formatar o conteúdo em uma página web.
+
+* **Tag de Abertura:** Começa com o sinal de menor `<` seguido pelo nome do elemento e, se necessário, atributos. Exemplo: `<p>`, `<div class="container">`.
+* **Conteúdo:** O conteúdo é o texto ou outros elementos que ficam dentro da tag. Exemplo: `Olá, mundo!`.
+* **Tag de Fechamento:** Termina com o sinal de maior `>`, seguido de uma barra `/` e o nome do elemento. Exemplo: `</p>`, `</div>`.
+* **Tags Autoencerráveis:** Existem tags que não têm um valor associado a elas, ou seja, elas não possuem atributos que exigem um valor. Essas tags são frequentemente usadas para definir estruturas e formatos, mas não requerem dados adicionais para funcionar. Essas tags não têm um conteúdo interno e são autoencerráveis, ou seja, elas não possuem uma tag de fechamento. No HTML5, você pode simplesmente usar a tag de abertura e o navegador entenderá que é autoencerrável.
+
+No HTML, **atributos** são usados para fornecer informações adicionais sobre os elementos e controlar seu comportamento ou aparência. Eles são especificados dentro da tag de abertura de um elemento.
+
+* **Nome do Atributo:** Define o tipo de informação ou configuração.
+* **Valor do Atributo:** Especifica o valor associado ao atributo, geralmente entre aspas.
+* **Atributos Padrão e Personalizados:** Alguns atributos são padrão e definidos pelos padrões HTML, enquanto outros podem ser personalizados e específicos para bibliotecas ou frameworks.
+
+* **Atributos Obrigatórios e Opcionais:** Alguns atributos são obrigatórios (como`href` para links), enquanto outros são opcionais e usados conforme a necessidade.
+* **Segurança e Acessibilidade:** Sempre use atributos como`alt` para imagens e`title` para fornecer informações adicionais e melhorar a acessibilidade.
+
 #### **Aula 3.B**
+
+[Documento HTML5](file:///C:/Users/Germano-Silva/Documents/GitHub/Start_Capgemini/Start%20By%20Capgemini/03_Trilha_Java/01_HTML5/03%20-%20Fundamentos%20de%20HTML5%20M%C3%B3dulo%203/Aula%2003%20-%20Estrutura%20b%C3%A1sica)
 
 #### **Aula 3.C**
 
+O **Notepad++** é um editor de texto e código-fonte gratuito e de código aberto para Windows, amplamente utilizado por programadores e desenvolvedores devido às suas funcionalidades avançadas e interface amigável.
+
+O **Visual Studio Code** (VSCode) é um editor de código-fonte desenvolvido pela Microsoft, amplamente utilizado no desenvolvimento de software. Ele é conhecido por sua flexibilidade, extensibilidade e recursos avançados, o que o torna uma escolha popular entre desenvolvedores em diversas áreas.
+
 #### **Aula 3.D**
+
 
 #### **Aula 3.E**
 
