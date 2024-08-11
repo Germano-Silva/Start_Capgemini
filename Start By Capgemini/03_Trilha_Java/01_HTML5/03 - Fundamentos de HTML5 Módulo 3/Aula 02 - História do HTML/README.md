@@ -6,7 +6,7 @@
 
 A história do HTML (HyperText Markup Language) é bastante interessante e reflete a evolução da web como um todo.
 
-###### **Origens**
+**Origens**
 
 * **1989-1990:** O conceito de HTML foi desenvolvido por Tim Berners-Lee, um cientista da computação britânico, enquanto trabalhava no CERN (Organização Europeia para a Pesquisa Nuclear). Ele queria criar uma maneira de organizar e compartilhar documentos científicos de forma eficiente. Em 1991, Berners-Lee lançou o primeiro site da web, que usava HTML para estruturar o conteúdo.
 
@@ -27,11 +27,11 @@ A história do HTML (HyperText Markup Language) é bastante interessante e refle
 
 #### **Aula 2.C**
 
-###### **Transição para o HTML5**
+**Transição para o HTML5**
 
 * **Especificações e Propostas:** Em 2008, a WHATWG começou a desenvolver o HTML5 como uma versão evolutiva do HTML, e o W3C adotou a especificação em 2009. A ideia era criar um padrão que unisse a melhor parte das especificações anteriores e que fosse mais adequado para as necessidades da web moderna.
 
-###### **Impacto da Transição**
+**Impacto da Transição**
 
 * **Adaptação da Web:** A transição para o HTML5 foi um marco importante, pois atendeu às crescentes demandas da web moderna e facilitou o desenvolvimento de aplicações web mais sofisticadas e funcionais.
 * **Adoção Generalizada:** HTML5 foi amplamente adotado pelos navegadores e desenvolvedores, ajudando a criar uma web mais consistente e rica em recursos.
@@ -42,7 +42,7 @@ A história do HTML (HyperText Markup Language) é bastante interessante e refle
   * **Canvas:** A tag`<canvas>` permite desenho e gráficos dinâmicos diretamente na página.
   * **APIs:** Introduziu várias APIs poderosas, como a API de armazenamento local (LocalStorage), a API de geolocalização e a API de WebSockets.
 
-###### **Evolução Contínua**
+**Evolução Contínua**
 
 HTML5 continua a evoluir, com adições e melhorias sendo feitas de forma contínua. O HTML é um padrão vivo e em constante desenvolvimento, adaptando-se às novas necessidades da web e à inovação tecnológica.
 
@@ -80,10 +80,19 @@ O **Visual Studio Code** (VSCode) é um editor de código-fonte desenvolvido pel
 
 #### **Aula 3.D**
 
+O **Nu Html Checker**, também conhecido como **Validator.nu** , é uma ferramenta online usada para validar a conformidade de documentos HTML e XHTML com os padrões do W3C. Ele ajuda os desenvolvedores a garantir que seus documentos HTML estejam de acordo com as especificações, identificando erros e advertências que podem afetar a acessibilidade, usabilidade e compatibilidade dos sites.
 
 #### **Aula 3.E**
 
+**`<!DOCTYPE html>`**
+
+* Declara o tipo de documento e a versão do HTML. O`<!DOCTYPE html>` indica que o documento é HTML5.
+
 #### **Aula 3.F**
+
+**`<html lang="pt-BR">`**
+
+* A tag`<html>` é o elemento raiz do documento HTML. O atributo`lang` especifica o idioma da página.
 
 ## **Aula 04 - Tags Estruturais**
 
