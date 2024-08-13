@@ -2,54 +2,27 @@
 
 #### Aula 2.A
 
-A Advanced Research Projects Agency Network (acrônimo ARPANET; em português:
-Rede da Agência para Projetos de Pesquisa Avançada) foi uma rede de
-computadores construída em 1969 para transmissão de dados militares sigilosos e
-interligação dos departamentos de pesquisa nos Estados Unidos
+A Advanced Research Projects Agency Network (acrônimo ARPANET; em português: Rede da Agência para Projetos de Pesquisa Avançada) foi uma rede de computadores construída em 1969 para transmissão de dados militares sigilosos e interligação dos departamentos de pesquisa nos Estados Unidos
 
-LAN -  Local Area Network ou área de rede local, é
-um grupo de dispositivos de computação conectados em uma área localizada que
-geralmente compartilha uma conexão centralizada com a internet.
+LAN -  Local Area Network ou área de rede local, é um grupo de dispositivos de computação conectados em uma área localizada que geralmente compartilha uma conexão centralizada com a internet.
 
-WAN - Wide Area
-Networks ou rede de longa distância como tecnologia para a transmissão dos
-dados.
+WAN - Wide Area Networks ou rede de longa distância como tecnologia para a transmissão dos dados.
 
 #### Aula 2.B
 
 Utilização dos cabos para criação da rede de Internet.
 
-Neste processo para realizar a modificação dos sinais para melhor
-compatibilidade e transcrição das informações do computador para o moldem
-(sinal digital transmitido do computador para o moldem) e do moldem para os
-cabos (sinal analógico transmitido por linha de telefone), transformando sinal
-digital para sinal analógico chamando esse processo de Modulação e Demodulação.
+Neste processo para realizar a modificação dos sinais para melhor compatibilidade e transcrição das informações do computador para o moldem (sinal digital transmitido do computador para o moldem) e do moldem para os cabos (sinal analógico transmitido por linha de telefone), transformando sinal digital para sinal analógico chamando esse processo de Modulação e Demodulação.
 
-Os moldem
-possibilitam que em qualquer lugar do mundo que queira implementar um servidor
-ou um cliente queira acessar a internet ou adicionar informações para que
-outras possam acessar essas informações.
+Os moldem possibilitam que em qualquer lugar do mundo que queira implementar um servidor ou um cliente queira acessar a internet ou adicionar informações para que outras possam acessar essas informações.
 
-TCP/IP é um conjunto de protocolos que possibilita a comunicação entre
-computadores e servidores, formando a Internet. Ele combina o Protocolo de
-Controle de Transmissão (TCP), responsável pela transmissão de dados, com o
-Protocolo de Internet (IP), que identificar os computadores e servidores. O TCP
-é usado em conjunto com o IP para manter a conexão entre o remetente e o
-destinatário e para garantir a ordem dos pacotes. O IP é um protocolo sem
-conexão, ou seja, cada unidade de dados é individualmente endereçada e
-direcionada do dispositivo de origem para o dispositivo de destino, que não
-envia uma confirmação de recebimento à origem.
+TCP/IP é um conjunto de protocolos que possibilita a comunicação entre computadores e servidores, formando a Internet. Ele combina o Protocolo de Controle de Transmissão (TCP), responsável pela transmissão de dados, com o Protocolo de Internet (IP), que identificar os computadores e servidores. O TCP é usado em conjunto com o IP para manter a conexão entre o remetente e o destinatário e para garantir a ordem dos pacotes. O IP é um protocolo sem conexão, ou seja, cada unidade de dados é individualmente endereçada e direcionada do dispositivo de origem para o dispositivo de destino, que não envia uma confirmação de recebimento à origem.
 
-A criação do HTML e
-do protocolo HTTP criado pelo laboratório de pesquisa revolucionou a forma de
-como as informações poderiam ser digitadas e transmitidas criando a WWW. World
-Wide Web (Rede Mundial de Computadores) designa um sistema de documentos em hipermídia
-(ou hipermédia) que são interligados e executados na Internet.
+A criação do HTML e do protocolo HTTP criado pelo laboratório de pesquisa revolucionou a forma de como as informações poderiam ser digitadas e transmitidas criando a WWW. World Wide Web (Rede Mundial de Computadores) designa um sistema de documentos em hipermídia (ou hipermédia) que são interligados e executados na Internet.
 
 #### Aula 2.C
 
-Tim Berners-Lee é
-conhecido como o ‘Pai da Internet’ por sua criação da World Wide Web, que
+Tim Berners-Lee é conhecido como o ‘Pai da Internet’ por sua criação da World Wide Web, que
 permitiu que pessoas em todo o mundo compartilhassem documentos e informações.
 Ele o ofereceu a qualquer pessoa sem patentes e não recebeu royalties por ele,
 portanto, não lucrou com sua invenção. No artigo Information Management: A
