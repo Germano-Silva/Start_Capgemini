@@ -81,14 +81,14 @@ Uma IDE (Ambiente de Desenvolvimento Integrado) é uma aplicação que fornece u
 
 #### Aula 4.B
 
-[NetBeans](https://netbeans.apache.org/front/main/download/nb22/)
+[NetBeans](https://netbeans.apache.org/front/main/download/nb22/) - IDE de código aberto que oferece suporte a várias linguagens como Java, PHP e C++. É conhecida por sua interface intuitiva e funcionalidades integradas, como editor de código, depurador e suporte a gerenciamento de projetos, tornando o desenvolvimento ágil e eficiente.
 
 #### Aula 4.C
 
-[Eclipse](https://eclipseide.org/)
+[Eclipse](https://eclipseide.org/) - IDE extensível e popular, ideal para Java e outras linguagens. Oferece uma plataforma modular com um vasto ecossistema de plugins, permitindo personalização e expansão conforme necessário. É amplamente usada no desenvolvimento de software corporativo e projetos complexos.
 
 #### Aula 4.D
 
-[IntelliJ IDEA](https://www.jetbrains.com/idea/download/?section=windows)
+[IntelliJ IDEA](https://www.jetbrains.com/idea/download/?section=windows) - IDE da JetBrains famosa por sua interface moderna e recursos avançados. É especialmente forte no desenvolvimento Java, com suporte robusto a frameworks, refatoração inteligente e integração contínua, proporcionando uma experiência de codificação produtiva.
 
 ## Aula 05 - Programas Java
