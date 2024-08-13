@@ -96,27 +96,22 @@ O **Nu Html Checker**, também conhecido como **Validator.nu** , é uma ferramen
 
 ## **Aula 04 - Tags Estruturais**
 
-#### **Aula 4.A**
+- `<!DOCTYPE html>`: Define o tipo de documento e versão do HTML.
+- `<html lang="pt-br">`: Inicia o documento HTML e define o idioma como português do Brasil.
+- `<head>`: Contém metadados do documento, como charset e título.
+- `<meta charset="UTF-8">`: Define a codificação de caracteres como UTF-8.
+- `<meta name="viewport" content="width=device-width, initial-scale=1.0">`: Configura a visualização em dispositivos móveis.
+- `<title>`: Define o título da página, exibido na aba do navegador.
+- `<body>`: Contém o conteúdo visível da página.
+- `<header>`: Define o cabeçalho da página ou seção.
+- `<nav>`: Define a área de navegação com links.
+- `<section>`: Define uma seção temática no documento.
+- `<article>`: Define um conteúdo independente dentro de uma seção.
+- `<main>`: Contém o conteúdo principal do documento.
+- `<aside>`: Define conteúdo complementar, como uma barra lateral.
+- `<footer>`: Define o rodapé da página ou seção.
+- `<span>`: Agrupa elementos em linha para estilização.
 
-#### **Aula 4.B**
-
-#### **Aula 4.C**
-
-#### **Aula 4.D**
-
-#### **Aula 4.E**
-
-#### **Aula 4.F**
-
-#### **Aula 4.G**
-
-#### **Aula 4.H**
-
-#### **Aula 4.I**
-
-#### **Aula 4.J**
-
-#### **Aula 4.K**
 
 ## **Aula 05 - Textos, Cabeçalhos**
 
