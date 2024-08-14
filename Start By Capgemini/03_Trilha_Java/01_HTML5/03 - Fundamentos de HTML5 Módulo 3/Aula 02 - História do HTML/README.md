@@ -115,15 +115,14 @@ O **Nu Html Checker**, também conhecido como **Validator.nu** , é uma ferramen
 
 ## **Aula 05 - Textos, Cabeçalhos**
 
-#### **Aula 5.A**
-
-#### **Aula 5.B**
-
-#### **Aula 5.C**
-
-#### **Aula 5.D**
-
-#### **Aula 5.E**
+- **`<h1>`**: Define o título principal da página, geralmente o mais importante, com maior destaque e tamanho.
+- **`<h2>`**: Define um subtítulo de segundo nível, usado para dividir seções principais da página.
+- **`<h3>`**: Define um subtítulo de terceiro nível, usado para sub-seções dentro de `<h2>`.
+- **`<h4>`**: Define um subtítulo de quarto nível, para subdivisões mais detalhadas dentro de `<h3>`.
+- **`<h5>`**: Define um subtítulo de quinto nível, usado para subseções mais específicas dentro de `<h4>`.
+- **`<h6>`**: Define o menor subtítulo, com o menor destaque e tamanho, usado para detalhes mais profundos.
+- **`<p>`**: Define um parágrafo de texto, usado para agrupar blocos de texto.
+- **`<br>`**: Insere uma quebra de linha, forçando o texto a continuar na linha seguinte.
 
 ## **Aula 06 - Links**
 
