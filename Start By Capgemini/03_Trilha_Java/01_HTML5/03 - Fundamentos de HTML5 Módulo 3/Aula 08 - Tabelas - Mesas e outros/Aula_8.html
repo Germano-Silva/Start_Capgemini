@@ -116,17 +116,19 @@
     <aside>
         <table border="1">
             <caption><h4>Hórarios de estudo</h4></caption>
-            <tbody>
+            <thead>
                 <tr>
-                    <td>Hórarios</td>
-                    <td>Segunda</td>
-                    <td>Terça</td>
-                    <td>Quarta</td>
-                    <td>Quinta</td>
-                    <td>Sexta</td>
-                    <td>Sábado</td>
-                    <td>Domingo</td>
+                    <th>Hórarios</th>
+                    <th>Segunda</th>
+                    <th>Terça</th>
+                    <th>Quarta</th>
+                    <th>Quinta</th>
+                    <th>Sexta</th>
+                    <th>Sábado</th>
+                    <th>Domingo</th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td>Manhã</td>
                     <td rowspan="3">HTML</td>
@@ -137,16 +139,25 @@
                 </tr>
                 <tr>
                     <td>Tarde</td>
-                    <td rowspan="2">HTML</td>
+                    <td rowspan="2">java</td>
                     <td rowspan="2">CSS</td>
                     <td colspan="2">Angular</td>
                 </tr>
                 <tr>
                     <td>Noite</td>
                     <td colspan="2">Java</td>
-
                 </tr>
             </tbody>
+            <tfoot>
+                <tr>
+                    <th>Hórarios</th>
+                    <th>Foco HTML</th>
+                    <th>Foco Java</th>
+                    <th>Foco CSS</th>
+                    <th colspan="2">Foco misto</th>
+                    <th colspan="2">Descancar</th>
+                </tr>
+            </tfoot>
         </table>
     </aside>
     <footer>
