@@ -19,3 +19,59 @@
 **2016** : O CSS4 começou a ser desenvolvido, mas, ao invés de uma nova versão, muitas das propostas foram incorporadas nas atualizações contínuas do CSS3. O foco continuou na evolução gradual e adição de novos recursos.
 
 O CSS está em constante evolução, com novos recursos sendo adicionados em ciclos contínuos. A comunidade de desenvolvedores continua a trabalhar em melhorias e novas especificações para atender às necessidades emergentes do design web.
+
+#### Aula 2.A
+
+A sintaxe do CSS é relativamente simples e segue um padrão consistente:
+
+1. **Seletores**: Identificam os elementos HTML que você deseja estilizar. Podem ser tags, classes, IDs ou outros tipos de seletores.
+
+2. **Propriedades**: Especificam os aspectos do estilo que você deseja aplicar, como cor, tamanho, ou margem.
+
+3. **Valores**: Definem o valor das propriedades, como uma cor específica ou uma medida em pixels.
+
+
+
+Aqui está a estrutura básica de uma regra CSS:
+
+```css
+seletor {
+  propriedade: valor;
+}
+```
+
+**Exemplo:**
+
+```css
+/* Seleciona todos os parágrafos e define a cor do texto como azul */
+p {
+  color: blue;
+}
+
+/* Seleciona o elemento com id "main-header" e define a fonte como Arial e o tamanho como 24px */
+#main-header {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+}
+
+/* Seleciona todos os elementos com a classe "button" e define o fundo como verde e o texto como branco */
+.button {
+  background-color: green;
+  color: white;
+}
+```
+
+**Componentes principais:**
+
+- **Seletores**: Podem ser simples (como `p`, `.button`, `#main-header`) ou combinados (como `div > p`, `a:hover`).
+  
+- **Declarações**: Dentro das chaves `{}`, você coloca uma ou mais declarações. Cada declaração é uma combinação de uma propriedade e um valor.
+
+- **Propriedades e Valores**: As propriedades são seguidas por dois pontos e, em seguida, o valor é definido, finalizado por um ponto e vírgula. 
+
+Por exemplo:
+```css
+font-size: 16px;
+color: red;
+```
+
