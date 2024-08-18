@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contato</title>
 </head>
 <body>
-    Pagina referente aos contatos 
+    <form>
+        <!--value="Nome" vai ser sempre o párametro inicial -->
+        <!--placeholder="Nome" Vai ser o que precisa ser adicionado no input-->
+        <!--<input type="hidden" name="autoincremento" value="hidden">-->
+        <input type="password" name="Senha" placeholder="Senha"><br>
+        <input type="text" name="name" placeholder="Nome"><br>
+        <input type="email" name="email" placeholder="email"><br>
+        <input type="search" name="Busca" placeholder="Pesquisa"><br>
+        <input type="tel" name="telefone" name="telefone" placeholder="+XX (XX) X XXXX-XXXX"><br>
+        <input type="number" name="idade" placeholder="idade"><br>
+        <input type="url" name="LinkedIn" placeholder="LinkedIn"><br>
+        <p> Urgencia <input type="range" name="urgencia" min="0" max="100" step="0.1" ></p>
+        <!--Seleciona varios-->
+        <p><input type="checkbox" name="dia-da-semana" value="2">Segunda Feira</p>
+        <p><input type="checkbox" name="dia-da-semana" value="3">Terça Feira</p>
+        <p><input type="checkbox" name="dia-da-semana" value="4">Quarta Feira</p>
+        <!--Seleciona somente um se tiver o mesmo nome e valor diferente-->
+        <p><input type="radio" name="horario" value="Manhã">Manhã</p>
+        <p><input type="radio" name="horario" value="Tarde">Tarde</p>
+        <p><input type="radio" name="horario" value="Noite">Noite</p>
+        <textarea name="Texto" cols="50" rows="10" placeholder="Texto sobre o que deseja"></textarea><br>
+        <select name="estado">
+            <option value="">Selecione o Estado</option>
+            <option value="DF">DF</option>
+            <option value="RJ">RJ</option>
+            <option value="SP">SP</option>
+        </select><br>
+        <input list="estado" name="estado" placeholder="Digite o estado">
+            <datalist id="estado" >
+                <option value="DF">DF</option>
+                <option value="RJ">RJ</option>
+                <option value="SP">SP</option>
+            </datalist>
+    </form>
 </body>
-</html>
+</html>     
