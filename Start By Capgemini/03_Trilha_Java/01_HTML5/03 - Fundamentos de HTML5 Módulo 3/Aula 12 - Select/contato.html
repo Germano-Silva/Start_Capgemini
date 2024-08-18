@@ -26,13 +26,19 @@
         <p><input type="radio" name="horario" value="Manhã">Manhã</p>
         <p><input type="radio" name="horario" value="Tarde">Tarde</p>
         <p><input type="radio" name="horario" value="Noite">Noite</p>
-        <textarea name="Texto" cols="50" rows="10" placeholder="Texto sobre o que deseja"></textarea>
+        <textarea name="Texto" cols="50" rows="10" placeholder="Texto sobre o que deseja"></textarea><br>
         <select name="estado">
             <option value="">Selecione o Estado</option>
             <option value="DF">DF</option>
             <option value="RJ">RJ</option>
             <option value="SP">SP</option>
-        </select>
+        </select><br>
+        <input list="estado" name="estado" placeholder="Digite o estado">
+            <datalist id="estado" >
+                <option value="DF">DF</option>
+                <option value="RJ">RJ</option>
+                <option value="SP">SP</option>
+            </datalist>
     </form>
 </body>
 </html>     
