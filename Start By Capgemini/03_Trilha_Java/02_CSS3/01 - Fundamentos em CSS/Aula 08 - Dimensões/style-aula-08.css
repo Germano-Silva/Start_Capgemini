@@ -5,16 +5,17 @@
     color: white;
     font-size: 5rem;
     border: 2px dotted black;
-
+    border-radius: 10px;
 }
 .azul{
     background-color: blue;
     border-width: 5px;
-    border-bottom-style: double;
+    border-style: double;
 }
 .verde{
     background-color: green;
     border-width: 0px 2px 0px 3px;
+    border-radius: 0 0 50px 10px;
 }
 .vermelho{
     background-color: red;
