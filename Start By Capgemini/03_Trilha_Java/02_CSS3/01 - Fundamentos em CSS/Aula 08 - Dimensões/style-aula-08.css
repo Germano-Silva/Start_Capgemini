@@ -1,21 +1,19 @@
 .box{
     box-sizing: content-box;
+    width: 5rem;
+    height: 5rem;
+    display: block;
+    color: white;
+    font-size: 5rem;
+    padding: 5px 2px 3px 5px;
+
 }
 .azul{
     background-color: blue;
-    width: 5rem;
-    height: 5rem;
-    display: block;
 }
 .verde{
     background-color: green;
-    width: 5rem;
-    height: 5rem;
-    display: block;
 }
 .vermelho{
     background-color: red;
-    width: 5rem;
-    height: 5rem;
-    display: block;
 }
