@@ -1,24 +1,23 @@
+body{
+    background-color: black;
+}
 .box{
     box-sizing: border-box;
     width: 5rem;
     height: 5rem;
-    color: white;
-    font-size: 5rem;
-    border: 2px dotted black;
-    border-radius: 10px;
+    margin: 0px 0px 5px 0px;
+    border: white;
+    padding: 10px;
 }
 .azul{
     background-color: blue;
-    border-width: 5px;
-    border-style: double;
 }
 .verde{
     background-color: green;
-    border-width: 0px 2px 0px 3px;
-    border-radius: 0 0 50px 10px;
+    margin-top: 40px;
+    margin-bottom: 0px;
 }
 .vermelho{
     background-color: red;
-    border-bottom-width: 0;
-    border-style: dashed;
+    margin-left: 10px;
 }
