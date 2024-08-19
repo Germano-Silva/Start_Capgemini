@@ -3,6 +3,8 @@ html{
     background-color: #ada6a6;
     background-image: url(https://th.bing.com/th/id/OIP.cAG6eSYR_88JbOlyuyiTlAHaIs?rs=1&pid=ImgDetMain);
     background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
 }
 h1{
     color: #000000;
