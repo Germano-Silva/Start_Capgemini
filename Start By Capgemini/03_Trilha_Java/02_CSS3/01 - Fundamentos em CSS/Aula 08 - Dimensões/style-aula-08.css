@@ -4,12 +4,13 @@
     height: 5rem;
     color: white;
     font-size: 5rem;
-    border: 2px solid black;
+    border: 2px dotted black;
 
 }
 .azul{
     background-color: blue;
     border-width: 5px;
+    border-bottom-style: double;
 }
 .verde{
     background-color: green;
@@ -18,4 +19,5 @@
 .vermelho{
     background-color: red;
     border-bottom-width: 0;
+    border-style: dashed;
 }
