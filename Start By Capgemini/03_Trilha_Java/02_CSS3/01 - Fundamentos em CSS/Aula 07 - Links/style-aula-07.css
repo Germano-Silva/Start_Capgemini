@@ -11,3 +11,15 @@ a:visited{
 a:hover{
     color: chocolate;
 }
+p:hover{
+    color: deeppink;
+}
+h2{
+    color: blue;
+    text-decoration: underline;
+
+}
+h2:hover{
+    cursor: pointer;
+    display: none;
+}
