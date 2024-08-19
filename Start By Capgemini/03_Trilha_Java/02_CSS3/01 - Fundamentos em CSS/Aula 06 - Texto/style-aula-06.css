@@ -10,9 +10,11 @@ html{
 h1{
     color: #000000;
     background-color: cadetblue;
+    text-decoration: underline;
 }
 h2{
     background-color: rgb(181, 181, 224);
+    text-decoration: line-through;
 }
 @font-face{
     font-family: "Alex Brush", cursive;
@@ -30,8 +32,10 @@ main{
 main p{
     text-indent: 1rem;
     text-align: start;
+    text-decoration: overline;
 }
 
 h1, h2, h3, h4, h5, h6{
     text-align: center;
 }
+
