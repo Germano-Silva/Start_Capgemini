@@ -1,0 +1,44 @@
+html{
+    color: rgba(0, 0, 255, 1);
+    background-color: #ada6a6;
+    background-image: url("https://th.bing.com/th/id/OIP.cAG6eSYR_88JbOlyuyiTlAHaIs?rs=1&pid=ImgDetMain");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: contain;
+}
+h1{
+    color: #000000;
+    background-color: cadetblue;
+    text-decoration: underline;
+    letter-spacing: 1rem;
+}
+h2{
+    background-color: rgb(181, 181, 224);
+    text-decoration: line-through;
+}
+@font-face{
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    src: url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+    
+}
+main{
+    font-family: Alex Brush;
+    font-size: medium;
+    font-size: 1rem;
+    text-indent: 0rem;
+}
+main p{
+    text-indent: 1rem;
+    text-align: start;
+    text-decoration: overline;
+    
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
+    text-transform: capitalize;
+}
+
