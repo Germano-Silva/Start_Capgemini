@@ -1,4 +1,7 @@
 a{
-    color: brown;
+    color: green;
     cursor: help;
+}
+a:active{
+    color: aqua;
 }
