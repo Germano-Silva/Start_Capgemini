@@ -1,0 +1,24 @@
+/*Seletor*/
+h2{
+    color: cadetblue;
+}
+/*Classe sobrescreve o seletor*/
+.titulo-aula{
+    text-decoration: overline;
+}
+.texto-azul{
+    color: blue;
+}
+.texto-rosa{
+    color: pink;
+}
+
+/*ID sobrescreve a classe ou o seletor*/
+#segunda-aula{
+    text-decoration: none;
+}
+
+#primeira-aula{
+    text-decoration: none;
+
+}
