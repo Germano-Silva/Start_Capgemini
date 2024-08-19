@@ -1,19 +1,43 @@
 /*Seletor*/
+
+h1{
+    color: red;
+}
+
+main h1{
+    color: black;
+}
+
 h2{
     color: cadetblue;
 }
+
 /*Classe sobrescreve o seletor*/
+/* classe alinhada em forma de cascata*/
+.texto-azul .comentario{
+    color: black;
+}
+/* classe alinhada em forma de alinhada um depois o outro*/
+.texto-azul.comemtario{
+    color: black;
+}
+.comentario{
+    color: blue;
+}
 .titulo-aula{
     text-decoration: overline;
 }
+
 .texto-azul{
     color: blue;
 }
+
 .texto-rosa{
     color: pink;
 }
 
 /*ID sobrescreve a classe ou o seletor*/
+
 #segunda-aula{
     text-decoration: none;
 }
