@@ -1,7 +1,7 @@
 html{
     color: rgba(0, 0, 255, 1);
     background-color: #ada6a6;
-    background-image: url(https://th.bing.com/th/id/OIP.cAG6eSYR_88JbOlyuyiTlAHaIs?rs=1&pid=ImgDetMain);
+    background-image: url("https://th.bing.com/th/id/OIP.cAG6eSYR_88JbOlyuyiTlAHaIs?rs=1&pid=ImgDetMain");
     background-repeat: no-repeat;
     height: 100vh;
     background-position: center;
@@ -13,4 +13,13 @@ h1{
 }
 h2{
     background-color: rgb(181, 181, 224);
+}
+@font-face{
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+main{
+    font-family: Alex Brush;
 }
