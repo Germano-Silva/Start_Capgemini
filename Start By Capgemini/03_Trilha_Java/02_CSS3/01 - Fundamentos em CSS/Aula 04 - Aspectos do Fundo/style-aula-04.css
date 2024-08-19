@@ -1,6 +1,11 @@
 html{
     color: rgba(0, 0, 255, 1);
+    background-color: #ada6a6;
 }
 h1{
     color: #000000;
+    background-color: cadetblue;
+}
+h2{
+    background-color: rgb(181, 181, 224);
 }
