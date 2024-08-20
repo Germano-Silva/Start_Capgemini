@@ -268,7 +268,25 @@ Site com toda a documentação https://owasp.org/www-proiect-top-ten/ e em portu
 
 #### **Aula 6.B**
 
+**Vantagens:**
+
+* Poucas alterações fonte.
+* Permite o uso de HTML/CSS/Javascript.
+* Acesso à API's como câmera, microfone e localização.
+* Aplicações leves.
+* Envio de notificações push (alertas ou pop-up de sites ou apps, abas ou não).
+* Pode ser usado offline.
+* Multiplataforma (IOS, Androide, SmartTVs, MacOS, Linux, Windows).
+
 #### **Aula 6.C**
+
+**Desvantagens:**
+
+* Não fica disponível nas loias do sistema operacional.
+* Se a aplicação for pesada, pode ficar lento.
+* Acesso limitado ou inexistente à alguns recursos: https://whatwebcando.today/ [mostrar recursos].
+* Pode funcionar de forma diferentes quando usa diferentes.
+
 
 #### **Aula 6.D**
 
