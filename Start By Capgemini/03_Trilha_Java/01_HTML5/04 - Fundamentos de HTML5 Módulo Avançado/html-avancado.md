@@ -79,7 +79,6 @@
 * `<img src="camisa-gola-poslo.jpg" alt="camisa azul gola polo">`
 * Opcionalmente, você pode colocar um title na sua imagem para quando o usuário passar o mouse.
 
-
   ![](https://i.sstatic.net/hFRDK.png)
 
 #### **Aula 3.H**
@@ -93,6 +92,7 @@
 #### **Aula 3.I**
 
 **Conteúdo**
+
 * Ser Original.
 * Ter qualidade.
 * Ter relevância para o tema abordado.
@@ -100,12 +100,14 @@
 #### **Aula 3.J**
 
 **Hiperlinks**
+
 * Use, quando possível, links para outras páginas suas que corrobore com o texto e crie interatividade.
 * Neste caso, são os links que vão para páginas, que muitas vezes explicam algum ponto abordado.
 
 #### **Aula 3.K**
 
 **Intertítulos `<h2>`**
+
 * Facilita a leitura do texto.
 * Organiza o conteúdo.Intertítulos `<h2>`.
 * Facilita a leitura do texto.
@@ -133,21 +135,50 @@
 
 #### **Aula 4.B**
 
+* Aplicações acessíveis independente de capacidade auditivas, visuais, físicas ou congnitivas.
+* Deve ser acessível por:
+  * Teclado.
+  * Mouse.
+  * Touch screen.
+  * Comandos de voz.
+
 #### **Aula 4.C**
+
+* Sites seguros do ponto de vista de saúde, exemplos:
+  * Sem cores não pensadas.
+  * Sem telas piscantes que prejudicam epiléticos.
+  * Sem item que podem causar dor de cabeça.
 
 #### **Aula 4.D**
 
+**Site com documentação:**
+[MDN Web Docs (antes era MDN - Mozilla Developer link)](https://developer.mozilla.org/pt-BR/docs/Learn/Accessibility/HTML)
+
 #### **Aula 4.E**
+
+[Multimídia acessível](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Multimedia)
 
 #### **Aula 4.F**
 
+[Acessibilidade móvel](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Moble)
+
 #### **Aula 4.G**
+
+[CSS e JavaScript - melhores prátias de acessibilidade](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript)
 
 #### **Aula 4.H**
 
+[Google Mobile Friendly](https://search.google.com/test/mobile-friendly)
+
 #### **Aula 4.I**
 
-Aula 05 - Segurança
+* **As vantagens de um site acessível e com boa semântica podem ser:**
+  * Bom para SEO.
+  * Boa usabilidade em dispositivos móveis.
+  * Fácil de ser desenvolvido.
+    ➡️ Aumenta a audiência do site e com isso os ganhos.
+
+## **Aula 05 - Segurança**
 
 #### **Aula 5.A**
 
