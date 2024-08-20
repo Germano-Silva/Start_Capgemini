@@ -287,21 +287,58 @@ Site com toda a documentação https://owasp.org/www-proiect-top-ten/ e em portu
 * Acesso limitado ou inexistente à alguns recursos: https://whatwebcando.today/ [mostrar recursos].
 * Pode funcionar de forma diferentes quando usa diferentes.
 
-
 #### **Aula 6.D**
 
+**APP SHELL**
+
+É o mínimo de HTML, CSS e JavaScript que alimenta uma interface de usuário. Entre as premissas, estão:
+* Carregamento rápido.
+* Ter armazenamento em cache.
+* Ter exibição dinâmica de conteúdo.
+
+**A arquitetura do app Shell leva em consideração os seguintes pontos:**
+
+* Priorização do carregamento inicial, ou seja, o service worker armazenará cache dos itens básicos para economizar tempo de carregamento.
+* Carregamento assíncrono visando já montar de forma rápida o aplicativo. Uso de cache é bem-vindo.
+* Usar ferramentas confiáveis de gerenciamento de conteúdo estático para armazenar e atualizar cache.
 #### **Aula 6.E**
+Vamos instalar o serviceworker.
+
+`npm install serviceworker`
+
+Depois vamos incluir o serviceWorker:
+```
+<script>
+    if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('generate-sw.is');
+    }
+</script>
+```
 
 #### **Aula 6.F**
 
+* **Criar arquivo manifest.ison**
+  * Exemplo de gerador de arquivo Manifest:
+    * https://app-manifest.firebaseapp.com/
+    * https://www.simicart.com/manifest-generator.html/
+* Criar ícone (é sugerido 512px por 512px).
 #### **Aula 6.G**
 
-#### **Aula 6.H**
+**CACHE**
+
+O Service Worker possui então as seguintes etapas:
+* **Install**: Ativado só uma vez, se alterar, é chamado novamente.
+* **Activate**: Chamado só uma vez, quando uma nova versão do sw.is é instalada e se não tiver outra versão sendo executada. É aqui onde deleta as antigas.
+* **Fetch**: Usado toda vez que a página é requisitada.
+* **message**
+* **sync**
+* **push**
 
 #### **Aula 6.I**
+**EXERCíClO PWA**
 
-#### **Aula 6.J**
+Vamos dar início ao nosso projeto:
+* Criar um PWA e instalar no seu smartphone.
+* Usar Less ou Sass para CSS (se conhecer alguma opção de PostCSS, também usar).
+* Tratar visualização e usar boas práticas (Google Mobile Friendly: search.google.com/test/mobile-friendly).
 
-## Aula 07 - Considerações Finais
-
-#### **Aula 7.A**
