@@ -182,25 +182,89 @@
 
 #### **Aula 5.A**
 
+* **Segurança**
+  * SSL/TLC
+  * CORS
+  * CSP
+  * OWASP Top 10
+
 #### **Aula 5.B**
 
-#### **Aula 5.C**
+* **SSL**
+  * Protocolo de Camada de Sockets Segura (Secure Sockets Layer).
+  * Há também o TLS (Segurança da Camada de Transporte/ Transport Layer
+  * Alguns consideram o SSL depreciado e sugerem o uso do TLS.
+  * É um protocolo criptografado que permite ter mais segurança de comunicação para acessar um ambiente virtual como páginas web ou e-mail.
+  * Os dados são criptografados, impossibilitando outras pessoas de utilizar.
+  * Geralmente o usuário pode escolher em usar sem o protocolo de segurança (http) ou com (https).
+  * A instalação é feita normalmente através do servidor contratado, alguns comuns e alguns oferecem versões pagas e gratuitas.
+  * No WordPress há plugins para esta funcionalidade.
 
+#### **Aula 5.C**
+* **CORS**
+  * Cross-origin Resource Sharing ou compartilhamento de recursos de origem cruzadas de origens diferentes.
+  * É um mecanismos que usa cabeçalhos adicionais HTTP para permitir que um WebApp seja executado numa origem/domínio com permissão para acessar recursos pré-selecionados de um outro servidor.
+  * Executa requisição Cross-origin HTTP ao solicitar um recurso de origem diferente, podendo ser domínio ou protocolo ou porta diferente da origem.
+  * Pode ocorrer nos testes que utilizamos recursos em portas diferentes: http://localhost:3000/ e http://localhost:3001/
+  * Ou usar recursos de outros domínios dentro do nosso WebApp, como imagens estão no nosso domínio.
 #### **Aula 5.D**
+
+* **CORS: Possíveis erros:**
+  * Erros mais comuns são com as requisições Javascript que utilizam XMLHttpRequest ou Fetch APIs.
+  * XMLHttpRequest são objetos usados para interagir entre servidores, indo de obtenção/recuperação de dados dentro de uma URL até atualização completa.
+  * Fetch APIs são interfaces para buscar recursos, usada para acessar e manipular HTML, com requests e responses obiects.
+  * Erros de CSS Shapes.
+  * Erros de carregamentos de imagens.
 
 #### **Aula 5.E**
 
+* **CORS: Algumas soluções:**
+  * Geralmente os problemas são causados por ausência de header. Exemplos:
+    * Header set Access-Control-Allow-Origin: https://google.com.br
+    * Header set Access-Control-Allow-Methods: POST, GET
+    * Header set Access-ControI-AIIow-Headers: * /*Podendo ser Accept para burlar restrições adicionais* /
+    * Header set Access-Control-Max-Age: 86400 /*tempo de manutenção da cache*/
+    * Há a opção também de fazer esta configuração no servidor web (Exemplo Apache).
+    * A forma de usar depende da ferramenta que está usando, se for Express, a documentação é: http://expressis.com/en/resources/middleware/cors.html
+
 #### **Aula 5.F**
+
+**CSP**
+
+* Content Security Policy, ou Politica de Segurança de Conteúdo.
+* É uma camada adicional de segurança, visando detectar e amenizar alguns tipos de ataque, como injeção de dados e Cross Site Scripting/XSS.
+  * Geralmente estes ataques baseiam-se em ir em algum formulário e inserir JavaScript para obter alguma vantagem, como roubo de dados ou distribuição de malwer.
+* Para habilitar, usamos a seguinte linha no `<head>`:
+   `<meta http-equiv="Content-Security-PoIicy" content="default-src 'self'; img-src https://* child-src'none';">`
+* Guia completo: https://content-security-policy.com/
 
 #### **Aula 5.G**
 
-#### **Aula 5.H**
+**Análise Observatory Mozilla**
 
+* Podemos analisar o site sobre este ponto através do https://observatory.mozilla.org.
+* Este site nos dá uma nota e a análise completa do que foi testado.
+* Através da análise, o site nos indica sugestões de melhoria.
+
+#### **Aula 5.H**
+**OWASP Top 10**
+* Open Web Application Security Project, ou Projeto Aberto de Segurança em Aplicações Web.
+* É um documento de conscientização para segurança de sites e aplicações web.
+* Aponta as principais falhas de segurança, apontados por vários especialistas de vario lugares.
 #### **Aula 5.I**
+Tem também o OWASP Top 1 0 de controles preventivos.
+Site com toda a documentação https://owasp.org/www-proiect-top-ten/ e em português tem um pdf: https://wiki.owasp.org/images/O/06/OWASP_Top_10-2017-pt_pt.pdf (visitar também página 23) - https://owasp.org/Top10/pt_BR/.
 
 ## Aula 06 -PWA
 
 #### **Aula 6.A**
+
+**Progressive Web App**
+  * É basicamente uma página web, ou seja, um site com cara de app.
+  * Pode ser desenvolvido para se comportar como um app nativo.
+  * Se o browser não suportar um recurso, só não irá ter o recurso, mas o resto funciona.
+  * Instalar ou não, a escolha é do usuário.
+  * Usado por Twitch, Facebook, Twiter e Uber, por exemplo.
 
 #### **Aula 6.B**
 
