@@ -78,8 +78,16 @@ O Cascading Style Sheets (CSS) é uma "folha de estilo" composta por "camadas" e
 * Facilita a mudança de propriedades do CSS de forma mais dinâmica e rápida.
 
 #### **Aula 3.F**
-
-
+**Hierarquia**
+* Pode ser usado de forma mais intuitiva, colocando um dentro do outro:
+```
+p{
+    color: @cor;
+    b{
+        color: @cor2;
+    }
+}
+```
 
 #### **Aula 3.G**
 
