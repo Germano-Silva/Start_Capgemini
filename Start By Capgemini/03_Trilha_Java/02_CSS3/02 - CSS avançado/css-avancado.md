@@ -59,14 +59,23 @@ O Cascading Style Sheets (CSS) é uma "folha de estilo" composta por "camadas" e
 * Site: Lesscss.org
 * Instalação no NodeJs: npm install less
     * Não é obrigatório, pois também funciona sem a instalação.
-    
+
 #### **Aula 3.D**
 
+**Arquivo HTML**
 
+* `<link rel="stylesheet/less" type="text/css" href="styles.css" />`
+* A parte importante do link é o stylesheet/less onde faz a definição do processamento.
+* `href="styles.css"` pode ser também `href="styles.less"`
+* https://lesscss.org/
 
 #### **Aula 3.E**
 
-
+**Variáveis**
+* Usa o @
+    * Exemplo: @cor
+* E ao invés de utilizar Uma determinado valor, você usa a variável criada.
+* Facilita a mudança de propriedades do CSS de forma mais dinâmica e rápida.
 
 #### **Aula 3.F**
 
