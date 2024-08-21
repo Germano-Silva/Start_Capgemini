@@ -96,13 +96,25 @@ p{
 * Permite transformar um valor noutro, manipular condicionais, fazer cálculos, etc.
 * Site: https://lesscss.org/functions/
 
-#### **Aula 3.H**
-
-
-
 #### **Aula 3.I**
 
+**Mixins**
+* Usado quando há itens iguais em mais de um seletor e acaba usando a mesma estrutura de função.
+* E como criar "funtions" dentro do CSS, com passagem ou não de parâmetros.
+* Possibilita uso de valores padrão.
+* Evita repetições.
+Função:
+```
+h1 {
+    .drop-shadow();
+    color: red;
+}
 
+.drop-shadow(){
+    text-shadow: 2px 1px 1px #ccc;
+    text-decoration: underline;
+}
+```
 
 #### **Aula 3.J**
 
