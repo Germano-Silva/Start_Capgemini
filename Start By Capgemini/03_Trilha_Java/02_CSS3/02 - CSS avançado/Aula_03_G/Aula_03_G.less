@@ -1,0 +1,15 @@
+@blue: blue;
+@width: 0.55;
+
+.drop-shadow{
+    text-shadow: 2px 1px 1px #ccc;
+    text-decoration: underline;
+}
+h1{
+    color: @blue;
+}
+
+p{
+    color: if(iscolor(@blue), @blue, red);
+    width: percentage(@width);
+}

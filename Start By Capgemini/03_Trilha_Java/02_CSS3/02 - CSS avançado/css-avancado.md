@@ -91,7 +91,10 @@ p{
 
 #### **Aula 3.G**
 
-
+**Função**
+* Permite a manipulação de valores a partir de uma lista de funções predefinidas pelo LESS.
+* Permite transformar um valor noutro, manipular condicionais, fazer cálculos, etc.
+* Site: https://lesscss.org/functions/
 
 #### **Aula 3.H**
 
