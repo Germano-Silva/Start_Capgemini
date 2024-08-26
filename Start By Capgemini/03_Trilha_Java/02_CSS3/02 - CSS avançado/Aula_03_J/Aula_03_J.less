@@ -1,15 +1,16 @@
-@blue: blue;
-@width: 0.55;
+@cor: blue;
+@cor_cinza_claro: rgb(210,212,208);
 
-.drop-shadow{
-    text-shadow: 2px 1px 1px #ccc;
-    text-decoration: underline;
+body{
+    background-color: @cor_cinza_claro;
 }
+
 h1{
-    color: @blue;
+    color: @cor;
+    text-shadow: 2px 1px 1px #7a7b7c;
 }
 
 p{
-    color: if(iscolor(@blue), @blue, red);
-    width: percentage(@width);
+    color: @cor;
+    font-size: 23px;
 }
