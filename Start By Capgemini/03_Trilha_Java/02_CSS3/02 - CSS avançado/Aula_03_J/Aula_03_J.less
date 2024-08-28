@@ -6,11 +6,17 @@ body{
 }
 
 h1{
-    color: @cor;
+    .cores();
     text-shadow: 2px 1px 1px #7a7b7c;
+    font-size: 50px;
 }
 
 p{
+    .cores();
+}
+
+.cores(){
     color: @cor;
+    background-color: @cor*0.2;
     font-size: 23px;
 }
