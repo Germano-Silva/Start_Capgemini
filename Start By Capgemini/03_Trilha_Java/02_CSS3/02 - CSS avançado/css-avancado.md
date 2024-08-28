@@ -121,8 +121,16 @@ h1 {
 
 
 #### **Aula 3.K**
+**Condições/lf**
 
-
+Pode ser usado para fazer alguma condição de cores para tratar um valor padrão.
+```
+& when (@color = ") {
+    color: darkgreen;
+}else{
+    color: @color;
+}
+```
 
 #### **Aula 3.L**
 
