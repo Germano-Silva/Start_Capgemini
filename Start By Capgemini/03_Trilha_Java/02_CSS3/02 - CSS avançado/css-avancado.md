@@ -143,18 +143,15 @@ Pode ser usado para fazer alguma condição de cores para tratar um valor padrã
 
 #### **Aula 3.M**
 
+Arquivos LESS são uma extensão do CSS que permitem usar variáveis, funções e outros recursos avançados para escrever folhas de estilo de maneira mais eficiente e organizada. No entanto, erros podem ocorrer durante a escrita ou compilação de arquivos LESS.
 
+* Use uma ferramenta de linting: Ferramentas como lesshint podem ajudar a identificar erros e problemas de estilo.
+* Consulte a documentação: A documentação oficial do LESS é uma ótima fonte para entender a sintaxe e os recursos disponíveis.
+* Verifique o console de erros: A maioria dos compiladores LESS fornece mensagens de erro detalhadas que podem ajudar a identificar e corrigir problemas.
 
-#### **Aula 3.N**
+#### **Aula 3.N 3.O 3.P**
 
-
-
-#### **Aula 3.O**
-
-
-
-#### **Aula 3.Q**
-
+Os exercicio e o servido em Node.js não foram realizados devido não ser realizado o cursos de JavaScript.
 
 
 ## **Aula 04 - SASS**
