@@ -157,12 +157,31 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
 ## **Aula 04 - SASS**
 #### **Aula 4.A**
 
+**SASS**
 
+* Sass é Uma extensão de CSS que empodera o CSS básico.
+* É um pré-processador de CSS, assim como o Less.
+* Permite o uso de variáveis, funções, cálculos e hierarquia.
+* É uma Gem do Ruby, ou seja, uma biblioteca escrita em Ruby.
+* Site: https://sass-lang.com/
 
 #### **Aula 4.B**
 
+**SASS**
 
-
+* Exemplos de conversores online:
+    - https://isonformatter.org/scss-to-css
+    - https://codebeautify.org/sass-to-css-converter
+* Plug-in Live Sass Compiler para VSCode.
+* Estes são exemplos, pode usar outros conforme desejar
+* Instalação da extenção:
+    - Name: Live Sass Compiler
+    - Id: glenn2223.live-sass
+    - Description: Compile Sass or Scss to CSS at realtime.
+    - Version: 6.1.2
+    - Publisher: Glenn Marks
+    - VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass
+    
 #### **Aula 4.C**
 
 
