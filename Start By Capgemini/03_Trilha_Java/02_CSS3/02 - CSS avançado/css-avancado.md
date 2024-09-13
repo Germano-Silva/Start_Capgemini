@@ -202,7 +202,16 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
 
 #### **Aula 4.D**
 
+* Para funções, usamos o @mixin para a declaração
 
+            @mixin fundoP($color) {
+                backg round -color:$color;
+            }
+* Na chamada usamos o @include
+
+            .tipo {
+                @include fundoP($cor);
+            }
 
 #### **Aula 4.E**
 
