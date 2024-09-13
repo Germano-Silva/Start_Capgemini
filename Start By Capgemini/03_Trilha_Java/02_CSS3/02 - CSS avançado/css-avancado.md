@@ -181,10 +181,24 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
     - Version: 6.1.2
     - Publisher: Glenn Marks
     - VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass
-    
+
 #### **Aula 4.C**
 
+* Para variável se usa o $ e não o conforme outras linguagens.
+* Permite usar os formatos .sass e .scss.
+    * .scss é mais parecido com a sintaxe do CSS e LESS e é a que usaremo
+        
+            $cor: red;
+            .item{
+                color: $cor;
+            } 
+        
+    * .sass é mais parecido com a sintaxe do Pug, ou seja, sem abertura.
 
+            $cor: red;
+            .item
+                color: $cor;
+            
 
 #### **Aula 4.D**
 
