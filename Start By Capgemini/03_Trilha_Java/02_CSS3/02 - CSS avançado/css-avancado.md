@@ -215,7 +215,15 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
 
 #### **Aula 4.E**
 
+**Hierarquia**
+* Pode ser usado de forma mais intuitiva, colocando um dentro do outro.
 
+        .tipo {
+            @include fundoP($cor2);
+            a{
+                color: $cor;
+            }
+        }
 
 #### **Aula 4.F**
 

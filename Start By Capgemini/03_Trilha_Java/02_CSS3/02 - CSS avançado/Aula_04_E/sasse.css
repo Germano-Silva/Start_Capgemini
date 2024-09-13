@@ -1,0 +1,19 @@
+body {
+  background-color: black;
+  color: lightgrey;
+  margin: 10%;
+}
+
+.sombra {
+  text-shadow: 2px 1px 1px #ccc;
+  text-decoration: underline;
+  color: lightblue;
+}
+
+h1 {
+  color: lightblue;
+}
+
+p b {
+  color: aquamarine;
+}/*# sourceMappingURL=sassd.css.map */
