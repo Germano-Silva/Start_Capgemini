@@ -259,7 +259,19 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
 
 #### **Aula 4.I**
 
+**Repetição/For/Looping**
+* É possível o há um padrão de repetição entre alguma configuração:
 
+* Exemplo:
+
+        $cor: red;
+
+            @for $i from 1 through 3 {
+                $nome: 'tipo' + $i;
+                    #{$nome} {
+                        background-color: lighten($cor, $i * 5%);
+                    }
+            }
 
 #### **Aula 4.J**
 

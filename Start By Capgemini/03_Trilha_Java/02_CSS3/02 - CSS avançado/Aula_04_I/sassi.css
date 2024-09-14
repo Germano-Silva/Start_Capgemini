@@ -1,1 +1,40 @@
-/*# sourceMappingURL=sassi.css.map */
+body {
+  background-color: black;
+  color: lightgrey;
+  color: lightgrey;
+  margin: 5%;
+}
+
+a {
+  color: white;
+  background-color: lime;
+}
+
+p b {
+  color: aquamarine;
+}
+
+.sombra {
+  text-shadow: 2px 1px 1px #ccc;
+  text-decoration: underline;
+  color: lightblue;
+}
+
+h1 {
+  color: lightblue;
+}
+
+.div-1 {
+  font-size: 14px;
+  background-color: #ff3333;
+}
+
+.div-2 {
+  font-size: 18px;
+  background-color: #ff6666;
+}
+
+.div-3 {
+  font-size: 22px;
+  background-color: #ff9999;
+}/*# sourceMappingURL=sassi.css.map */
