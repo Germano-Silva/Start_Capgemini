@@ -235,6 +235,17 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
 
 #### **Aula 4.G**
 
+**Operadores/Math**
+
+* ``` >, >=, <, <= == ``` e ```!= ``` para comparações.
+* ```+, -, *``` e ``` /``` para números.
+* ```+``` para concatenar strings.
+* Exemplos:
+
+            1 + 2 * 3 == 1 + (2 * 3) // true
+* true or false and false == true or (false and false) // true
+
+            ((1 + 2)* 3 + 4) * 5; // 65
 
 
 #### **Aula 4.H**
