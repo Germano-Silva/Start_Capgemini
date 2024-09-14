@@ -250,6 +250,11 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
 
 #### **Aula 4.H**
 
+**Remover aspas de uma string**
+* ```#{$variável + 1}```
+* Cria uma string sem aspas
+* Se for usar como número, pode não funcionar, pois apesar de parecer um número não é.
+* Se for para transformar em número, use $number * 1 px.
 
 
 #### **Aula 4.I**
