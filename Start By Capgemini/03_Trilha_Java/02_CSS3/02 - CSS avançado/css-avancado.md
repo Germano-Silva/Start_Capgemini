@@ -227,7 +227,11 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
 
 #### **Aula 4.F**
 
-
+**Import**
+* É possível fazer o uso de imports:
+* @use 'base';
+* @import 'base'; / *este está em desuso
+* Ao contrário das importações de CSS simples, que exigem que o navegador faça varias solicitações HTTP à medida que renderiza sua página, aqui importa tudo de uma vez, visto que irá se tornar só um arquivo CSS.
 
 #### **Aula 4.G**
 
