@@ -1,1 +1,24 @@
-/*# sourceMappingURL=sassf.css.map */
+.sombra {
+  text-shadow: 2px 1px 1px #ccc;
+  text-decoration: underline;
+  color: lightblue;
+}
+
+h1 {
+  color: lightblue;
+}
+
+a {
+  color: white;
+  background-color: lime;
+}
+
+body {
+  background-color: black;
+  color: lightgrey;
+  margin: 10%;
+}
+
+p b {
+  color: aquamarine;
+}/*# sourceMappingURL=sassf.css.map */

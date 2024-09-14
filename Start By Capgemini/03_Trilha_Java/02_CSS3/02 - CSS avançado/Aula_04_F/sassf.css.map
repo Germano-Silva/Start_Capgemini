@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"sassf.css"}
+{"version":3,"sources":["_base.scss","sassf.css","_formatacao.scss","sassf.scss"],"names":[],"mappings":"AAEA;EACI,6BAAA;EACA,0BAAA;EACA,gBALE;ACIN;;ADIA;EACI,gBATE;ACQN;;ACRA;EACI,YAAA;EACA,sBAAA;ADWJ;;AEJA;EAHI,uBAHS;EAQT,gBATG;EAUH,WAAA;AFOJ;;AEHI;EACI,iBAAA;AFMR","file":"sassf.css"}

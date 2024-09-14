@@ -1,0 +1,20 @@
+@import '_base', '_formatacao';
+
+$cor2 :lightgrey ;
+$background: black;
+
+@mixin fundoP($color){
+    background-color: $color;
+}
+
+body {
+    @include fundoP($background) ;
+    color: $cor2;
+    margin: 10%;
+}
+
+p{
+    b{
+        color: aquamarine;
+    }
+}
