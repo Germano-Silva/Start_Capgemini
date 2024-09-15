@@ -1,4 +1,5 @@
 ## **Aula 02 - Apresentação do Curso**
+
 #### **Aula 2.A**
 
 **CSS AVANÇADO**
@@ -11,9 +12,10 @@
 * CSS Modules
 
 ## **Aula 03 - Processadores CSS**
+
 #### **Aula 3.A**
 
-**Introdução - CSS** 
+**Introdução - CSS**
 
 O Cascading Style Sheets (CSS) é uma "folha de estilo" composta por "camadas" e utilizada para definir apresentação (aparência) em páginas da internos adotam para o seu desenvolvimento linguagens de  marcação (como XML HTML e XHTML).
 
@@ -27,9 +29,9 @@ O Cascading Style Sheets (CSS) é uma "folha de estilo" composta por "camadas" e
 * Leem todo o código gerado e convertem para CSS (podendo ser minificado, se assim estiver definido).
 * Possuem funcionalidades que não existe no CSS puro, como herança por exemplo.
 * Bons exemplos são:
-    * LESS
-    * Sass
-    * Stylus
+  * LESS
+  * Sass
+  * Stylus
 * Eles tem semelhanças, logo vale a pena identificar qual agrada mais e qual irá atender melhor sua demand
 
 #### **Aula 3.B**
@@ -50,6 +52,7 @@ O Cascading Style Sheets (CSS) é uma "folha de estilo" composta por "camadas" e
 #### **Aula 3.C**
 
 **LESS**
+
 * É um pré-processador de CSS.
 * Amplia a capacidade do CSS e que compila mais rápido que outros pré processadores.
 * É baseado em JavaScript (não precisa conhecer a linguagem).
@@ -58,7 +61,7 @@ O Cascading Style Sheets (CSS) é uma "folha de estilo" composta por "camadas" e
 * Permite o uso de variáveis, funções, cálculos e hierarquia.
 * Site: Lesscss.org
 * Instalação no NodeJs: npm install less
-    * Não é obrigatório, pois também funciona sem a instalação.
+  * Não é obrigatório, pois também funciona sem a instalação.
 
 #### **Aula 3.D**
 
@@ -72,14 +75,18 @@ O Cascading Style Sheets (CSS) é uma "folha de estilo" composta por "camadas" e
 #### **Aula 3.E**
 
 **Variáveis**
+
 * Usa o @
-    * Exemplo: @cor
+  * Exemplo: @cor
 * E ao invés de utilizar Uma determinado valor, você usa a variável criada.
 * Facilita a mudança de propriedades do CSS de forma mais dinâmica e rápida.
 
 #### **Aula 3.F**
+
 **Hierarquia**
+
 * Pode ser usado de forma mais intuitiva, colocando um dentro do outro:
+
 ```
 p{
     color: @cor;
@@ -92,6 +99,7 @@ p{
 #### **Aula 3.G**
 
 **Função**
+
 * Permite a manipulação de valores a partir de uma lista de funções predefinidas pelo LESS.
 * Permite transformar um valor noutro, manipular condicionais, fazer cálculos, etc.
 * Site: https://lesscss.org/functions/
@@ -99,11 +107,13 @@ p{
 #### **Aula 3.I**
 
 **Mixins**
+
 * Usado quando há itens iguais em mais de um seletor e acaba usando a mesma estrutura de função.
 * E como criar "funtions" dentro do CSS, com passagem ou não de parâmetros.
 * Possibilita uso de valores padrão.
 * Evita repetições.
-Função:
+  Função:
+
 ```
 h1 {
     .drop-shadow();
@@ -118,12 +128,12 @@ h1 {
 
 #### **Aula 3.J**
 
-
-
 #### **Aula 3.K**
+
 **Condições/lf**
 
 Pode ser usado para fazer alguma condição de cores para tratar um valor padrão.
+
 ```
 & when (@color = ") {
     color: darkgreen;
@@ -133,13 +143,13 @@ Pode ser usado para fazer alguma condição de cores para tratar um valor padrã
 ```
 
 #### **Aula 3.L**
+
 **Math**
 
 * Ao fazer uma configuração, a definição de um estilo, você poder fazer cálculos para definir padrões/proporcionalidades.
 * Funciona também com cores.
 * Opções: + - * /
 * Devido às versões do Less, em algumas o/não funcionalidade a não ser que force o ./ que está obsoleto atualmente
-
 
 #### **Aula 3.M**
 
@@ -153,8 +163,8 @@ Arquivos LESS são uma extensão do CSS que permitem usar variáveis, funções 
 
 Os exercicio e o servido em Node.js não foram realizados devido não ser realizado o cursos de JavaScript.
 
-
 ## **Aula 04 - SASS**
+
 #### **Aula 4.A**
 
 **SASS**
@@ -170,53 +180,53 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
 **SASS**
 
 * Exemplos de conversores online:
-    - https://isonformatter.org/scss-to-css
-    - https://codebeautify.org/sass-to-css-converter
+  - https://isonformatter.org/scss-to-css
+  - https://codebeautify.org/sass-to-css-converter
 * Plug-in Live Sass Compiler para VSCode.
 * Estes são exemplos, pode usar outros conforme desejar
 * Instalação da extenção:
-    - Name: Live Sass Compiler
-    - Id: glenn2223.live-sass
-    - Description: Compile Sass or Scss to CSS at realtime.
-    - Version: 6.1.2
-    - Publisher: Glenn Marks
-    - VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass
+  - Name: Live Sass Compiler
+  - Id: glenn2223.live-sass
+  - Description: Compile Sass or Scss to CSS at realtime.
+  - Version: 6.1.2
+  - Publisher: Glenn Marks
+  - VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass
 
 #### **Aula 4.C**
 
 * Para variável se usa o $ e não o conforme outras linguagens.
 * Permite usar os formatos .sass e .scss.
-    * .scss é mais parecido com a sintaxe do CSS e LESS e é a que usaremo
-        
-            $cor: red;
-            .item{
-                color: $cor;
-            } 
-        
+  * .scss é mais parecido com a sintaxe do CSS e LESS e é a que usaremo
+
+      $cor: red;
+      .item{
+          color: $cor;
+      } 
+
     * .sass é mais parecido com a sintaxe do Pug, ou seja, sem abertura.
 
-            $cor: red;
-            .item
-                color: $cor;
-            
+        $cor: red;
+        .item
+            color: $cor;
 
-#### **Aula 4.D**
+  #### **Aula 4.D**
 
-* Para funções, usamos o @mixin para a declaração
+  * Para funções, usamos o @mixin para a declaração
 
-            @mixin fundoP($color) {
-                backg round -color:$color;
-            }
-* Na chamada usamos o @include
+          @mixin fundoP($color) {
+              backg round -color:$color;
+          }
+
+    * Na chamada usamos o @include
 
             .tipo {
                 @include fundoP($cor);
             }
+    #### **Aula 4.E**
 
-#### **Aula 4.E**
+    **Hierarquia**
 
-**Hierarquia**
-* Pode ser usado de forma mais intuitiva, colocando um dentro do outro.
+    * Pode ser usado de forma mais intuitiva, colocando um dentro do outro.
 
         .tipo {
             @include fundoP($cor2);
@@ -224,145 +234,115 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
                 color: $cor;
             }
         }
+    #### **Aula 4.F**
 
-#### **Aula 4.F**
+    **Import*** É possível fazer o uso de imports:
+    * @use 'base';
+    * @import 'base'; / *este está em desuso
+    * Ao contrário das importações de CSS simples, que exigem que o navegador faça varias solicitações HTTP à medida que renderiza sua página, aqui importa tudo de uma vez, visto que irá se tornar só um arquivo CSS.
 
-**Import**
-* É possível fazer o uso de imports:
-* @use 'base';
-* @import 'base'; / *este está em desuso
-* Ao contrário das importações de CSS simples, que exigem que o navegador faça varias solicitações HTTP à medida que renderiza sua página, aqui importa tudo de uma vez, visto que irá se tornar só um arquivo CSS.
 
-#### **Aula 4.G**
+    #### **Aula 4.G**
 
-**Operadores/Math**
+    **Operadores/Math**
 
-* ``` >, >=, <, <= == ``` e ```!= ``` para comparações.
-* ```+, -, *``` e ``` /``` para números.
-* ```+``` para concatenar strings.
-* Exemplos:
+    * ```>, >=, <, <= ==``` e ```!= ``` para comparações.
+    * ```+, -, *``` e ``` /``` para números.
+    * ```+``` para concatenar strings.
+    * Exemplos:
 
             1 + 2 * 3 == 1 + (2 * 3) // true
-* true or false and false == true or (false and false) // true
 
-            ((1 + 2)* 3 + 4) * 5; // 65
+      * true or false and false == true or (false and false) // true
 
+              ((1 + 2)* 3 + 4) * 5; // 65
+      #### **Aula 4.H**
 
-#### **Aula 4.H**
+      **Remover aspas de uma string**
 
-**Remover aspas de uma string**
-* ```#{$variável + 1}```
-* Cria uma string sem aspas
-* Se for usar como número, pode não funcionar, pois apesar de parecer um número não é.
-* Se for para transformar em número, use $number * 1 px.
+      * ```#{$variável + 1}```
+      * Cria uma string sem aspas
+      * Se for usar como número, pode não funcionar, pois apesar de parecer um número não é.
+      * Se for para transformar em número, use $number * 1 px.
 
+      #### **Aula 4.I**
 
-#### **Aula 4.I**
+      **Repetição/For/Looping**
 
-**Repetição/For/Looping**
-* É possível o há um padrão de repetição entre alguma configuração:
+      * É possível o há um padrão de repetição entre alguma configuração:
+      * Exemplo:
 
-* Exemplo:
+          $cor: red;
 
-        $cor: red;
+              @for $i from 1 through 3 {
+                  $nome: 'tipo' + $i;
+                      #{$nome} {
+                          background-color: lighten($cor, $i * 5%);
+                      }
+              }
 
-            @for $i from 1 through 3 {
-                $nome: 'tipo' + $i;
-                    #{$nome} {
-                        background-color: lighten($cor, $i * 5%);
-                    }
-            }
+      #### **Aula 4.J**
 
-#### **Aula 4.J**
+      **Vamos criar um projeto:**
+      
+        * Você pode usar uma página sua como base, criando uma cópia.
+        * Sugiro Usar algum plug-in, como segunda opção, o NodeJs.
+        * Se já tiver um CSS, pode convertê-lo para SASS.
+        * Obrigatório usar variáveis, mixins, cálculos, looping e hierarquia.
 
+      ## **Aula 05 - Pós CSS**
 
 
-## **Aula 05 - Pós CSS**
-#### **Aula 5.A**
+      #### **Aula 5.A**
 
+      #### **Aula 5.B**
 
+      #### **Aula 5.C**
 
-#### **Aula 5.B**
+      #### **Aula 5.D**
 
+      ## **Aula 06 - Componentes Estilizados**
 
+      #### **Aula 6.A**
 
-#### **Aula 5.C**
+      #### **Aula 6.B**
 
+      #### **Aula 6.C**
 
+      #### **Aula 6.D**
 
-#### **Aula 5.D**
+      #### **Aula 6.E**
 
+      #### **Aula 6.F**
 
+      ## **Aula 07 - Módulos CSS**
 
-## **Aula 06 - Componentes Estilizados**
-#### **Aula 6.A**
+      #### **Aula 7.A**
 
+      #### **Aula 7.B**
 
+      #### **Aula 7.C**
 
-#### **Aula 6.B**
+      #### **Aula 08 -
 
+      Web Components**
 
+      #### **Aula 8.A**
 
-#### **Aula 6.C**
+      #### **Aula 8.B**
 
+      #### **Aula 8.C**
 
+      #### **Aula 8.D**
 
-#### **Aula 6.D**
+      ## **Aula 09 - Google Mobile**
 
+      #### **Aula 9.A**
 
+      #### **Aula 9.B**
 
-#### **Aula 6.E**
+      ## **Aula 10 - Considerações Finais**
 
+      #### **Aula 10.**
 
-
-#### **Aula 6.F**
-
-
-
-## **Aula 07 - Módulos CSS**
-#### **Aula 7.A**
-
-
-
-#### **Aula 7.B**
-
-
-
-#### **Aula 7.C**
-
-
-
-#### **Aula 08 - 
-
-
-Web Components**
-#### **Aula 8.A**
-
-
-
-#### **Aula 8.B**
-
-
-
-#### **Aula 8.C**
-
-
-
-#### **Aula 8.D**
-
-
-
-## **Aula 09 - Google Mobile**
-#### **Aula 9.A**
-
-
-
-#### **Aula 9.B**
-
-
-
-## **Aula 10 - Considerações Finais**
-#### **Aula 10.**
-
-
-A
+      A
