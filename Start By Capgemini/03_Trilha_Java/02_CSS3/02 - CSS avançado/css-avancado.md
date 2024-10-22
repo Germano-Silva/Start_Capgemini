@@ -320,7 +320,17 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
 
       #### **Aula 5.C**
 
-        
+        * É uma ferramenta para transformas CSS com JavaScript.
+        * No desenvolvimento podemos usar conceitos já apresentados neste  curso, visando evitar repetição de código, reuso, código limpo, organizada de fácil manutenção.
+        * Podemos usá-lo através de linha de comando ou taskrunners.
+        * É sempre importante consultar as documentações para entender e tirar o melhores benefícios.
+
+        * https://github.com/iedmao/postcss-middleware
+        * NodeJs
+            * npm install postcss-middleware
+        * https://github.com/postcss/postcss
+        * https://www.postcss.parts/
+        * https://postcss.org/
       #### **Aula 5.D**
 
       ## **Aula 06 - Componentes Estilizados**
