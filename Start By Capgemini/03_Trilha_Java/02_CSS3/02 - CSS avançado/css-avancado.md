@@ -332,7 +332,18 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
         * https://www.postcss.parts/
         * https://postcss.org/
       #### **Aula 5.D**
-
+        * Exemplos de plug-ins 
+            * PostCSS Brazilian Portuguese Stylesheets 
+                * https://www.npmis.com/package/postcss-brazilian-portuguese-stylesheets 
+                * Permite a programação em português e processa para CSS.
+            * Autoprefixer
+                * https;//github.com/postcss/autoprefixer#browsers
+                * https://autoprefixer.github.io/
+                * Usado pela Google e Twitter, por exemplo
+                * Usa dados do https://caniuse.com/ para aplicar regras atualizadas.
+            * StyleLint
+                * https://stylelint.io/
+                * Valida e revisa códigos CSS, evitando erros
       ## **Aula 06 - Componentes Estilizados**
 
       #### **Aula 6.A**
