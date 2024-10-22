@@ -291,6 +291,8 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
         * Obrigatório usar variáveis, mixins, cálculos, looping e hierarquia.
 
       ## **Aula 05 - Pós CSS**
+
+      #### **Aula 5.A**
         **POSTCSS**
         * E um ecossistema de plugins personalizados e de ferramentas.
         * Existe mais de 200 plugins e é possível criar mais.
@@ -299,13 +301,26 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
 
         ![POSTCSS](img/postcss.png)
 
-
-      #### **Aula 5.A**
-
       #### **Aula 5.B**
+
+      Exemplo: 
+        * Entrada:
+
+                p{
+                    display: flex;
+                }
+
+        * Saída:
+
+                p{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                }
 
       #### **Aula 5.C**
 
+        
       #### **Aula 5.D**
 
       ## **Aula 06 - Componentes Estilizados**
