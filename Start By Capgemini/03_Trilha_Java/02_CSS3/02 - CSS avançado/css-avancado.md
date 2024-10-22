@@ -291,6 +291,13 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
         * Obrigatório usar variáveis, mixins, cálculos, looping e hierarquia.
 
       ## **Aula 05 - Pós CSS**
+        **POSTCSS**
+        * E um ecossistema de plugins personalizados e de ferramentas.
+        * Existe mais de 200 plugins e é possível criar mais.
+        * Pode ser usado com pré ou pós processador.
+        * Como pós processador, você não terá muito controle do que será feito, diferente do que é feito com o Less ou Sass.
+
+        ![POSTCSS](img/postcss.png)
 
 
       #### **Aula 5.A**
