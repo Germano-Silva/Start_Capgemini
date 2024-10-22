@@ -347,7 +347,14 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
       ## **Aula 06 - Componentes Estilizados**
 
       #### **Aula 6.A**
-
+        **STYLED COMPONENTS**
+        * É uma biblioteca para React/React Native que permite uso de estivos a nível  de componentes. 
+        * É baseado em JavaScript com CSS.
+        * Documentação: https://styled-components.com/docs
+        **Principais vantagens:**
+        * Evita erros de nome de classe.
+        * Exclusão mais fácil de CSS: se excluir um componente não usado, todos seus estilos filhos também são excluídos juntos. Além disso há ferramenta para detectar se o componente é ou não usado.
+        * Fácil manutenção.
       #### **Aula 6.B**
 
       #### **Aula 6.C**
