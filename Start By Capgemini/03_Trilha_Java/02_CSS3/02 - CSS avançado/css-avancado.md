@@ -355,13 +355,27 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
 
 
       #### **Aula 6.B**
-      
+
         **Principais vantagens:**
         * Evita erros de nome de classe.
         * Exclusão mais fácil de CSS: se excluir um componente não usado, todos seus estilos filhos também são excluídos juntos. Além disso há ferramenta para detectar se o componente é ou não usado.
         * Fácil manutenção.
 
       #### **Aula 6.C**
+
+        **Instalação:**
+
+        * YARN
+            * yarn add styled-components
+        * NPM
+            * install create-react-app
+            * Criação de projeto:
+            * init react-app my-app
+            * create-react-app my-app
+        * Instalação do Styled-components
+            * npm install styled-components
+        * Iniciar a aplicação:
+            * npm start
 
       #### **Aula 6.D**
 
