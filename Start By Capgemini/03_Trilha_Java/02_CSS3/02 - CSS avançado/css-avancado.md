@@ -196,51 +196,56 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
 
 * Para variável se usa o $ e não o conforme outras linguagens.
 * Permite usar os formatos .sass e .scss.
+
   * .scss é mais parecido com a sintaxe do CSS e LESS e é a que usaremo
 
-      $cor: red;
-      .item{
-          color: $cor;
-      } 
+    $cor: red;
+    .item{
+    color: $cor;
+    }
 
     * .sass é mais parecido com a sintaxe do Pug, ou seja, sem abertura.
 
-        $cor: red;
-        .item
-            color: $cor;
+      $cor: red;
+      .item
+      color: $cor;
 
   #### **Aula 4.D**
 
+
   * Para funções, usamos o @mixin para a declaração
 
-          @mixin fundoP($color) {
-              backg round -color:$color;
-          }
+    @mixin fundoP($color) {
+    backg round -color:$color;
+    }
 
     * Na chamada usamos o @include
 
-            .tipo {
-                @include fundoP($cor);
-            }
+      .tipo {
+      @include fundoP($cor);
+      }
+
     #### **Aula 4.E**
 
     **Hierarquia**
 
+
     * Pode ser usado de forma mais intuitiva, colocando um dentro do outro.
 
-        .tipo {
-            @include fundoP($cor2);
-            a{
-                color: $cor;
-            }
-        }
+      .tipo {
+      @include fundoP($cor2);
+      a{
+      color: $cor;
+      }
+      }
+
     #### **Aula 4.F**
 
     **Import*** É possível fazer o uso de imports:
+
     * @use 'base';
     * @import 'base'; / *este está em desuso
     * Ao contrário das importações de CSS simples, que exigem que o navegador faça varias solicitações HTTP à medida que renderiza sua página, aqui importa tudo de uma vez, visto que irá se tornar só um arquivo CSS.
-
 
     #### **Aula 4.G**
 
@@ -251,14 +256,16 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
     * ```+``` para concatenar strings.
     * Exemplos:
 
-            1 + 2 * 3 == 1 + (2 * 3) // true
+      1 + 2 * 3 == 1 + (2 * 3) // true
 
       * true or false and false == true or (false and false) // true
 
-              ((1 + 2)* 3 + 4) * 5; // 65
+        ((1 + 2)* 3 + 4) * 5; // 65
+
       #### **Aula 4.H**
 
       **Remover aspas de uma string**
+
 
       * ```#{$variável + 1}```
       * Cria uma string sem aspas
@@ -272,145 +279,161 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
       * É possível o há um padrão de repetição entre alguma configuração:
       * Exemplo:
 
-          $cor: red;
+        $cor: red;
 
-              @for $i from 1 through 3 {
-                  $nome: 'tipo' + $i;
-                      #{$nome} {
-                          background-color: lighten($cor, $i * 5%);
-                      }
-              }
+        @for $i from 1 through 3 {
+        $nome: 'tipo' + $i;
+        #{$nome} {
+        background-color: lighten($cor, $i * 5%);
+        }
+        }
 
       #### **Aula 4.J**
 
       **Vamos criar um projeto:**
-      
-        * Você pode usar uma página sua como base, criando uma cópia.
-        * Sugiro Usar algum plug-in, como segunda opção, o NodeJs.
-        * Se já tiver um CSS, pode convertê-lo para SASS.
-        * Obrigatório usar variáveis, mixins, cálculos, looping e hierarquia.
+
+      * Você pode usar uma página sua como base, criando uma cópia.
+      * Sugiro Usar algum plug-in, como segunda opção, o NodeJs.
+      * Se já tiver um CSS, pode convertê-lo para SASS.
+      * Obrigatório usar variáveis, mixins, cálculos, looping e hierarquia.
 
       ## **Aula 05 - Pós CSS**
 
       #### **Aula 5.A**
-        **POSTCSS**
-        * E um ecossistema de plugins personalizados e de ferramentas.
-        * Existe mais de 200 plugins e é possível criar mais.
-        * Pode ser usado com pré ou pós processador.
-        * Como pós processador, você não terá muito controle do que será feito, diferente do que é feito com o Less ou Sass.
 
-        ![POSTCSS](img/postcss.png)
+      **POSTCSS**
+
+      * E um ecossistema de plugins personalizados e de ferramentas.
+      * Existe mais de 200 plugins e é possível criar mais.
+      * Pode ser usado com pré ou pós processador.
+      * Como pós processador, você não terá muito controle do que será feito, diferente do que é feito com o Less ou Sass.
+
+      ![POSTCSS](img/postcss.png)
 
       #### **Aula 5.B**
 
-      Exemplo: 
-        * Entrada:
+      Exemplo:
 
-                p{
-                    display: flex;
-                }
+      * Entrada:
+
+        p{
+        display: flex;
+        }
 
         * Saída:
 
-                p{
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: flex;
-                }
+          p{
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          }
 
-      #### **Aula 5.C**
+        #### **Aula 5.C**
+
 
         * É uma ferramenta para transformas CSS com JavaScript.
         * No desenvolvimento podemos usar conceitos já apresentados neste  curso, visando evitar repetição de código, reuso, código limpo, organizada de fácil manutenção.
         * Podemos usá-lo através de linha de comando ou taskrunners.
         * É sempre importante consultar as documentações para entender e tirar o melhores benefícios.
-
         * https://github.com/iedmao/postcss-middleware
         * NodeJs
-            * npm install postcss-middleware
+
+          * npm install postcss-middleware
         * https://github.com/postcss/postcss
         * https://www.postcss.parts/
         * https://postcss.org/
-      #### **Aula 5.D**
-        * Exemplos de plug-ins 
-            * PostCSS Brazilian Portuguese Stylesheets 
-                * https://www.npmis.com/package/postcss-brazilian-portuguese-stylesheets 
-                * Permite a programação em português e processa para CSS.
-            * Autoprefixer
-                * https;//github.com/postcss/autoprefixer#browsers
-                * https://autoprefixer.github.io/
-                * Usado pela Google e Twitter, por exemplo
-                * Usa dados do https://caniuse.com/ para aplicar regras atualizadas.
-            * StyleLint
-                * https://stylelint.io/
-                * Valida e revisa códigos CSS, evitando erros
-      ## **Aula 06 - Componentes Estilizados**
 
-      #### **Aula 6.A**
+        #### **Aula 5.D**
+
+        * Exemplos de plug-ins
+          * PostCSS Brazilian Portuguese Stylesheets
+            * https://www.npmis.com/package/postcss-brazilian-portuguese-stylesheets
+            * Permite a programação em português e processa para CSS.
+          * Autoprefixer
+            * https;//github.com/postcss/autoprefixer#browsers
+            * https://autoprefixer.github.io/
+            * Usado pela Google e Twitter, por exemplo
+            * Usa dados do https://caniuse.com/ para aplicar regras atualizadas.
+          * StyleLint
+            * https://stylelint.io/
+            * Valida e revisa códigos CSS, evitando erros
+
+        ## **Aula 06 - Componentes Estilizados**
+
+        #### **Aula 6.A**
 
         **STYLED COMPONENTS**
-        * É uma biblioteca para React/React Native que permite uso de estivos a nível  de componentes. 
+
+        * É uma biblioteca para React/React Native que permite uso de estivos a nível  de componentes.
         * É baseado em JavaScript com CSS.
         * Documentação: https://styled-components.com/docs
 
-
-      #### **Aula 6.B**
+        #### **Aula 6.B**
 
         **Principais vantagens:**
+
         * Evita erros de nome de classe.
         * Exclusão mais fácil de CSS: se excluir um componente não usado, todos seus estilos filhos também são excluídos juntos. Além disso há ferramenta para detectar se o componente é ou não usado.
         * Fácil manutenção.
 
-      #### **Aula 6.C**
+        #### **Aula 6.C**
 
         **Instalação:**
 
         * YARN
-            * yarn add styled-components
+          * yarn add styled-components
         * NPM
-            * install create-react-app
-            * Criação de projeto:
-            * init react-app my-app
-            * create-react-app my-app
+          * install create-react-app
+          * Criação de projeto:
+          * init react-app my-app
+          * create-react-app my-app
         * Instalação do Styled-components
-            * npm install styled-components
+          * npm install styled-components
         * Iniciar a aplicação:
-            * npm start
+          * npm start
 
-      #### **Aula 6.D**
+        #### **Aula 6.D**
 
-      #### **Aula 6.E**
+        **Exemplo de uso:**
+        import styled from 'styled-components';
+        const Title = styled.h1'
+        color: red;
+        ';
 
-      #### **Aula 6.F**
+        <Title>Página 01 </Title>
 
-      ## **Aula 07 - Módulos CSS**
+        #### **Aula 6.E**
 
-      #### **Aula 7.A**
+        #### **Aula 6.F**
 
-      #### **Aula 7.B**
+        ## **Aula 07 - Módulos CSS**
 
-      #### **Aula 7.C**
+        #### **Aula 7.A**
 
-      #### **Aula 08 -
+        #### **Aula 7.B**
 
-      Web Components**
+        #### **Aula 7.C**
 
-      #### **Aula 8.A**
+        #### **Aula 08**
 
-      #### **Aula 8.B**
+        **Web Components**
 
-      #### **Aula 8.C**
+        #### **Aula 8.A**
 
-      #### **Aula 8.D**
+        #### **Aula 8.B**
 
-      ## **Aula 09 - Google Mobile**
+        #### **Aula 8.C**
 
-      #### **Aula 9.A**
+        #### **Aula 8.D**
 
-      #### **Aula 9.B**
+        ## **Aula 09 - Google Mobile**
 
-      ## **Aula 10 - Considerações Finais**
+        #### **Aula 9.A**
 
-      #### **Aula 10.**
+        #### **Aula 9.B**
 
-      A
+        ## **Aula 10 - Considerações Finais**
+
+        #### **Aula 10.**
+
+        A
