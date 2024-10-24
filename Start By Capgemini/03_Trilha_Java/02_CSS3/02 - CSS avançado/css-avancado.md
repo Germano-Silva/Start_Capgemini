@@ -402,7 +402,17 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
 
         <Title>Página 01 </Title>
 
+        Realizado a criação de um app simples chamado my-app.
+
         #### **Aula 6.E**
+        
+        Realizado a criação de um app simples chamado my-app-2.
+
+        Para melhor compreender os conceitos foi realizado os cursos abaixo.
+
+        * [NPM](https://www.youtube.com/watch?v=g-V5qptW2oo&list=PLbV6TI03ZWYVjruiKLeb3m2rEXeYsG6RQ)
+
+        * [React](https://www.youtube.com/watch?v=mXuxPrs6oHE&list=PLbV6TI03ZWYVIiHL5XBvefrVwhcLo7XYN)
 
         #### **Aula 6.F**
 
