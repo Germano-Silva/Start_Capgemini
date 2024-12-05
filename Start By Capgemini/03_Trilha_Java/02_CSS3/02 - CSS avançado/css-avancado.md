@@ -416,6 +416,11 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
 
         #### **Aula 6.F**
 
+        Vamos dar continuidade ao nosso projeto:
+        - Criar um projeto com 5 páginas, simulando um site.
+        - Utilizar Styled Components além de CSS num arquivo separado.
+        - Tratar usabilidade e boas práticas.
+
         ## **Aula 07 - Módulos CSS**
 
         #### **Aula 7.A**

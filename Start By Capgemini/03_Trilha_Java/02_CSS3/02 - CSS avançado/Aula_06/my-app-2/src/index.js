@@ -20,23 +20,25 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Home from './pages/home';
 import Sobre from './pages/sobre';
 import Contato from './pages/contato';
+import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min';
+import something from 'react-router-dom';
+
 
 ReactDOM.render(
   (
-    <Router>
+    <BrowserRouter>
       <App>
-        <Switch>
+        <Routes>
           <Route exact path="/" component ={Home}/>
           <Route path="/sobre" component ={Sobre}/>
           <Route path="/contato" component ={Contato}/>
-        </Switch>
+        </Routes>
       </App>
-    </Router>
+    </BrowserRouter>
   ),
   document.getElementById('root')
 )
