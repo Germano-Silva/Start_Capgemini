@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import MancherImage from '/assets/images/Mancher.jpg';
+import CaustinImage from '/assets/images/Caustin.jpg';
+import TorontoImage from '/assets/images/Toronto.jpg';
 
 const CitiesContainer = styled.section`
   padding: 3rem;
@@ -44,9 +47,9 @@ const CityDescription = styled.p`
 
 function TopCities() {
   const cities = [
-    { name: 'Mancher', image: '/assets/images/Mancher.jpg', description: '3 days, 4 nights.' },
-    { name: 'Caustin', image: '/assets/images/Caustin.jpg', description: '3 days, 4 nights.' },
-    { name: 'Toronto', image: '/assets/images/Toronto.jpg', description: '3 days, 4 nights.' },
+    { name: 'Mancher', image: MancherImage, description: '3 days, 4 nights.' },
+    { name: 'Caustin', image: CaustinImage, description: '3 days, 4 nights.' },
+    { name: 'Toronto', image: TorontoImage, description: '3 days, 4 nights.' },
   ];
 
   return (

