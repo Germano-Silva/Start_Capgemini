@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import MancherImage from '/assets/images/Mancher.jpg';
-import CaustinImage from '/assets/images/Caustin.jpg';
-import TorontoImage from '/assets/images/Toronto.jpg';
+import MancherImage from '../assets/images/Mancher.jpg';
+import CaustinImage from '../assets/images/Caustin.jpg';
+import TorontoImage from '../assets/images/Toronto.jpg';
 
 const CitiesContainer = styled.section`
   padding: 3rem;
@@ -51,6 +51,7 @@ function TopCities() {
     { name: 'Caustin', image: CaustinImage, description: '3 days, 4 nights.' },
     { name: 'Toronto', image: TorontoImage, description: '3 days, 4 nights.' },
   ];
+  
 
   return (
     <CitiesContainer>
