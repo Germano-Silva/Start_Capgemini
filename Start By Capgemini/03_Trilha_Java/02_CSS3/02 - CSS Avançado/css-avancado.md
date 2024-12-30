@@ -560,7 +560,25 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
 
         #### **Aula 8.C**
 
+        **Shadow DOM**
+
+        O **Shadow DOM** é uma tecnologia fundamental do **Web Components** que permite criar um escopo isolado para elementos HTML, proporcionando encapsulamento total de estilo e comportamento. Ao utilizar o Shadow DOM, desenvolvedores podem definir um "DOM sombra" para um elemento, que é separado do DOM principal, criando uma barreira que impede que estilos globais ou scripts externos afetem seu conteúdo interno. Isso é especialmente útil para criar componentes reutilizáveis, como botões, modais ou widgets, garantindo que eles funcionem de forma previsível, independentemente do ambiente em que são inseridos.
+
+        O encapsulamento do Shadow DOM inclui:
+        - **Estilos isolados**: CSS definido dentro do Shadow DOM não interfere nem é afetado por estilos externos.
+        - **Estrutura DOM encapsulada**: O conteúdo interno não pode ser acessado diretamente do DOM principal, protegendo sua implementação.
+        - **Shadow Root**: O ponto de entrada para criar e gerenciar o Shadow DOM, ativado por métodos como `attachShadow`.
+
+        Existem dois modos de Shadow DOM:
+        - **Aberto (`open`)**: Permite que o script externo acesse o Shadow DOM via JavaScript.
+        - **Fechado (`closed`)**: Restringe completamente o acesso ao Shadow DOM, garantindo maior segurança.
+
+        O Shadow DOM melhora a modularidade e escalabilidade de aplicações web, tornando-o uma ferramenta poderosa para bibliotecas modernas e frameworks baseados em componentes, como React ou Vue, que integram conceitos semelhantes.
+        
+        [Documentação](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM)
+
         #### **Aula 8.D**
+
 
         ## **Aula 09 - Google Mobile**
 
@@ -571,5 +589,3 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
         ## **Aula 10 - Considerações Finais**
 
         #### **Aula 10.**
-
-        A
