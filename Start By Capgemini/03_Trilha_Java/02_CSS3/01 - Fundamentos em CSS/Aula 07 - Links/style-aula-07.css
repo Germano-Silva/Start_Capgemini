@@ -1,0 +1,25 @@
+a{
+    color: green;
+    cursor: help;
+}
+a:active{
+    color: aqua;
+}
+a:visited{
+    color: brown;
+}
+a:hover{
+    color: chocolate;
+}
+p:hover{
+    color: deeppink;
+}
+h2{
+    color: blue;
+    text-decoration: underline;
+
+}
+h2:hover{
+    cursor: pointer;
+    display: none;
+}
