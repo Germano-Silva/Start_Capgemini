@@ -13,14 +13,14 @@ public class Main {
         //COMANDOS DE ENTRADA
         //======================================================================
         /*
-            Uma das possibilidades de entrada e saída de dados em Java é a 
-            utilização da classe Scanner.
+            Uma das possibilidades de entrada e saï¿½da de dados em Java ï¿½ a 
+            utilizaï¿½ï¿½o da classe Scanner.
         
-            Passos para a utilização do Scanner:
+            Passos para a utilizaï¿½ï¿½o do Scanner:
             
             1 - Importar o pacote java.util
             2 - Instanciar e criar um objeto Scanner
-            3 - Ler valores através do teclado
+            3 - Ler valores atravï¿½s do teclado
         */
        
         //2 - Instanciar e criar um objeto Scanner
@@ -29,30 +29,30 @@ public class Main {
         int n = leitor.nextInt();
         float f = leitor.nextFloat();
         double d = leitor.nextDouble();
-        String s = leitor.next(); //Lê apenas uma palavra, não é permitido o uso do caractere espaço
+        String s = leitor.next(); //Lï¿½ apenas uma palavra, nï¿½o ï¿½ permitido o uso do caractere espaï¿½o
         String ss = leitor.nextLine(); //Leitura de texto com mais de uma palavra
         
         /*
-            Como o método next retorna um texto precisamos pegar o caractere da
-            primeira posição da palavra para isso usamos o método charAt() na
-            posição zero
+            Como o mï¿½todo next retorna um texto precisamos pegar o caractere da
+            primeira posiï¿½ï¿½o da palavra para isso usamos o mï¿½todo charAt() na
+            posiï¿½ï¿½o zero
         */
         char c = leitor.next().charAt(0);
         //======================================================================
         
-        //COMANDOS DE SAÍDA
+        //COMANDOS DE SAï¿½DA
         //======================================================================
         /*
-            Existem algumas opções de comandos de saída utilizando a classe 
-            System. São elas: 
+            Existem algumas opï¿½ï¿½es de comandos de saï¿½da utilizando a classe 
+            System. Sï¿½o elas: 
             
-            1 - print() - Imprime o valor de uma variável
-            2 - printf() - Imprime o valor de uma variável conforme uma formatação especificada
-            3 - println() - Imprime o valorm de uma variável e pula uma linha
+            1 - print() - Imprime o valor de uma variï¿½vel
+            2 - printf() - Imprime o valor de uma variï¿½vel conforme uma formataï¿½ï¿½o especificada
+            3 - println() - Imprime o valorm de uma variï¿½vel e pula uma linha
         */
         
-        String texto = "Esse texto será impresso no console";
-        String outroTexto = "Esse texto também será impresso no console";
+        String texto = "Esse texto serï¿½ impresso no console";
+        String outroTexto = "Esse texto tambï¿½m serï¿½ impresso no console";
         System.out.println(texto);
         System.out.print(outroTexto);
         //======================================================================
