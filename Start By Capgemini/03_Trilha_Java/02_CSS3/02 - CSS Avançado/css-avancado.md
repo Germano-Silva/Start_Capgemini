@@ -579,6 +579,30 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
 
         #### **Aula 8.D**
 
+        **TEMPLATES**
+
+        - É formado por APIs JavaScript, as quais permite definir elementos  customizados.
+        - Permite a criação de Slots, o que dá mais flexibilidade ao códigos
+        
+        Arquivo.js
+        ```JavaScript
+        <div class="info">
+          <p>Cargo: <slot name="cargo"/></p>
+          <p>Experiencia: <slot name="xp" /></p>
+          <p>Idiomas: <slot name="idiomas"/></p>
+        <div>
+        ```
+
+        Arquivo.html
+        ```HTML
+        <span slot="cargo">Estagiário</span>
+        <span slot="xp">6 meses</span>
+        <span slot="idiomas">Espanhol e Inglês</span>
+
+        ```
+        **Templates e slots** são recursos essenciais no desenvolvimento de Web Components para criar estruturas de HTML reutilizáveis e flexíveis. O elemento `<template>` permite definir um fragmento de HTML que não é renderizado até ser explicitamente usado via JavaScript, proporcionando eficiência e separação de estrutura e comportamento. Já os `<slot>`s são utilizados para criar áreas dinâmicas nos componentes, onde o conteúdo pode ser inserido externamente, permitindo personalização sem alterar a estrutura interna. Esses recursos combinam modularidade e reutilização, tornando a construção de interfaces mais escalável e adaptável.
+
+        [Documentação](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_templates_and_slots)
 
         ## **Aula 09 - Google Mobile**
 
