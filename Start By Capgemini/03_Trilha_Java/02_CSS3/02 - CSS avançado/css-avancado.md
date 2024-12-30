@@ -421,9 +421,28 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
         - Utilizar Styled Components além de CSS num arquivo separado.
         - Tratar usabilidade e boas práticas.
 
+        Exercício realizado e hospedado no link:[Travel](https://github.com/Germano-Silva/Start_Capgemini/tree/main/Start%20By%20Capgemini/03_Trilha_Java/02_CSS3/02%20-%20CSS%20avan%C3%A7ado/Aula_06/travel)
+
         ## **Aula 07 - Módulos CSS**
 
         #### **Aula 7.A**
+
+          É um processo que ocorre no processo de build, que alteram o nome de classes e seletores para ter escopo local.
+          ```JavaScript
+          import styles from "./styles.css";
+          element.innerHTML = <h1 class= "${styles.title}"> Titulo Exemplo </h1>
+          ```
+          ```HTML
+          <h1 class= "styles_title_XPT0123"> Titulo Exemplo </h1>
+          ```
+          Geralmente feito por JavaScript.
+          Exemplos: 
+          [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+          [Jest](https://iestis.io/pt-BR/docs/webpack).
+
+          Vem para sanar problemas como dependências, eliminação de código morto e classes globais.
+          E mais vantajoso em projetos grandes.
+          Projetos pequenos pode aumentar a complexidade de forma de desnecesária.
 
         #### **Aula 7.B**
 
