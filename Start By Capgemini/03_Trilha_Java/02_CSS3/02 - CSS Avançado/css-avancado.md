@@ -523,7 +523,40 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
 
         #### **Aula 8.B**
 
-        
+        **CUSTOM ELEMENTS**
+
+        - É formado por APIs JavaScript, as quais permite definir elementos customizados.
+        - Permite que selam criadas Tag diferentes das convencionais.
+        - Evita os alinhamentos de Divs, os temidos Div Hells.
+        - Possibilita criar elementos personalizados herdando características de algum já existente.
+
+        [Documentação](https://developer.mozilla.org/pt-BR/docs/Web/Web_Components/Using_custom_elements)
+
+        Exemplo de codigo que será utilizado para custom elements.
+        ```JavaScript
+        class meuCompnente extends HTMLElement {
+            constructor() {
+                super();
+                // Cria um shadow DOM para o componente
+                this.root = this.attachShadow({ mode: 'open' });
+            }
+
+            connectedCallback() {
+                // Define o template HTML e CSS do componente
+                const template = `
+                <style>
+                    :host {
+                        color: darkblue;
+                    }
+                </style>
+                <slot> Ola Mundo! </slot>
+                `;
+
+                // Adiciona o template ao shadow DOM
+                this.root.innerHTML = template;
+            }
+        }
+        ```
 
         #### **Aula 8.C**
 
