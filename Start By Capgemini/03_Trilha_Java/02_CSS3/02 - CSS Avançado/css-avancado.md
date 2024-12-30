@@ -210,441 +210,477 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
       .item
       color: $cor;
 
-  #### **Aula 4.D**
+#### **Aula 4.D**
 
+* Para funções, usamos o @mixin para a declaração
 
-  * Para funções, usamos o @mixin para a declaração
+  @mixin fundoP($color) {
+  backg round -color:$color;
+  }
 
-    @mixin fundoP($color) {
-    backg round -color:$color;
+  * Na chamada usamos o @include
+
+    .tipo {
+    @include fundoP($cor);
     }
 
-    * Na chamada usamos o @include
+#### **Aula 4.E**
 
-      .tipo {
-      @include fundoP($cor);
-      }
+**Hierarquia**
 
-    #### **Aula 4.E**
 
-    **Hierarquia**
+* Pode ser usado de forma mais intuitiva, colocando um dentro do outro.
 
+  .tipo {
+  @include fundoP($cor2);
+  a{
+  color: $cor;
+  }
+  }
 
-    * Pode ser usado de forma mais intuitiva, colocando um dentro do outro.
+#### **Aula 4.F**
 
-      .tipo {
-      @include fundoP($cor2);
-      a{
-      color: $cor;
-      }
-      }
+**Import*** É possível fazer o uso de imports:
 
-    #### **Aula 4.F**
+* @use 'base';
+* @import 'base'; / *este está em desuso
+* Ao contrário das importações de CSS simples, que exigem que o navegador faça varias solicitações HTTP à medida que renderiza sua página, aqui importa tudo de uma vez, visto que irá se tornar só um arquivo CSS.
 
-    **Import*** É possível fazer o uso de imports:
+#### **Aula 4.G**
 
-    * @use 'base';
-    * @import 'base'; / *este está em desuso
-    * Ao contrário das importações de CSS simples, que exigem que o navegador faça varias solicitações HTTP à medida que renderiza sua página, aqui importa tudo de uma vez, visto que irá se tornar só um arquivo CSS.
+**Operadores/Math**
 
-    #### **Aula 4.G**
+* ```>, >=, <, <= ==``` e ```!= ``` para comparações.
+* ```+, -, *``` e ``` /``` para números.
+* ```+``` para concatenar strings.
+* Exemplos:
 
-    **Operadores/Math**
+  1 + 2 * 3 == 1 + (2 * 3) // true
 
-    * ```>, >=, <, <= ==``` e ```!= ``` para comparações.
-    * ```+, -, *``` e ``` /``` para números.
-    * ```+``` para concatenar strings.
-    * Exemplos:
+  * true or false and false == true or (false and false) // true
 
-      1 + 2 * 3 == 1 + (2 * 3) // true
+    ((1 + 2)* 3 + 4) * 5; // 65
 
-      * true or false and false == true or (false and false) // true
+#### **Aula 4.H**
 
-        ((1 + 2)* 3 + 4) * 5; // 65
+**Remover aspas de uma string**
 
-      #### **Aula 4.H**
+* ```#{$variável + 1}```
+* Cria uma string sem aspas
+* Se for usar como número, pode não funcionar, pois apesar de parecer um número não é.
+* Se for para transformar em número, use $number * 1 px.
 
-      **Remover aspas de uma string**
+#### **Aula 4.I**
 
+**Repetição/For/Looping**
 
-      * ```#{$variável + 1}```
-      * Cria uma string sem aspas
-      * Se for usar como número, pode não funcionar, pois apesar de parecer um número não é.
-      * Se for para transformar em número, use $number * 1 px.
+* É possível o há um padrão de repetição entre alguma configuração:
+* Exemplo:
 
-      #### **Aula 4.I**
+  $cor: red;
 
-      **Repetição/For/Looping**
+  @for $i from 1 through 3 {
+  $nome: 'tipo' + $i;
+  #{$nome} {
+  background-color: lighten($cor, $i * 5%);
+  }
+  }
 
-      * É possível o há um padrão de repetição entre alguma configuração:
-      * Exemplo:
+#### **Aula 4.J**
 
-        $cor: red;
+**Vamos criar um projeto:**
 
-        @for $i from 1 through 3 {
-        $nome: 'tipo' + $i;
-        #{$nome} {
-        background-color: lighten($cor, $i * 5%);
-        }
-        }
+* Você pode usar uma página sua como base, criando uma cópia.
+* Sugiro Usar algum plug-in, como segunda opção, o NodeJs.
+* Se já tiver um CSS, pode convertê-lo para SASS.
+* Obrigatório usar variáveis, mixins, cálculos, looping e hierarquia.
 
-      #### **Aula 4.J**
+## **Aula 05 - Pós CSS**
 
-      **Vamos criar um projeto:**
+#### **Aula 5.A**
 
-      * Você pode usar uma página sua como base, criando uma cópia.
-      * Sugiro Usar algum plug-in, como segunda opção, o NodeJs.
-      * Se já tiver um CSS, pode convertê-lo para SASS.
-      * Obrigatório usar variáveis, mixins, cálculos, looping e hierarquia.
+**POSTCSS**
 
-      ## **Aula 05 - Pós CSS**
+* E um ecossistema de plugins personalizados e de ferramentas.
+* Existe mais de 200 plugins e é possível criar mais.
+* Pode ser usado com pré ou pós processador.
+* Como pós processador, você não terá muito controle do que será feito, diferente do que é feito com o Less ou Sass.
 
-      #### **Aula 5.A**
+![POSTCSS](img/postcss.png)
 
-      **POSTCSS**
+#### **Aula 5.B**
 
-      * E um ecossistema de plugins personalizados e de ferramentas.
-      * Existe mais de 200 plugins e é possível criar mais.
-      * Pode ser usado com pré ou pós processador.
-      * Como pós processador, você não terá muito controle do que será feito, diferente do que é feito com o Less ou Sass.
+Exemplo:
 
-      ![POSTCSS](img/postcss.png)
+* Entrada:
 
-      #### **Aula 5.B**
+  p{
+  display: flex;
+  }
 
-      Exemplo:
+  * Saída:
 
-      * Entrada:
+    p{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    }
 
-        p{
-        display: flex;
-        }
+#### **Aula 5.C**
 
-        * Saída:
+* É uma ferramenta para transformas CSS com JavaScript.
+* No desenvolvimento podemos usar conceitos já apresentados neste  curso, visando evitar repetição de código, reuso, código limpo, organizada de fácil manutenção.
+* Podemos usá-lo através de linha de comando ou taskrunners.
+* É sempre importante consultar as documentações para entender e tirar o melhores benefícios.
+* https://github.com/iedmao/postcss-middleware
+* NodeJs
 
-          p{
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          }
+  * npm install postcss-middleware
+* https://github.com/postcss/postcss
+* https://www.postcss.parts/
+* https://postcss.org/
 
-        #### **Aula 5.C**
+#### **Aula 5.D**
 
+* Exemplos de plug-ins
+  * PostCSS Brazilian Portuguese Stylesheets
+    * https://www.npmis.com/package/postcss-brazilian-portuguese-stylesheets
+    * Permite a programação em português e processa para CSS.
+  * Autoprefixer
+    * https;//github.com/postcss/autoprefixer#browsers
+    * https://autoprefixer.github.io/
+    * Usado pela Google e Twitter, por exemplo
+    * Usa dados do https://caniuse.com/ para aplicar regras atualizadas.
+  * StyleLint
+    * https://stylelint.io/
+    * Valida e revisa códigos CSS, evitando erros
 
-        * É uma ferramenta para transformas CSS com JavaScript.
-        * No desenvolvimento podemos usar conceitos já apresentados neste  curso, visando evitar repetição de código, reuso, código limpo, organizada de fácil manutenção.
-        * Podemos usá-lo através de linha de comando ou taskrunners.
-        * É sempre importante consultar as documentações para entender e tirar o melhores benefícios.
-        * https://github.com/iedmao/postcss-middleware
-        * NodeJs
+## **Aula 06 - Componentes Estilizados**
 
-          * npm install postcss-middleware
-        * https://github.com/postcss/postcss
-        * https://www.postcss.parts/
-        * https://postcss.org/
+#### **Aula 6.A**
 
-        #### **Aula 5.D**
+**STYLED COMPONENTS**
 
-        * Exemplos de plug-ins
-          * PostCSS Brazilian Portuguese Stylesheets
-            * https://www.npmis.com/package/postcss-brazilian-portuguese-stylesheets
-            * Permite a programação em português e processa para CSS.
-          * Autoprefixer
-            * https;//github.com/postcss/autoprefixer#browsers
-            * https://autoprefixer.github.io/
-            * Usado pela Google e Twitter, por exemplo
-            * Usa dados do https://caniuse.com/ para aplicar regras atualizadas.
-          * StyleLint
-            * https://stylelint.io/
-            * Valida e revisa códigos CSS, evitando erros
+* É uma biblioteca para React/React Native que permite uso de estivos a nível  de componentes.
+* É baseado em JavaScript com CSS.
+* Documentação: https://styled-components.com/docs
+
+#### **Aula 6.B**
+
+**Principais vantagens:**
+
+* Evita erros de nome de classe.
+* Exclusão mais fácil de CSS: se excluir um componente não usado, todos seus estilos filhos também são excluídos juntos. Além disso há ferramenta para detectar se o componente é ou não usado.
+* Fácil manutenção.
+
+#### **Aula 6.C**
+
+**Instalação:**
+
+* YARN
+  * yarn add styled-components
+* NPM
+  * install create-react-app
+  * Criação de projeto:
+  * init react-app my-app
+  * create-react-app my-app
+* Instalação do Styled-components
+  * npm install styled-components
+* Iniciar a aplicação:
+  * npm start
+
+#### **Aula 6.D**
+
+**Exemplo de uso:**
+import styled from 'styled-components';
+const Title = styled.h1'
+color: red;
+';
+
+<Title>Página 01 </Title>
+
+Realizado a criação de um app simples chamado my-app.
 
-        ## **Aula 06 - Componentes Estilizados**
+#### **Aula 6.E**
 
-        #### **Aula 6.A**
+Realizado a criação de um app simples chamado my-app-2.
 
-        **STYLED COMPONENTS**
+Para melhor compreender os conceitos foi realizado os cursos abaixo.
 
-        * É uma biblioteca para React/React Native que permite uso de estivos a nível  de componentes.
-        * É baseado em JavaScript com CSS.
-        * Documentação: https://styled-components.com/docs
-
-        #### **Aula 6.B**
-
-        **Principais vantagens:**
-
-        * Evita erros de nome de classe.
-        * Exclusão mais fácil de CSS: se excluir um componente não usado, todos seus estilos filhos também são excluídos juntos. Além disso há ferramenta para detectar se o componente é ou não usado.
-        * Fácil manutenção.
-
-        #### **Aula 6.C**
-
-        **Instalação:**
-
-        * YARN
-          * yarn add styled-components
-        * NPM
-          * install create-react-app
-          * Criação de projeto:
-          * init react-app my-app
-          * create-react-app my-app
-        * Instalação do Styled-components
-          * npm install styled-components
-        * Iniciar a aplicação:
-          * npm start
-
-        #### **Aula 6.D**
-
-        **Exemplo de uso:**
-        import styled from 'styled-components';
-        const Title = styled.h1'
-        color: red;
-        ';
-
-        <Title>Página 01 </Title>
-
-        Realizado a criação de um app simples chamado my-app.
+* [NPM](https://www.youtube.com/watch?v=g-V5qptW2oo&list=PLbV6TI03ZWYVjruiKLeb3m2rEXeYsG6RQ)
 
-        #### **Aula 6.E**
-        
-        Realizado a criação de um app simples chamado my-app-2.
+* [React](https://www.youtube.com/watch?v=mXuxPrs6oHE&list=PLbV6TI03ZWYVIiHL5XBvefrVwhcLo7XYN)
 
-        Para melhor compreender os conceitos foi realizado os cursos abaixo.
+#### **Aula 6.F**
 
-        * [NPM](https://www.youtube.com/watch?v=g-V5qptW2oo&list=PLbV6TI03ZWYVjruiKLeb3m2rEXeYsG6RQ)
+Vamos dar continuidade ao nosso projeto:
+- Criar um projeto com 5 páginas, simulando um site.
+- Utilizar Styled Components além de CSS num arquivo separado.
+- Tratar usabilidade e boas práticas.
 
-        * [React](https://www.youtube.com/watch?v=mXuxPrs6oHE&list=PLbV6TI03ZWYVIiHL5XBvefrVwhcLo7XYN)
+Exercício realizado e hospedado no link:[Travel](https://github.com/Germano-Silva/Start_Capgemini/tree/main/Start%20By%20Capgemini/03_Trilha_Java/02_CSS3/02%20-%20CSS%20avan%C3%A7ado/Aula_06/travel)
 
-        #### **Aula 6.F**
+## **Aula 07 - Módulos CSS**
 
-        Vamos dar continuidade ao nosso projeto:
-        - Criar um projeto com 5 páginas, simulando um site.
-        - Utilizar Styled Components além de CSS num arquivo separado.
-        - Tratar usabilidade e boas práticas.
+#### **Aula 7.A**
 
-        Exercício realizado e hospedado no link:[Travel](https://github.com/Germano-Silva/Start_Capgemini/tree/main/Start%20By%20Capgemini/03_Trilha_Java/02_CSS3/02%20-%20CSS%20avan%C3%A7ado/Aula_06/travel)
+  É um processo que ocorre no processo de build, que alteram o nome de classes e seletores para ter escopo local.
+  ```JavaScript
+  import styles from "./styles.css";
+  element.innerHTML = <h1 class= "${styles.title}"> Titulo Exemplo </h1>
+  ```
+  ```HTML
+  <h1 class= "styles_title_XPT0123"> Titulo Exemplo </h1>
+  ```
+  Geralmente feito por JavaScript.
+  Exemplos: 
+  [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+  [Jest](https://iestis.io/pt-BR/docs/webpack).
 
-        ## **Aula 07 - Módulos CSS**
+  Vem para sanar problemas como dependências, eliminação de código morto e classes globais.
+  E mais vantajoso em projetos grandes.
+  Projetos pequenos pode aumentar a complexidade de forma de desnecesária.
 
-        #### **Aula 7.A**
+#### **Aula 7.B**
+Criado um projeto node e react basico.
+Modificado o nome do arquivo App.css para App.module.css.
+Após isso será necessario modificar o arquivo App.js configurando a importação.
+```JavaScript
+import estilo from App.module.css
+```
+Depois desse processo tera que modificar todas as classe pois as mesmas estarão em formato hash convertendo as classes em uma sequência fixa de caracteres.
 
-          É um processo que ocorre no processo de build, que alteram o nome de classes e seletores para ter escopo local.
-          ```JavaScript
-          import styles from "./styles.css";
-          element.innerHTML = <h1 class= "${styles.title}"> Titulo Exemplo </h1>
-          ```
-          ```HTML
-          <h1 class= "styles_title_XPT0123"> Titulo Exemplo </h1>
-          ```
-          Geralmente feito por JavaScript.
-          Exemplos: 
-          [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-          [Jest](https://iestis.io/pt-BR/docs/webpack).
+Com base nisso foi realizado as seguintes modificações:
+```JavaScript
+import logo from './logo.svg';
+import estilo from'./App.module.css';
 
-          Vem para sanar problemas como dependências, eliminação de código morto e classes globais.
-          E mais vantajoso em projetos grandes.
-          Projetos pequenos pode aumentar a complexidade de forma de desnecesária.
+function App() {
+  return (
+    // utilizando o modulo css para estilizar o componente quando a classe não possuí "-" no nome.
+    <div className={estilo.App}>
+      {/* utilizando o modulo css para estilizar o componente quando a classe possuí "-" no nome. */}
+      <header className={estilo["App-header"]}>
+        <img src={logo} className={estilo["App-logo"]} alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className={estilo["App-link"]}
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
 
-        #### **Aula 7.B**
-        Criado um projeto node e react basico.
-        Modificado o nome do arquivo App.css para App.module.css.
-        Após isso será necessario modificar o arquivo App.js configurando a importação.
-        ```JavaScript
-        import estilo from App.module.css
-        ```
-        Depois desse processo tera que modificar todas as classe pois as mesmas estarão em formato hash convertendo as classes em uma sequência fixa de caracteres.
+export default App;
+```
 
-        Com base nisso foi realizado as seguintes modificações:
-        ```JavaScript
-        import logo from './logo.svg';
-        import estilo from'./App.module.css';
+Desta maneira podemos utilizar diversos modulos feitos com o mesmo nome de classe que não vai interferir na estilização da pagina caso não seja feito a troca do modulo impotado.
 
-        function App() {
-          return (
-            // utilizando o modulo css para estilizar o componente quando a classe não possuí "-" no nome.
-            <div className={estilo.App}>
-              {/* utilizando o modulo css para estilizar o componente quando a classe possuí "-" no nome. */}
-              <header className={estilo["App-header"]}>
-                <img src={logo} className={estilo["App-logo"]} alt="logo" />
-                <p>
-                  Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <a
-                  className={estilo["App-link"]}
-                  href="https://reactjs.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Learn React
-                </a>
-              </header>
-            </div>
-          );
-        }
+#### **Aula 7.C**
 
-        export default App;
-        ```
+**STYLED COMPONENTS VS CSS MODULES.**
 
-        Desta maneira podemos utilizar diversos modulos feitos com o mesmo nome de classe que não vai interferir na estilização da pagina caso não seja feito a troca do modulo impotado.
+Se você gosta de usar/programar em CSS e/ou se manter um pouco mais conservador, a sugestão é usar CSS Modules.
+Na prática, é quase o mesmo CSS puro, porém terá o escopo adicinal exceto nos casos que deixar a definição de escopo global.
+Caso não queira e/ou não goste e/ou simplesmente decida não usar CSS, o Styled Components é uma ótima opção
+Com ele não terá mais os arquivos .css. Usa tudo com JavaScript.
 
-        #### **Aula 7.C**
+## **Aula 08**
 
-        **STYLED COMPONENTS VS CSS MODULES.**
+#### **Aula 8.A**
 
-        Se você gosta de usar/programar em CSS e/ou se manter um pouco mais conservador, a sugestão é usar CSS Modules.
-        Na prática, é quase o mesmo CSS puro, porém terá o escopo adicinal exceto nos casos que deixar a definição de escopo global.
-        Caso não queira e/ou não goste e/ou simplesmente decida não usar CSS, o Styled Components é uma ótima opção
-        Com ele não terá mais os arquivos .css. Usa tudo com JavaScript.
+**Web Components e CSS**
 
-        #### **Aula 08**
+Web Components são uma tecnologia que permite criar elementos HTML personalizados com funcionalidades e estilos encapsulados, utilizando três pilares principais: **Custom Elements**, **Shadow DOM** e **HTML Templates**. No contexto de CSS, os Web Components oferecem recursos fundamentais para isolar e organizar estilos, evitando conflitos em projetos maiores.
 
-        #### **Aula 8.A**
+**Conceitos Importantes**
 
-        **Web Components e CSS**
+**1. Encapsulamento de Estilo com Shadow DOM**  
+O Shadow DOM cria um ambiente isolado dentro do componente, garantindo que os estilos internos não vazem para o restante da página e vice-versa. Isso possibilita o desenvolvimento de componentes reutilizáveis sem interferir no design global do site.
 
-        Web Components são uma tecnologia que permite criar elementos HTML personalizados com funcionalidades e estilos encapsulados, utilizando três pilares principais: **Custom Elements**, **Shadow DOM** e **HTML Templates**. No contexto de CSS, os Web Components oferecem recursos fundamentais para isolar e organizar estilos, evitando conflitos em projetos maiores.
+**2. Personalização com Variáveis CSS**  
+Embora os estilos internos sejam encapsulados, os Web Components podem utilizar variáveis CSS (custom properties) para permitir personalizações externas, mantendo a flexibilidade no design.
 
-        **Conceitos Importantes**
+**3. Escalabilidade e Organização**  
+Web Components ajudam a estruturar estilos de forma modular, sendo ideais para sistemas de design, bibliotecas de componentes e aplicações que exigem separação de responsabilidades no código.
 
-        **1. Encapsulamento de Estilo com Shadow DOM**  
-        O Shadow DOM cria um ambiente isolado dentro do componente, garantindo que os estilos internos não vazem para o restante da página e vice-versa. Isso possibilita o desenvolvimento de componentes reutilizáveis sem interferir no design global do site.
+**4. Compatibilidade com Frameworks CSS**  
+Por serem isolados, os Web Components permitem integrar frameworks CSS sem o risco de conflitos de classe ou estilos entre diferentes partes de um projeto.
 
-        **2. Personalização com Variáveis CSS**  
-        Embora os estilos internos sejam encapsulados, os Web Components podem utilizar variáveis CSS (custom properties) para permitir personalizações externas, mantendo a flexibilidade no design.
+Essa abordagem modular facilita a manutenção e a escalabilidade, sendo uma solução poderosa para equipes que trabalham em projetos complexos ou colaborativos.
 
-        **3. Escalabilidade e Organização**  
-        Web Components ajudam a estruturar estilos de forma modular, sendo ideais para sistemas de design, bibliotecas de componentes e aplicações que exigem separação de responsabilidades no código.
+[Documentação](https://developer.mozilla.org/pt-BR/docs/Web/API/Web_components)
 
-        **4. Compatibilidade com Frameworks CSS**  
-        Por serem isolados, os Web Components permitem integrar frameworks CSS sem o risco de conflitos de classe ou estilos entre diferentes partes de um projeto.
+#### **Aula 8.B**
 
-        Essa abordagem modular facilita a manutenção e a escalabilidade, sendo uma solução poderosa para equipes que trabalham em projetos complexos ou colaborativos.
+**CUSTOM ELEMENTS**
 
-        [Documentação](https://developer.mozilla.org/pt-BR/docs/Web/API/Web_components)
+- É formado por APIs JavaScript, as quais permite definir elementos customizados.
+- Permite que selam criadas Tag diferentes das convencionais.
+- Evita os alinhamentos de Divs, os temidos Div Hells.
+- Possibilita criar elementos personalizados herdando características de algum já existente.
 
-        #### **Aula 8.B**
+[Documentação](https://developer.mozilla.org/pt-BR/docs/Web/Web_Components/Using_custom_elements)
 
-        **CUSTOM ELEMENTS**
+Exemplo de codigo que será utilizado para custom elements.
+```JavaScript
+class meuCompnente extends HTMLElement {
+    constructor() {
+        super();
+        // Cria um shadow DOM para o componente
+        this.root = this.attachShadow({ mode: 'open' });
+    }
 
-        - É formado por APIs JavaScript, as quais permite definir elementos customizados.
-        - Permite que selam criadas Tag diferentes das convencionais.
-        - Evita os alinhamentos de Divs, os temidos Div Hells.
-        - Possibilita criar elementos personalizados herdando características de algum já existente.
-
-        [Documentação](https://developer.mozilla.org/pt-BR/docs/Web/Web_Components/Using_custom_elements)
-
-        Exemplo de codigo que será utilizado para custom elements.
-        ```JavaScript
-        class meuCompnente extends HTMLElement {
-            constructor() {
-                super();
-                // Cria um shadow DOM para o componente
-                this.root = this.attachShadow({ mode: 'open' });
+    connectedCallback() {
+        // Define o template HTML e CSS do componente
+        const template = `
+        <style>
+            :host {
+                color: darkblue;
             }
+        </style>
+        <slot> Ola Mundo! </slot>
+        `;
 
-            connectedCallback() {
-                // Define o template HTML e CSS do componente
-                const template = `
-                <style>
-                    :host {
-                        color: darkblue;
-                    }
-                </style>
-                <slot> Ola Mundo! </slot>
-                `;
+        // Adiciona o template ao shadow DOM
+        this.root.innerHTML = template;
+    }
+}
+```
 
-                // Adiciona o template ao shadow DOM
-                this.root.innerHTML = template;
-            }
-        }
-        ```
+#### **Aula 8.C**
 
-        #### **Aula 8.C**
+**Shadow DOM**
 
-        **Shadow DOM**
+O **Shadow DOM** é uma tecnologia fundamental do **Web Components** que permite criar um escopo isolado para elementos HTML, proporcionando encapsulamento total de estilo e comportamento. Ao utilizar o Shadow DOM, desenvolvedores podem definir um "DOM sombra" para um elemento, que é separado do DOM principal, criando uma barreira que impede que estilos globais ou scripts externos afetem seu conteúdo interno. Isso é especialmente útil para criar componentes reutilizáveis, como botões, modais ou widgets, garantindo que eles funcionem de forma previsível, independentemente do ambiente em que são inseridos.
 
-        O **Shadow DOM** é uma tecnologia fundamental do **Web Components** que permite criar um escopo isolado para elementos HTML, proporcionando encapsulamento total de estilo e comportamento. Ao utilizar o Shadow DOM, desenvolvedores podem definir um "DOM sombra" para um elemento, que é separado do DOM principal, criando uma barreira que impede que estilos globais ou scripts externos afetem seu conteúdo interno. Isso é especialmente útil para criar componentes reutilizáveis, como botões, modais ou widgets, garantindo que eles funcionem de forma previsível, independentemente do ambiente em que são inseridos.
+O encapsulamento do Shadow DOM inclui:
+- **Estilos isolados**: CSS definido dentro do Shadow DOM não interfere nem é afetado por estilos externos.
+- **Estrutura DOM encapsulada**: O conteúdo interno não pode ser acessado diretamente do DOM principal, protegendo sua implementação.
+- **Shadow Root**: O ponto de entrada para criar e gerenciar o Shadow DOM, ativado por métodos como `attachShadow`.
 
-        O encapsulamento do Shadow DOM inclui:
-        - **Estilos isolados**: CSS definido dentro do Shadow DOM não interfere nem é afetado por estilos externos.
-        - **Estrutura DOM encapsulada**: O conteúdo interno não pode ser acessado diretamente do DOM principal, protegendo sua implementação.
-        - **Shadow Root**: O ponto de entrada para criar e gerenciar o Shadow DOM, ativado por métodos como `attachShadow`.
+Existem dois modos de Shadow DOM:
+- **Aberto (`open`)**: Permite que o script externo acesse o Shadow DOM via JavaScript.
+- **Fechado (`closed`)**: Restringe completamente o acesso ao Shadow DOM, garantindo maior segurança.
 
-        Existem dois modos de Shadow DOM:
-        - **Aberto (`open`)**: Permite que o script externo acesse o Shadow DOM via JavaScript.
-        - **Fechado (`closed`)**: Restringe completamente o acesso ao Shadow DOM, garantindo maior segurança.
+O Shadow DOM melhora a modularidade e escalabilidade de aplicações web, tornando-o uma ferramenta poderosa para bibliotecas modernas e frameworks baseados em componentes, como React ou Vue, que integram conceitos semelhantes.
 
-        O Shadow DOM melhora a modularidade e escalabilidade de aplicações web, tornando-o uma ferramenta poderosa para bibliotecas modernas e frameworks baseados em componentes, como React ou Vue, que integram conceitos semelhantes.
-        
-        [Documentação](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM)
+[Documentação](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM)
 
-        #### **Aula 8.D**
+#### **Aula 8.D**
 
-        **TEMPLATES**
+**TEMPLATES**
 
-        - É formado por APIs JavaScript, as quais permite definir elementos  customizados.
-        - Permite a criação de Slots, o que dá mais flexibilidade ao códigos
-        
-        Arquivo.js
-        ```JavaScript
-        <div class="info">
-          <p>Cargo: <slot name="cargo"/></p>
-          <p>Experiencia: <slot name="xp" /></p>
-          <p>Idiomas: <slot name="idiomas"/></p>
-        <div>
-        ```
+- É formado por APIs JavaScript, as quais permite definir elementos  customizados.
+- Permite a criação de Slots, o que dá mais flexibilidade ao códigos
 
-        Arquivo.html
-        ```HTML
-        <span slot="cargo">Estagiário</span>
-        <span slot="xp">6 meses</span>
-        <span slot="idiomas">Espanhol e Inglês</span>
+Arquivo.js
+```JavaScript
+<div class="info">
+  <p>Cargo: <slot name="cargo"/></p>
+  <p>Experiencia: <slot name="xp" /></p>
+  <p>Idiomas: <slot name="idiomas"/></p>
+<div>
+```
 
-        ```
-        **Templates e slots** são recursos essenciais no desenvolvimento de Web Components para criar estruturas de HTML reutilizáveis e flexíveis. O elemento `<template>` permite definir um fragmento de HTML que não é renderizado até ser explicitamente usado via JavaScript, proporcionando eficiência e separação de estrutura e comportamento. Já os `<slot>`s são utilizados para criar áreas dinâmicas nos componentes, onde o conteúdo pode ser inserido externamente, permitindo personalização sem alterar a estrutura interna. Esses recursos combinam modularidade e reutilização, tornando a construção de interfaces mais escalável e adaptável.
+Arquivo.html
+```HTML
+<span slot="cargo">Estagiário</span>
+<span slot="xp">6 meses</span>
+<span slot="idiomas">Espanhol e Inglês</span>
 
-        [Documentação](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_templates_and_slots)
+```
+**Templates e slots** são recursos essenciais no desenvolvimento de Web Components para criar estruturas de HTML reutilizáveis e flexíveis. O elemento `<template>` permite definir um fragmento de HTML que não é renderizado até ser explicitamente usado via JavaScript, proporcionando eficiência e separação de estrutura e comportamento. Já os `<slot>`s são utilizados para criar áreas dinâmicas nos componentes, onde o conteúdo pode ser inserido externamente, permitindo personalização sem alterar a estrutura interna. Esses recursos combinam modularidade e reutilização, tornando a construção de interfaces mais escalável e adaptável.
 
-        ## **Aula 09 - Google Mobile**
+[Documentação](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_templates_and_slots)
 
-        #### **Aula 9.A**
 
-        **PÁGINAS GOOGLE DE VERIFICAÇÃO** 
+## **Aula 09 - Google Mobile**
 
-        Google Mobile Friendly
-        search.google.com/test/mobile-friendly
+#### **Aula 9.A**
 
-        A **Google Mobile-Friendly Test** é uma ferramenta oferecida pelo Google para verificar se uma página da web é otimizada para dispositivos móveis. Ela analisa a experiência do usuário ao acessar o site em smartphones e tablets, considerando fatores como:
+**PÁGINAS GOOGLE DE VERIFICAÇÃO** 
 
-        **Finalidades da ferramenta:**
+Google Mobile Friendly
+search.google.com/test/mobile-friendly
 
-        1. **Avaliar a compatibilidade móvel:**  
-          A ferramenta ajuda a verificar se o design e a estrutura do site funcionam bem em dispositivos móveis, como celulares e tablets.
+A **Google Mobile-Friendly Test** é uma ferramenta oferecida pelo Google para verificar se uma página da web é otimizada para dispositivos móveis. Ela analisa a experiência do usuário ao acessar o site em smartphones e tablets, considerando fatores como:
 
-        2. **Melhorar o ranqueamento nos resultados de busca:**  
-          O Google prioriza páginas "mobile-friendly" no ranking de resultados de busca, especialmente em pesquisas feitas por dispositivos móveis. Portanto, passar no teste pode melhorar a visibilidade do site.
+**Finalidades da ferramenta:**
 
-        3. **Identificar problemas técnicos:**  
-          O teste destaca problemas como:
-          - Texto muito pequeno.
-          - Elementos clicáveis muito próximos.
-          - Conteúdo que não se ajusta à tela.
-          - Uso de tecnologias desatualizadas, como Flash.
+1. **Avaliar a compatibilidade móvel:**  
+  A ferramenta ajuda a verificar se o design e a estrutura do site funcionam bem em dispositivos móveis, como celulares e tablets.
 
-        4. **Proporcionar uma melhor experiência ao usuário:**  
-          Um site otimizado para dispositivos móveis é mais rápido, acessível e fácil de navegar, o que melhora a satisfação dos visitantes.
+2. **Melhorar o ranqueamento nos resultados de busca:**  
+  O Google prioriza páginas "mobile-friendly" no ranking de resultados de busca, especialmente em pesquisas feitas por dispositivos móveis. Portanto, passar no teste pode melhorar a visibilidade do site.
 
-        5. **Planejar melhorias no design responsivo:**  
-          A ferramenta oferece insights para ajudar os desenvolvedores a ajustarem o layout e o design do site para atender aos critérios de responsividade.
+3. **Identificar problemas técnicos:**  
+  O teste destaca problemas como:
+  - Texto muito pequeno.
+  - Elementos clicáveis muito próximos.
+  - Conteúdo que não se ajusta à tela.
+  - Uso de tecnologias desatualizadas, como Flash.
 
-        ### **Como usar:**
-        1. Acesse o site oficial da ferramenta: [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly).
-        2. Insira o URL da página que deseja testar.
-        3. Aguarde o diagnóstico, que incluirá um resumo da análise e sugestões de melhorias, caso necessário.
+4. **Proporcionar uma melhor experiência ao usuário:**  
+  Um site otimizado para dispositivos móveis é mais rápido, acessível e fácil de navegar, o que melhora a satisfação dos visitantes.
 
-        Essa ferramenta é essencial para desenvolvedores front-end, para garantir que os sites em que está trabalhando atendam aos padrões modernos de usabilidade e SEO.
+5. **Planejar melhorias no design responsivo:**  
+  A ferramenta oferece insights para ajudar os desenvolvedores a ajustarem o layout e o design do site para atender aos critérios de responsividade.
 
-        #### **Aula 9.B**
+### **Como usar:**
+1. Acesse o site oficial da ferramenta: [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly).
+2. Insira o URL da página que deseja testar.
+3. Aguarde o diagnóstico, que incluirá um resumo da análise e sugestões de melhorias, caso necessário.
 
-        ## **Aula 10 - Considerações Finais**
+Essa ferramenta é essencial para desenvolvedores front-end, para garantir que os sites em que está trabalhando atendam aos padrões modernos de usabilidade e SEO.
 
-        #### **Aula 10.**
+#### **Aula 9.B**
+
+**Google Page Speed Tools**
+
+O **Google PageSpeed Insights** é uma ferramenta oferecida pelo Google que analisa o desempenho de páginas da web, tanto em dispositivos móveis quanto em desktops. Ele mede a velocidade de carregamento, avalia a experiência do usuário e oferece sugestões de melhorias para otimizar o desempenho do site.  
+
+**O que a ferramenta faz?**
+
+1. **Avaliação de desempenho:**  
+  Fornece uma pontuação de 0 a 100, baseada em dados de laboratório e do mundo real (usando o Chrome User Experience Report).  
+  - **90+**: Excelente  
+  - **50-89**: Precisa de melhorias  
+  - **<50**: Ruim  
+
+2. **Análise de Core Web Vitals:**  
+  O relatório inclui as métricas principais de desempenho, chamadas de **Core Web Vitals**, que medem a experiência real dos usuários:  
+  - **LCP (Largest Contentful Paint):** Tempo para carregar o maior elemento visível.  
+  - **FID (First Input Delay):** Tempo de resposta ao primeiro clique ou interação.  
+  - **CLS (Cumulative Layout Shift):** Estabilidade visual do layout.  
+
+3. **Sugestões de melhorias técnicas:**  
+  Oferece recomendações específicas, como:  
+  - Reduzir o tamanho de imagens.  
+  - Usar cache no navegador.  
+  - Minificar CSS, JavaScript e HTML.  
+  - Eliminar JavaScript bloqueante na renderização.  
+  - Habilitar compressão de dados (gzip ou brotli).  
+
+4. **Simulação de carregamento:**  
+  Mostra como a página se comporta em diferentes condições de rede e dispositivos (por exemplo, 4G em um smartphone).
+
+**Como usar a ferramenta:**
+1. Acesse [Google PageSpeed Insights](https://pagespeed.web.dev/).
+2. Insira o URL da página que deseja analisar.
+3. Clique em **Analisar** e aguarde o relatório.
+
+**Benefícios para desenvolvedores:**
+
+- **SEO aprimorado:** O Google usa a velocidade do site como um fator de ranqueamento.  
+- **Melhor experiência do usuário:** Sites rápidos aumentam o engajamento e reduzem taxas de rejeição.  
+- **Insights práticos:** Ajuda a identificar gargalos técnicos e fornece soluções claras para melhorar o desempenho.
+
+Como desenvolvedor front-end, essa ferramenta é valiosa para garantir que os sites que você desenvolve tenham um desempenho ideal e estejam alinhados com os padrões do Google.
