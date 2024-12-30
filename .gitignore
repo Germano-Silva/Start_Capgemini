@@ -9,6 +9,7 @@
 .gradle
 build
 bin
+Materiais
 
 # files
 .pnp.js
