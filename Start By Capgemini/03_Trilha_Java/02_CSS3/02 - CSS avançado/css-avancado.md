@@ -497,9 +497,29 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
 
         #### **Aula 08**
 
-        **Web Components**
-
         #### **Aula 8.A**
+
+        **Web Components e CSS**
+
+        Web Components são uma tecnologia que permite criar elementos HTML personalizados com funcionalidades e estilos encapsulados, utilizando três pilares principais: **Custom Elements**, **Shadow DOM** e **HTML Templates**. No contexto de CSS, os Web Components oferecem recursos fundamentais para isolar e organizar estilos, evitando conflitos em projetos maiores.
+
+        **Conceitos Importantes**
+
+        **1. Encapsulamento de Estilo com Shadow DOM**  
+        O Shadow DOM cria um ambiente isolado dentro do componente, garantindo que os estilos internos não vazem para o restante da página e vice-versa. Isso possibilita o desenvolvimento de componentes reutilizáveis sem interferir no design global do site.
+
+        **2. Personalização com Variáveis CSS**  
+        Embora os estilos internos sejam encapsulados, os Web Components podem utilizar variáveis CSS (custom properties) para permitir personalizações externas, mantendo a flexibilidade no design.
+
+        **3. Escalabilidade e Organização**  
+        Web Components ajudam a estruturar estilos de forma modular, sendo ideais para sistemas de design, bibliotecas de componentes e aplicações que exigem separação de responsabilidades no código.
+
+        **4. Compatibilidade com Frameworks CSS**  
+        Por serem isolados, os Web Components permitem integrar frameworks CSS sem o risco de conflitos de classe ou estilos entre diferentes partes de um projeto.
+
+        Essa abordagem modular facilita a manutenção e a escalabilidade, sendo uma solução poderosa para equipes que trabalham em projetos complexos ou colaborativos.
+
+        [Documentação](https://developer.mozilla.org/pt-BR/docs/Web/API/Web_components)
 
         #### **Aula 8.B**
 
