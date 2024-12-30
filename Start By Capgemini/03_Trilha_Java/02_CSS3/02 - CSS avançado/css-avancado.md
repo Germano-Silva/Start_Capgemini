@@ -523,6 +523,8 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
 
         #### **Aula 8.B**
 
+        
+
         #### **Aula 8.C**
 
         #### **Aula 8.D**
