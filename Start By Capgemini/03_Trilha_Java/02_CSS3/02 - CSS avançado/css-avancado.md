@@ -445,6 +445,46 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
           Projetos pequenos pode aumentar a complexidade de forma de desnecesária.
 
         #### **Aula 7.B**
+        Criado um projeto node e react basico.
+        Modificado o nome do arquivo App.css para App.module.css.
+        Após isso será necessario modificar o arquivo App.js configurando a importação.
+        ```JavaScript
+        import estilo from App.module.css
+        ```
+        Depois desse processo tera que modificar todas as classe pois as mesmas estarão em formato hash convertendo as classes em uma sequência fixa de caracteres.
+
+        Com base nisso foi realizado as seguintes modificações:
+        ```JavaScript
+        import logo from './logo.svg';
+        import estilo from'./App.module.css';
+
+        function App() {
+          return (
+            // utilizando o modulo css para estilizar o componente quando a classe não possuí "-" no nome.
+            <div className={estilo.App}>
+              {/* utilizando o modulo css para estilizar o componente quando a classe possuí "-" no nome. */}
+              <header className={estilo["App-header"]}>
+                <img src={logo} className={estilo["App-logo"]} alt="logo" />
+                <p>
+                  Edit <code>src/App.js</code> and save to reload.
+                </p>
+                <a
+                  className={estilo["App-link"]}
+                  href="https://reactjs.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Learn React
+                </a>
+              </header>
+            </div>
+          );
+        }
+
+        export default App;
+        ```
+
+        Desta maneira podemos utilizar diversos modulos feitos com o mesmo nome de classe que não vai interferir na estilização da pagina caso não seja feito a troca do modulo impotado.
 
         #### **Aula 7.C**
 
