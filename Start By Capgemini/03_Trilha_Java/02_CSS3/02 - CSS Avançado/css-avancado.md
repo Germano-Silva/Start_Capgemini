@@ -608,6 +608,41 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
 
         #### **Aula 9.A**
 
+        **PÁGINAS GOOGLE DE VERIFICAÇÃO** 
+
+        Google Mobile Friendly
+        search.google.com/test/mobile-friendly
+
+        A **Google Mobile-Friendly Test** é uma ferramenta oferecida pelo Google para verificar se uma página da web é otimizada para dispositivos móveis. Ela analisa a experiência do usuário ao acessar o site em smartphones e tablets, considerando fatores como:
+
+        **Finalidades da ferramenta:**
+
+        1. **Avaliar a compatibilidade móvel:**  
+          A ferramenta ajuda a verificar se o design e a estrutura do site funcionam bem em dispositivos móveis, como celulares e tablets.
+
+        2. **Melhorar o ranqueamento nos resultados de busca:**  
+          O Google prioriza páginas "mobile-friendly" no ranking de resultados de busca, especialmente em pesquisas feitas por dispositivos móveis. Portanto, passar no teste pode melhorar a visibilidade do site.
+
+        3. **Identificar problemas técnicos:**  
+          O teste destaca problemas como:
+          - Texto muito pequeno.
+          - Elementos clicáveis muito próximos.
+          - Conteúdo que não se ajusta à tela.
+          - Uso de tecnologias desatualizadas, como Flash.
+
+        4. **Proporcionar uma melhor experiência ao usuário:**  
+          Um site otimizado para dispositivos móveis é mais rápido, acessível e fácil de navegar, o que melhora a satisfação dos visitantes.
+
+        5. **Planejar melhorias no design responsivo:**  
+          A ferramenta oferece insights para ajudar os desenvolvedores a ajustarem o layout e o design do site para atender aos critérios de responsividade.
+
+        ### **Como usar:**
+        1. Acesse o site oficial da ferramenta: [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly).
+        2. Insira o URL da página que deseja testar.
+        3. Aguarde o diagnóstico, que incluirá um resumo da análise e sugestões de melhorias, caso necessário.
+
+        Essa ferramenta é essencial para desenvolvedores front-end, para garantir que os sites em que está trabalhando atendam aos padrões modernos de usabilidade e SEO.
+
         #### **Aula 9.B**
 
         ## **Aula 10 - Considerações Finais**
