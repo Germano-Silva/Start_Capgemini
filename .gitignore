@@ -2,8 +2,8 @@
 
 # compiled output
 
-**/workspace/
-**/Material do curso/workspace/
+**/workspace
+**/Material do curso/workspace
 
 # dependencies
 /node_modules
