@@ -488,6 +488,13 @@ Os exercicio e o servido em Node.js não foram realizados devido não ser realiz
 
         #### **Aula 7.C**
 
+        **STYLED COMPONENTS VS CSS MODULES.**
+
+        Se você gosta de usar/programar em CSS e/ou se manter um pouco mais conservador, a sugestão é usar CSS Modules.
+        Na prática, é quase o mesmo CSS puro, porém terá o escopo adicinal exceto nos casos que deixar a definição de escopo global.
+        Caso não queira e/ou não goste e/ou simplesmente decida não usar CSS, o Styled Components é uma ótima opção
+        Com ele não terá mais os arquivos .css. Usa tudo com JavaScript.
+
         #### **Aula 08**
 
         **Web Components**
