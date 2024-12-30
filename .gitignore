@@ -1,9 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# compiled output
-**/workspace/
-**/Material do curso/workspace/
-
 # dependencies
 /node_modules
 /.pnp
@@ -11,8 +7,8 @@
 
 # directories
 .gradle
-/build
-/bin
+build
+bin
 
 # files
 .pnp.js
