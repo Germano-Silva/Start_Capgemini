@@ -1,25 +1,21 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # compiled output
-
-**/workspace
-**/Material do curso/workspace
+**/workspace/
+**/Material do curso/workspace/
 
 # dependencies
 /node_modules
 /.pnp
-.pnp.js
-**/.gradle
-**/build
-**/bin
-
-# testing
 /coverage
 
-# production
+# directories
+.gradle
 /build
+/bin
 
-# misc
+# files
+.pnp.js
 .DS_Store
 .env.local
 .env.development.local
