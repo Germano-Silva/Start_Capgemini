@@ -170,8 +170,16 @@ Professor: Ralf Lima
 - Foi explicado o uso da função para exibir os valores das variáveis e como evitar erros comuns ao manipular os dados.
 
 #### Aula 1.F
+- A aula introduziu os **operadores relacionais** no JavaScript, usados para realizar comparações e retornar valores booleanos (`true` ou `false`).
 
-
+- **Operadores Relacionais**:
+  - **Maior (`>`):** Verifica se um número é maior que outro.
+  - **Menor (`<`):** Verifica se um número é menor que outro.
+  - **Igualdade (`==`):** Verifica se dois valores são iguais.
+    - O operador `=` é usado para atribuição, enquanto `==` é usado para comparação.
+  - **Maior ou Igual (`>=`):** Verifica se um número é maior ou igual a outro.
+  - **Menor ou Igual (`<=`):** Verifica se um número é menor ou igual a outro.
+  - **Diferente (`!=`):** Verifica se dois valores são diferentes. 
 
 #### Aula 1.G
 
