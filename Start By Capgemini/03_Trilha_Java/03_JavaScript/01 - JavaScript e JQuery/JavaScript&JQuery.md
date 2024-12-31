@@ -130,7 +130,20 @@ Professor: Ralf Lima
 
 #### Aula 1.C
 
+- Na aula de hoje, trabalhamos com a **estrutura base do JavaScript** e criamos um arquivo HTML para iniciar nossos projetos.  
 
+- Foi explicado como organizar os arquivos, sugerindo salvar com um nome que facilite a identificação, como `01_estrutura_base.html`.
+
+- Estrutura básica criada no arquivo HTML:
+  - Declaração do tipo de documento: `<!DOCTYPE html>`.
+  - Tags principais: `<html>`, `<head>`, `<meta charset="UTF-8">`, `<title>` e `<body>`.
+  - O título foi definido como "Estrutura Base".
+
+- Introdução ao uso do JavaScript dentro do HTML:
+  - O JavaScript será escrito dentro de uma tag `<script>` localizada no `<head>` do arquivo.
+  - Foi recomendado adicionar comentários para organizar e identificar melhor o código JavaScript.
+
+- Esta estrutura será a base para os próximos exemplos do curso.  
 
 #### Aula 1.D
 
