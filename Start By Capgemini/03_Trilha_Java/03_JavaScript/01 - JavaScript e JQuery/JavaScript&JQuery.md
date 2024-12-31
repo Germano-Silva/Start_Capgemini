@@ -147,7 +147,11 @@ Professor: Ralf Lima
 
 #### Aula 1.D
 
+- A aula abordou o uso de **caixas de mensagem** no JavaScript para orientar o usuário em interações no site, como validações de formulários.
 
+- Introduzimos o comando `alert` para exibir mensagens simples ao usuário.
+
+- As caixas de mensagem são úteis para melhorar a interação e a navegação do usuário em sites e formulários.  
 
 #### Aula 1.E
 
