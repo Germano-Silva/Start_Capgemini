@@ -84,7 +84,49 @@ Professor: Ralf Lima
 
 #### Aula 1.B
 
+1. **Escolha o Local para o Workspace**  
+   - Decida onde o workspace será criado no seu sistema de arquivos. Geralmente, pode ser dentro de uma pasta chamada `Projetos` ou `Aulas`.
 
+2. **Crie a Pasta do Workspace**  
+   - Navegue até o local escolhido e crie uma nova pasta. Por exemplo, nomeie a pasta como `JavaScript_Aulas`.
+
+3. **Organize o Workspace**  
+   - Dentro da pasta `JavaScript_Aulas`, crie subpastas para cada projeto ou aula. Exemplo:
+     - `Aula_01`
+     - `Aula_02`
+     - `Aula_03`
+   - Isso ajudará a manter os projetos organizados.
+
+4. **Configure um Editor de Código**  
+   - Baixe e instale um editor de código, como o [Visual Studio Code](https://code.visualstudio.com/), se ainda não tiver.
+   - Abra o Visual Studio Code e selecione a opção **File > Open Folder** para abrir o workspace recém-criado.
+
+5. **Inicie um Projeto**  
+   - Dentro de uma subpasta (por exemplo, `Aula_01`), crie os seguintes arquivos básicos:
+     - `index.html`: Estrutura básica de uma página HTML.
+     - `style.css`: Para estilização (opcional).
+     - `script.js`: Para o código JavaScript.
+
+6. **Adicione um Servidor Local (Opcional)**  
+   - Instale a extensão **Live Server** no Visual Studio Code para facilitar a execução e o teste dos projetos diretamente no navegador.
+   - Clique com o botão direito no arquivo `index.html` e selecione **Open with Live Server**.
+
+7. **Configure o Controle de Versão (Opcional)**  
+   - Se quiser salvar o progresso do workspace, instale o [Git](https://git-scm.com/) e conecte o workspace a um repositório no GitHub:
+     - Execute `git init` no terminal dentro do workspace.
+     - Faça commits regulares do progresso de cada aula.
+
+8. **Organize o Conteúdo para as Aulas**  
+   - Dentro de cada subpasta de aula, mantenha anotações, exemplos de código e exercícios separados para facilitar a consulta.
+
+9. **Teste seu Ambiente**  
+   - Certifique-se de que o `index.html` pode ser executado no navegador e que o JavaScript está funcionando corretamente. Adicione um código simples no `script.js` para testar, como:
+     ```javascript
+     console.log("Ambiente configurado com sucesso!");
+     ```
+
+10. **Mantenha o Workspace Atualizado**  
+    - Adicione novas subpastas para cada nova aula e siga a mesma estrutura.
 
 #### Aula 1.C
 
