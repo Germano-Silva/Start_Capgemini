@@ -154,8 +154,20 @@ Professor: Ralf Lima
 - As caixas de mensagem são úteis para melhorar a interação e a navegação do usuário em sites e formulários.  
 
 #### Aula 1.E
+- A aula abordou o conceito de **variáveis** no JavaScript, usadas para armazenar e manipular diferentes tipos de dados.
 
+- **Tipos de variáveis**:
+  - Texto (string): Exemplo, nome armazenado como `"Ralf"`.
+  - Numéricas: Exemplo, idade armazenada como `28`.
+  - Decimais: Exemplo, altura armazenada como `1.80`.
+  - Booleanas (lógicas): Verdadeiro ou falso, como `true` ou `false`.
 
+- **Regras para criação de variáveis**:
+  - Não usar caracteres especiais ou espaços.
+  - Não começar o nome da variável com números.
+  - Utilizar nomes coesos e legíveis. Exemplos: `nomeDaEmpresa` ou `nome_empresa`.
+
+- Foi explicado o uso da função para exibir os valores das variáveis e como evitar erros comuns ao manipular os dados.
 
 #### Aula 1.F
 
