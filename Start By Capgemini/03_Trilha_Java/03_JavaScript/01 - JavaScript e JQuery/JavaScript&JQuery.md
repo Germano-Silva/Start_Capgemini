@@ -4,6 +4,14 @@
 
 # Curso de JavaScript e JQuery
 
+Professor: Ralf Lima
+[GitHub](https://github.com/ralflima)
+[LinkedIn](https://www.linkedin.com/in/ralf-lima-3b93708a/)
+[Instagram](https://www.instagram.com/ralflima_dev/)
+[YouTube](https://www.youtube.com/@RalfLima/featured)
+
+
+
 # Índice
 
 - [Aula 01 - Introdução](#aula-01---introdução)
@@ -60,12 +68,19 @@
   - [Aula 5.K](#aula-5k)
 
 ## Aula 01 - Introdução
+### Aula 1.A
 
+- JavaScript foi criado em 1995 por Brendan Eich enquanto trabalhava na Netscape. Inicialmente chamado de Mocha, depois LiveScript, foi rebatizado como JavaScript para capitalizar na popularidade do Java.
 
+- É uma linguagem de programação interpretada, dinâmica e baseada em protótipos. Originalmente desenvolvida para adicionar interatividade a páginas web, tornou-se uma das principais tecnologias da web, ao lado de HTML e CSS.
 
-#### Aula 1.A
+- Serve para criar experiências interativas no navegador, como validação de formulários, animações, manipulação de elementos da página e interações dinâmicas com o servidor (AJAX). Atualmente, é usado em back-end (Node.js), desenvolvimento mobile (React Native), aplicativos desktop (Electron) e até mesmo IoT.
 
+- Hoje, JavaScript é amplamente utilizado em aplicações web modernas, frameworks (React, Angular, Vue.js) e na construção de APIs e servidores graças à sua versatilidade e comunidade ativa.
 
+- Java e JavaScript são linguagens distintas:
+  - **Java**: Linguagem orientada a objetos, tipagem estática, usada para criar aplicações robustas (desktop, mobile e servidores).
+  - **JavaScript**: Linguagem leve, dinâmica e focada principalmente no desenvolvimento web, sendo executada diretamente no navegador ou em servidores com Node.js.
 
 #### Aula 1.B
 
