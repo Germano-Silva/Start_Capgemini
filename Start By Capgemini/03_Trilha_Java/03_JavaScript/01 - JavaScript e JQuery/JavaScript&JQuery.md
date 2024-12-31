@@ -193,8 +193,22 @@ Professor: Ralf Lima
 - O uso do condicional simples permite criar validações básicas que serão expandidas em futuras implementações.  
 
 #### Aula 1.H
+- **Condicional alinhado**, usado para avaliar múltiplas condições e fornecer diversas respostas baseadas nos resultados.
 
+- **Funcionamento**:
+  - A estrutura básica utiliza `if`, `else if` e `else` para organizar as condições.
+  - O JavaScript avalia as condições em sequência. Quando uma é atendida, o código correspondente é executado, e as demais são ignoradas.
 
+- **Aplicação**:
+  - Um exemplo prático foi a avaliação de médias escolares, com respostas diferentes para cada intervalo de notas:
+    - Nota igual a 10: "Parabéns".
+    - Nota entre 9 e 9.9: "Ótimo".
+    - Nota entre 8 e 8.9: "Bom".
+    - Nota entre 7 e 7.9: "Na média".
+    - Nota entre 5 e 6.9: "Em exame".
+    - Nota abaixo de 5: "Reprovado".
+
+- O condicional alinhado permite criar validações mais detalhadas e flexíveis para diferentes cenários.  
 
 #### Aula 1.I
 
