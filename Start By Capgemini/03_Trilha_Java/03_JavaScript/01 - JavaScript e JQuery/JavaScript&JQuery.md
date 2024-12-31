@@ -182,8 +182,15 @@ Professor: Ralf Lima
   - **Diferente (`!=`):** Verifica se dois valores são diferentes. 
 
 #### Aula 1.G
+- **Condicional simples** no JavaScript, usado para executar ações baseadas em condições.
 
+- **Conceito do condicional `if`**:
+  - Avalia uma condição e executa o bloco de código correspondente se a condição for verdadeira.
 
+- **Estrutura do condicional `if-else`**:
+  - O bloco `if` verifica a condição.
+  - O bloco `else` é opcional e executa uma ação caso a condição seja falsa.
+- O uso do condicional simples permite criar validações básicas que serão expandidas em futuras implementações.  
 
 #### Aula 1.H
 
