@@ -453,7 +453,21 @@ Professor: Ralf Lima
 
 #### Aula 3.C
 
+**Conceito:** **Evento `onChange`.**
 
+**Para que serve:** *O evento `onChange` é disparado quando o valor de um elemento HTML é alterado. É frequentemente usado com elementos `<input>`, `<select>` e `<textarea>`.*
+
+**Como utilizar:**
+
+*   **HTML (inline):** `<elemento onchange="funcao()">` - Executa a função `funcao()` quando o valor do elemento é alterado.
+*   **JavaScript (addEventListener):** `elemento.addEventListener('change', funcao);` - Adiciona um ouvinte de evento `change` ao elemento, executando a função `funcao()` quando o evento ocorre.
+
+**Boas práticas:**
+
+*   O atributo `onchange` em HTML (inline) é uma forma mais antiga de adicionar eventos. O uso de `addEventListener` em JavaScript é considerado uma prática melhor.
+*   Em elementos `<select>`, o evento `onChange` é disparado quando uma opção diferente é selecionada.
+*   Em campos de texto `<input type="text">`, o evento `onChange` é disparado quando o elemento perde o foco *após* uma alteração no valor. Para detectar mudanças em tempo real, use os eventos `oninput` ou `onkeyup`.
+*   O evento `onChange` é útil para validar formulários, atualizar outros elementos da página com base na seleção do usuário ou executar outras ações dinâmicas.
 
 #### Aula 3.D
 

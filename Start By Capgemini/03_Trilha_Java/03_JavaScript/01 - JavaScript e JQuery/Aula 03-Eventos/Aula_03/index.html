@@ -3,14 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 2.I</title>
+    <title>Aula 3.C</title>
 </head>
 
 <script>
-    //
-    
+    //Evento alteração
+    function mensagem(){
+        //obter o curso selecionado
+        var curso = document.getElementById("curso").value;
+
+        //exibir mensagem
+        alert("Curso selecionado: "+curso);
+    }
+
 </script>
 <body>
+    <select onchange="mensagem()" id="curso">
+        <option value="">Escolha seu curso</option>
+        <option value="">C++</option>
+        <option value="">Python</option>
+        <option value="">Java</option>
+    </select>
     
 </body>
 </html>
