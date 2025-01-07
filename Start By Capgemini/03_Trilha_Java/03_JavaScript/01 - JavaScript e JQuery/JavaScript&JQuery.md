@@ -218,6 +218,9 @@ Professor: Ralf Lima
 
 #### Aula 1.J
 
+- O operador lógico OU (`||`) é usado para validar se pelo menos uma das condições em uma condicional é verdadeira. Ele permite que uma das opções avaliadas atenda ao critério para que o bloco de código seja executado.
+
+- Sua utilidade está em criar verificações flexíveis, onde apenas uma condição precisa ser verdadeira para cumprir o objetivo. É importante organizar as condições em parênteses para facilitar a leitura e evitar ambiguidades. Pode ser utilizado com duas ou mais comparações, ampliando as possibilidades de validação em cenários diversos.
 
 
 #### Aula 1.K
