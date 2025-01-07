@@ -251,7 +251,9 @@ Professor: Ralf Lima
 
 #### Aula 1.O
 
+- O laço de repetição `for` é utilizado para executar ações com base em um número pré-determinado de iterações. Ele funciona com três parâmetros essenciais: valor inicial, condição de término e incremento ou decremento.
 
+- Sua estrutura permite maior controle sobre o número de repetições e é ideal para cenários em que o número de iterações é conhecido. O índice é geralmente declarado dentro do próprio `for`, seguindo o padrão da linguagem. É importante configurar corretamente os parâmetros para evitar loops desnecessários ou infinitos, garantindo a eficiência do código.
 
 #### Aula 1.P
 
