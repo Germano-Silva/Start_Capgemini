@@ -397,6 +397,23 @@ Professor: Ralf Lima
 
 #### Aula 2.I
 
+**Conceito:** **Criação de Funções.**
+
+**Para que serve:** *Funções permitem reutilizar código e criar blocos de código com funcionalidades específicas.*
+
+**Como utilizar:**
+
+*   `function nomeDaFuncao(parametro1, parametro2, ...)`: Define uma função com o nome `nomeDaFuncao` e parâmetros opcionais.
+*   `return valor;`: Retorna um valor da função.
+*   `nomeDaFuncao(argumento1, argumento2, ...);`: Chama/executa a função passando argumentos para os parâmetros.
+
+**Boas práticas:**
+
+*   Nomes de funções devem ser descritivos e indicar sua finalidade.
+*   Parâmetros são as entradas da função.
+*   `return` encerra a execução da função e retorna um valor. Se não houver `return`, a função retorna `undefined`.
+*   Funções podem ser usadas para organizar o código, tornando-o mais modular e legível.
+
 ## Aula 03 - Eventos
 
 
