@@ -225,6 +225,9 @@ Professor: Ralf Lima
 
 #### Aula 1.K
 
+O operador lógico NÃO (`!`) é utilizado para inverter o valor de uma variável booleana, transformando `true` em `false` e vice-versa. 
+
+É aplicado em verificações onde é necessário negar uma condição antes de avaliá-la. Sua utilidade está em simplificar a lógica ao trabalhar com valores booleanos. Para garantir clareza no código, organize bem as condições e evite negativas excessivas, que podem dificultar a leitura e compreensão.
 
 
 #### Aula 1.L
