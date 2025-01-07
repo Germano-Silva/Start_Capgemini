@@ -471,9 +471,25 @@ Professor: Ralf Lima
 
 #### Aula 3.D
 
+**Conceito:** **Evento `onload`.**
 
+**Para que serve:** *O evento `onload` é disparado quando um elemento, ou a página inteira, termina de carregar completamente. É frequentemente usado com o elemento `<body>` para executar código JavaScript após o carregamento completo do conteúdo da página, incluindo imagens, scripts e outros recursos.*
+
+**Como utilizar:**
+
+*   **HTML (inline):** `<body onload="funcao()">` - Executa a função `funcao()` após o carregamento completo do corpo da página. Também pode ser usado em outros elementos, como `<img>`, para detectar quando a imagem é carregada.
+*   **JavaScript (addEventListener):** `window.addEventListener('load', funcao);` - Adiciona um ouvinte de evento `load` ao objeto `window`, executando a função `funcao()` após o carregamento completo da página. Esta abordagem é preferível ao uso inline.
+
+**Boas práticas:**
+
+*   O atributo `onload` em HTML (inline) é uma forma mais antiga de adicionar eventos. O uso de `addEventListener` em JavaScript é considerado uma prática melhor.
+*   Usar `window.addEventListener('load', ...)` garante que o código JavaScript seja executado somente após o carregamento completo de todos os recursos da página, evitando erros ao tentar acessar elementos que ainda não foram carregados.
+*   `onload` é útil para executar inicializações, animações ou outras ações que dependem da disponibilidade de todos os elementos da página.
+*   O evento `DOMContentLoaded` é diferente de `load`. `DOMContentLoaded` é disparado quando o HTML é completamente carregado e analisado, mas não espera o carregamento de recursos externos como imagens e folhas de estilo. O evento `load` (associado a `window`) aguarda o carregamento completo de todos os recursos.
 
 #### Aula 3.E
+
+
 
 ## Aula 04 - Seletores de Conteúdo
 
