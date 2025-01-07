@@ -376,7 +376,24 @@ Professor: Ralf Lima
 
 #### Aula 2.H
 
+**Conceito:** **Função `Math.random()`.**
 
+**Para que serve:** *Gera um número pseudoaleatório entre 0 (inclusivo) e 1 (exclusivo).*
+
+**Como utilizar:**
+
+*   `Math.random()`: Retorna um número decimal entre 0 e 1.
+*   Para gerar um número aleatório dentro de um intervalo específico (entre `min` e `max`, inclusivos):
+    ```javascript
+    Math.floor(Math.random() * (max - min + 1)) + min;
+    ```
+
+**Boas práticas:**
+
+*   Para obter um número inteiro aleatório, utilize `Math.floor()` (arredonda para baixo) ou `Math.round()` (arredonda para o inteiro mais próximo) em conjunto com `Math.random()`.
+*   Multiplicar `Math.random()` por um número define o intervalo máximo (exclusivo) do número aleatório gerado antes do arredondamento.
+*   Somar um valor ao resultado da multiplicação desloca o intervalo para cima.
+*   Útil para jogos, simulações e outras aplicações que necessitam de aleatoriedade.
 
 #### Aula 2.I
 
