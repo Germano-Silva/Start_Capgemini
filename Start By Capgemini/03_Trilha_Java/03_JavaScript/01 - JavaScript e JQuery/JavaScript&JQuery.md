@@ -324,7 +324,23 @@ Professor: Ralf Lima
 
 #### Aula 2.E
 
+**Conceito:** **Função `slice()`.**
 
+**Para que serve:** *A função `slice()` é utilizada para extrair uma parte de uma string, retornando uma nova string sem modificar a original. Ela permite definir o ponto de início e, opcionalmente, o ponto de fim da extração.*
+
+**Como utilizar:**
+
+*   `slice(índiceInicial)`: Extrai a parte da string a partir do `índiceInicial` até o final da string.
+*   `slice(índiceInicial, índiceFinal)`: Extrai a parte da string do `índiceInicial` até o `índiceFinal` (não incluindo o caractere no `índiceFinal`).
+
+**Boas práticas:**
+
+*   Lembrar que a indexação de strings começa em 0.
+*   Se o `índiceInicial` for negativo, ele conta a partir do final da string. Por exemplo, `-1` representa o último caractere.
+*   Se o `índiceFinal` for omitido, a extração vai até o final da string.
+*   Se o `índiceFinal` for negativo, ele também conta a partir do final da string.
+*   `slice()` não modifica a string original; ela retorna uma nova string contendo a parte extraída.
+*   Utilizar `slice()` para extrair partes relevantes de textos, como em resumos de artigos para blogs ou para processar dados de strings.
 
 #### Aula 2.F
 
