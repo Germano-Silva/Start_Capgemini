@@ -305,7 +305,22 @@ Professor: Ralf Lima
 
 #### Aula 2.D
 
+**Conceito:** **Funções `indexOf()` e `lastIndexOf()`.**
 
+**Para que serve:** *As funções `indexOf()` e `lastIndexOf()` são usadas para encontrar a posição (índice) de um determinado caractere ou substring dentro de uma string. `indexOf()` retorna a posição da primeira ocorrência, enquanto `lastIndexOf()` retorna a posição da última ocorrência.*
+
+**Como utilizar:**
+
+*   `indexOf()`: Retorna o índice da primeira ocorrência de um valor especificado em uma string. Se o valor não for encontrado, retorna -1. Sintaxe: `string.indexOf(valorPesquisado, [índiceInicial])`. O parâmetro `índiceInicial` é opcional e especifica a posição a partir da qual a busca deve começar.
+*   `lastIndexOf()`: Retorna o índice da última ocorrência de um valor especificado em uma string, pesquisando a string de trás para frente. Se o valor não for encontrado, retorna -1. Sintaxe: `string.lastIndexOf(valorPesquisado, [índiceInicial])`. O parâmetro `índiceInicial` é opcional e especifica a posição a partir da qual a busca deve começar a partir do final.
+
+**Boas práticas:**
+
+*   Lembrar que a indexação em strings começa em 0. O primeiro caractere está no índice 0, o segundo no índice 1, e assim por diante.
+*   Usar `indexOf()` para encontrar a primeira ocorrência de um caractere ou substring.
+*   Usar `lastIndexOf()` para encontrar a última ocorrência de um caractere ou substring.
+*   Verificar o retorno das funções (`-1`) para tratar casos em que o valor pesquisado não é encontrado na string.
+*   Essas funções são úteis para validações de dados, como verificar a presença de um caractere específico em um email ou nome de usuário.
 
 #### Aula 2.E
 
