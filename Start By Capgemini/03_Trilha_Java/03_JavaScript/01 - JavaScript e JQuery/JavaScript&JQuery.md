@@ -416,11 +416,23 @@ Professor: Ralf Lima
 
 ## Aula 03 - Eventos
 
-
-
 #### Aula 3.A
 
+**Conceito:** **Eventos em JavaScript.**
 
+**Para que servem:** *Eventos representam ações ou ocorrências que acontecem em elementos HTML, permitindo a execução de código JavaScript em resposta a essas ações.*
+
+**Exemplos de Eventos Abordados:**
+
+*   **Clique (click):** Ocorre quando um elemento é clicado com o mouse. (Ex: botão que redireciona para um site)
+*   **Clique Duplo (dblclick):** Ocorre quando um elemento é clicado duas vezes rapidamente. (Ex: botão que exibe um alerta)
+*   **Entrada de Texto (input/change/keyup/etc.):** Ocorre quando o usuário interage com um campo de texto, digitando, alterando ou liberando uma tecla. (Ex: campo de texto onde o valor digitado pode ser usado em outra parte da página).
+
+**Boas práticas:**
+
+*   Eventos permitem interatividade nas páginas web.
+*   Diferentes eventos correspondem a diferentes ações do usuário.
+*   JavaScript possibilita a captura e o tratamento desses eventos, executando funções específicas em resposta.
 
 #### Aula 3.B
 
