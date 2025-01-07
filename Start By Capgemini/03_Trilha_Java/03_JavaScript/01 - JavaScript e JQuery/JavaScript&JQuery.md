@@ -225,13 +225,15 @@ Professor: Ralf Lima
 
 #### Aula 1.K
 
-O operador lógico NÃO (`!`) é utilizado para inverter o valor de uma variável booleana, transformando `true` em `false` e vice-versa. 
+- O operador lógico NÃO (`!`) é utilizado para inverter o valor de uma variável booleana, transformando `true` em `false` e vice-versa. 
 
-É aplicado em verificações onde é necessário negar uma condição antes de avaliá-la. Sua utilidade está em simplificar a lógica ao trabalhar com valores booleanos. Para garantir clareza no código, organize bem as condições e evite negativas excessivas, que podem dificultar a leitura e compreensão.
-
+- É aplicado em verificações onde é necessário negar uma condição antes de avaliá-la. Sua utilidade está em simplificar a lógica ao trabalhar com valores booleanos. Para garantir clareza no código, organize bem as condições e evite negativas excessivas, que podem dificultar a leitura e compreensão.
 
 #### Aula 1.L
 
+- A estrutura de escolha `switch` é utilizada para executar diferentes blocos de código com base no valor de uma variável, sendo uma alternativa mais compacta aos condicionais `if-else` em casos de comparações de igualdade.
+
+- Ela é útil para simplificar verificações com múltiplas possibilidades, especialmente quando há muitos casos a serem tratados. É importante lembrar que apenas comparações de igualdade são suportadas e que o comando `break` deve ser utilizado para finalizar cada caso, evitando a execução dos demais. O uso do `default` permite tratar valores não previstos, garantindo uma resposta padrão no código.
 
 
 #### Aula 1.M
