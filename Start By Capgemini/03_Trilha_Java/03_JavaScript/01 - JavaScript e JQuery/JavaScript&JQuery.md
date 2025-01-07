@@ -287,7 +287,21 @@ Professor: Ralf Lima
 
 #### Aula 2.C
 
+**Conceito:** **Funções `toUpperCase()` e `toLowerCase()`.**
 
+**Para que serve:** *As funções `toUpperCase()` e `toLowerCase()` são usadas para converter strings (textos) para letras maiúsculas ou minúsculas, respectivamente. Isso é útil para padronizar dados, especialmente em situações como validação de formulários, comparação de strings e organização de informações em bancos de dados.*
+
+**Como utilizar:**
+
+*   `toUpperCase()`: Converte uma string para letras maiúsculas. Sintaxe: `string.toUpperCase()`. Exemplo: `palavra.toUpperCase()` (onde `palavra` é uma variável contendo uma string).
+*   `toLowerCase()`: Converte uma string para letras minúsculas. Sintaxe: `string.toLowerCase()`. Exemplo: `palavra.toLowerCase()`.
+
+**Boas práticas:**
+
+*   Utilizar essas funções antes de comparar strings para evitar erros causados por diferenças de capitalização (maiúsculas/minúsculas).
+*   Em validação de formulários, converter os dados de entrada do usuário para um formato consistente (maiúsculas ou minúsculas) antes de armazená-los no banco de dados. Isso previne problemas de busca e comparação.
+*   Em bancos de dados, a distinção entre maiúsculas e minúsculas pode afetar a integridade dos dados. O uso dessas funções ajuda a garantir a consistência.
+*   Não confie apenas na validação do lado do cliente (JavaScript). É crucial ter validações também no servidor para garantir a segurança e a integridade dos dados.
 
 #### Aula 2.D
 
