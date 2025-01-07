@@ -344,7 +344,18 @@ Professor: Ralf Lima
 
 #### Aula 2.F
 
+**Conceito:** **Função `Math.round()`.**
 
+**Para que serve:** *A função `Math.round()` é usada para arredondar um número para o inteiro mais próximo.*
+
+**Como utilizar:** `Math.round(numero)`.
+
+**Boas práticas:**
+
+*   Números com a parte decimal menor que 0.5 são arredondados para baixo.
+*   Números com a parte decimal igual ou maior que 0.5 são arredondados para cima.
+*   `Math.round()` retorna um valor numérico inteiro.
+*   Útil para exibir valores formatados sem casas decimais, como notas ou valores monetários em algumas situações.
 
 #### Aula 2.G
 
