@@ -359,7 +359,20 @@ Professor: Ralf Lima
 
 #### Aula 2.G
 
+**Conceito:** **Funções `Math.min()` e `Math.max()`.**
 
+**Para que servem:** *Encontram o menor e o maior valor, respectivamente, entre um conjunto de números.*
+
+**Como utilizar:**
+
+*   `Math.min(num1, num2, ..., numN)`: Retorna o menor valor.
+*   `Math.max(num1, num2, ..., numN)`: Retorna o maior valor.
+
+**Boas práticas:**
+
+*   Aceitam múltiplos argumentos numéricos.
+*   Retornam `NaN` se algum argumento não for numérico.
+*   Podem ser usados com arrays via spread operator (`...`). Exemplo: `Math.min(...meuArray)`.
 
 #### Aula 2.H
 
