@@ -269,11 +269,13 @@ Professor: Ralf Lima
 
 ## Aula 02 - Funções
 
-
-
 #### Aula 2.A
 
+- Funções são ações definidas no código para executar uma tarefa específica quando solicitada, como validações, manipulações de dados ou envio de informações para o banco de dados. Elas podem ser criadas pelo desenvolvedor ou aproveitadas das funções nativas da linguagem.
 
+- No JavaScript, funções são fundamentais para criar páginas dinâmicas e interativas, permitindo responder a eventos como cliques de botões ou entrada de dados pelo usuário. 
+
+- Boas práticas incluem manter funções bem nomeadas, modularizadas e reutilizáveis para facilitar a manutenção e o entendimento do código.
 
 #### Aula 2.B
 
