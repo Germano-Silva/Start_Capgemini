@@ -263,6 +263,10 @@ Professor: Ralf Lima
 
 #### Aula 1.Q
 
+- Um vetor de objetos é uma estrutura que armazena múltiplos objetos, cada um contendo várias características ou atributos. Diferente de um vetor convencional que armazena apenas um valor por posição, ele permite agrupar informações adicionais, como nome, carga horária e local.
+
+- Essa estrutura é útil para organizar dados mais complexos, como listas com várias propriedades por item. Para acessar as informações, utilizam-se os índices das posições do vetor e os nomes dos atributos do objeto. É importante manter a consistência na organização dos dados e evitar redundâncias nos atributos.
+
 ## Aula 02 - Funções
 
 
