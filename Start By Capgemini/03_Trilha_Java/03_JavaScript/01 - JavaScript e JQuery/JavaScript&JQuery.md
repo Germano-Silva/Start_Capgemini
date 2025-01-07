@@ -238,7 +238,9 @@ Professor: Ralf Lima
 
 #### Aula 1.M
 
+- O laço de repetição `while` é utilizado para executar uma ação repetidamente enquanto uma condição for verdadeira. Sua estrutura consiste em uma validação dentro de parênteses e o bloco de ações dentro de chaves.
 
+- Esse laço é útil para situações em que o número de repetições depende de uma condição dinâmica. É essencial inicializar e incrementar um índice para evitar um looping infinito, garantindo que a condição eventualmente se torne falsa. Pode ser aplicado em diversas tarefas, como exibir mensagens, realizar validações ou iterar sobre dados de um banco de dados.
 
 #### Aula 1.N
 
