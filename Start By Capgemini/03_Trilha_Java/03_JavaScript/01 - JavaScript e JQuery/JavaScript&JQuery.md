@@ -436,7 +436,20 @@ Professor: Ralf Lima
 
 #### Aula 3.B
 
+**Conceito:** **Evento `onclick`.**
 
+**Para que serve:** *O evento `onclick` é disparado quando um elemento HTML é clicado com o mouse.*
+
+**Como utilizar:**
+
+*   **HTML (inline):** `<elemento onclick="funcao()">` - Executa a função `funcao()` ao clicar no elemento.
+*   **JavaScript (addEventListener):** `elemento.addEventListener('click', funcao);` - Adiciona um ouvinte de evento `click` ao elemento, executando a função `funcao()` quando o evento ocorre.
+
+**Boas práticas:**
+
+*   O atributo `onclick` em HTML (inline) é uma forma mais antiga de adicionar eventos. O uso de `addEventListener` em JavaScript é considerado uma prática melhor, pois permite adicionar múltiplos ouvintes para o mesmo evento e facilita a remoção de ouvintes, além de separar melhor o HTML do JavaScript.
+*   `onclick` executa uma função JavaScript. Essa função pode conter qualquer código JavaScript, como exibir um alerta, modificar o conteúdo da página, enviar dados para um servidor, etc.
+*   O evento `click` é um dos eventos mais comuns em JavaScript, usado para adicionar interatividade às páginas web.
 
 #### Aula 3.C
 
