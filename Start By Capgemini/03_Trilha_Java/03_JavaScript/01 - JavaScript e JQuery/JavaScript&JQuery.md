@@ -244,6 +244,9 @@ Professor: Ralf Lima
 
 #### Aula 1.N
 
+- O laço de repetição `do...while` é utilizado para executar uma ação pelo menos uma vez, independente da condição, e verificar a validação posteriormente. Sua estrutura inicia com o bloco `do` contendo as ações a serem executadas, seguido pela condição no `while`.
+
+- É ideal para situações em que uma ação deve ser garantidamente realizada antes de qualquer validação, como exibir mensagens ou executar funções. Assim como no laço `while`, é importante garantir um incremento ou mudança na variável utilizada na condição, evitando loops infinitos. 
 
 
 #### Aula 1.O
