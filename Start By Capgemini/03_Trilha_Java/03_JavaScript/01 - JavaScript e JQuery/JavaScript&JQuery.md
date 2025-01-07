@@ -279,7 +279,11 @@ Professor: Ralf Lima
 
 #### Aula 2.B
 
+**Contando Caracteres com Funções de Texto**
 
+- A função para contar caracteres é amplamente utilizada em validações de entrada de dados, como nome, e-mail, número de conta ou outras informações que requerem um tamanho mínimo ou máximo. Ela contabiliza letras, números e espaços.
+
+- No JavaScript, isso pode ser feito usando a propriedade `.length`. Por exemplo, ao atribuir uma string a uma variável e chamar `.length`, o resultado será o total de caracteres dessa string. É uma solução prática para verificar o cumprimento de requisitos em campos de formulários e melhorar a experiência do usuário com validações precisas.
 
 #### Aula 2.C
 
