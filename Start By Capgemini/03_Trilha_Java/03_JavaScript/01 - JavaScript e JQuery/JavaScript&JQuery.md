@@ -257,7 +257,9 @@ Professor: Ralf Lima
 
 #### Aula 1.P
 
+- Um vetor ou array é uma estrutura que funciona como um banco de dados temporário, permitindo armazenar, manipular e exibir múltiplas informações enquanto a página estiver aberta. Ele deixa de existir ao fechar o navegador ou atualizar a página.
 
+- Os dados no vetor são organizados por posições, que começam no índice zero. Essa estrutura é útil para armazenar coleções de dados, como listas de itens, e permite acessar ou manipular elementos individuais por meio de suas posições. Boas práticas incluem manter a organização dos dados e nomear os vetores de forma clara e descritiva.
 
 #### Aula 1.Q
 
