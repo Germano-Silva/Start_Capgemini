@@ -8,14 +8,11 @@
     <script>
         //variavel
         var media = 8.5;
+        var faltas = 20
 
-        //condicional alinhada
-        if(media == 10){
-            alert("Aprovado com Distinção");
-        }else if(media >= 7){
+        //condicional &&
+        if((media>=7)&&(faltas>=15)){
             alert("Aprovado");
-        }else if(media <= 5){
-            alert("Em Recuperação");
         }else{
             alert("Reprovado");
         }

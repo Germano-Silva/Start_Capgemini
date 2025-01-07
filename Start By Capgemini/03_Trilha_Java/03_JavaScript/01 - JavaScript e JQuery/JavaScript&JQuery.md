@@ -212,7 +212,9 @@ Professor: Ralf Lima
 
 #### Aula 1.I
 
+- O operador lógico E (`&&`) é utilizado para validar se todas as condições especificadas em uma condicional são verdadeiras. Ele permite verificar múltiplas condições simultaneamente em estruturas de decisão como `if`.
 
+- Serve para garantir que todas as condições sejam atendidas antes de executar um bloco de código. É uma boa prática organizar cada condição entre parênteses para facilitar a leitura e evitar lógicas excessivamente complexas em uma única verificação.
 
 #### Aula 1.J
 
