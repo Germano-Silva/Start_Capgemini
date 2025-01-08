@@ -561,7 +561,26 @@ Professor: Ralf Lima
 
 #### Aula 4.C
 
+**Conceito:** **Seletores HTML em JavaScript (getElementById).**
 
+**Para que serve:** *`document.getElementById()` retorna uma referência para o elemento com o ID especificado.*
+
+**`document.getElementById()`:**
+
+*   Este método retorna um objeto *Element* representando o elemento cujo atributo `id` corresponde à string especificada.
+*   Como os IDs devem ser únicos dentro de um documento HTML, `getElementById()` é uma maneira rápida e direta de acessar um elemento específico.
+*   Se nenhum elemento com o ID especificado for encontrado, o método retorna `null`.
+
+**Propriedade `value`:**
+
+*   A propriedade `value` é usada principalmente com elementos de formulário (`<input>`, `<select>`, `<textarea>`) para obter ou definir o valor do campo.
+
+**Boas práticas:**
+
+*   Utilize `getElementById` quando precisar acessar um único elemento específico com um ID conhecido. É o método mais rápido e eficiente para selecionar um elemento por ID.
+*   Como os IDs devem ser únicos, não é necessário usar índices ou outras formas de iteração para acessar o elemento retornado por `getElementById`.
+*   A propriedade `value` é essencial para interagir com campos de formulário, permitindo obter e modificar os dados inseridos pelo usuário.
+*   Ao usar `getElementById`, certifique-se de que o ID especificado corresponda exatamente ao ID no HTML, incluindo letras maiúsculas e minúsculas.
 
 #### Aula 4.D
 

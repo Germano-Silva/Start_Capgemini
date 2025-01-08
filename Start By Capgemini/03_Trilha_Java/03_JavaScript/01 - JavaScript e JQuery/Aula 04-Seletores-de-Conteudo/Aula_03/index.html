@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4.C</title>
+</head>
+
+<script>
+    //Seletor de ID
+    //Função exibir
+    function exibir(){
+        //Pegar o valor do campo
+        var campo = document.getElementById("campo").value;
+        //Exibir o valor do campo
+        alert(campo);
+
+        //Limpar o campo
+        document.getElementById("campo").value = "";
+    }
+    
+</script>
+<body>
+    <input type="text" id="campo">
+    <button onclick="exibir()">Clique aqui!</button>
+    
+</body>
+</html>
