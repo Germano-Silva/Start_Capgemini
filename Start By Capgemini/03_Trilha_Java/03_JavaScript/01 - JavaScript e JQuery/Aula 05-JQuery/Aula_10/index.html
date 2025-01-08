@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05.J</title>
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Script javascript-->
+    <script>
+        //alterar atributos
+        //ao corregar o documento
+        $(document).ready(function(){
+            //Selecionar o elemento img e alterar o atributo width
+            $("img").attr("width","200px");
+
+            //Selecionar o elemento img e alterar o atributo title
+            $("img").attr("title","casal apaixonado");
+            
+        });
+    </script>
+</head>
+    <body>
+        <img src="imagem.jpg" width="100px" title="casal lindo">
+    </body>
+</html>

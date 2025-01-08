@@ -830,6 +830,26 @@ $('seletor').animate({
 
 #### Aula 5.J
 
+**Conceito:** Alteração de atributos com jQuery.
 
+**Objetivo:** Modificar atributos de elementos HTML usando jQuery.
+
+**Método jQuery:**
+
+*   `.attr()`: Este método é utilizado para obter ou definir o valor de um atributo.
+
+**Sintaxe:**
+
+1.  **Obter o valor de um atributo:**
+
+    ```javascript
+    $('seletor').attr('nomeDoAtributo');
+    ```
+
+2.  **Definir o valor de um atributo:**
+
+    ```javascript
+    $('seletor').attr('nomeDoAtributo', 'novoValor');
+    ```
 
 #### Aula 5.K
