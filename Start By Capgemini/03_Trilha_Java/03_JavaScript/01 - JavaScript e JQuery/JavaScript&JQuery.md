@@ -753,7 +753,22 @@ Um elemento pode ser inicialmente oculto usando CSS (`display: none`). Ao clicar
 
 #### Aula 5.G
 
+**Conceito:** **Efeito Slide com jQuery.**
 
+**Objetivo:** Criar animações de deslize vertical para exibir e ocultar elementos.
+
+**Métodos jQuery:**
+
+*   `.slideUp()`: Oculta o elemento com uma animação de deslize para cima.
+*   `.slideDown()`: Exibe o elemento com uma animação de deslize para baixo.
+
+**Controle de Tempo:**
+
+O tempo da animação pode ser controlado passando um valor em milissegundos como argumento para os métodos `.slideUp()` e `.slideDown()`.
+
+**Exemplo conceitual:**
+
+Um elemento com a classe "mensagem" pode ser oculto com `.slideUp()` e exibido com `.slideDown()`. A velocidade da animação pode ser ajustada usando valores em milissegundos.
 
 #### Aula 5.H
 

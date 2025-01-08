@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05.G</title>
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Script javascript com jQuery Slide-->
+    <script>
+        //ao corregar o documento
+        $(document).ready(function(){
+
+            //ocultar a mensagem
+            $(".ocultar").click(function(){
+                $(".mensagem").slideUp(2000);
+            });
+
+            //exibir a mensagem em 2 segundos
+            $(".exibir").click(function(){
+                $(".mensagem").slideDown(2000);
+            });
+            
+        });
+    </script>
+</head>
+    <body>
+        <h1 class="exibir">Exibir</h1>
+        <h1 class="ocultar">ocultar</h1>
+        <hr>
+        <h1 class="mensagem">Olá Mundo!</h1>
+    </body>
+</html>
