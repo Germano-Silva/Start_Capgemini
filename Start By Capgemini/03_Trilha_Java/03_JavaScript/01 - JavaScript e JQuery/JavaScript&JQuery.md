@@ -584,7 +584,22 @@ Professor: Ralf Lima
 
 #### Aula 4.D
 
+**Conceito:** **Manipulação de CSS com JavaScript (style).**
 
+**Para que serve:** *Permite modificar os estilos CSS de elementos HTML diretamente através de JavaScript.*
+
+**Como funciona:**
+
+*   **Acessando o elemento:** Primeiro, você precisa selecionar o elemento HTML que deseja estilizar, usando métodos como `document.getElementsByTagName()`, `document.getElementById()` ou `document.getElementsByClassName()`.
+*   **Acessando a propriedade `style`:** Cada elemento HTML possui uma propriedade `style` que é um objeto contendo os estilos inline do elemento.
+*   **Modificando os estilos:** Você pode acessar e modificar as propriedades CSS diretamente através da propriedade `style`. A sintaxe é `elemento.style.propriedadeCSS = "valor"`.
+
+**Observações importantes:**
+
+*   Nomes de propriedades CSS com hífen (`-`) são convertidos para camelCase em JavaScript. Por exemplo, `background-color` se torna `backgroundColor`, `font-size` se torna `fontSize`.
+*   As unidades de medida devem ser incluídas como strings. Por exemplo, para definir o tamanho da fonte para 20 pixels, você usaria `elemento.style.fontSize = "20px"`.
+*   Modificar estilos diretamente com a propriedade `style` adiciona estilos inline ao elemento, o que tem alta prioridade e pode sobrescrever estilos definidos em folhas de estilo externas ou internas.
+*   Para alterar o conteúdo de um elemento, usa-se a propriedade `innerHTML`.
 
 #### Aula 4.E
 

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4.D</title>
+</head>
+
+<script>
+    //Manipular CSS com javascript
+    //função
+    function acao(){
+        //obter o elemento H1
+        var texto = document.getElementsByTagName("h1")[0];
+
+        //css
+        texto.style.color = "blue";
+        texto.style.fontSize = "50px";
+
+        //alterar texto
+        texto.innerHTML = "Curso de JavaScript";
+    }
+</script>
+<body>
+    <h1>JavaScript</h1>
+    <button onclick="acao()">Clique aqui!</button>
+</body>
+</html>
