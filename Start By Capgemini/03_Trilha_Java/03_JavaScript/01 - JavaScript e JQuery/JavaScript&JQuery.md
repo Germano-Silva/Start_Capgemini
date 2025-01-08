@@ -640,7 +640,31 @@ Professor: Ralf Lima
 
 #### Aula 5.B
 
+**Conceito:** **Estrutura Base jQuery.**
 
+**Objetivo:** Definir a estrutura básica para uso do jQuery em projetos.
+
+**Componentes principais:**
+
+1.  **Importação da biblioteca jQuery:** Através da tag `<script src="caminho/para/jquery.js"></script>`. O arquivo jQuery deve estar na mesma pasta ou em um local acessível.
+2.  **Bloco `$(document).ready()`:** Garante que o código jQuery seja executado somente após o carregamento completo do DOM (Document Object Model). Sintaxe:
+
+    ```javascript
+    $(document).ready(function() {
+        // Código jQuery aqui
+    });
+    ```
+
+**Diferenças em relação ao JavaScript puro:**
+
+*   O JavaScript puro executa o código linha a linha, podendo gerar erros se o código tentar acessar elementos HTML que ainda não foram carregados.
+*   O jQuery, com o uso do `$(document).ready()`, resolve esse problema, executando o código somente após o carregamento completo do DOM.
+
+**Observações:**
+
+*   O símbolo `$` é um atalho para o objeto jQuery.
+*   Dentro do bloco `$(document).ready()`, podem ser definidas funções, variáveis, laços, condicionais e outras operações.
+*   Esta estrutura será utilizada nas próximas aulas.
 
 #### Aula 5.C
 
