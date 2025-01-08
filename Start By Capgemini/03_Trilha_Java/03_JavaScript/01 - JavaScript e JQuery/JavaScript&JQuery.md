@@ -709,7 +709,24 @@ Professor: Ralf Lima
 
 #### Aula 5.E
 
+**Conceito:** **Efeitos de Exibir e Ocultar com jQuery.**
 
+**Objetivo:** Controlar a visibilidade de elementos HTML na página.
+
+**Métodos jQuery:**
+
+*   `.hide()`: Oculta o elemento selecionado.
+*   `.show()`: Exibe o elemento selecionado.
+
+**Implementação:**
+
+1.  Selecionar o elemento que será manipulado (ex: uma imagem com a tag `<img>`).
+2.  Associar um evento (ex: `click`) a um elemento disparador (ex: um botão).
+3.  Dentro da função de callback do evento, usar `.hide()` para ocultar ou `.show()` para exibir o elemento alvo.
+
+**Exemplo conceitual:**
+
+Um botão com o ID "ocultar" ao ser clicado, oculta uma imagem. Um botão com o ID "exibir" ao ser clicado, exibe a mesma imagem.
 
 #### Aula 5.F
 

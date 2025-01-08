@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05.E</title>
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Script javascript-->
+    <script>
+        //efeitos no jQuery de exibir e ocultar
+        //ao corregar o documento
+        $(document).ready(function(){
+            //exibir imagem
+            $("#exibir").click(function(){
+                $("#foto").show();
+            });
+
+            //ocultar imagem
+            $("#ocultar").click(function(){
+                $("#foto").hide();
+            });
+            
+        });
+    </script>
+</head>
+<body>
+    <button id="exibir">Exibir</button>
+    <button id="ocultar">Ocultar</button>
+    <br>
+    <img src="foto.jpg" alt="foto" id="foto">
+</body>
+</html>
