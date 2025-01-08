@@ -489,7 +489,28 @@ Professor: Ralf Lima
 
 #### Aula 3.E
 
+**Conceito:** **Eventos de Teclado: `onkeyup`, `onkeydown` e `onkeypress`.**
 
+**Para que servem:** *Os eventos de teclado permitem capturar as interações do usuário com o teclado, como pressionar, manter pressionada ou soltar uma tecla.*
+
+**Tipos de Eventos de Teclado:**
+
+*   **`onkeyup`:** Disparado quando uma tecla é *solta*. Executa a ação *após* exibir o caractere no campo (se aplicável).
+*   **`onkeydown`:** Disparado quando uma tecla é *pressionada*. Executa a ação *antes* de exibir o caractere no campo (se aplicável).
+*   **`onkeypress`:** Disparado quando uma tecla que produz um caractere é pressionada. Executa a ação *antes* de exibir o caractere no campo (se aplicável). *Não suporta teclas de função (F1, F2, etc.), teclas modificadoras (Alt, Ctrl, Shift) e algumas outras teclas especiais.*
+
+**Diferenças Chave:**
+
+*   **Ordem de Execução:** `onkeydown` -> `onkeypress` -> `onkeyup`.
+*   **Suporte a Teclas Especiais:** `onkeypress` não suporta teclas de função, modificadoras e algumas outras teclas especiais, enquanto `onkeydown` e `onkeyup` suportam.
+*   **`onkeypress` é considerado obsoleto em muitos casos e seu uso não é recomendado.** Os eventos `keydown` e `keyup` oferecem maior flexibilidade e abrangência.
+
+**Boas práticas:**
+
+*   Para a maioria dos casos de uso, `onkeydown` e `onkeyup` são as melhores opções.
+*   Use `onkeydown` para detectar quando uma tecla é pressionada, independentemente do caractere que ela produz.
+*   Use `onkeyup` para detectar quando uma tecla é solta, geralmente após o caractere ter sido inserido no campo.
+*   Evite usar `onkeypress` devido ao suporte limitado a teclas especiais e comportamento inconsistente entre navegadores.
 
 ## Aula 04 - Seletores de Conteúdo
 

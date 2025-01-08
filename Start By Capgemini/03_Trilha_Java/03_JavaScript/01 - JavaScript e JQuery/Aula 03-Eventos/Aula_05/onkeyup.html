@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3.E</title>
+</head>
+
+<script>
+    //Evento de teclado
+
+    /*
+    onkeyup - quando uma tecla é solta
+    Exibe o caracter e depois executa a ação
+    
+    onkeydown - quando uma tecla é pressionada
+    Executa a ação e depois exibe o caracter
+
+    onkeypress - quando uma tecla é pressionada e solta
+    Executa a ação e depois exibe o caracter
+
+    Não tem suporte as seguintes teclas:
+    shift, ctrl, alt, esc, f1...f12, etc.
+
+    */
+
+    function exibir(){
+        //Obtendo o valor do campo
+        var campo = document.getElementById("campokeyup").value;
+
+        //Exibir o valor do campo
+        alert(campo);
+    }
+    
+</script>
+<body>
+    <input type="text" id="campokeyup" onkeyup="exibir()">
+</body>
+</html>
