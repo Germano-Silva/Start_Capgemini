@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05.D</title>
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Script javascript-->
+    <script>
+        //eventos em javascript em jquery
+        //ao corregar o documento
+        $(document).ready(function(){
+            //Evento de clique
+            $("button").click(function(){
+                //adicionar um texto no h1
+                $("h1").html("Você clicou no botão!");
+            });
+            
+        });
+    </script>
+</head>
+<body>
+    <h1></h1>
+    <button>clique aqui!</button>
+</body>
+</html>

@@ -690,7 +690,22 @@ Professor: Ralf Lima
 
 #### Aula 5.D
 
+**Conceito:** **Eventos jQuery.**
 
+**Objetivo:** Executar ações em resposta a interações do usuário.
+
+**Sintaxe:** `$('seletor').evento(função);`
+
+*   `$('seletor')`: Seleciona o elemento HTML.
+*   `.evento()`: Define o tipo de evento (ex: `click`, `dblclick`, `keyup`, `change`, `load`). O prefixo `on` (ex: `onclick`) não é utilizado no jQuery.
+*   `função`: Define a ação a ser executada quando o evento ocorre.
+
+**Vantagens do jQuery para eventos:**
+
+*   Código mais organizado, separando a definição do evento do HTML.
+*   Sintaxe mais concisa.
+
+**Observação:** Os conceitos dos eventos do JavaScript se aplicam ao jQuery, com sintaxe simplificada.
 
 #### Aula 5.E
 
