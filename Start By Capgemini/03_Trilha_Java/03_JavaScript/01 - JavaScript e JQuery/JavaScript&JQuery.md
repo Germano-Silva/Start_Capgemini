@@ -621,10 +621,21 @@ Professor: Ralf Lima
 
 ## Aula 05 - JQuery
 
-
-
 #### Aula 5.A
 
+**Conceito:** **Introdução ao jQuery.**
+
+**O que é:** Uma biblioteca JavaScript criada em 2006 por John Resig.
+
+**Contexto de criação:** Criado durante um evento BarCamp em Nova Iorque.
+
+**Objetivo:** Simplificar o desenvolvimento JavaScript, permitindo escrever menos código para realizar mais ações. Slogan: "Write Less, Do More."
+
+**Pré-requisitos:** HTML, CSS e JavaScript.
+
+**Página oficial:** [jquery.com](https://jquery.com/)
+
+**Download:** Disponível na página oficial, oferecendo opções como download direto (versões comprimida e não comprimida), instalação via gerenciadores de pacotes (ex: NPM) e uso de CDNs (ex: Google CDN, Microsoft CDN). A versão comprimida (minified) é geralmente preferida por ser mais leve.
 
 
 #### Aula 5.B
