@@ -730,7 +730,26 @@ Um botão com o ID "ocultar" ao ser clicado, oculta uma imagem. Um botão com o 
 
 #### Aula 5.F
 
+**Conceito:** **Efeito Fade com jQuery.**
 
+**Objetivo:** Criar transições de fade (esmaecimento) para exibir e ocultar elementos.
+
+**Métodos jQuery:**
+
+*   `.fadeIn()`: Exibe o elemento com efeito de fade-in (aparecimento gradual).
+*   `.fadeOut()`: Oculta o elemento com efeito de fade-out (desaparecimento gradual).
+
+**Controle de Tempo:**
+
+O tempo da transição pode ser controlado de três maneiras:
+
+1.  **Padrão (default):** Quando nenhum argumento é passado para `.fadeIn()` ou `.fadeOut()`, o tempo padrão é de 0.4 segundos.
+2.  **Palavras-chave:** Usando palavras como `slow` (0.6 segundos).
+3.  **Milisegundos:** Especificando um valor numérico em milisegundos (ex: `3000` para 3 segundos).
+
+**Exemplo conceitual:**
+
+Um elemento pode ser inicialmente oculto usando CSS (`display: none`). Ao clicar em um botão "Exibir", o elemento aparece com um efeito fade-in. Ao clicar em um botão "Ocultar", o elemento desaparece com um efeito fade-out. O tempo da transição pode ser ajustado conforme necessário.
 
 #### Aula 5.G
 

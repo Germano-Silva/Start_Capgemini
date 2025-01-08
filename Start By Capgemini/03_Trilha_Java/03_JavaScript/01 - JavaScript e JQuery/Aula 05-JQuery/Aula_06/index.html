@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05.F</title>
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Script javascript fade-->
+    <script>
+        //ao corregar o documento
+        $(document).ready(function(){
+            //ocultar h1 ao iniciar a pagina
+            $("h1").hide();
+            //$("h1").css("display","none");
+
+            //exibir h1 ao clicar no botão exibir
+            $("#exibir").click(function(){
+                //$("h1").show();
+                //$("h1").fadeIn();
+                $("h1").fadeIn("slow");
+            });
+
+            //ocultar h1 ao clicar no botão ocultar
+            $("#ocultar").click(function(){
+                //$("h1").hide();
+                //$("h1").fadeOut();
+                $("h1").fadeOut(3000);
+            });
+
+            /*
+            TEMPO DE ANIMAÇÃO
+
+                1 - default 0,4s
+                2 - slow 0,6s
+                3 - valor 3000 = 3s
+            */
+            
+        });
+    </script>
+</head>
+<body>
+    <button id="exibir">Exibir</button>
+    <button id="ocultar">Ocultar</button>
+
+    <hr>
+    <h1>Aprendendo jQuery</h1>
+    
+</body>
+</html>
