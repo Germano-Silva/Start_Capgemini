@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4.B</title>
+</head>
+
+<script>
+    //Seletor de conteudo atraves de classe
+    function exibir(){
+        var elementos = document.getElementsByClassName("titulo")[0];
+        alert(elementos.innerHTML);
+    }
+    
+</script>
+<body>
+
+    <button onclick="exibir()">Clique aqui!</button>
+    
+    <h1 class="titulo">Titulo H1</h1>
+    <h2 class="titulo">Titulo H2</h2>
+    <p class="titulo">Paragrafo</p>
+    
+</body>
+</html>

@@ -539,7 +539,25 @@ Professor: Ralf Lima
 
 #### Aula 4.B
 
+**Conceito:** **Seletores HTML em JavaScript (getElementsByClassName).**
 
+**Para que servem:** *`document.getElementsByClassName()` retorna uma coleção *HTMLCollection* de todos os elementos que possuem o nome de classe especificado.*
+
+**`document.getElementsByClassName()`:**
+
+*   Este método retorna um objeto *HTMLCollection* que representa uma coleção de elementos encontrados no documento que possuem a classe CSS especificada.
+*   A coleção retornada é *ao vivo* (live), o que significa que se o DOM for modificado, a coleção será atualizada automaticamente.
+*   Para acessar um elemento específico na coleção, use índices numéricos (começando em 0).
+
+**Propriedade `innerHTML`:**
+
+*   A propriedade `innerHTML` define ou retorna o conteúdo HTML de um elemento.
+
+**Boas práticas:**
+
+*   `getElementsByClassName` retorna uma coleção de elementos. Mesmo que haja apenas um elemento com a classe especificada, ainda será retornado um HTMLCollection com um único item.
+*   É importante lembrar que os índices das coleções HTML começam em 0.
+*   A propriedade `innerHTML` é útil para manipular o conteúdo HTML dentro de um elemento.
 
 #### Aula 4.C
 
