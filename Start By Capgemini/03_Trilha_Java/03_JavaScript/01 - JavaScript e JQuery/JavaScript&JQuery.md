@@ -514,11 +514,28 @@ Professor: Ralf Lima
 
 ## Aula 04 - Seletores de Conteúdo
 
-
-
 #### Aula 4.A
 
+**Conceito:** **Seletores HTML em JavaScript (getElementByTagName).**
 
+**Para que servem:** *Os seletores HTML permitem acessar e manipular elementos HTML específicos em uma página web usando JavaScript.*
+
+**`document.getElementsByTagName()`:**
+
+*   Este método retorna uma coleção *HTMLCollection* de todos os elementos que têm o nome de tag especificado.
+*   A coleção retornada é *ao vivo* (live), o que significa que se o DOM for modificado, a coleção será atualizada automaticamente.
+*   Para acessar um elemento específico na coleção, use índices numéricos (começando em 0).
+
+**Propriedade `innerHTML`:**
+
+*   A propriedade `innerHTML` define ou retorna o conteúdo HTML de um elemento.
+*   Pode ser usada para obter o conteúdo de um elemento ou para modificar o conteúdo existente.
+
+**Boas práticas:**
+
+* `getElementsByTagName` retorna uma coleção de elementos. Mesmo que haja apenas um elemento com a tag especificada, ainda será retornado um HTMLCollection com um único item.
+* É importante lembrar que os índices das coleções HTML começam em 0.
+* A propriedade `innerHTML` é útil para manipular o conteúdo HTML dentro de um elemento, mas deve ser usada com cautela, pois pode apresentar riscos de segurança (XSS) se usada com dados fornecidos pelo usuário sem a devida sanitização.
 
 #### Aula 4.B
 

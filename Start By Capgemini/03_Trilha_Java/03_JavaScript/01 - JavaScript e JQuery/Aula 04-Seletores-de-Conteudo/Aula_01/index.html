@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4.</title>
+</head>
+
+<script>
+    //Seletor HTML
+    function acao(){
+        //selecionar todos os elementos h1
+        var texto = document.getElementsByTagName("h1")[0];
+
+        //exibir o conteúdo do primeiro elemento
+        alert(texto.innerHTML);
+    }
+    
+</script>
+<body>
+    <button onclick="acao()" >Seleção</button>
+    
+    <h1>Python</h1>
+    <h1>C++</h1>
+    <h1>Java</h1>
+    <h1>JavaScript</h1>
+</body>
+</html>
