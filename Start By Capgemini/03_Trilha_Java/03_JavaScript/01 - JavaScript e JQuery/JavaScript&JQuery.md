@@ -772,7 +772,25 @@ Um elemento com a classe "mensagem" pode ser oculto com `.slideUp()` e exibido c
 
 #### Aula 5.H
 
+**Conceito:** **Efeito Animate com jQuery.**
 
+**Objetivo:** Criar animações personalizadas manipulando propriedades CSS.
+
+**Pré-requisito:** Conhecimento de CSS.
+
+**Método jQuery:**
+
+*   `.animate()`: Permite animar diversas propriedades CSS simultaneamente.
+
+**Sintaxe:**
+
+```javascript
+$('seletor').animate({
+  propriedadeCSS1: valor1,
+  propriedadeCSS2: valor2,
+  // ... outras propriedades
+}, tempo, easing, callback);
+```
 
 #### Aula 5.I
 
