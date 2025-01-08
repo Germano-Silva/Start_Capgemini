@@ -794,7 +794,39 @@ $('seletor').animate({
 
 #### Aula 5.I
 
+**Conceito:** Manipulação de CSS com jQuery.
 
+**Objetivo:** Modificar estilos CSS de elementos HTML usando jQuery.
+
+**Método jQuery:**
+
+*   `.css()`: Usado para obter ou definir propriedades CSS.
+
+**Sintaxe:**
+
+1.  **Obter valor de uma propriedade:**
+
+    ```javascript
+    $('seletor').css('propriedade');
+    ```
+
+2.  **Definir propriedades:**
+
+    *   **Uma única propriedade:**
+
+        ```javascript
+        $('seletor').css('propriedade', 'valor');
+        ```
+
+    *   **Múltiplas propriedades:**
+
+        ```javascript
+        $('seletor').css({
+          propriedade1: 'valor1',
+          propriedade2: 'valor2',
+          // ...
+        });
+        ```
 
 #### Aula 5.J
 
