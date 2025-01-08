@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05.C</title>
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Script javascript -->
+    <script>
+        //seletor 
+        //ao corregar o documento
+        $(document).ready(function(){
+            //variáveis
+            //seletor de tag
+            var campo = $("input").val();
+            //seletor de id
+            var titulo = $("#titulo").html();
+            //seletor de classe
+            var subtitulo = $(".subtitulo").html();
+
+            //exibir
+            alert(campo);
+            alert(titulo);
+            alert(subtitulo);
+
+            
+        });
+    </script>
+</head>
+<body>
+
+    <input type="text" value="Campo Nome">
+    <h1 id="titulo">Título H1</h1>
+    <h2 class="subtitulo">Subtitulo H2</h2>
+    
+</body>
+</html>

@@ -668,7 +668,25 @@ Professor: Ralf Lima
 
 #### Aula 5.C
 
+**Conceito:** **Seletores jQuery.**
 
+**Objetivo:** Selecionar elementos HTML de forma simplificada.
+
+**Tipos de seletores:**
+
+*   **Seletor de elemento (tag):** `$('elemento')` (ex: `$('input')`). Seleciona todos os elementos com a tag especificada. Para obter o valor de um campo de formulário, usa-se `.val()`.
+*   **Seletor de ID:** `$('#id')` (ex: `$('#titulo')`). Seleciona o elemento com o ID especificado. Para obter o conteúdo textual, usa-se `.html()`.
+*   **Seletor de classe:** `$('.classe')` (ex: `$('.subtitulo')`). Seleciona todos os elementos com a classe especificada. Para obter o conteúdo textual, usa-se `.html()`.
+
+**Métodos para obter conteúdo:**
+
+*   `.val()`: Obtém o valor de elementos de formulário (input, select, textarea).
+*   `.html()`: Obtém o conteúdo HTML de um elemento.
+
+**Observações:**
+
+*   O jQuery utiliza o símbolo `$` para suas funções.
+*   A função `alert()` do JavaScript funciona normalmente com jQuery.
 
 #### Aula 5.D
 
