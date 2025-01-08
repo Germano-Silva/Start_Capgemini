@@ -853,3 +853,16 @@ $('seletor').animate({
     ```
 
 #### Aula 5.K
+
+**Resumo Final do Curso de JavaScript e jQuery**
+
+Este curso abordou os fundamentos da utilização de JavaScript e, principalmente, da biblioteca jQuery para manipulação do DOM (Document Object Model) e interação com elementos HTML.
+
+*   **Importância do jQuery e JavaScript no Desenvolvimento Web:** jQuery simplifica tarefas comuns de JavaScript, tornando o desenvolvimento web mais eficiente.
+
+*   **Documentação Oficial do jQuery:** Recomendação para consultar a documentação oficial (API Documentation) para aprofundar os conhecimentos e explorar mais funcionalidades. Link para a documentação: [https://api.jquery.com/](https://api.jquery.com/) (adicionei o link para facilitar o acesso).
+
+
+**Conclusão:**
+
+O curso forneceu uma base sólida em JavaScript e jQuery, capacitando os alunos a manipular elementos HTML, estilos CSS e atributos. A mensagem final enfatiza a importância da prática contínua, da exploração de novas tecnologias e da utilização da documentação oficial.
