@@ -603,6 +603,22 @@ Professor: Ralf Lima
 
 #### Aula 4.E
 
+**Conceito:** **Manipulação de Atributos HTML com JavaScript.**
+
+**Objetivo:** Modificar dinamicamente atributos de elementos HTML.
+
+**Métodos e propriedades principais:**
+
+*   `document.getElementsByTagName()`: Seleciona elementos pelo nome da tag.
+*   `elemento.href`: Acessa ou modifica o atributo `href` de um link (`<a>`).
+*   `elemento.setAttribute(nome, valor)`: Define ou altera o valor de um atributo.
+*   `elemento.getAttribute(nome)`: Obtém o valor de um atributo.
+
+**Observações:**
+
+*   Atributos são complementos das tags HTML.
+*   Acessar um elemento por `getElementsByTagName()` retorna uma coleção, sendo necessário usar o índice (ex: `[0]`) para acessar um elemento específico.
+
 ## Aula 05 - JQuery
 
 
