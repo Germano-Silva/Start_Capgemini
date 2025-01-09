@@ -358,3 +358,26 @@ Demonstrar o uso dos comandos de incrementação (`++`) e decrementação (`--`)
   - Identação e legibilidade do código são fundamentais para facilitar a leitura e manutenção.  
   - Usar incrementação e decrementação de forma clara para evitar erros de lógica.
 
+#### Aula 9.D
+
+**Operadores Relacionais no Java**
+
+**Objetivo:**  
+Apresentar os operadores relacionais em Java e demonstrar como eles são usados para controlar o fluxo de um programa.
+
+**Conceitos Apresentados:**  
+- **Operadores Relacionais:**  
+  - `>` (maior)  
+  - `<` (menor)  
+  - `>=` (maior ou igual)  
+  - `<=` (menor ou igual)  
+  - `==` (igual)  
+  - `!=` (diferente)  
+
+- **Uso dos Operadores:**  
+  - Permitem comparar variáveis e valores, determinando condições para execução de trechos específicos de código.  
+  - São utilizados para definir a lógica em comandos condicionais, como `if` e `else`.  
+
+**Boas Práticas:**  
+- Garantir que as comparações sejam feitas entre tipos compatíveis de variáveis.  
+- Organizar e indentar o código para melhorar a legibilidade e manutenção.  
