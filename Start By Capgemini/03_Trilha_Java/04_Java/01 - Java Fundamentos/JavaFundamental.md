@@ -326,3 +326,16 @@ Demonstrar o uso de operadores aritméticos básicos em Java e como aplicá-los 
 **Nota:**  
 Operações aritméticas simples não envolvem lógica complexa, mas são fundamentais para cálculos básicos no programa. Resultados são exibidos usando `System.out.println`.  
 
+#### Aula 9.B
+
+**Introdução a Expressões e Operadores Lógicos**
+
+**Objetivo:**  
+Apresentar o conceito de expressões em Java e como utilizá-las em conjunto com operadores lógicos.
+
+**Expressões:**  
+  - Fórmulas que combinam operadores e variáveis para realizar cálculos ou tomadas de decisão.  
+
+**Nota:**  
+Expressões são essenciais para criar lógica em programas, combinando operadores para resolver problemas específicos.  
+
