@@ -161,3 +161,25 @@ Mostrar a localização, estrutura interna e portabilidade do arquivo `.class` g
 - A estrutura interna do `.class` pode ser visualizada em um editor de texto, onde é possível identificar algumas referências como nomes de variáveis, métodos e strings.  
 - Portabilidade do `.class`: pode ser executado em qualquer sistema operacional com a JVM instalada.  
 
+#### Aula 5.E
+
+**Execução de Programas Java**
+
+**Objetivo:**  
+Demonstrar as formas de executar programas Java, utilizando IDEs ou linha de comando, e destacar atalhos comuns em diferentes ferramentas.
+
+**Conceitos Aprendidos:**  
+- Execução via IDE:  
+  - Botão de execução (geralmente um ícone verde com uma seta branca).  
+  - Atalhos variam entre frameworks:
+    - **Eclipse:** Ctrl + F11.  
+    - **NetBeans:** F6.  
+    - **IntelliJ IDEA:** Atalho similar ao botão de execução.  
+
+- Execução via linha de comando:  
+  - Compilar com `javac NomeDoPrograma.java`.  
+  - Executar com `java NomeDoPrograma`.  
+
+- Diferenças entre execução via linha de comando e IDE:
+  - Linha de comando é funcional, mas sem interface amigável.  
+  - IDEs oferecem botões e telas intuitivas que simplificam a execução.  
