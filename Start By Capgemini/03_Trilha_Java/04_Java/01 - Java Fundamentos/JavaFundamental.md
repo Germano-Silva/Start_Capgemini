@@ -183,3 +183,51 @@ Demonstrar as formas de executar programas Java, utilizando IDEs ou linha de com
 - Diferenças entre execução via linha de comando e IDE:
   - Linha de comando é funcional, mas sem interface amigável.  
   - IDEs oferecem botões e telas intuitivas que simplificam a execução.  
+
+## Aula 06 - Tipos de dados
+
+#### Aula 6.A
+
+**Introdução a Tipos de Dados, Variáveis e Operadores em Java**
+
+**Objetivo:**  
+Iniciar a exploração dos conceitos fundamentais de programação em Java, incluindo tipos de dados, variáveis e operadores, para desenvolver uma base sólida na linguagem.
+
+**Conceitos Apresentados:**  
+- Tipos de dados.  
+- Declaração e uso de variáveis.  
+- Operadores aritméticos, relacionais e lógicos.  
+- Organização por projeto: cada assunto será trabalhado em um projeto separado, facilitando a consulta e o uso como material de referência.  
+
+**Nota:**  
+Os projetos criados durante essa fase serão disponibilizados no pacote de exercícios do curso para consulta e estudo.  
+
+#### Aula 6.B
+
+**Tipos de Dados no Java**
+
+**Objetivo:**  
+Apresentar os principais tipos de dados disponíveis em Java, suas características e como utilizá-los.
+
+**Conceitos Apresentados:**  
+- **Tipos de Dados mais Comuns:**
+  - **`int`:** Armazena números inteiros, sem casas decimais.  
+    Exemplo: `int numero = 10;`  
+  - **`float`:** Armazena números decimais curtos. Necessita do sufixo `F`.  
+    Exemplo: `float decimalCurto = 10.5F;`  
+  - **`double`:** Armazena números decimais longos, sem necessidade de sufixo.  
+    Exemplo: `double decimalLongo = 20.5;`  
+  - **`char`:** Armazena um único caractere, delimitado por aspas simples.  
+    Exemplo: `char letra = 'A';`  
+  - **`String`:** Armazena uma sequência de caracteres, delimitada por aspas duplas.  
+    Exemplo: `String texto = "Curso de Java";`  
+
+- **Observações:**  
+  - O operador `=` é usado para atribuição de valores.  
+  - **Erros comuns:**  
+    - Tentar usar `double` como `float` sem o sufixo `F`.  
+    - Usar aspas duplas em valores `char`.  
+    - Usar aspas simples em valores `String`.  
+
+**Nota:**  
+Esses são os tipos de dados mais utilizados em Java. Outros tipos podem ser abordados conforme necessário durante o curso.  
