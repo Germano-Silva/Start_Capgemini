@@ -381,3 +381,25 @@ Apresentar os operadores relacionais em Java e demonstrar como eles são usados 
 **Boas Práticas:**  
 - Garantir que as comparações sejam feitas entre tipos compatíveis de variáveis.  
 - Organizar e indentar o código para melhorar a legibilidade e manutenção.  
+
+#### Aula 9.E
+
+**Operadores Lógicos no Java**
+
+**Objetivo:**  
+Apresentar os operadores lógicos em Java e como eles são utilizados para combinar condições em expressões condicionais.
+
+**Conceitos Apresentados:**  
+- **Operadores Lógicos:**  
+  - **`&&` (E):** Ambas as condições devem ser verdadeiras para a expressão ser verdadeira.  
+  - **`||` (OU):** Pelo menos uma das condições deve ser verdadeira para a expressão ser verdadeira.  
+
+- **Uso dos Operadores Lógicos:**  
+  - Permitem agrupar e combinar condições em comandos condicionais (`if` e `else`).  
+  - As expressões devem ser delimitadas por parênteses para garantir a correta avaliação.  
+  - No caso do `&&`, todas as condições devem ser satisfeitas.  
+  - No caso do `||`, basta que uma das condições seja satisfeita.  
+
+**Boas Práticas:**  
+- Organizar as expressões com parênteses para facilitar a leitura e evitar ambiguidades.  
+- Utilizar operadores lógicos para simplificar e otimizar a lógica do programa.  
