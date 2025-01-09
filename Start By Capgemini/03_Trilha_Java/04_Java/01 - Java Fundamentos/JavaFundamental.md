@@ -276,5 +276,33 @@ Definir o conceito de literais e sua relação com a atribuição de valores a v
     - Caracteres: `char letra = 'A';`  
     - Strings: `String texto = "Curso de Java";`  
 
+#### Aula 8.B
+
+**Detalhes sobre Literais no Java**
+
+**Objetivo:**  
+Explorar os diferentes tipos de literais em Java e como eles são utilizados para atribuir valores a variáveis.
+
+**Conceitos Apresentados:**  
+- **Tipos de Literais:**
+  - **Numéricos:** Valores inteiros ou decimais atribuídos a variáveis numéricas.  
+    Exemplo: `int numero = 10;`  
+  - **String:** Cadeias de caracteres delimitadas por aspas duplas.  
+    Exemplo: `String cadeia = "Meu curso de Java";`  
+  - **Char:** Um único caractere delimitado por aspas simples.  
+    Exemplo: `char caractere = 'S';`  
+  - **Boolean:** Valores lógicos que podem ser `true` ou `false`.  
+    Exemplo: `boolean certoOuErrado = true;`  
+
+- **Alteração de Valores:**  
+  - Variáveis podem ser reatribuídas durante a execução do programa.  
+  - Exemplo:  
+    - `numero = 20;`  
+    - `cadeia = "Novo texto";`  
+    - `caractere = 'N';`  
+    - `certoOuErrado = false;`  
+
+- **Observação:**  
+  - Os literais atribuídos às variáveis são armazenados em memória, e seus valores podem ser exibidos ou modificados conforme necessário.  
 
 
