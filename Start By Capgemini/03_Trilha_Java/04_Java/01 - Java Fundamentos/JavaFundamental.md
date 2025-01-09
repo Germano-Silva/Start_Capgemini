@@ -137,6 +137,16 @@ Demonstrar como declarar, inicializar e manipular variáveis em Java, além de e
 - Impressão de valores no console utilizando `System.out.println`.  
 - Concatenar texto e variáveis para criar mensagens dinâmicas.  
 
+#### Aula 5.C
+
+**Execução e Geração do Arquivo `.class`**
+
+**Objetivo:**  
+Demonstrar o processo de compilação e execução de um programa Java, destacando a geração do arquivo `.class`.
+
+**Conceitos Aprendidos:**  
+- Compilação do programa Java gera um arquivo `.class`, que contém o bytecode.  
+- Execução do programa exibe os resultados definidos no código.  
 
 
 
