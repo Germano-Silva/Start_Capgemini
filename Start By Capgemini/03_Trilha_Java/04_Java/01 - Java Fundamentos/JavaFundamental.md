@@ -95,7 +95,7 @@ Uma IDE (Ambiente de Desenvolvimento Integrado) é uma aplicação que fornece u
 
 #### Aula 5.A
 
-**Aula 5.A: Criação e Execução de um Programa Java**
+**Criação e Execução de um Programa Java**
 
 - **Objetivo:** Demonstrar o processo de criação, compilação e execução de um programa Java simples, utilizando a IDE Eclipse.
 
@@ -123,5 +123,20 @@ Uma IDE (Ambiente de Desenvolvimento Integrado) é uma aplicação que fornece u
   - Criar um programa que exiba a mensagem "Meu Primeiro Programa em Java!".
   - Localizar o arquivo `.class` gerado pelo programa e explorá-lo no sistema de arquivos.
 
----
+
+#### Aula 5.B
+
+**Manipulação de Variáveis e Impressão de Valores no Java**
+
+**Objetivo:**  
+Demonstrar como declarar, inicializar e manipular variáveis em Java, além de exibir seus valores no console.
+
+**Conceitos Aprendidos:**  
+- Declaração de variáveis em Java com diferentes tipos de dados (`int`, `float`).  
+- Uso de modificadores de acesso como `public`.  
+- Impressão de valores no console utilizando `System.out.println`.  
+- Concatenar texto e variáveis para criar mensagens dinâmicas.  
+
+
+
 
