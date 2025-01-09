@@ -403,3 +403,20 @@ Apresentar os operadores lógicos em Java e como eles são utilizados para combi
 **Boas Práticas:**  
 - Organizar as expressões com parênteses para facilitar a leitura e evitar ambiguidades.  
 - Utilizar operadores lógicos para simplificar e otimizar a lógica do programa.  
+
+#### Aula 9.F
+
+**Resumo sobre Operadores no Java**
+
+**Objetivo:**  
+Recapitular os operadores apresentados e introduzir a importância de compreender as diferenças entre os operadores condicionais para utilizá-los de forma adequada.
+
+**Conceitos Apresentados:**  
+- **Operadores já estudados:**
+  - Aritméticos: Soma, subtração, multiplicação e divisão.  
+  - Incrementais e decrementais: Usados para adicionar ou subtrair 1 de uma variável.  
+  - Relacionais: Comparações como maior, menor, igual e diferente.  
+  - Lógicos: Combinação de condições com `&&` (E) e `||` (OU).  
+
+**Nota:**  
+Diferentes operadores condicionais devem ser utilizados de acordo com o contexto do programa, sendo importante entender suas particularidades e aplicações.  
