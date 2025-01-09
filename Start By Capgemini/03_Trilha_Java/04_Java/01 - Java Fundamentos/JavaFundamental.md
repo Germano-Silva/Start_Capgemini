@@ -230,4 +230,51 @@ Apresentar os principais tipos de dados disponíveis em Java, suas característi
     - Usar aspas simples em valores `String`.  
 
 **Nota:**  
-Esses são os tipos de dados mais utilizados em Java. Outros tipos podem ser abordados conforme necessário durante o curso.  
+Esses são os tipos de dados mais utilizados em Java. Outros tipos podem ser abordados conforme necessário durante o curso.
+
+## Aula 07 - Variáveis
+
+#### Aula 7.A
+
+**Introdução a Variáveis no Java**
+
+**Objetivo:**  
+Definir o conceito de variáveis, sua função nos programas e boas práticas de utilização em Java.
+
+**Conceitos Apresentados:**  
+- **O que são variáveis?**  
+  - Áreas de memória nomeadas e tipificadas para armazenar dados.  
+  - O valor de uma variável pode mudar durante a execução do programa, de acordo com a lógica implementada.  
+
+- **Constantes:**  
+  - Variáveis definidas como `final` em Java são imutáveis (não podem ter o valor alterado após inicialização).  
+  - Exemplo: `final int valorConstante = 10;`  
+
+- **Boas práticas:**  
+  - Evitar criar variáveis desnecessárias ou com dimensionamento inadequado para economizar memória.  
+  - Criar apenas as variáveis necessárias para o programa.  
+
+- **Persistência:**  
+  - Variáveis existem apenas durante a execução do programa; ao término, são liberadas da memória.  
+
+## Aula 08 - Literais
+
+#### Aula 8.A
+
+**Introdução a Literais no Java**
+
+**Objetivo:**  
+Definir o conceito de literais e sua relação com a atribuição de valores a variáveis em Java.
+
+**Conceitos Apresentados:**  
+- **O que são Literais?**  
+  - Valores atribuídos diretamente às variáveis durante a programação.  
+  - Exemplo:  
+    - Inteiros: `int numero = 10;`  
+    - Decimais (float): `float decimalCurto = 10.5F;`  
+    - Decimais (double): `double decimalLongo = 20.5;`  
+    - Caracteres: `char letra = 'A';`  
+    - Strings: `String texto = "Curso de Java";`  
+
+
+
