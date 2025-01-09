@@ -68,6 +68,7 @@ Professor: Ralf Lima
   - [Aula 5.K](#aula-5k)
 
 ## Aula 01 - Introdução
+
 ### Aula 1.A
 
 - JavaScript foi criado em 1995 por Brendan Eich enquanto trabalhava na Netscape. Inicialmente chamado de Mocha, depois LiveScript, foi rebatizado como JavaScript para capitalizar na popularidade do Java.
