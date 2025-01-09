@@ -305,4 +305,6 @@ Explorar os diferentes tipos de literais em Java e como eles são utilizados par
 - **Observação:**  
   - Os literais atribuídos às variáveis são armazenados em memória, e seus valores podem ser exibidos ou modificados conforme necessário.  
 
+## Aula 09 - Aritméticos
+
 
