@@ -148,5 +148,16 @@ Demonstrar o processo de compilação e execução de um programa Java, destacan
 - Compilação do programa Java gera um arquivo `.class`, que contém o bytecode.  
 - Execução do programa exibe os resultados definidos no código.  
 
+#### Aula 5.D
 
+**Explorando o Arquivo `.class` e Portabilidade do Java**
+
+**Objetivo:**  
+Mostrar a localização, estrutura interna e portabilidade do arquivo `.class` gerado após a compilação de um programa Java.
+
+**Conceitos Aprendidos:**  
+- O arquivo `.class` é gerado na pasta `bin` do workspace após a compilação.  
+- O `.class` não é um arquivo `.java`, mas sim o bytecode que pode ser interpretado pela JVM.  
+- A estrutura interna do `.class` pode ser visualizada em um editor de texto, onde é possível identificar algumas referências como nomes de variáveis, métodos e strings.  
+- Portabilidade do `.class`: pode ser executado em qualquer sistema operacional com a JVM instalada.  
 
