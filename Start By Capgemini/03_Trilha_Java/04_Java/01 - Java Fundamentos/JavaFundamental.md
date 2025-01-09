@@ -339,3 +339,22 @@ Apresentar o conceito de expressões em Java e como utilizá-las em conjunto com
 **Nota:**  
 Expressões são essenciais para criar lógica em programas, combinando operadores para resolver problemas específicos.  
 
+#### Aula 9.C
+
+**Comandos de Incrementação e Decrementação no Java**
+
+**Objetivo:**  
+Demonstrar o uso dos comandos de incrementação (`++`) e decrementação (`--`) e sua aplicação em laços de repetição.
+
+**Conceitos Apresentados:**  
+- **Incrementação (`++`):** Adiciona 1 ao valor atual de uma variável.  
+- **Decrementação (`--`):** Subtrai 1 do valor atual de uma variável.  
+
+- **Aplicação em Laços de Repetição:**  
+  - Utilizados frequentemente em loops como `while` e `for`.  
+  - Permitem repetir instruções baseadas em condições específicas.  
+
+- **Boas Práticas:**  
+  - Identação e legibilidade do código são fundamentais para facilitar a leitura e manutenção.  
+  - Usar incrementação e decrementação de forma clara para evitar erros de lógica.
+

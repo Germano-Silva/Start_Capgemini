@@ -5,7 +5,7 @@ public class OperadoresAritimeticos {
 	public static void main(String[] args) {
 		int numero1 = 10;
 		int numero2 = 20;
-		int resultado = 0;
+		int resultado;
 
 		// Soma
 		resultado = numero1 + numero2;
