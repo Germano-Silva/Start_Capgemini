@@ -5,7 +5,7 @@
 /node_modules
 /.pnp
 /coverage
-
+/.settings
 
 
 # directories
@@ -16,7 +16,7 @@ Materiais
 Material
 Material do curso
 .metadata
-.settings
+
 
 # files
 .pnp.js
