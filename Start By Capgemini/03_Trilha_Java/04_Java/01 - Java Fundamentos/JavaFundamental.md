@@ -49,7 +49,7 @@ Em 2010 a ORACLE adquire a SUN, mantendo todas as patentes e projetos que eram �
 WRITE ONCE, RUN ANYWHERE
 Interpretando codigo em outras linguagens:
 
-![Interpretação de linguagem compilada](https://www.concatenar.com.br/images/artigos_java/Compila%C3%A7%C3%A3o.jpg)
+![Interpretação de linguagem compilada](https://www.alura.com.br/artigos/assets/jvm-conhecendo-processo-execucao-de-codigo/imagem2.jpg)
 
 A Java Virtual Machine (JVM) é um componente central da plataforma Java que permite a execução de código Java em diferentes sistemas operacionais e arquiteturas de hardware. Ela desempenha um papel crucial na portabilidade das aplicações Java, já que o código-fonte Java é primeiro compilado em bytecode, uma forma intermediária e independente de plataforma.
 
@@ -92,3 +92,36 @@ Uma IDE (Ambiente de Desenvolvimento Integrado) é uma aplicação que fornece u
 [IntelliJ IDEA](https://www.jetbrains.com/idea/download/?section=windows) - IDE da JetBrains famosa por sua interface moderna e recursos avançados. É especialmente forte no desenvolvimento Java, com suporte robusto a frameworks, refatoração inteligente e integração contínua, proporcionando uma experiência de codificação produtiva.
 
 ## Aula 05 - Programas Java 
+
+#### Aula 5.A
+
+**Aula 5.A: Criação e Execução de um Programa Java**
+
+- **Objetivo:** Demonstrar o processo de criação, compilação e execução de um programa Java simples, utilizando a IDE Eclipse.
+
+- **Conceitos Aprendidos:**
+  - Processo de criação de um projeto Java em uma IDE.
+  - Estrutura básica de um programa Java, incluindo `public static void main`.
+  - Introdução ao bytecode (`.class`) gerado pelo Java após a compilação.
+
+- **Principais Comandos e Sintaxe:**
+  - Criar um novo projeto Java no Eclipse:
+    - **Passos:** File > New > Java Project > Nome do projeto > Finish.
+  - Criar uma classe principal:
+    - **Passos:** New > Class > Nome da classe > Marcar a opção `public static void main`.
+  - Estrutura básica do programa:
+    ```java
+    public class ClassePrincipal {
+        public static void main(String[] args) {
+            System.out.println("Hello, World!");
+        }
+    }
+    ```
+  - Bytecode gerado: Arquivo `.class` que contém o código em bytecode para execução na JVM.
+
+- **Exercícios Propostos:** 
+  - Criar um programa que exiba a mensagem "Meu Primeiro Programa em Java!".
+  - Localizar o arquivo `.class` gerado pelo programa e explorá-lo no sistema de arquivos.
+
+---
+
