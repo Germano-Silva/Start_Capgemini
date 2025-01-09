@@ -307,4 +307,22 @@ Explorar os diferentes tipos de literais em Java e como eles são utilizados par
 
 ## Aula 09 - Aritméticos
 
+#### Aula 9.A
+
+**Operadores Aritméticos no Java**
+
+**Objetivo:**  
+Demonstrar o uso de operadores aritméticos básicos em Java e como aplicá-los em variáveis.
+
+**Operadores Aritméticos:**  
+  - Soma (`+`)  
+  - Subtração (`-`)  
+  - Multiplicação (`*`)  
+  - Divisão (`/`)  
+
+- **Declaração de Variáveis:**  
+  - É possível declarar várias variáveis do mesmo tipo em uma única linha, separando-as por vírgulas.  
+
+**Nota:**  
+Operações aritméticas simples não envolvem lógica complexa, mas são fundamentais para cálculos básicos no programa. Resultados são exibidos usando `System.out.println`.  
 
