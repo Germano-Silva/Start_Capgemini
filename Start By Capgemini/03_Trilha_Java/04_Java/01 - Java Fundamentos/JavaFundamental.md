@@ -907,3 +907,33 @@ Reforçar o conceito e a utilidade dos métodos `getters` e `setters` no context
 
 **Nota:**  
 Getters e Setters são indispensáveis para trabalhar com atributos encapsulados, promovendo segurança e organização no código.  
+
+#### Aula 13.I
+
+**Herança: Pilar da Orientação a Objetos**
+
+**Objetivo:**  
+Introduzir o conceito de herança em orientação a objetos, explicando como ela promove a reutilização de código e organização em hierarquias de classes.
+
+**Conceitos Apresentados:**  
+- **O que é Herança:**  
+  - Mecanismo que permite que uma classe (subclasse) herde atributos e métodos de outra classe (superclasse).  
+  - Promove o reaproveitamento de código, eliminando a necessidade de duplicação de atributos e métodos comuns.  
+
+- **Exemplo de Aplicação:**  
+  - Superclasse: `Pessoa` com atributos como `nome`, `situação` e `dataNascimento`.  
+  - Subclasses:  
+    - `PessoaFisica` com atributos específicos como `CPF` e `identidade`.  
+    - `PessoaJuridica` com atributos específicos como `CNPJ` e `inscriçãoEstadual`.  
+  - Atributos e métodos comuns ficam na superclasse, enquanto os específicos são definidos nas subclasses.  
+
+- **Benefícios:**  
+  - Centraliza atributos e métodos comuns na superclasse, evitando redundâncias.  
+  - Simplifica a organização e manutenção do código.  
+  - Facilita a modelagem de sistemas complexos com hierarquias de classes.  
+
+- **Aplicação em Java:**  
+  - Subclasses utilizam a palavra-chave `extends` para herdar da superclasse.  
+
+**Nota:**  
+Herança é uma ferramenta poderosa para estruturar hierarquias e reaproveitar código, sendo fundamental em sistemas orientados a objetos.  
