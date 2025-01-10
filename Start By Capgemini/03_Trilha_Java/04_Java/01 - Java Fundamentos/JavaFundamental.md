@@ -509,3 +509,5 @@ Apresentar o comando `switch` em Java, suas características e uso em comparaç�
 - **Boas Práticas:**  
   - Sempre utilizar `break` para evitar execução indesejada de outros blocos.  
   - Certificar-se de que o tipo de dado da variável é compatível com os valores testados no `case`.  
+
+## Aula 11 - Laços de repetição
