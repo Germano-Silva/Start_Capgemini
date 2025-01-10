@@ -420,3 +420,6 @@ Recapitular os operadores apresentados e introduzir a importância de compreende
 
 **Nota:**  
 Diferentes operadores condicionais devem ser utilizados de acordo com o contexto do programa, sendo importante entender suas particularidades e aplicações.  
+
+## Aula 10 - Estruturas Condicionais
+
