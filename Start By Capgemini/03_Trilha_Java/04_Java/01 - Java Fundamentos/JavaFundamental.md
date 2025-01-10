@@ -787,3 +787,34 @@ Explicar o que são atributos em uma classe e sua importância na orientação a
 
 **Nota:**  
 Os atributos são essenciais para descrever os objetos em um sistema orientado a objetos.  
+
+#### Aula 13.E
+
+**Conceito de Instanciação em Orientação a Objetos**
+
+**Objetivo:**  
+Explicar o conceito de instanciação e seu papel na criação de objetos em Java.
+
+**Conceitos Apresentados:**  
+- **O que é Instanciação:**  
+  - Processo de criar um objeto a partir de uma classe.  
+  - Utiliza o operador `new` para instanciar a classe, atribuindo seus atributos e métodos ao objeto criado.  
+
+- **Funcionamento:**  
+  - A classe por si só é apenas um modelo, sem "vida".  
+  - Através da instanciação, a classe torna-se um objeto utilizável no programa.  
+  - Após instanciar, é possível acessar e manipular os atributos e métodos da classe.  
+
+- **Exemplo Conceitual:**  
+  - Classe: `Pessoa`  
+    - Atributos: `nome`, `idade`  
+    - Métodos: `mostrarDados()`  
+  - Objeto: Criado usando `new Pessoa()`.  
+    - Permite acessar e modificar os atributos e métodos da classe `Pessoa`.  
+
+**Importância da Instanciação:**  
+- Torna os atributos e métodos da classe acessíveis.  
+- Permite a criação de múltiplos objetos baseados na mesma classe, cada um com seus próprios valores e comportamentos.  
+
+**Nota:**  
+Instanciar uma classe é essencial para transformar um modelo abstrato em um objeto funcional no programa.  
