@@ -876,3 +876,34 @@ Explicar o conceito de encapsulamento e sua função de proteger os atributos de
 
 **Importância:**  
 O encapsulamento é fundamental para garantir a integridade dos dados e permitir que o acesso aos atributos de uma classe seja feito de forma controlada e segura.  
+
+#### Aula 13.H
+
+**Getters e Setters**
+
+**Objetivo:**  
+Reforçar o conceito e a utilidade dos métodos `getters` e `setters` no contexto do encapsulamento em Java.
+
+**Conceitos Apresentados:**  
+- **O que são Getters e Setters:**  
+  - Métodos usados para acessar (`get`) e modificar (`set`) os atributos encapsulados de uma classe.  
+  - Garantem controle e segurança no acesso aos dados.  
+
+- **Funcionamento:**  
+  - `get`: Retorna o valor de um atributo encapsulado.  
+  - `set`: Define ou altera o valor de um atributo encapsulado.  
+
+- **Vantagens:**  
+  - Facilita a manipulação de atributos encapsulados.  
+  - Automatiza a criação desses métodos em IDEs como o Eclipse.  
+
+- **Automatização no Eclipse:**  
+  - Use `CTRL + 3` e selecione **Generate Getters and Setters** para criar automaticamente os métodos.  
+  - A opção **Encapsulate Field** pode ser usada para encapsular múltiplos atributos de forma eficiente.  
+
+- **Boas Práticas:**  
+  - Criar `getters` e `setters` para cada atributo, especialmente em classes com muitos campos.  
+  - Utilizar ferramentas da IDE para economizar tempo e evitar erros manuais.  
+
+**Nota:**  
+Getters e Setters são indispensáveis para trabalhar com atributos encapsulados, promovendo segurança e organização no código.  
