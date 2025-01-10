@@ -847,3 +847,32 @@ Definir o conceito de objeto e sua relação com classes em Java.
 **Nota:**  
 Um objeto é a concretização de uma classe, tornando seus atributos e métodos utilizáveis no programa.  
 
+#### Aula 13.G
+
+**Encapsulamento: Pilar da Orientação a Objetos**
+
+**Objetivo:**  
+Explicar o conceito de encapsulamento e sua função de proteger os atributos de uma classe, controlando seu acesso.
+
+**Conceitos Apresentados:**  
+- **O que é Encapsulamento:**  
+  - Técnica que blinda os atributos de uma classe, impedindo acesso direto a eles.  
+  - Permite o acesso controlado por meio de métodos chamados `getters` e `setters`.  
+
+- **Funcionamento:**  
+  - Atributos da classe são declarados como `private`, restringindo seu acesso direto.  
+  - Métodos `get` e `set` são gerados para fornecer ou modificar os valores dos atributos.  
+    - `get`: Retorna o valor do atributo.  
+    - `set`: Define ou atualiza o valor do atributo.  
+
+- **Benefícios:**  
+  - Melhora a segurança do código, evitando modificações indevidas nos atributos.  
+  - Proporciona maior controle sobre o acesso e modificação dos dados.  
+  - Facilita a manutenção e depuração do código.  
+
+- **Exemplo:**  
+  - Atributos `nome` e `idade` da classe `Pessoa` encapsulados com `private`.  
+  - Métodos `getNome`, `setNome`, `getIdade` e `setIdade` gerados para acessar e modificar os dados.  
+
+**Importância:**  
+O encapsulamento é fundamental para garantir a integridade dos dados e permitir que o acesso aos atributos de uma classe seja feito de forma controlada e segura.  
