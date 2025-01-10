@@ -463,3 +463,24 @@ Demonstrar o uso do comando `if` com `else` em Java para tratar condições e fo
 
 - **Aplicação em Cenários Mais Complexos:**  
   - Possibilidade de adicionar condições intermediárias para maior controle.  
+
+#### Aula 10.C
+
+**Estruturas Condicionais: `if-else` com `else if`**
+
+**Objetivo:**  
+Demonstrar o uso do comando `if-else` com condições intermediárias utilizando `else if`.
+
+**Conceitos Apresentados:**  
+- **Uso do `else if`:**  
+  - Permite avaliar condições intermediárias antes de chegar ao bloco final do `else`.  
+  - Ideal para cenários onde há mais de duas possibilidades, como maior, menor ou igual.  
+
+- **Funcionamento:**  
+  - A primeira condição (`if`) é avaliada.  
+  - Se não for satisfeita, a próxima condição (`else if`) é avaliada.  
+  - Caso nenhuma condição seja verdadeira, o programa segue para o bloco `else`.  
+
+- **Boas Práticas:**  
+  - Estruturar mensagens e condições de forma clara para facilitar a identificação do fluxo.  
+  - Adicionar quantos `else if` forem necessários para cobrir todas as possibilidades.  
