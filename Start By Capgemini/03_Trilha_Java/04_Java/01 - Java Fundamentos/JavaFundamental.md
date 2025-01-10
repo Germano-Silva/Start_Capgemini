@@ -511,3 +511,24 @@ Apresentar o comando `switch` em Java, suas características e uso em comparaç�
   - Certificar-se de que o tipo de dado da variável é compatível com os valores testados no `case`.  
 
 ## Aula 11 - Laços de repetição
+
+#### Aula 11.A
+
+**Introdução aos Laços de Repetição no Java**
+
+**Objetivo:**  
+Explicar o conceito de laços de repetição, sua finalidade e como utilizá-los para evitar redundância no código.
+
+**Conceitos Apresentados:**  
+- **O que são Laços de Repetição:**  
+  - Estruturas que permitem executar um bloco de código várias vezes com base em uma condição.  
+  - Eliminam a necessidade de repetir manualmente trechos idênticos de código.  
+
+- **Funcionamento:**  
+  - Uma condição é avaliada.  
+  - Enquanto a condição for verdadeira, o bloco de código do laço será executado.  
+  - Quando a condição não é mais satisfeita, o programa sai do laço e continua a execução após seu escopo.  
+
+- **Benefícios:**  
+  - Reduz redundância no código.  
+  - Facilita manutenção e alterações, já que o trecho repetido está centralizado.  
