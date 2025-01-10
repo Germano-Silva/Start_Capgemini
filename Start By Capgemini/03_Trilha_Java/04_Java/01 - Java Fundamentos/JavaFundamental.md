@@ -757,3 +757,33 @@ Apresentar o conceito de métodos, sua definição e uso prático dentro de clas
 
 **Nota:**  
 Os métodos são fundamentais na orientação a objetos para estruturar e organizar ações dentro das classes.  
+
+#### Aula 13.D
+
+**Conceito de Atributos em Orientação a Objetos**
+
+**Objetivo:**  
+Explicar o que são atributos em uma classe e sua importância na orientação a objetos.
+
+**Conceitos Apresentados:**  
+- **O que é um Atributo:**  
+  - Representa uma característica ou propriedade de uma classe.  
+  - Armazena informações relacionadas a objetos daquela classe.  
+
+- **Exemplos:**  
+  - Para a classe `Pessoa`, atributos podem incluir:  
+    - `nome`  
+    - `idade`  
+    - `CPF`  
+    - `dataNascimento`  
+
+- **Papel dos Atributos:**  
+  - Definem as informações específicas que um objeto pode conter.  
+  - Servem como base para manipulação de dados no programa.  
+
+- **Futuro Uso em Banco de Dados:**  
+  - Atributos podem corresponder a colunas de tabelas em bancos de dados.  
+  - Facilitam a inserção, recuperação e manipulação de dados por meio de programas Java.  
+
+**Nota:**  
+Os atributos são essenciais para descrever os objetos em um sistema orientado a objetos.  
