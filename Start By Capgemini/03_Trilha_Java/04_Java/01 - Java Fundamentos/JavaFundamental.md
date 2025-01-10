@@ -818,3 +818,32 @@ Explicar o conceito de instanciação e seu papel na criação de objetos em Jav
 
 **Nota:**  
 Instanciar uma classe é essencial para transformar um modelo abstrato em um objeto funcional no programa.  
+
+#### Aula 13.F
+
+**Conceito de Objeto em Orientação a Objetos**
+
+**Objetivo:**  
+Definir o conceito de objeto e sua relação com classes em Java.
+
+**Conceitos Apresentados:**  
+- **O que é um Objeto:**  
+  - Uma instância de uma classe, criada através do operador `new`.  
+  - Representa uma entidade específica com atributos e comportamentos definidos pela classe.  
+
+- **Características:**  
+  - Após criar o objeto, seus atributos e métodos podem ser acessados e manipulados.  
+  - Um objeto é sempre vinculado a uma classe que define sua estrutura e comportamento.  
+
+- **Outros Exemplos de Objetos no Java:**  
+  - Além de objetos baseados em classes personalizadas, o Java oferece diversas estruturas como:  
+    - `ArrayList`  
+    - `LinkedList`  
+    - Outras listas e coleções.  
+
+**Importância:**  
+- Objetos são fundamentais para o paradigma orientado a objetos, permitindo a modelagem de sistemas baseados em entidades do mundo real.  
+
+**Nota:**  
+Um objeto é a concretização de uma classe, tornando seus atributos e métodos utilizáveis no programa.  
+
