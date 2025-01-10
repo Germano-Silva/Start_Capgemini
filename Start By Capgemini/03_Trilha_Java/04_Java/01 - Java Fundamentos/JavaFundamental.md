@@ -587,3 +587,32 @@ Explicar o funcionamento do comando `do-while` no Java e suas diferenças em rel
 **Boas Práticas:**  
 - Utilizar `do-while` somente quando for garantido que o bloco deve ser executado ao menos uma vez.  
 - Certificar-se de que a lógica do programa se beneficia dessa estrutura específica.  
+
+#### Aula 11.D
+
+**Laços de Repetição: Comando `for`**
+
+**Objetivo:**  
+Apresentar o comando `for` no Java, destacando sua estrutura e utilização para controle eficiente de laços de repetição.
+
+**Conceitos Apresentados:**  
+- **Comando `for`:**  
+  - Estrutura de laço que combina inicialização, condição e incremento em uma única linha.  
+  - Reduz a chance de erros como esquecer a incrementação, comum em outros laços.  
+
+- **Estrutura do `for`:**  
+  - **Inicialização:** Declaração e inicialização de uma variável de controle.  
+  - **Condição:** Avaliada antes de cada iteração; controla a execução do laço.  
+  - **Incremento:** Atualiza a variável de controle após cada iteração.  
+
+- **Funcionamento:**  
+  - O laço é executado enquanto a condição for verdadeira.  
+  - Ao final do laço, o programa continua a execução após o bloco do `for`.  
+
+- **Características e Limitações:**  
+  - A variável declarada dentro do `for` está limitada ao escopo do laço.  
+  - Para reutilizar valores após o laço, é necessário atribuí-los a uma variável externa.  
+
+- **Boas Práticas:**  
+  - Utilizar o `for` para laços com número conhecido de iterações.  
+  - Manter condições e incrementos claros para evitar loops infinitos ou comportamentos inesperados.  
