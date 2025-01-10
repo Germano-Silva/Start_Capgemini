@@ -532,3 +532,29 @@ Explicar o conceito de laços de repetição, sua finalidade e como utilizá-los
 - **Benefícios:**  
   - Reduz redundância no código.  
   - Facilita manutenção e alterações, já que o trecho repetido está centralizado.  
+
+#### Aula 11.B
+
+**Laços de Repetição: Comando `while`**
+
+**Objetivo:**  
+Apresentar o comando `while`, suas características e funcionamento como um laço de repetição no Java.
+
+**Conceitos Apresentados:**  
+- **Comando `while`:**  
+  - Um laço de repetição pré-testado.  
+  - Avalia uma condição antes de executar o bloco de código associado.  
+  - Continua repetindo enquanto a condição for verdadeira.  
+
+- **Funcionamento:**  
+  - Uma variável controla o número de repetições.  
+  - Após cada iteração, a variável é atualizada (geralmente incrementada ou decrementada).  
+  - Quando a condição deixa de ser verdadeira, o programa sai do laço e executa os comandos subsequentes.  
+
+- **Características:**  
+  - Ideal para cenários onde o número de iterações depende de uma condição dinâmica.  
+  - Requer atenção para evitar loops infinitos (garantir que a condição seja eventualmente falsa).  
+
+- **Boas Práticas:**  
+  - Garantir clareza no controle do laço, utilizando variáveis e incrementos bem definidos.  
+  - Mensagens claras para indicar o progresso do laço e o momento em que ele termina.  
