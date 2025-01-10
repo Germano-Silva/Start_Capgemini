@@ -484,3 +484,28 @@ Demonstrar o uso do comando `if-else` com condições intermediárias utilizando
 - **Boas Práticas:**  
   - Estruturar mensagens e condições de forma clara para facilitar a identificação do fluxo.  
   - Adicionar quantos `else if` forem necessários para cobrir todas as possibilidades.  
+
+#### Aula 10.D
+
+**Estruturas Condicionais: Comando `switch`**
+
+**Objetivo:**  
+Apresentar o comando `switch` em Java, suas características e uso em comparação com o comando `if`.
+
+**Conceitos Apresentados:**  
+- **O que é o `switch`:**  
+  - Comando utilizado para testar valores absolutos.  
+  - Ideal para cenários com múltiplas opções bem definidas, como menus.  
+  - Não permite testar faixas de valores ou usar operadores relacionais.  
+
+- **Funcionamento:**  
+  - O valor da variável é comparado com as opções (`case`) especificadas.  
+  - O comando `break` é necessário para evitar que o programa continue avaliando os demais `case`.  
+  - Caso nenhuma das opções seja atendida, o bloco `default` pode ser utilizado como alternativa.  
+
+- **Exemplo de Aplicação:**  
+  - Menus onde cada opção corresponde a uma ação, como incluir, alterar, excluir ou consultar.  
+
+- **Boas Práticas:**  
+  - Sempre utilizar `break` para evitar execução indesejada de outros blocos.  
+  - Certificar-se de que o tipo de dado da variável é compatível com os valores testados no `case`.  
