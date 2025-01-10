@@ -640,3 +640,34 @@ Apresentar o uso do comando `break` para interromper a execução de um laço de
 - **Boas Práticas:**  
   - Utilizar o `break` apenas quando necessário para manter a legibilidade e controle do código.  
   - Evitar dependência excessiva do `break`, priorizando estruturas claras e bem organizadas.  
+
+## Aula 12 - Entrada de dados gráficos
+
+#### Aula 12.A
+
+**Entrada de Dados no Java**
+
+**Objetivo:**  
+Apresentar diferentes formas de entrada de dados no Java, destacando o uso de `JOptionPane` para interações simples com o usuário.
+
+**Conceitos Apresentados:**  
+- **Entrada de Dados:**  
+  - Variáveis podem ser inicializadas diretamente no código ou receber valores fornecidos pelo usuário em tempo de execução.  
+  - Ferramentas para entrada de dados incluem:
+    - `Scanner`: Lê dados do console.  
+    - `JOptionPane`: Fornece uma interface gráfica para entrada e exibição de dados.  
+
+- **Uso do `JOptionPane`:**  
+  - Classe útil para criar caixas de diálogo interativas.  
+  - Método `showInputDialog`: Solicita entrada de dados ao usuário.  
+  - Método `showMessageDialog`: Exibe mensagens ao usuário.  
+
+- **Conversão de Dados:**  
+  - Entradas do `JOptionPane` são recebidas como `String`.  
+  - Conversão necessária para tipos numéricos, utilizando métodos como:  
+    - `Integer.parseInt()`: Converte `String` para `int`.  
+    - `Float.parseFloat()`: Converte `String` para `float`.  
+
+- **Boas Práticas:**  
+  - Garantir que o valor recebido seja tratado adequadamente, especialmente ao realizar conversões de tipo.  
+  - Usar `JOptionPane` para testes e programas simples, evitando seu uso em aplicações comerciais complexas.  
