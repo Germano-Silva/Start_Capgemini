@@ -671,3 +671,27 @@ Apresentar diferentes formas de entrada de dados no Java, destacando o uso de `J
 - **Boas Práticas:**  
   - Garantir que o valor recebido seja tratado adequadamente, especialmente ao realizar conversões de tipo.  
   - Usar `JOptionPane` para testes e programas simples, evitando seu uso em aplicações comerciais complexas.  
+
+#### Aula 13.A
+
+**Introdução à Orientação a Objetos**
+
+**Objetivo:**  
+Apresentar o conceito de orientação a objetos (OO) e seus benefícios em comparação ao paradigma estruturado.
+
+**Conceitos Apresentados:**  
+- **Paradigma Estruturado vs. Orientação a Objetos:**  
+  - No paradigma estruturado, código e rotinas precisam ser repetidos, o que dificulta manutenção e reaproveitamento.  
+  - A orientação a objetos permite reutilização de código por meio de objetos, aumentando a produtividade e facilitando a manutenção.  
+
+- **Benefícios da Orientação a Objetos:**  
+  - Reduz redundância no código.  
+  - Melhora a manutenibilidade e escalabilidade das aplicações.  
+  - Acelera o desenvolvimento ao reaproveitar objetos existentes.  
+  - É amplamente utilizada em linguagens modernas como Java, C#, Python e JavaScript.  
+
+- **Quatro Pilares da Orientação a Objetos:**  
+  - A base conceitual da orientação a objetos será explorada com foco nos quatro pilares principais em aulas futuras.  
+
+**Nota:**  
+A orientação a objetos é essencial para o desenvolvimento de sistemas robustos e escaláveis.  
