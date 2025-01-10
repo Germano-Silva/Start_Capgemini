@@ -443,3 +443,23 @@ Apresentar as estruturas condicionais no Java e sua função de alterar o fluxo 
 
 **Nota:**  
 As estruturas condicionais serão exploradas em detalhes, partindo de casos simples até exemplos mais complexos.  
+
+#### Aula 10.B
+
+**Estruturas Condicionais: `if` com `else`**
+
+**Objetivo:**  
+Demonstrar o uso do comando `if` com `else` em Java para tratar condições e fornecer alternativas de execução.
+
+**Conceitos Apresentados:**  
+- **Uso do `if-else`:**  
+  - Avalia uma condição.  
+  - Executa um bloco de código se a condição for verdadeira e outro bloco se for falsa.  
+  - Exemplo prático: Verificar se um número é maior ou menor que outro.  
+
+- **Funcionamento:**  
+  - Se a condição no `if` for satisfeita, executa o bloco correspondente.  
+  - Caso contrário, executa o bloco do `else`.    
+
+- **Aplicação em Cenários Mais Complexos:**  
+  - Possibilidade de adicionar condições intermediárias para maior controle.  
