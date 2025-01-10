@@ -695,3 +695,35 @@ Apresentar o conceito de orientação a objetos (OO) e seus benefícios em compa
 
 **Nota:**  
 A orientação a objetos é essencial para o desenvolvimento de sistemas robustos e escaláveis.  
+
+#### Aula 13.B
+
+**Conceito de Classe em Orientação a Objetos**
+
+**Objetivo:**  
+Introduzir o conceito de classe, sua estrutura e papel fundamental na orientação a objetos.
+
+**Conceitos Apresentados:**  
+- **O que é uma Classe:**  
+  - Representação abstrata de um objeto no mundo real.  
+  - Contém variáveis (atributos), construtores e métodos que definem suas características e comportamentos.  
+  - Exemplo: Uma classe `Veículo` pode ter atributos como marca, modelo, ano de fabricação e métodos para calcular quilometragem.  
+
+- **Estrutura de uma Classe:**  
+  - Declaração de variáveis (atributos) para armazenar dados.  
+  - Métodos para definir o comportamento do objeto.  
+  - Construtores para inicializar o objeto.  
+
+- **Instanciação:**  
+  - Processo de criar um objeto a partir de uma classe.  
+  - Torna a classe "viva", permitindo manipular seus atributos e métodos no programa principal.  
+
+- **Visibilidade:**  
+  - Modificador `public` permite que variáveis ou métodos sejam acessados de outras partes do programa.  
+
+**Exemplo Conceitual:**  
+- Classe `Pessoa` com atributos `nome` e `idade`.  
+- Instanciação no programa principal para criar e manipular objetos do tipo `Pessoa`.  
+
+**Nota:**  
+O conceito de classe é a base para o desenvolvimento orientado a objetos, permitindo organização e reutilização de código.  
