@@ -616,3 +616,27 @@ Apresentar o comando `for` no Java, destacando sua estrutura e utilização para
 - **Boas Práticas:**  
   - Utilizar o `for` para laços com número conhecido de iterações.  
   - Manter condições e incrementos claros para evitar loops infinitos ou comportamentos inesperados.  
+
+#### Aula 11.E
+
+**Interrupção de Laços: Comando `break`**
+
+**Objetivo:**  
+Apresentar o uso do comando `break` para interromper a execução de um laço de repetição em Java.
+
+**Conceitos Apresentados:**  
+- **Comando `break`:**  
+  - Utilizado para interromper um laço de repetição antes de sua condição ser satisfeita.  
+  - Comumente usado quando uma condição específica dentro do laço é atendida.  
+
+- **Funcionamento:**  
+  - O comando `break` faz o programa sair imediatamente do laço em que está inserido.  
+  - Após o `break`, a execução continua no próximo comando após o laço de repetição.  
+
+- **Aplicações Comuns:**  
+  - Procurar valores específicos em estruturas como arrays ou matrizes.  
+  - Parar o laço após alcançar um objetivo, como encontrar um valor ou atender a uma condição.  
+
+- **Boas Práticas:**  
+  - Utilizar o `break` apenas quando necessário para manter a legibilidade e controle do código.  
+  - Evitar dependência excessiva do `break`, priorizando estruturas claras e bem organizadas.  
