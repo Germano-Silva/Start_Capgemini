@@ -937,3 +937,46 @@ Introduzir o conceito de herança em orientação a objetos, explicando como ela
 
 **Nota:**  
 Herança é uma ferramenta poderosa para estruturar hierarquias e reaproveitar código, sendo fundamental em sistemas orientados a objetos.  
+
+#### Aula 13.J
+
+**Implementação de Herança: Classes Pessoa, Pessoa Física e Pessoa Jurídica**
+
+**Importante:**  
+O código adicionado nesta aula foi desenvolvido em conjunto com a aula anterior, **Aula 13.I**.
+
+**Objetivo:**  
+Demonstrar a implementação prática do conceito de herança, organizando atributos comuns e específicos entre as classes `Pessoa`, `PessoaFisica` e `PessoaJuridica`.
+
+**Conceitos Apresentados:**  
+- **Estrutura de Herança:**  
+  - **Superclasse:** `Pessoa`  
+    - Contém atributos comuns como `nome` e `situação`.  
+  - **Subclasses:**  
+    - `PessoaFisica`: Inclui atributos como `CPF` e `identidade`.  
+    - `PessoaJuridica`: Inclui atributos como `CNPJ` e `inscriçãoEstadual`.  
+
+- **Benefícios da Herança:**  
+  - Evita redundância de atributos comuns.  
+  - Centraliza dados compartilhados na superclasse e organiza atributos específicos nas subclasses.  
+
+- **Características da Implementação:**  
+  - **Palavra-chave `extends`:**  
+    - `PessoaFisica` e `PessoaJuridica` utilizam `extends` para herdar os atributos e métodos da classe `Pessoa`.  
+  - **Métodos toString:**  
+    - Criados para exibir informações específicas de cada classe, integrando atributos herdados e próprios.  
+
+- **Exemplo de Uso:**  
+  - **Instanciação:**  
+    - Objetos `PessoaFisica` e `PessoaJuridica` são criados diretamente.  
+    - Não é necessário instanciar a classe `Pessoa` diretamente.  
+  - **Acessando Atributos:**  
+    - Atributos herdados (`nome`, `situação`) podem ser acessados e modificados pelas subclasses.  
+    - Métodos como `toString` facilitam a exibição dos dados.  
+
+**Resultados:**  
+- Dados da classe `PessoaFisica` e `PessoaJuridica` exibidos separadamente com atributos próprios e herdados.  
+- Organização clara entre atributos comuns e específicos, eliminando redundância.  
+
+**Nota:**  
+A herança simplifica a estruturação e manutenção do código, permitindo reutilização e clareza ao lidar com atributos compartilhados e únicos entre diferentes classes.  
