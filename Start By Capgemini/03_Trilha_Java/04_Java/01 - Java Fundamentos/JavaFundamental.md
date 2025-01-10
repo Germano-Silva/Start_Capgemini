@@ -727,3 +727,33 @@ Introduzir o conceito de classe, sua estrutura e papel fundamental na orientaç�
 
 **Nota:**  
 O conceito de classe é a base para o desenvolvimento orientado a objetos, permitindo organização e reutilização de código.  
+
+#### Aula 13.C
+
+**Conceito de Métodos em Orientação a Objetos**
+
+**Objetivo:**  
+Apresentar o conceito de métodos, sua definição e uso prático dentro de classes em Java.
+
+**Conceitos Apresentados:**  
+- **O que é um Método:**  
+  - Um bloco de código que realiza uma tarefa específica.  
+  - Representa uma sequência de passos para executar uma ação ou calcular um resultado.  
+
+- **Definição de um Método:**  
+  - Declaração: Define o nome, parâmetros (se necessário) e o que o método fará.  
+  - Escopo: Contém as instruções que o método executará quando chamado.  
+
+- **Exemplo de Uso:**  
+  - Método `mostraDados`:  
+    - Exibe os valores dos atributos `nome` e `idade` da classe `Pessoa`.  
+  - No programa principal:
+    - Atribuição de valores aos atributos da classe.  
+    - Chamada ao método para realizar a exibição.  
+
+**Características:**  
+- Métodos podem receber parâmetros e utilizar esses valores para executar suas tarefas.  
+- Permitem encapsular funcionalidades específicas, tornando o código mais organizado e reutilizável.  
+
+**Nota:**  
+Os métodos são fundamentais na orientação a objetos para estruturar e organizar ações dentro das classes.  
