@@ -423,3 +423,23 @@ Diferentes operadores condicionais devem ser utilizados de acordo com o contexto
 
 ## Aula 10 - Estruturas Condicionais
 
+#### Aula 10.A
+
+**Introdução às Estruturas Condicionais no Java**
+
+**Objetivo:**  
+Apresentar as estruturas condicionais no Java e sua função de alterar o fluxo do programa com base em condições específicas.
+
+**Conceitos Apresentados:**  
+- **Estruturas Condicionais:**  
+  - Utilizam operadores relacionais e lógicos para avaliar condições.  
+  - Permitem direcionar o fluxo do programa de acordo com resultados específicos.  
+  - Exemplos práticos: Validação de dados como CPF.  
+
+- **Tipos de Estruturas:**  
+  - `if`: Avalia uma única condição.  
+  - `if-else`: Avalia uma condição e fornece alternativas.  
+  - Condicionais aninhadas: Combinação de várias condições para cenários mais complexos.  
+
+**Nota:**  
+As estruturas condicionais serão exploradas em detalhes, partindo de casos simples até exemplos mais complexos.  
