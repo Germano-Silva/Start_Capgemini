@@ -558,3 +558,32 @@ Apresentar o comando `while`, suas características e funcionamento como um laç
 - **Boas Práticas:**  
   - Garantir clareza no controle do laço, utilizando variáveis e incrementos bem definidos.  
   - Mensagens claras para indicar o progresso do laço e o momento em que ele termina.  
+
+#### Aula 11.C
+
+**Laços de Repetição: Comando `do-while`**
+
+**Objetivo:**  
+Explicar o funcionamento do comando `do-while` no Java e suas diferenças em relação ao `while`.
+
+**Conceitos Apresentados:**  
+- **Comando `do-while`:**  
+  - Um laço de repetição pós-testado.  
+  - Garante que o bloco de código será executado pelo menos uma vez, pois a condição é avaliada somente após a execução.  
+
+- **Funcionamento:**  
+  - O programa entra no bloco `do` independentemente da condição inicial.  
+  - Após a execução, a condição é testada para determinar se o laço deve ser repetido.  
+  - Se a condição for falsa na primeira avaliação, o laço não será repetido.  
+
+- **Características:**  
+  - Ideal para situações em que é necessário executar o bloco pelo menos uma vez antes de validar a condição.  
+  - Deve ser usado com cautela para evitar comportamentos inesperados.  
+
+- **Diferenças entre `do-while` e `while`:**  
+  - `while`: Pré-testado, avalia a condição antes de entrar no laço.  
+  - `do-while`: Pós-testado, entra no laço e avalia a condição após a execução.  
+
+**Boas Práticas:**  
+- Utilizar `do-while` somente quando for garantido que o bloco deve ser executado ao menos uma vez.  
+- Certificar-se de que a lógica do programa se beneficia dessa estrutura específica.  
