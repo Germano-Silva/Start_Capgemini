@@ -392,6 +392,8 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 ## Aula 06 - Matriz
 
 #### Aulas 6.A
+
+
 #### Aulas 6.B
 #### Aulas 6.C
 #### Aulas 6.D
