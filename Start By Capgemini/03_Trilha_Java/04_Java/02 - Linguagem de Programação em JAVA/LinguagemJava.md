@@ -321,6 +321,42 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
   - Promove organização ao limitar acessos desnecessários em pacotes diferentes.
 
 #### Aulas 5.E
+
+- **Modificador de Acesso Private:**
+  - É o modificador mais restritivo.
+  - Permite acesso somente dentro da própria classe.
+  - Nenhuma classe externa, mesmo no mesmo pacote, pode acessar diretamente atributos ou métodos privados.
+
+- **Características:**
+  - Garante total encapsulamento de atributos e métodos.
+  - Torna obrigatória a instanciação da classe para acesso indireto aos seus elementos.
+  - Atributos e métodos **private** podem ser expostos externamente apenas por meio de **getters**, **setters** ou construtores.
+
+- **Funcionamento:**
+  - Mesmo ao importar uma classe de outro pacote, atributos e métodos privados não são acessíveis.
+  - Apenas elementos **public** ou com visibilidade compatível (como **protected**) podem ser acessados por classes relacionadas.
+
+- **Casos de Uso:**
+  - Para proteger informações sensíveis ou evitar manipulação direta de dados internos.
+  - Permite maior controle sobre como os dados são manipulados.
+
+- **Regras Importantes:**
+  - Atributos ou métodos marcados como **private** só podem ser acessados pela própria classe.
+  - Construtores, **getters** e **setters** são meios para expor dados de forma controlada.
+
+- **Comparativo de Visibilidade:**
+  | **Modificador** | **Mesma Classe** | **Mesmo Pacote** | **Subclasses (Pacotes Diferentes)** | **Classes Não Relacionadas** |
+  |------------------|------------------|------------------|-------------------------------------|------------------------------|
+  | Public           | Sim              | Sim              | Sim                                 | Sim                          |
+  | Protected        | Sim              | Sim              | Sim                                 | Não                          |
+  | Default          | Sim              | Sim              | Não                                 | Não                          |
+  | Private          | Sim              | Não              | Não                                 | Não                          |
+
+- **Benefícios:**
+  - Garante o controle total sobre os dados internos da classe.
+  - Melhora a segurança e a integridade do programa.
+  - Promove boas práticas de encapsulamento, incentivando o uso de métodos controladores como **getters** e **setters**.
+
 #### Aulas 5.F
 
 ## Aula 06 - Matriz
