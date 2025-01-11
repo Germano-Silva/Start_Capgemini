@@ -131,6 +131,37 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 
 #### Aulas 3.B
 
+- **Construtores com Sobrecarga:**
+  - Permitem receber múltiplos parâmetros ao instanciar uma classe.
+  - Podem ser gerados automaticamente utilizando IDEs como Eclipse.
+  - Construtores sobrecarregados são úteis para inicializar diversos atributos em uma única chamada.
+
+- **Funcionamento:**
+  - Atributos são definidos dentro da classe e podem ser inicializados através dos parâmetros do construtor.
+  - A variável **this** diferencia os atributos da classe dos valores recebidos pelo construtor.
+  - Após a execução, os valores dos parâmetros são atribuídos aos atributos correspondentes.
+
+- **Gerenciamento de Memória:**
+  - Construtores não utilizados são descartados pelo **Garbage Collector**.
+  - Variáveis são carregadas na memória apenas quando criadas.
+
+- **Cálculo de Valores:**
+  - Métodos dentro da classe podem ser chamados após a inicialização dos atributos para realizar cálculos.
+  - Os métodos utilizam os valores armazenados nos atributos da classe.
+
+- **Uso de Enumeradores:**
+  - Enumeradores podem ser utilizados para definir valores específicos associados a atributos.
+  - Ajudam a representar estados ou categorias, como "aprovado" ou "reprovado".
+
+- **Regras Importantes:**
+  - Todos os parâmetros definidos no construtor devem ser devidamente atribuídos aos atributos da classe.
+  - Construtores são flexíveis e podem ser adaptados conforme a necessidade do programa.
+
+- **Benefícios dos Construtores:**
+  - Facilitam a troca de informações entre o método principal e as classes.
+  - Melhoram a organização e a inicialização de variáveis dentro das classes.
+  - São cruciais para garantir consistência e eficiência na manipulação de dados.
+
 ## Aula 04 - Enumeradores
 
 #### Aulas 4.A
