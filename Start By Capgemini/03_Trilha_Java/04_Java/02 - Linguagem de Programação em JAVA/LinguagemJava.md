@@ -48,6 +48,35 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 ## Aula 02 - Interfaces
 
 #### Aulas 2.A
+
+- **Conceito de Interface:**
+  - Uma **interface** é um elemento do Java, criado de forma similar a **classes** e **numeradores**.
+  - Permite agrupar classes com características em comum.
+  - **Diferencial:** Uma interface pode ser vinculada a várias classes, ao contrário da herança.
+
+- **Funcionalidades de uma Interface:**
+  - Define métodos comuns para classes relacionadas.
+  - Métodos podem incluir ações ou propriedades compartilhadas.
+
+- **Características das Interfaces:**
+  - Contêm assinaturas de métodos e suas propriedades.
+  - Classes vinculadas devem implementar os métodos com a **mesma assinatura**:
+    - Mesmo nome.
+    - Mesmo retorno.
+    - Mesmos parâmetros.
+  - Garante **reaproveitamento de código** e melhora a manutenibilidade e legibilidade do programa.
+
+- **Assinaturas de Métodos:**
+  - Devem ser idênticas entre a interface e as classes que a implementam.
+  - Reforçam o princípio de **orientação a objetos** focado no **reaproveitamento de código**.
+
+- **Benefícios:**
+  - Programas mais **flexíveis** e **manuteníveis**.
+  - Melhoria na **legibilidade** do código.
+
+- **Próximos Passos:**
+  - Demonstração de como criar interfaces e utilizá-las em situações práticas.
+
 #### Aulas 2.B
 
 ## Aula 03 - Construtores
