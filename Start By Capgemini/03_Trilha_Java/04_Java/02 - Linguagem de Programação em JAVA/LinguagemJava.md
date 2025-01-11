@@ -79,6 +79,29 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 
 #### Aulas 2.B
 
+- **O que uma interface deve ter:**
+  - Nomeação clara e objetiva.
+  - Declaração de métodos com assinaturas específicas, sem implementação.
+
+- **Criação de Classes que Implementam a Interface:**
+  - Classes utilizam a palavra-chave **implements** para implementar a interface.
+  - Implementação obrigatória de todos os métodos declarados na interface.
+  - Métodos nas classes devem ter:
+    - Mesmo nome.
+    - Mesmo tipo de retorno.
+    - Mesmos parâmetros.
+
+- **Uso de Notações:**
+  - O **@Override** é adicionado automaticamente para identificar que o método foi sobrescrito.
+
+- **Regras Importantes:**
+  - Todos os métodos da interface devem ser implementados nas classes correspondentes.
+  - O código gerado automaticamente pode ser ajustado para atender às especificações do projeto.
+
+- **Benefícios do Uso de Interfaces:**
+  - Promove organização e consistência no código.
+  - Facilita a reutilização e a implementação de comportamentos comuns em várias classes.
+
 ## Aula 03 - Construtores
 
 #### Aulas 3.A
