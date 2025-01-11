@@ -11,35 +11,23 @@ Este curso tem como objetivo introduzir os conceitos fundamentais da programaç�
 
 ## Índice
 
-1. [Aula 02 - Introdução ao JAVA](#aula-02---introdução-ao-java)  
-   - [2.B - Um pouco da história do Java](#aula-2b---um-pouco-da-história-do-java)  
-   - [2.C - Características do Java](#aula-2c---características-do-java)  
-   - [2.D - A JVM e a execução de código](#aula-2d---a-jvm-e-a-execução-de-código)  
-   - [2.E - JRE e JDK](#aula-2e---jre-e-jdk)  
+01. [Aula 02 - Introdução ao JAVA](#aula-02---introdução-ao-java)  
 
-2. [Aula 03 - Ambiente de Desenvolvimento](#aula-03---ambiente-de-desenvolvimento)
+02. [Aula 03 - Ambiente de Desenvolvimento](#aula-03---ambiente-de-desenvolvimento)
 
-3. [Aula 04 - Visão dos Frameworks](#aula-04---visão-dos-frameworks)  
-   - [4.A - O que é uma IDE?](#aula-4a---o-que-é-uma-ide)  
-   - [4.B - IDE NetBeans](#aula-4b---ide-netbeans)  
-   - [4.C - IDE Eclipse](#aula-4c---ide-eclipse)  
-   - [4.D - IDE IntelliJ IDEA](#aula-4d---ide-intellij-idea)  
+03. [Aula 04 - Visão dos Frameworks](#aula-04---visão-dos-frameworks)   
 
-4. [Aula 05 - Programas Java](#aula-05---programas-java)  
-   - [5.A - Criação e execução de programas](#aula-5a---criação-e-execução-de-programas)  
-   - [5.B - Manipulação de variáveis](#aula-5b---manipulação-de-variáveis)  
+04. [Aula 05 - Programas Java](#aula-05---programas-java)   
 
-5. [Aula 06 - Tipos de Dados](#aula-06---tipos-de-dados)  
-   - [6.A - Introdução](#aula-6a---introdução)  
-   - [6.B - Tipos de dados no Java](#aula-6b---tipos-de-dados-no-java)  
+05. [Aula 06 - Tipos de Dados](#aula-06---tipos-de-dados)  
 
-6. [Aula 07 - Variáveis](#aula-07---variáveis)  
+06. [Aula 07 - Variáveis](#aula-07---variáveis)  
 
-7. [Aula 08 - Literais](#aula-08---literais)  
+07. [Aula 08 - Literais](#aula-08---literais)  
 
-8. [Aula 09 - Operadores](#aula-09---operadores)  
+08. [Aula 09 - Operadores](#aula-09---operadores)  
 
-9. [Aula 10 - Estruturas Condicionais](#aula-10---estruturas-condicionais)  
+09. [Aula 10 - Estruturas Condicionais](#aula-10---estruturas-condicionais)  
 
 10. [Aula 11 - Laços de Repetição](#aula-11---laços-de-repetição)  
 
