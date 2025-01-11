@@ -105,6 +105,30 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 ## Aula 03 - Construtores
 
 #### Aulas 3.A
+
+- **O que são Construtores:**
+  - São elementos presentes em todas as classes.
+  - Toda classe possui pelo menos um **construtor padrão**.
+  - Permitem a comunicação entre a parte externa da classe e seus métodos ou atributos.
+
+- **Função dos Construtores:**
+  - Atuam como um meio de ligação entre a parte externa e interna da classe.
+  - Facilitam a inicialização de variáveis e atributos de uma classe.
+  - Podem retornar uma, várias ou todas as variáveis de uma classe, conforme necessário.
+
+- **Características:**
+  - Utilizam a variável **this** para diferenciar valores recebidos e atributos da classe.
+  - Reduzem o tráfego de atributos entre diferentes partes do programa.
+  - São importantes para o gerenciamento de memória, sendo auxiliados pelo **Garbage Collector** para liberar memória quando não são mais utilizados.
+
+- **Regras Importantes:**
+  - Construtores são essenciais para a **instanciação** de classes.
+  - Ajudam a evitar o uso desnecessário de memória ao limitar a quantidade de atributos trafegados.
+
+- **Benefícios:**
+  - Facilitam a **organização e encapsulamento** em classes.
+  - Contribuem para uma melhor **eficiência no uso da memória**.
+
 #### Aulas 3.B
 
 ## Aula 04 - Enumeradores
