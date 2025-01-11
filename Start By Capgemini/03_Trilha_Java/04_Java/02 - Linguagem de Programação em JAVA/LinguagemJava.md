@@ -166,6 +166,37 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 
 #### Aulas 4.A
 
+- **Enumeradores:**
+  - Enumeradores são estruturas que permitem definir valores fixos associados a um atributo.
+  - Ajudam a representar estados ou categorias com valores limitados e bem definidos.
+  - Substituem tabelas de banco de dados para armazenar valores simples e repetitivos.
+
+- **Criação de Enumeradores:**
+  - Podem ser definidos dentro ou fora de uma classe.
+  - Cada valor do enumerador é tratado como uma constante.
+  - Exemplo de uso: `matriculado`, `pendente`, `reprovado`.
+
+- **Funcionamento:**
+  - Atributos da classe utilizam o enumerador como tipo de dado.
+  - Ao atribuir valores, o enumerador fornece opções pré-definidas, facilitando o controle e a validação.
+
+- **Benefícios dos Enumeradores:**
+  - Melhoram a legibilidade do código ao substituir valores arbitrários por constantes nomeadas.
+  - Facilitam a manutenção e evitam erros ao limitar as opções possíveis.
+  - São amplamente utilizados para representar status ou condições específicas.
+
+- **Regras Importantes:**
+  - Enumeradores são imutáveis, ou seja, seus valores não podem ser alterados em tempo de execução.
+  - Devem ser usados para categorias com um número fixo de opções.
+
+- **Uso Prático:**
+  - Permitem verificar e alterar o estado de atributos com base em condições do programa.
+  - Podem ser exibidos ou manipulados diretamente no código com boa integração em IDEs.
+  - Garantem que o programa seja mais eficiente e consistente.
+
+- **Legibilidade e Flexibilidade:**
+  - Enumeradores tornam o código mais claro e compreensível.
+  - São úteis para estruturar programas com requisitos fixos e categorias predefinidas.
 
 ## Aula 05 - Modificadores de acesso
 
