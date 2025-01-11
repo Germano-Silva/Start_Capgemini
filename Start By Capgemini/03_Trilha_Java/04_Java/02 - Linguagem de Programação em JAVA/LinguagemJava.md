@@ -27,6 +27,24 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 
 #### Aulas 1.A
 
+- **Curso de Java Intermediário:**
+  - Objetivo: Capacitar o aluno para desenvolver um projeto Java com atualização em banco de dados.
+  - Revisão: Continuação do aprendizado iniciado no curso básico, com foco na orientação a objetos.
+
+- **Conceitos Abordados:**
+  - **Consultores**, **interfaces** e **numeradores**.
+  - Manipulação de **arrays**.
+  - Integração de Java com **banco de dados**.
+
+- **Projeto Final:**
+  - Desenvolvimento de um sistema utilizando uma única tabela.
+  - Implementação de métodos para:
+    - Acessar banco de dados.
+    - **Incluir**, **alterar**, **excluir** e **consultar** elementos específicos.
+    - **Consultar todos** os elementos de uma tabela.
+
+- **Objetivo Final:** Possibilitar a aplicação prática dos conceitos aprendidos em um sistema funcional com banco de dados.
+
 ## Aula 02 - Interfaces
 
 #### Aulas 2.A
