@@ -250,6 +250,41 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
   - Utilizar **private** para dados sensíveis e expor apenas o necessário usando **getters** e **setters**.
 
 #### Aulas 5.C
+
+- **Modificador de Acesso Público (Public):**
+  - Permite acesso irrestrito a atributos e métodos de uma classe.
+  - Pode ser acessado de qualquer classe, independentemente do pacote.
+
+- **Características:**
+  - Compartilha informações entre classes relacionadas ou não.
+  - Não há limitações de visibilidade em pacotes diferentes ou no mesmo pacote.
+  - Permite instanciar e acessar atributos ou métodos de qualquer lugar.
+
+- **Casos de Uso:**
+  - Em uma classe, atributos ou métodos marcados como **public** podem ser acessados por outras classes sem restrição.
+  - Exemplos comuns incluem métodos utilitários e atributos que precisam ser amplamente disponíveis.
+
+- **Visibilidade do Modificador Public:**
+
+| **Contexto**                              | **Visibilidade do Modificador Public** |
+|-------------------------------------------|----------------------------------------|
+| Classes derivadas no mesmo pacote         | Acessível                              |
+| Classes derivadas em pacotes diferentes   | Acessível                              |
+| Classes não relacionadas no mesmo pacote  | Acessível                              |
+| Classes não relacionadas em pacotes diferentes | Acessível                          |
+
+- **Regras Importantes:**
+  - Usar com cautela, pois **public** expõe todos os detalhes sem restrições.
+  - Deve ser aplicado apenas a elementos que precisam ser amplamente acessíveis.
+
+- **Riscos:**
+  - Reduz o encapsulamento e pode comprometer a segurança do programa.
+  - Requer planejamento cuidadoso para evitar uso inadequado ou excessivo.
+
+- **Benefícios:**
+  - Simplifica o compartilhamento de funcionalidades entre diferentes partes do programa.
+  - Facilita a reutilização de código em múltiplos contextos.
+
 #### Aulas 5.D
 #### Aulas 5.E
 #### Aulas 5.F
