@@ -980,3 +980,44 @@ Demonstrar a implementação prática do conceito de herança, organizando atrib
 
 **Nota:**  
 A herança simplifica a estruturação e manutenção do código, permitindo reutilização e clareza ao lidar com atributos compartilhados e únicos entre diferentes classes.  
+
+#### Aula 13.K
+
+**Polimorfismo: Pilar da Orientação a Objetos**
+
+**Objetivo:**  
+Demonstrar o conceito de polimorfismo em Java, permitindo que um método tenha diferentes implementações dependendo da classe que o utiliza.
+
+**Conceitos Apresentados:**  
+- **O que é Polimorfismo:**  
+  - Capacidade de um método ter múltiplas formas, permitindo diferentes comportamentos dependendo da classe que o implementa.  
+  - Promove reutilização de código e flexibilidade.  
+
+- **Estrutura do Polimorfismo:**  
+  - **Superclasse Abstrata:**  
+    - Contém a definição de métodos abstratos que devem ser implementados nas subclasses.  
+  - **Subclasses:**  
+    - Implementam os métodos definidos na superclasse com comportamentos específicos.  
+
+- **Exemplo de Aplicação:**  
+  - **Superclasse:** `Mamifero` (classe abstrata).  
+    - Método abstrato `cotaDeAreaDeLeite()`.  
+  - **Subclasses:**  
+    - `Elefante`: Implementa `cotaDeAreaDeLeite()` retornando 30 litros.  
+    - `Rato`: Implementa `cotaDeAreaDeLeite()` retornando 0.5 litros.  
+
+- **Vantagens do Polimorfismo:**  
+  - Reduz a duplicação de código.  
+  - Facilita a manutenção e extensão do sistema.  
+  - Permite o uso de referências da superclasse para acessar métodos das subclasses.  
+
+- **Características Técnicas:**  
+  - Métodos com a mesma assinatura (nome, parâmetros e tipo de retorno).  
+  - Diferentes implementações em classes derivadas.  
+
+**Resultados:**  
+- `cotaDeAreaDeLeite()` foi utilizado em diferentes classes (`Elefante` e `Rato`) com comportamentos distintos.  
+- Mesma estrutura de método, retornando valores específicos conforme a classe.  
+
+**Nota:**  
+O polimorfismo é um dos pilares fundamentais da orientação a objetos, sendo essencial para a criação de sistemas flexíveis e bem estruturados.  
