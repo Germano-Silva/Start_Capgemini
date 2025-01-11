@@ -220,6 +220,35 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
   - Manter consistência na aplicação dos modificadores para melhorar a clareza do código.
 
 #### Aulas 5.B
+
+- **Tipos de Modificadores de Acesso:**
+  - **Private:** Maior nível de restrição, acesso permitido apenas dentro da própria classe.
+  - **Default:** Acesso restrito ao mesmo pacote, aplicado automaticamente quando nenhum modificador é explicitado.
+  - **Protected:** Permite acesso dentro do mesmo pacote e por subclasses, mesmo em pacotes diferentes.
+  - **Public:** Menor nível de restrição, permite acesso de qualquer classe.
+
+- **Níveis de Modificadores:**
+  - **Nível Superior:**
+    - Aplicável a **classes**.
+    - Modificadores possíveis: **Public** e **Default**.
+    - O **Default** é assumido quando nenhum modificador é definido explicitamente.
+  - **Nível de Membro:**
+    - Aplicável a **atributos** e **métodos**.
+    - Modificadores possíveis: **Private**, **Default**, **Protected** e **Public**.
+    - O **Default** é assumido automaticamente caso nenhum modificador seja declarado.
+
+- **Ordem de Restrição:**
+  - **Private** → **Default** → **Protected** → **Public**.
+  - A visibilidade aumenta conforme o nível de acesso se torna menos restritivo.
+
+- **Função dos Modificadores:**
+  - Controlar a visibilidade e acessibilidade de elementos entre classes e pacotes.
+  - Garantir **segurança** e **encapsulamento**, restringindo o uso indevido de atributos e métodos.
+
+- **Regras Importantes:**
+  - Sempre definir modificadores de acesso para evitar ambiguidade no código.
+  - Utilizar **private** para dados sensíveis e expor apenas o necessário usando **getters** e **setters**.
+
 #### Aulas 5.C
 #### Aulas 5.D
 #### Aulas 5.E
