@@ -1021,3 +1021,22 @@ Demonstrar o conceito de polimorfismo em Java, permitindo que um método tenha d
 
 **Nota:**  
 O polimorfismo é um dos pilares fundamentais da orientação a objetos, sendo essencial para a criação de sistemas flexíveis e bem estruturados.  
+
+#### Aula 14
+
+**Encerramento do Curso de Java Fundamentos**
+
+**Resumo:**  
+- Conclusão do curso de **Java Fundamentos**, abordando os pilares e conceitos essenciais para programação em Java.  
+- Reforço da importância de praticar os exercícios propostos para consolidar o aprendizado.  
+
+**Convite para o Próximo Curso:**  
+- **Java Intermediário:**  
+  - Tópicos avançados de Java.  
+  - Trabalho com Banco de Dados.  
+  - Manipulação de Arrays.  
+  - Conteúdo aprofundado para ampliar as habilidades em Java.  
+
+**Mensagem Final:**  
+Foi um prazer acompanhar você neste curso. Continue praticando e explore os desafios do próximo nível.  
+Até o próximo curso!  
