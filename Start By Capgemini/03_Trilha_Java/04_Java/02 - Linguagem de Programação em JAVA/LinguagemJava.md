@@ -286,6 +286,40 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
   - Facilita a reutilização de código em múltiplos contextos.
 
 #### Aulas 5.D
+
+- **Modificador de Acesso Protected:**
+  - Define que atributos e métodos marcados como **protected** são acessíveis:
+    - Dentro da mesma classe.
+    - Por classes derivadas, mesmo que estejam em pacotes diferentes.
+    - Por classes no mesmo pacote.
+
+- **Características:**
+  - Funciona como uma combinação entre os níveis **default** e **public**.
+  - Permite visibilidade limitada para manter o encapsulamento em pacotes diferentes.
+  - Classes não relacionadas, em pacotes diferentes, não têm acesso.
+
+- **Casos de Uso:**
+  - Utilizado para proteger atributos e métodos que devem ser acessíveis apenas por classes diretamente relacionadas.
+  - Ideal para herança, permitindo que subclasses acessem elementos protegidos.
+
+- **Visibilidade do Modificador Protected:**
+
+| **Contexto**                              | **Visibilidade do Modificador Protected** |
+|-------------------------------------------|-------------------------------------------|
+| Classes derivadas no mesmo pacote         | Acessível                                 |
+| Classes derivadas em pacotes diferentes   | Acessível                                 |
+| Classes não relacionadas no mesmo pacote  | Acessível                                 |
+| Classes não relacionadas em pacotes diferentes | Não acessível                         |
+
+- **Regras Importantes:**
+  - Classes no mesmo pacote têm acesso aos elementos **protected**.
+  - Subclasses podem acessar elementos **protected** mesmo fora do pacote original.
+  - Classes não relacionadas, em pacotes diferentes, não conseguem acessar.
+
+- **Benefícios:**
+  - Garante encapsulamento parcial, permitindo acesso controlado para herança.
+  - Promove organização ao limitar acessos desnecessários em pacotes diferentes.
+
 #### Aulas 5.E
 #### Aulas 5.F
 
