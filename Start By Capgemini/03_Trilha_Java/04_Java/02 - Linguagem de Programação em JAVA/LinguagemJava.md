@@ -359,6 +359,36 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 
 #### Aulas 5.F
 
+- **Modificador de Acesso Default:**
+  - Aplicado automaticamente quando nenhum modificador é explicitado.
+  - Restringe o acesso aos elementos apenas dentro do mesmo pacote.
+
+- **Características:**
+  - Permite acesso entre classes e métodos que compartilham o mesmo pacote.
+  - Não permite acesso por classes de pacotes diferentes, mesmo se forem relacionadas.
+  - É mais restritivo que o **public**, mas menos que o **protected** e **private**.
+
+- **Funcionamento:**
+  - Atributos ou métodos sem um modificador declarado explicitamente assumem o **default**.
+  - Classes dentro do mesmo pacote podem acessar atributos e métodos **default** sem restrições.
+  - Classes fora do pacote original não têm acesso, mesmo que sejam subclasses.
+
+- **Casos de Uso:**
+  - Utilizado para organizar o acesso de elementos que devem ser visíveis apenas dentro de um contexto restrito (pacote).
+  - Útil para programas que possuem pacotes claramente segmentados por funcionalidades.
+
+- **Regras Importantes:**
+  - O modificador **default** é o padrão quando não se especifica **public**, **protected** ou **private**.
+  - É restritivo a classes do mesmo pacote e não é recomendado para elementos que precisam ser amplamente acessíveis.
+
+- **Comparação com Outros Modificadores:**
+  - O **default** é mais restritivo que o **public** e o **protected**, mas menos que o **private**.
+  - A diferença é perceptível ao tentar acessar atributos ou métodos a partir de pacotes diferentes.
+
+- **Benefícios:**
+  - Mantém o encapsulamento parcial ao limitar o acesso ao escopo do pacote.
+  - Facilita a organização e segurança em sistemas com múltiplos pacotes.
+
 ## Aula 06 - Matriz
 
 #### Aulas 6.A
