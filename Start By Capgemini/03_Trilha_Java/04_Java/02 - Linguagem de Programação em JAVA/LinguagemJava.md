@@ -201,7 +201,23 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 ## Aula 05 - Modificadores de acesso
 
 #### Aulas 5.A
+- **Modificadores de Acesso:**
+  - Definem o nível de acesso a classes, atributos e métodos em um programa Java.
+  - São fundamentais para implementar **encapsulamento** e controlar a visibilidade de elementos.
 
+- **Funções Principais:**
+  - Garantir **segurança** e **controle** ao proteger informações sensíveis.
+  - Melhorar a **organização** e a **manutenibilidade** do código.
+  - Restringir ou permitir o uso de elementos conforme necessário.
+
+- **Benefícios:**
+  - Promovem **segurança** no acesso aos dados.
+  - Facilitam o **encapsulamento** e a modularização do código.
+  - Garantem que apenas partes relevantes do código sejam expostas.
+
+- **Boas Práticas:**
+  - Evitar uso desnecessário de **public** em atributos e métodos.
+  - Manter consistência na aplicação dos modificadores para melhorar a clareza do código.
 
 #### Aulas 5.B
 #### Aulas 5.C
