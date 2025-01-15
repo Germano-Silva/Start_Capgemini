@@ -481,6 +481,38 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
   - **Indexador:** Maior controle sobre índices e valores individuais.
 
 #### Aulas 6.D
+
+- **Manipulação de Arrays em Java:**
+  - Arrays são estruturas de dados que armazenam múltiplos valores do mesmo tipo.
+  - Permitem tanto inicialização direta quanto inserção de dados de forma iterativa.
+
+- **Declaração e Inicialização de Arrays:**
+  - Podem ser declarados com tamanho fixo e valores iniciais:
+    - Exemplo: `String[] paises = new String[4];`.
+  - Valores podem ser atribuídos diretamente ou por meio de interação com o usuário.
+
+- **Iteração sobre Arrays:**
+  - Utiliza-se laços como **for** para preencher ou listar os valores.
+  - O índice começa em **0** e vai até o tamanho do array menos um.
+  - O laço **for** facilita a navegação e manipulação dos elementos.
+
+- **Alteração de Valores em Arrays:**
+  - É possível modificar valores específicos indicando a posição desejada.
+  - Exemplo: `array[2] = novoValor;`.
+
+- **Erros Comuns e Prevenção:**
+  - Tentar acessar posições inexistentes gera uma exceção (**ArrayIndexOutOfBoundsException**).
+  - Garantir que o índice utilizado esteja dentro do limite definido.
+
+- **Boas Práticas:**
+  - Utilizar comentários para descrever a funcionalidade de partes importantes do código.
+  - Evitar a duplicação de lógica e manter a legibilidade do código.
+
+- **Benefícios:**
+  - Permitem organização de dados de maneira sequencial e eficiente.
+  - Suportam cálculos e manipulações diretas em valores armazenados.
+  - Oferecem flexibilidade para inicialização e alteração conforme necessidade.
+
 #### Aulas 6.E
 
 ## Aula 07 - Cobranças
