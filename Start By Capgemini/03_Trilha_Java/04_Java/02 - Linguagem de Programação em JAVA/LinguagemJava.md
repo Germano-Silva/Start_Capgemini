@@ -446,6 +446,40 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
   - Estrutura simples e eficiente para trabalhar com volumes fixos de dados.
 
 #### Aulas 6.C
+
+- **Inicialização Padrão de Arrays:**
+  - Elementos de arrays recebem valores padrão se não forem inicializados explicitamente:
+    - **Numéricos:** Inicializados com `0`.
+    - **Booleanos:** Inicializados com `false`.
+    - **Referências:** Inicializadas com `null`.
+
+- **Inicialização Personalizada:**
+  - Arrays podem ser inicializados com valores específicos no momento da criação.
+  - Exemplo: `String[] paises = {"Brasil", "Alemanha", "Itália", "Polônia"};`.
+
+- **Iteração sobre Arrays:**
+  - O loop **for-each** é uma forma eficiente de iterar sobre os elementos de um array.
+    - Exemplo básico:
+      ```java
+      for (String pais : paises) {
+          System.out.println(pais);
+      }
+      ```
+  - O laço percorre os elementos do array automaticamente, parando quando todos os itens são acessados.
+
+- **Indexação em Arrays:**
+  - Outra forma de iterar é utilizando um índice para acessar posições específicas do array.
+  - Essa abordagem permite modificar elementos diretamente no array.
+
+- **Práticas com Arrays:**
+  - Inicializar arrays interativamente (como entrada do usuário).
+  - Alterar valores armazenados em posições específicas.
+  - Explorar diferentes abordagens para manipular e listar elementos.
+
+- **Vantagens de Iteração com Arrays:**
+  - **For-each:** Simplicidade e legibilidade.
+  - **Indexador:** Maior controle sobre índices e valores individuais.
+
 #### Aulas 6.D
 #### Aulas 6.E
 
