@@ -410,6 +410,40 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 
 #### Aulas 6.B
 
+- **Arrays em Java:**
+  - Estruturas de dados utilizadas para armazenar múltiplos valores do mesmo tipo.
+  - Divididos em **unidimensionais** (vetores) e **multidimensionais** (matrizes).
+
+- **Criação de Arrays:**
+  - Requer a definição do tipo de dado, nome do array e alocação de memória usando `new`.
+  - O tamanho do array é fixo e definido no momento de sua criação.
+  - Exemplo básico:
+    - `int[] numeros = new int[4];` (array com quatro posições).
+
+- **Atributos e Funcionamento:**
+  - Os índices começam em **0** e vão até o tamanho do array menos um.
+  - Cada posição do array armazena um valor específico do tipo declarado.
+  - Acessar índices fora do limite resulta em um erro (**ArrayIndexOutOfBoundsException**).
+
+- **Inicialização de Arrays:**
+  - **Imediata:** Valores são definidos no momento da declaração.
+    - Exemplo: `int[] valores = {12, 32, 64, 6, 8};`.
+  - **Posterior:** A memória é alocada e os valores atribuídos posteriormente.
+    - Exemplo:
+      - `int[] meuArray;`
+      - `meuArray = new int[10];`.
+
+- **Utilização:**
+  - Ideal para armazenar dados sequenciais ou estruturados de maneira eficiente.
+  - Pode ser usado em combinação com laços como **for** para iterar sobre seus elementos.
+
+- **Erros Comuns:**
+  - Acessar posições que não existem no array.
+  - Não inicializar o array antes de utilizá-lo.
+
+- **Vantagens:**
+  - Permite organizar e acessar dados de forma sequencial.
+  - Estrutura simples e eficiente para trabalhar com volumes fixos de dados.
 
 #### Aulas 6.C
 #### Aulas 6.D
