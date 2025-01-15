@@ -393,8 +393,24 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 
 #### Aulas 6.A
 
+- **Arrays em Java:**
+  - Estruturas fundamentais para armazenar e organizar dados.
+  - Semelhantes a conceitos de listas e matrizes.
+
+- **Objetivo:**
+  - Facilitar o armazenamento e manipulação de múltiplos valores relacionados em uma única estrutura.
+
+- **Características:**
+  - Os arrays são sequências ordenadas.
+  - Cada elemento do array pode ser acessado por sua posição, chamada de índice.
+
+- **Importância:**
+  - Proporcionam uma maneira eficiente de trabalhar com grandes volumes de dados.
+  - Fundamentais para a lógica de programação e organização de dados em Java.
 
 #### Aulas 6.B
+
+
 #### Aulas 6.C
 #### Aulas 6.D
 #### Aulas 6.E
