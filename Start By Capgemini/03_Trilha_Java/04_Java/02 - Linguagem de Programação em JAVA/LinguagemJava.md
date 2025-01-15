@@ -580,6 +580,8 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 ## Aula 07 - Cobranças
 
 #### Aulas 7.A
+
+
 #### Aulas 7.B
 #### Aulas 7.C
 #### Aulas 7.D
