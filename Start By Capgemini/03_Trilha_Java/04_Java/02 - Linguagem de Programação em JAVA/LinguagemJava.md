@@ -515,6 +515,68 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 
 #### Aulas 6.E
 
+- **Matrizes (Arrays Bidimensionais) em Java:**
+  - Representam **vetores de vetores**, ou seja, arrays contendo outros arrays.
+  - Utilizadas para organizar dados em linhas e colunas, como tabelas ou planilhas.
+
+- **Criação de Matrizes:**
+  - Declaradas com dois conjuntos de colchetes.
+    - Exemplo: `float[][] notas = new float[3][4];`.
+    - **3 linhas** e **4 colunas** no exemplo acima.
+  - Cada posição é acessada por dois índices: `[linha][coluna]`.
+
+- **Funcionamento:**
+  - Permite armazenar dados como em um boletim:
+    - Cada linha representa um aluno.
+    - Cada coluna representa uma nota.
+  - Exemplo:
+    - `notas[0][0]`: Primeira nota do primeiro aluno.
+    - `notas[1][2]`: Terceira nota do segundo aluno.
+
+- **Iteração com Matrizes:**
+  - Utiliza dois laços **for** aninhados:
+    - O **for externo** itera sobre as linhas.
+    - O **for interno** itera sobre as colunas.
+  - Exemplo:
+    ```java
+    for (int i = 0; i < alunos.length; i++) {
+        for (int j = 0; j < notas[i].length; j++) {
+            // Processar cada nota
+        }
+    }
+    ```
+
+- **Cálculo e Condições:**
+  - Calcular a média de cada aluno somando as notas e dividindo pelo número de colunas.
+  - Regras para definir o status do aluno:
+    - Média maior ou igual a 7.5: **Aprovado**.
+    - Média entre 5.5 e 7.5: **Recuperação**.
+    - Média menor que 5.5: **Reprovado**.
+
+- **Boletins e Resultados:**
+  - Para cada aluno:
+    - Imprimir o nome, notas, média e status (Aprovado, Recuperação ou Reprovado).
+  - Exemplo de saída:
+    ```
+    Aluno: João
+    Nota 1: 8
+    Nota 2: 8
+    Nota 3: 8
+    Nota 4: 8
+    Média: 8
+    Status: Aprovado
+    ```
+
+- **Boas Práticas:**
+  - Inicializar variáveis como somatórios dentro do laço externo para evitar contaminação entre alunos.
+  - Usar comentários para descrever a lógica de cálculo e iteração.
+
+- **Benefícios de Matrizes:**
+  - Organizam dados de forma estruturada e eficiente.
+  - Facilmente iteráveis com laços aninhados.
+  - Permitem a representação de relacionamentos entre conjuntos de dados.
+
+
 ## Aula 07 - Cobranças
 
 #### Aulas 7.A
