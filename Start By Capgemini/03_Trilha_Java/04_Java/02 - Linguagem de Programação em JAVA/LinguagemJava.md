@@ -581,6 +581,26 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 
 #### Aulas 7.A
 
+- **Collections em Java:**
+  - **Introdução ao Tema:**
+    - As **Collections** são interfaces que fornecem estruturas de dados dinâmicas e flexíveis.
+    - Permitem manipular listas, mapas e conjuntos de forma eficiente.
+    - São amplamente utilizadas para substituir arrays fixos e oferecem métodos prontos para manipulação.
+
+- **O que será abordado:**
+  - **Listas (List):**
+    - Estruturas que armazenam elementos ordenados e permitem duplicatas.
+  - **Mapas (Map):**
+    - Associam chaves únicas a valores, facilitando buscas.
+  - **ArrayList:**
+    - Lista dinâmica baseada em arrays.
+    - Oferece funcionalidades como adição, remoção, alteração e busca de elementos.
+    - Integra métodos úteis para manipulação de dados e controle de posições.
+
+- **Objetivo do Estudo:**
+  - Explorar a flexibilidade e as funcionalidades do **ArrayList**.
+  - Demonstrar como localizar, modificar e substituir elementos em um **ArrayList**.
+  - Mostrar como as **Collections** tornam a manipulação de dados mais prática e eficiente.
 
 #### Aulas 7.B
 #### Aulas 7.C
