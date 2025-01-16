@@ -950,6 +950,34 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 
 #### Aulas 10.A
 
+- **Anotações (Annotations) em Java:**
+  - São metadados utilizados para fornecer informações adicionais ao código.
+  - Podem ser aplicadas em tempo de compilação, execução ou construção do projeto.
+
+- **Exemplos de Anotações Comuns:**
+  - **@Override:** Indica que um método está sobrescrevendo um método da superclasse.
+  - **@Deprecated:** Marca um elemento como obsoleto, indicando que não deve ser mais utilizado.
+  - **@SuppressWarnings:** Suprime avisos específicos do compilador.
+  - **@Test:** Utilizada em frameworks de teste, como o JUnit, para indicar métodos de teste.
+
+- **Tipos de Uso:**
+  - **Documentação:** Ferramentas como JavaDoc utilizam anotações para gerar documentação do código.
+  - **Compilação:** Informações fornecidas pelas anotações ajudam o compilador a validar o código.
+  - **Execução:** Frameworks como Spring e ferramentas de serialização (ex.: XML, JSON) usam anotações para configurar e gerenciar objetos dinamicamente.
+
+- **Benefícios das Anotações:**
+  - Facilitam a integração com frameworks e ferramentas.
+  - Tornam o código mais legível e organizado.
+  - Simplificam processos como testes automatizados, validação e serialização.
+
+- **Aplicações Práticas:**
+  - **Ferramentas de Teste:** Identificação de métodos de teste com **@Test**.
+  - **Frameworks Web:** Configuração de rotas e dependências com anotações como **@Controller** e **@Autowired** no Spring.
+  - **Serialização:** Especificação de mapeamentos com anotações para XML ou JSON.
+
+- **Importância:**
+  - As anotações são amplamente utilizadas em projetos modernos para melhorar a organização e eficiência do código.
+  - São fundamentais para o desenvolvimento baseado em frameworks e programação orientada a aspectos.
 
 #### Aulas 10.B
 
