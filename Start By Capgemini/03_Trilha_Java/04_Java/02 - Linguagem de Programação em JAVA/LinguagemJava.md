@@ -768,6 +768,22 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 ## Aula 08 - Tópicos avançados
 
 #### Aulas 8.A
+- **Próximos Tópicos em Java:**
+  - **Genéricos (Generics):**
+    - Ferramentas que permitem criar classes, interfaces e métodos que trabalham com tipos parametrizados.
+    - Garantem maior segurança e flexibilidade ao lidar com diferentes tipos de dados.
+
+  - **Anotações (Annotations):**
+    - Metadados que fornecem informações ao compilador ou ao tempo de execução.
+    - Amplamente utilizados em frameworks e bibliotecas Java.
+
+  - **Threads (Multithreading):**
+    - Técnicas para executar várias tarefas simultaneamente dentro de um programa.
+    - Cruciais para aplicações que requerem desempenho e paralelismo.
+
+- **Objetivo do Estudo:**
+  - Explorar conceitos avançados para melhorar a escrita, organização e execução de programas Java.
+  - Demonstrar como Genéricos, Anotações e Threads tornam o código mais robusto e eficiente.
 #### Aulas 8.B
 #### Aulas 8.C
 
