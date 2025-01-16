@@ -712,6 +712,59 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 
 #### Aulas 7.E
 
+- **LinkedList em Java:**
+  - Estrutura de dados dinâmica especializada em manipulação de elementos nas extremidades.
+  - Compartilha características com o **ArrayList**, mas com foco em operações no início e fim da lista.
+
+- **Criação do LinkedList:**
+  - Declaração semelhante ao **ArrayList**, utilizando a estrutura de diamante:
+    ```java
+    LinkedList<String> carros = new LinkedList<>();
+    ```
+  - Requer importação da classe `java.util.LinkedList`.
+
+- **Principais Métodos do LinkedList:**
+  - **Inserções:**
+    - `addFirst(element)`: Adiciona um elemento no início.
+    - `addLast(element)`: Adiciona um elemento no fim.
+    - `add(index, element)`: Insere em uma posição específica.
+  - **Remoções:**
+    - `removeFirst()`: Remove o primeiro elemento.
+    - `removeLast()`: Remove o último elemento.
+  - **Acessos:**
+    - `getFirst()`: Retorna o primeiro elemento.
+    - `getLast()`: Retorna o último elemento.
+    - `get(index)`: Retorna o elemento em uma posição específica.
+  - **Outros Métodos:**
+    - `clear()`: Remove todos os elementos da lista.
+    - `isEmpty()`: Verifica se a lista está vazia.
+
+- **Exemplo de Operações:**
+  - Inserção de elementos:
+    ```java
+    carros.addFirst("Mazda");
+    carros.addLast("Bugatti");
+    ```
+  - Remoção de elementos:
+    ```java
+    carros.removeFirst();
+    carros.removeLast();
+    ```
+  - Acessar elementos:
+    ```java
+    String primeiroCarro = carros.getFirst();
+    String ultimoCarro = carros.getLast();
+    ```
+
+- **Comparação com ArrayList:**
+  - **LinkedList:**
+    - Melhor para operações frequentes de inserção e remoção nas extremidades.
+  - **ArrayList:**
+    - Mais eficiente para acesso e manipulação de elementos no meio da lista.
+
+- **Finalização:**
+  - Os métodos de `LinkedList` permitem flexibilidade em diferentes contextos, mesmo compartilhando funções comuns com o **ArrayList**, como `clear()` e `isEmpty()`.
+
 ## Aula 08 - Tópicos avançados
 
 #### Aulas 8.A
