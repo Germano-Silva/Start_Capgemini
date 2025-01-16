@@ -785,8 +785,56 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 - **Objetivo do Estudo:**
   - Explorar conceitos avançados para melhorar a escrita, organização e execução de programas Java.
   - Demonstrar como Genéricos, Anotações e Threads tornam o código mais robusto e eficiente.
-  
+
 #### Aulas 8.B
+
+- **Classes Wrapper em Java:**
+  - São classes disponíveis no pacote **java.lang**, que encapsulam tipos primitivos em objetos.
+  - Permitem conversões e operações avançadas com tipos primitivos.
+
+- **Tipos e Correspondências:**
+  - **Lógicos:** `boolean` → `Boolean`.
+  - **Caractere:** `char` → `Character`.
+  - **Numéricos Integrais:**
+    - `byte` → `Byte`.
+    - `short` → `Short`.
+    - `int` → `Integer`.
+    - `long` → `Long`.
+  - **Numéricos Flutuantes:**
+    - `float` → `Float`.
+    - `double` → `Double`.
+
+- **Vantagens das Classes Wrapper:**
+  - Realizam conversões entre tipos primitivos e objetos de forma eficiente.
+  - Facilitam operações complexas como cálculos, formatações e comparações.
+  - Permitem o uso de métodos utilitários, como `parse` e `toString`.
+
+- **Boxing e Unboxing:**
+  - **Boxing:** Converte um tipo primitivo em um objeto Wrapper.
+    - Exemplo: `Integer numero = Integer.valueOf(5);`.
+  - **Unboxing:** Converte um objeto Wrapper de volta para o tipo primitivo.
+    - Exemplo: `int numero = Integer.parseInt("5");`.
+
+- **Automação de Boxing e Unboxing:**
+  - O compilador realiza essas conversões automaticamente quando necessário:
+    - **Auto-boxing:** De primitivo para Wrapper.
+    - **Auto-unboxing:** De Wrapper para primitivo.
+
+- **Aplicação Prática:**
+  - Uso comum em coleções e métodos que exigem objetos, como listas (`ArrayList`).
+  - Permitem manipular tipos primitivos como objetos, adicionando flexibilidade ao código.
+
+- **Exemplo de Conversão com Classes Wrapper:**
+  ```java
+  int numero = 10;
+  Integer wrapperNumero = numero; // Auto-boxing
+  int primitivoNumero = wrapperNumero; // Auto-unboxing
+  ```
+
+- **Importância:**
+  - Facilita a manipulação de dados em estruturas complexas e métodos avançados.
+  - Oferece eficiência e conveniência, especialmente em laços e expressões complexas.
+
 #### Aulas 8.C
 
 ## Aula 09 - Genéricos
