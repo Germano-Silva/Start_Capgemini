@@ -837,6 +837,42 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 
 #### Aulas 8.C
 
+- **Implementação de Classes Wrapper:**
+  - As **classes wrapper** encapsulam tipos primitivos, permitindo utilizá-los como objetos.
+  - São amplamente utilizadas para conversões de tipos primitivos para objetos e vice-versa.
+
+- **Uso de Classes Wrapper:**
+  - **Boolean, Character, Integer, Float, Double, etc.**
+    - Representam os tipos primitivos correspondentes como objetos.
+    - Possuem métodos utilitários como `parse` e `valueOf` para conversões e manipulações.
+
+- **Exemplo Prático:**
+  - Conversão de uma **String** para um tipo primitivo utilizando **Integer.parseInt**:
+    ```java
+    String numeroTexto = "1";
+    int numero = Integer.parseInt(numeroTexto); // Conversão para int
+    numero = numero + 1; // Operação com o valor convertido
+    System.out.println(numero); // Saída: 2
+    ```
+
+- **Boxing e Unboxing na Implementação:**
+  - **Boxing:** O valor primitivo é encapsulado em um objeto wrapper.
+  - **Unboxing:** O objeto wrapper é convertido de volta para um tipo primitivo.
+    - Exemplo:
+      ```java
+      Integer numeroWrapper = Integer.valueOf(10); // Boxing
+      int numeroPrimitivo = numeroWrapper; // Unboxing
+      ```
+
+- **Vantagens:**
+  - Permitem manipular tipos primitivos em estruturas de dados que exigem objetos, como **ArrayList**.
+  - Facilitam operações complexas, como conversões e manipulação em coleções.
+  - Integram métodos utilitários para facilitar cálculos e transformações.
+
+- **Considerações:**
+  - As classes wrapper são essenciais para trabalhar com dados em Java modernos.
+  - Serão frequentemente usadas em operações com coleções e manipulação de dados no decorrer do curso.
+
 ## Aula 09 - Genéricos
 
 #### Aulas 9.A
