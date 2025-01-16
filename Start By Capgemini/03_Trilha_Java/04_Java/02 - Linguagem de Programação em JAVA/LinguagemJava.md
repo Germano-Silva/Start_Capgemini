@@ -1017,6 +1017,8 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 ## Aula 11 - Fios
 
 #### Aulas 11.A
+
+
 #### Aulas 11.B
 
 ## Aula 12 - Laços
