@@ -876,6 +876,8 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 ## Aula 09 - Genéricos
 
 #### Aulas 9.A
+
+
 #### Aulas 9.B
 
 ## Aula 10 - Anotações
