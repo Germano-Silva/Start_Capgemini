@@ -697,6 +697,19 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
   - Simples de integrar com interfaces gráficas ou métodos que interajam com o usuário.
 
 #### Aulas 7.D
+
+- **LinkedList em Java:**
+  - Estrutura de dados dinâmica similar ao **ArrayList**.
+  - Especializada para operações nas extremidades (início e fim da lista).
+
+- **Diferenciais do LinkedList:**
+  - Otimizado para inserções e remoções nas pontas.
+  - Oferece métodos específicos como `addFirst()`, `addLast()`, `removeFirst()`, e `removeLast()`.
+
+- **Comparação com ArrayList:**
+  - **LinkedList:** Melhor performance em operações nas extremidades.
+  - **ArrayList:** Melhor performance em acessos e manipulações na parte central da lista.
+
 #### Aulas 7.E
 
 ## Aula 08 - Tópicos avançados
