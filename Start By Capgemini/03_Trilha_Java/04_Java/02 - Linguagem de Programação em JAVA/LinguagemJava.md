@@ -641,6 +641,61 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
   - Explorar a utilização de **LinkedList** e compreender suas diferenças.
 
 #### Aulas 7.C
+
+- **Uso Prático do ArrayList:**
+  - Estrutura dinâmica que substitui arrays tradicionais com maior flexibilidade.
+  - Permite operações como adição, remoção, modificação e busca de elementos.
+
+- **Criação e Configuração:**
+  - Declarado utilizando a **estrutura de diamante** para especificar o tipo:
+    - Exemplo: `ArrayList<String> carros = new ArrayList<>();`.
+  - Requer importação da classe `java.util.ArrayList`.
+
+- **Principais Métodos do ArrayList:**
+  - **add(element):** Adiciona um elemento ao final da lista.
+  - **add(index, element):** Insere um elemento em uma posição específica.
+  - **get(index):** Retorna o elemento na posição especificada.
+  - **set(index, element):** Substitui o elemento em uma posição específica.
+  - **remove(element):** Remove o primeiro elemento encontrado que corresponda ao valor.
+  - **size():** Retorna o tamanho atual da lista.
+  - **clear():** Remove todos os elementos da lista.
+  - **contains(element):** Verifica se um elemento existe na lista.
+  - **indexOf(element):** Retorna a posição do elemento especificado.
+
+- **Características:**
+  - Elementos são armazenados na ordem de inserção.
+  - O tamanho da lista é ajustado automaticamente conforme elementos são adicionados ou removidos.
+
+- **Exemplo de Operações:**
+  - **Adicionar elementos:**
+    ```java
+    carros.add("Fusca");
+    carros.add("Sandero");
+    ```
+  - **Substituir elementos:**
+    ```java
+    carros.set(1, "BMW");
+    ```
+  - **Remover elementos por valor:**
+    ```java
+    carros.remove("Fusca");
+    ```
+  - **Buscar elementos e modificar dinamicamente:**
+    - Utilizando um laço `for` para localizar e alterar elementos.
+
+- **Iteração e Verificação:**
+  - O método `for` é utilizado para percorrer os elementos com base no tamanho da lista (`size()`).
+  - Permite buscas e alterações dinâmicas baseadas no conteúdo ou posição dos elementos.
+
+- **Tratamento de Casos Específicos:**
+  - Implementação de lógica condicional para situações em que elementos não sejam encontrados.
+  - Uso de métodos como `contains()` para evitar operações em elementos inexistentes.
+
+- **Benefícios do ArrayList:**
+  - Evita a necessidade de pré-definir tamanhos como em arrays.
+  - Oferece maior flexibilidade com métodos integrados para manipulação eficiente.
+  - Simples de integrar com interfaces gráficas ou métodos que interajam com o usuário.
+
 #### Aulas 7.D
 #### Aulas 7.E
 
