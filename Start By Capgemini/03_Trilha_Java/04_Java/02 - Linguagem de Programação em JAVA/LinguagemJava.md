@@ -901,6 +901,51 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 
 #### Aulas 9.B
 
+- **Uso Prático de Generics em Java:**
+  - **Generics** permitem criar classes e métodos que trabalham com tipos parametrizados, aumentando a flexibilidade e a reutilização de código.
+
+- **Exemplo com Generics:**
+  - Cenário: Gerenciar voos em um pátio de aeroporto (ordem de chegada e decolagem).
+  - Implementação sem Generics:
+    - Definir a classe e métodos diretamente tipados, como `Integer` para os números dos voos.
+    - Cada vez que o tipo muda, é necessário alterar todos os métodos e declarações associadas.
+  - Implementação com Generics:
+    - Utilizar um tipo genérico `<T>` na definição da classe e métodos.
+    - O tipo é definido no momento da instânciação da classe.
+    - Exemplo:
+      ```java
+      public class Aeronaves<T> {
+          private List<T> voos = new ArrayList<>();
+          public void adicionarVoo(T voo) {
+              voos.add(voo);
+          }
+          public T primeiroVoo() {
+              return voos.get(0);
+          }
+      }
+      ```
+
+- **Flexibilidade dos Generics:**
+  - Alterar o tipo ao instanciar sem modificar a classe ou métodos.
+    ```java
+    Aeronaves<Integer> aeronavesInteiros = new Aeronaves<>();
+    Aeronaves<String> aeronavesStrings = new Aeronaves<>();
+    ```
+  - Os métodos funcionam independentemente do tipo utilizado.
+
+- **Benefícios Práticos:**
+  - **Reutilização de Código:** Não é necessário criar versões diferentes da mesma classe ou método para tipos diferentes.
+  - **Segurança de Tipos:** O compilador garante que apenas os tipos corretos sejam utilizados, reduzindo erros de tempo de execução.
+  - **Redução de Conversões:** Elimina a necessidade de casts para manipular objetos.
+
+- **Aplicação no Exemplo:**
+  - Com Generics, é possível alternar entre números de voos (`Integer`) e identificadores textuais (`String`) sem modificar a lógica da classe.
+  - O tipo genérico `<T>` se adapta ao tipo definido no momento da instânciação.
+
+- **Conclusão:**
+  - Generics tornam o código mais flexível, reutilizável e seguro.
+  - São essenciais em cenários onde o tipo de dados pode variar, mas a lógica permanece a mesma.
+
 ## Aula 10 - Anotações
 
 #### Aulas 10.A
