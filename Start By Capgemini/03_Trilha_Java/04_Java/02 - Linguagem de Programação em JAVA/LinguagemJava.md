@@ -877,6 +877,27 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 
 #### Aulas 9.A
 
+- **Generics em Java:**
+  - Permitem criar classes, interfaces e métodos que trabalham com tipos parametrizados.
+  - Aumentam a **reutilização de código** e reduzem a necessidade de conversões explícitas de tipos.
+
+- **Características dos Generics:**
+  - Tipagem dinâmica definida no momento da criação do objeto ou uso da classe.
+  - Elimina a necessidade de **cast** (conversão de tipos) ao manipular dados.
+  - Garante maior segurança ao detectar erros de tipo em tempo de compilação.
+
+- **Exemplo Básico de Uso:**
+  - Utilização em listas:
+    ```java
+    List<String> lista = new ArrayList<>();
+    lista.add("Exemplo");
+    String elemento = lista.get(0); // Sem necessidade de cast
+    ```
+
+- **Benefícios:**
+  - **Reutilização:** Evita a reescrita de código ao trabalhar com diferentes tipos.
+  - **Segurança:** Reduz o risco de erros de tipo em tempo de execução.
+  - **Legibilidade:** Simplifica o código ao eliminar conversões manuais repetitivas.
 
 #### Aulas 9.B
 
