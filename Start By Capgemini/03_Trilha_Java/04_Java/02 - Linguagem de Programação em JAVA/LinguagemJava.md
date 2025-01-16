@@ -981,6 +981,39 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 
 #### Aulas 10.B
 
+- **Uso Prático de Anotações (Annotations):**
+  - Demonstram como as anotações são aplicadas em métodos para fornecer informações adicionais e facilitar o gerenciamento do código.
+
+- **Exemplo Prático:**
+  - Criado um projeto para testar anotações em Java.
+  - Utilização da anotação **@Deprecated** para marcar um método como obsoleto.
+    ```java
+    @Deprecated
+    public void exibido() {
+        System.out.println("Este método está obsoleto.");
+    }
+    ```
+
+- **Comportamento ao Usar @Deprecated:**
+  - Quando um método marcado com **@Deprecated** é chamado:
+    - O compilador exibe um aviso de que o método está obsoleto.
+    - Indica que o uso é possível, mas desaconselhado.
+    - A execução do método ocorre normalmente, com o aviso sendo exibido durante a compilação.
+
+- **Vantagens de @Deprecated:**
+  - Ajuda a identificar partes do código que não devem mais ser usadas.
+  - Fornece tempo para os desenvolvedores migrarem para métodos ou funcionalidades atualizadas.
+  - Melhora a manutenção ao destacar trechos do código que precisam ser revisados.
+
+- **Outras Aplicações de Anotações:**
+  - **Documentação:** Utilizadas por ferramentas como JavaDoc para gerar documentação de métodos e classes.
+  - **Testes:** Frameworks como JUnit utilizam anotações para indicar métodos de teste (ex.: **@Test**).
+  - **Controle de Código:** Anotações como **@SuppressWarnings** ajudam a suprimir avisos do compilador.
+
+- **Considerações:**
+  - Anotações como **@Deprecated** são usadas em tempo de compilação e ajudam a alertar desenvolvedores sobre práticas desaconselhadas.
+  - Apesar dos avisos, o método ainda pode ser executado, mas seu uso deve ser evitado.
+
 ## Aula 11 - Fios
 
 #### Aulas 11.A
