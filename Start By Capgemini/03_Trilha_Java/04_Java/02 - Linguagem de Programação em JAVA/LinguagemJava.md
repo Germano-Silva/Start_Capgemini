@@ -603,6 +603,43 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
   - Mostrar como as **Collections** tornam a manipulação de dados mais prática e eficiente.
 
 #### Aulas 7.B
+
+- **Collections no Java:**
+  - As Collections são estruturas de dados dinâmicas que permitem manipular e organizar objetos de maneira eficiente.
+  - A interface **Collection** fornece métodos gerais para operações como adição, remoção, busca e iteração de elementos.
+
+- **Diferentes Implementações de Lists:**
+  - **ArrayList:**
+    - Otimizado para acesso e manipulação no meio da lista.
+    - Similar a arrays, mas com tamanho ajustável dinamicamente.
+  - **LinkedList:**
+    - Ideal para operações nas extremidades (início e fim da lista).
+    - Baseada em nós ligados, o que facilita inserções e remoções.
+
+- **Características de ArrayList:**
+  - Permite adicionar elementos sem um tamanho pré-definido.
+  - Oferece métodos como `add()`, `remove()`, `get()`, e `set()`.
+  - Dinamicamente ajustável:
+    - Exemplo: O tamanho inicial pode ser 10, mas cresce conforme elementos são adicionados.
+  - Integra-se bem com laços como **for**, utilizando métodos como `size()` para determinar o tamanho atual.
+
+- **Diferença entre Arrays e ArrayList:**
+  - **Arrays:**
+    - Tamanho fixo, definido no momento da criação.
+    - Menor flexibilidade para adicionar ou remover elementos.
+  - **ArrayList:**
+    - Tamanho ajustável dinamicamente.
+    - Oferece maior flexibilidade e métodos para manipulação.
+
+- **Vantagens das Lists em Collections:**
+  - Evitam a necessidade de definir tamanhos fixos.
+  - Permitem localizar e modificar elementos facilmente.
+  - Suportam operações dinâmicas como adição e remoção em qualquer posição.
+
+- **Próximos Passos:**
+  - Praticar o uso de **ArrayList** com métodos dinâmicos.
+  - Explorar a utilização de **LinkedList** e compreender suas diferenças.
+
 #### Aulas 7.C
 #### Aulas 7.D
 #### Aulas 7.E
