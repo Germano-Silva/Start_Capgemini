@@ -1099,6 +1099,42 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 
 #### Aulas 12.A
 
+**Laço de Repetição em Java:**
+
+- **Revisão do Laço for Tradicional:**
+  - Estrutura básica:
+    ```java
+    for (int i = 0; i < array.length; i++) {
+        System.out.println(array[i]);
+    }
+    ```
+  - Ideal para acessar elementos de arrays ou listas utilizando índices.
+
+- **Introdução ao For-Each (Enhanced For):**
+  - Construção simplificada para iterar diretamente sobre elementos de arrays ou coleções.
+  - Utiliza **classes wrapper** para trabalhar com tipos primitivos como objetos.
+  - Exemplo de uso:
+    ```java
+    for (int numero : array) {
+        System.out.println(numero);
+    }
+    ```
+
+**Benefícios do For-Each:**
+
+- **Simplicidade:** Não é necessário gerenciar índices manualmente.
+- **Legibilidade:** O código é mais limpo e fácil de entender.
+- **Segurança:** Evita erros relacionados ao uso de índices inválidos.
+
+**Considerações:**
+
+- O For-Each é ideal para casos onde não é necessário modificar os elementos ou acessar seus índices diretamente.
+- Para manipulação mais complexa ou quando os índices são necessários, o laço for tradicional continua sendo útil.
+
+**Próximos Passos:**
+
+- Demonstrar o uso do For-Each na prática com arrays e listas.
+- Explorar como o For-Each facilita a interação com coleções e objetos encapsulados.
 
 #### Aulas 12.B
 
