@@ -1098,6 +1098,8 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 ## Aula 12 - Laços
 
 #### Aulas 12.A
+
+
 #### Aulas 12.B
 
 ## Aula 13 - Trabalhando com dados
