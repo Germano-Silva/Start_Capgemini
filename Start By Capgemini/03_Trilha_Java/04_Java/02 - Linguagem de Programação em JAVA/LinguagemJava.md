@@ -1138,6 +1138,54 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 
 #### Aulas 12.B
 
+**Uso Prático do For-Each (Enhanced For) em Java:**
+
+- **Exemplo com Vetores:**
+  - Um vetor de números é declarado e percorrido utilizando o laço **for** tradicional.
+  - Estrutura básica:
+    ```java
+    int[] numeros = {1, 2, 3, 4, 5};
+    for (int i = 0; i < numeros.length; i++) {
+        System.out.println(numeros[i]);
+    }
+    ```
+
+- **Implementação com For-Each:**
+  - O **for-each** simplifica a iteração:
+    ```java
+    for (int numero : numeros) {
+        System.out.println(numero);
+    }
+    ```
+
+**Diferenças entre For e For-Each:**
+
+- **For Tradicional:**
+  - Requer o controle manual dos índices.
+  - Ideal para manipulações que dependem das posições dos elementos.
+
+- **For-Each:**
+  - Itera diretamente sobre os elementos.
+  - Torna o código mais legível e elimina o risco de erros com índices inválidos.
+
+**Uso com Classes Wrapper:**
+  - É possível encapsular os elementos em objetos utilizando classes wrapper:
+    ```java
+    Integer[] numerosWrapper = {1, 2, 3, 4, 5};
+    for (Integer numero : numerosWrapper) {
+        System.out.println(numero);
+    }
+    ```
+
+**Benefícios do For-Each:**
+  - Código mais limpo e legível.
+  - Evita a necessidade de gerenciar índices.
+  - Compatível com arrays e coleções como listas.
+
+**Considerações:**
+  - O For-Each é adequado para cenários onde não é necessário acessar ou modificar diretamente os índices.
+  - Para manipulações mais específicas ou que envolvam índices, o laço for tradicional pode ser mais útil.
+
 ## Aula 13 - Trabalhando com dados
 
 #### Aulas 13.A
