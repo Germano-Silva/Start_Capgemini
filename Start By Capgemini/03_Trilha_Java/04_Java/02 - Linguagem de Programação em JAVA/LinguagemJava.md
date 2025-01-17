@@ -1048,6 +1048,53 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 
 #### Aulas 11.B
 
+**Implementação de Threads em Java:**
+
+- Threads são criadas e gerenciadas utilizando a interface **Runnable** ou diretamente pela classe **Thread**.
+- Permitem a execução de múltiplas tarefas de forma concorrente.
+
+**Estrutura do Exemplo:**
+
+- **Criação de Threads:**
+  - Foram criadas duas threads: **T1** e **T2**, utilizando a interface **Runnable**.
+  - Cada thread executa um laço que imprime o valor de um contador e identifica a thread que está executando.
+
+- **Inicialização das Threads:**
+  - As threads são iniciadas com o método `start()`:
+    ```java
+    Thread thread1 = new Thread(new RunnableTask("T1"));
+    thread1.start();
+    ```
+
+- **Comportamento de Execução:**
+  - A execução das threads é alternada pelo escalonador do sistema operacional.
+  - Não há garantia da ordem de execução:
+    - Exemplo:
+      ```
+      T1: Contador 1
+      T2: Contador 1
+      T1: Contador 2
+      T2: Contador 2
+      ```
+  - A ordem pode variar a cada execução.
+
+**Vantagens do Uso de Threads:**
+
+- **Execução Concorrente:**
+  - Permite que múltiplas tarefas sejam executadas simultaneamente, otimizando o tempo de execução.
+- **Eficiência:**
+  - Reduz o tempo ocioso do processador ao alternar entre tarefas ativas.
+
+**Considerações Importantes:**
+
+- O comportamento de alternância entre threads depende do escalonador e pode variar.
+- Threads oferecem flexibilidade, mas exigem cuidado com problemas como condições de corrida e sincronização.
+
+**Conclusão:**
+
+- Threads são fundamentais para construir aplicações que requerem execução simultânea de tarefas.
+- Demonstram como o escalonador distribui o tempo de execução entre processos, aumentando a eficiência.
+
 ## Aula 12 - Laços
 
 #### Aulas 12.A
