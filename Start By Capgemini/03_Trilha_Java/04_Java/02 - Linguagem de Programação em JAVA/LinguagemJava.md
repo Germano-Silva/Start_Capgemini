@@ -1189,6 +1189,8 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 ## Aula 13 - Trabalhando com dados
 
 #### Aulas 13.A
+
+
 #### Aulas 13.B
 #### Aulas 13.C
 #### Aulas 13.D
