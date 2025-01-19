@@ -1190,6 +1190,14 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 
 #### Aulas 13.A
 
+**Trabalhando com Datas em Java:**
+
+- **Objetivo:**
+  - Demonstrar como formatar e converter datas utilizando ferramentas nativas do Java.
+
+- **Funcionalidades a Serem Abordadas:**
+  - Formatação de datas em diferentes padrões.
+  - Conversão de strings para objetos de data e vice-versa.
 
 #### Aulas 13.B
 #### Aulas 13.C
