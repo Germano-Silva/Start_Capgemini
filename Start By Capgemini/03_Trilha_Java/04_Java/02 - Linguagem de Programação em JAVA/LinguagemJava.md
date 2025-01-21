@@ -1256,6 +1256,43 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 
 #### Aulas 13.D
 
+**Conversão de Datas com a Classe Calendar e SimpleDateFormat:**
+
+**Utilização da Classe Calendar para Conversão:**
+  - A classe **Calendar** permite obter e manipular datas para posterior formatação ou conversão.
+  - Exemplo de inicialização e uso básico:
+    ```java
+    Calendar calendar = Calendar.getInstance();
+    Date dataAtual = calendar.getTime();
+    ```
+
+**Uso de SimpleDateFormat para Formatação e Conversão:**
+  - Formata datas em strings em padrões definidos:
+    ```java
+    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+    String dataFormatada = sdf.format(dataAtual);
+    System.out.println("Data formatada: " + dataFormatada);
+    ```
+  - Converte strings para objetos de data:
+    ```java
+    Date dataConvertida = sdf.parse("01/01/1970 00:00:00");
+    ```
+
+**Fluxo de Conversão Demonstrado:**
+  - Obter a data atual: `Calendar.getInstance().getTime()`.
+  - Aplicar formatação personalizada com **SimpleDateFormat**.
+  - Converter strings formatadas de volta para objetos **Date** utilizando o método `parse`.
+
+**Observações:**
+  - Padrões podem incluir:
+    - `"dd/MM/yyyy"`: Data simples.
+    - `"dd/MM/yyyy HH:mm:ss"`: Data com hora.
+    - Outros padrões personalizáveis com horas, minutos, segundos, etc.
+
+**Benefícios e Limitações:**
+  - Simplifica a manipulação e conversão de datas.
+  - Versátil para diferentes requisitos de apresentação e armazenamento.
+  - Apesar de eficaz, em versões mais modernas do Java, recomenda-se o uso de APIs como **java.time** para maior precisão e funcionalidade.
 
 ## Aula 14 - Persistência de dados
 
