@@ -1385,6 +1385,29 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
   - É independente do sistema operacional, mas precisa ser configurado corretamente no ambiente de desenvolvimento.
 
 #### Aulas 14.D
+
+**Configuração do Driver JDBC no Projeto Eclipse:**
+
+**Preparação do Projeto:**
+  - Criado um projeto chamado `PersistenciaDB` com um pacote chamado `cadastros`.
+  - O pacote contém classes relacionadas ao menu e funcionalidades do banco de dados.
+
+**Adicionando o Driver JDBC ao Eclipse:**
+  1. No **Package Explorer**, clique com o botão direito sobre o projeto.
+  2. Selecione **Build Path > Configure Build Path...**.
+  3. Vá até a aba **Libraries** e clique em **Add External JARs...**.
+  4. Navegue até o local onde o driver JDBC foi salvo (ex.: `drivers/jdbc/postgresql`).
+  5. Selecione o arquivo `.jar` do PostgreSQL e clique em **Open**.
+  6. Clique em **Apply and Close** para finalizar a configuração.
+
+**Verificando a Configuração:**
+  - Após adicionar o driver, ele aparecerá em **Referenced Libraries** no projeto.
+  - A biblioteca conterá classes compiladas em `.class` que permitem interação com o banco de dados.
+
+**Benefícios da Configuração:**
+  - Garante que o projeto tenha acesso às funcionalidades do driver JDBC.
+  - Habilita a conexão e execução de comandos SQL no banco de dados.
+
 #### Aulas 14.E
 #### Aulas 14.F
 #### Aulas 14.G
