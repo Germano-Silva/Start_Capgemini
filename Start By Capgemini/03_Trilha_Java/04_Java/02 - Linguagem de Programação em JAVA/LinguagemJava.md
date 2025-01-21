@@ -1320,6 +1320,44 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
   - Suporte a operações transacionais para maior controle e segurança.
 
 #### Aulas 14.B
+
+**Conceitos Básicos de Persistência de Dados e JDBC:**
+
+**O que é Persistência de Dados?**
+  - Refere-se às operações realizadas em bancos de dados, como:
+    - **Inclusão:** Inserir novos registros.
+    - **Exclusão:** Remover registros existentes.
+    - **Alteração:** Atualizar informações.
+    - **Seleção:** Consultar dados no banco.
+
+**O que é JDBC?**
+  - Uma biblioteca Java que permite a conexão entre aplicações e bancos de dados.
+  - Facilita a execução de operações como consultas, atualizações e manipulação de dados.
+
+**Criação de Banco de Dados e Tabelas:**
+  - **Ferramentas Utilizadas:**
+    - **DBBeaver:** Interface gráfica para gerenciamento de bancos de dados.
+    - **PostgreSQL:** Banco de dados utilizado no exemplo.
+  - **Passos Realizados:**
+    1. Criado um banco de dados chamado `cadastros`.
+    2. Configurada uma conexão ao banco para permitir acesso.
+    3. Criada uma tabela chamada `pessoa` com os seguintes campos:
+       - `id` (Integer): Identificador único (Primary Key).
+       - `nome` (Varchar): Nome da pessoa.
+       - `email` (Varchar): Email da pessoa.
+    4. Diagrama da tabela em SQL.
+    ![Diagrama SQL](img/Cadastros_Diagrama.jpeg)
+    5. Codigo SQL:
+    ```SQL
+    CREATE DATABASE Cadatros;
+
+    CREATE TABLE IF NOT EXISTS pessoa (
+        id_pessoa INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+        nome_pessoa VARCHAR(500) NOT NULL,
+        email_pessoa VARCHAR(500) NOT NULL
+        );
+    ```
+
 #### Aulas 14.C
 #### Aulas 14.D
 #### Aulas 14.E
