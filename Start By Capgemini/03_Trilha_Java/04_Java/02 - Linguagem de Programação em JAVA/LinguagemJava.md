@@ -1297,6 +1297,7 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 ## Aula 14 - Persistência de dados
 
 #### Aulas 14.A
+
 #### Aulas 14.B
 #### Aulas 14.C
 #### Aulas 14.D
