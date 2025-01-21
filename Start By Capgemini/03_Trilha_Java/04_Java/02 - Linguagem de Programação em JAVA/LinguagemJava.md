@@ -1493,6 +1493,35 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
   - É crucial garantir que essas informações estejam corretas para evitar falhas na conexão.
 
 #### Aulas 14.G
+
+**Análise da Classe Pessoa:**
+
+**Finalidade da Classe Pessoa:**
+  - Representar a estrutura da tabela `pessoa` do banco de dados no código.
+  - Facilitar a manipulação dos dados utilizando o paradigma orientado a objetos.
+
+**Estrutura da Classe Pessoa:**
+  - **Atributos:**
+    - `id` (int): Representa o identificador único da pessoa.
+    - `nome` (String): Armazena o nome da pessoa.
+    - `email` (String): Armazena o email da pessoa.
+
+  - **Construtores:**
+    - Construtor padrão.
+    - Construtor para inclusão.
+    - Construtor para alteração.
+
+  - **Getters e Setters:**
+    - Garantem o encapsulamento e o acesso controlado aos atributos.
+
+**Integração com a Classe DAO:**
+  - A classe Pessoa estende a classe DAO, herdando sua funcionalidade de conexão com o banco de dados.
+  - Utiliza o método `super` para inicializar a conexão no construtor.
+
+**Benefícios:**
+  - Centraliza a definição da estrutura dos dados em uma única classe.
+  - Facilita a interação entre a aplicação e o banco, com métodos encapsulados para manipular atributos.
+
 #### Aulas 14.H
 #### Aulas 14.I
 #### Aulas 14.J
