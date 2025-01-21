@@ -1452,6 +1452,46 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
   - Deve estar corretamente configurado em **Referenced Libraries** no Eclipse.
 
 #### Aulas 14.F
+
+**Análise da Classe DAO (Data Access Object):**
+
+**Importância da Classe DAO:**
+  - É a classe central para gerenciar a conexão e operações de persistência com o banco de dados.
+  - Erros nessa classe podem comprometer o funcionamento de todo o projeto.
+
+**Componentes da Classe DAO:**
+  - **Variáveis de Conexão:**
+    - URL do banco, usuário e senha, necessários para configurar a conexão.
+    - Exemplo:
+      ```java
+      String url = "jdbc:postgresql://localhost:5432/cadastros";
+      String user = "postgres";
+      String password = "admin";
+      ```
+
+  - **Método `open`:**
+    - Responsável por estabelecer a conexão com o banco.
+    - Implementa tratamento de exceções para erros de conexão.
+
+  - **Definição do Driver:**
+    - Especifica o driver JDBC a ser utilizado.
+    - Exemplo:
+      ```java
+      Class.forName("org.postgresql.Driver");
+      ```
+
+  - **Encerramento da Conexão:**
+    - Inclui método para fechar a conexão ao final das operações:
+      ```java
+      if (conn != null) {
+          conn.close();
+      }
+      ```
+
+**Atenção às Configurações:**
+  - A **URL do banco** e o **driver** podem variar dependendo do sistema de gerenciamento de banco de dados utilizado.
+  - É crucial garantir que essas informações estejam corretas para evitar falhas na conexão.
+
 #### Aulas 14.G
 #### Aulas 14.H
 #### Aulas 14.I
