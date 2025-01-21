@@ -1357,8 +1357,33 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
         email_pessoa VARCHAR(500) NOT NULL
         );
     ```
-
 #### Aulas 14.C
+
+**Configuração do JDBC do PostgreSQL no Eclipse:**
+
+**Download do Driver JDBC:**
+  - O JDBC do PostgreSQL é necessário para conectar aplicações Java ao banco de dados.
+  - **Link para download:** [PostgreSQL JDBC Driver](https://jdbc.postgresql.org/download/)
+  - O driver é disponibilizado como um arquivo `.jar`.
+
+**Passos para Baixar e Configurar o Driver:**
+  1. Acesse o site oficial do PostgreSQL JDBC e baixe a versão mais recente do driver.
+     - Exemplo: `postgresql-42.3.1.jar`.
+  2. Salve o arquivo `.jar` em uma pasta dedicada no sistema.
+     - Sugestão: Criar uma pasta chamada `drivers/jdbc/postgresql` para organização.
+
+**Configuração no Eclipse:**
+  - Adicione o arquivo `.jar` ao projeto no Eclipse:
+    1. Clique com o botão direito no projeto no painel **Package Explorer**.
+    2. Vá em **Build Path > Configure Build Path...**.
+    3. Na aba **Libraries**, clique em **Add External JARs...**.
+    4. Selecione o arquivo `.jar` baixado e clique em **Apply and Close**.
+
+**Benefícios do Driver JDBC:**
+  - Permite a comunicação direta com o banco de dados.
+  - Suporta operações como consultas, inserções, atualizações e exclusões.
+  - É independente do sistema operacional, mas precisa ser configurado corretamente no ambiente de desenvolvimento.
+
 #### Aulas 14.D
 #### Aulas 14.E
 #### Aulas 14.F
