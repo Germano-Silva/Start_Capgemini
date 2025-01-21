@@ -1298,6 +1298,27 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
 
 #### Aulas 14.A
 
+**Persistência de Dados e Uso do JDBC:**
+
+**Objetivo:**
+  - Introduzir o conceito de persistência de dados utilizando JDBC (Java Database Connectivity).
+  - Demonstrar como estabelecer conexões e interagir com bancos de dados.
+
+**O que é JDBC:**
+  - Uma API que permite a comunicação entre aplicações Java e bancos de dados.
+  - Suporta operações como consultas, inserções, atualizações e exclusões.
+
+**Elementos Fundamentais do JDBC:**
+  - **Driver:** Conecta o Java ao banco de dados.
+  - **Connection:** Estabelece a ligação entre a aplicação e o banco.
+  - **Statement e PreparedStatement:** Executam comandos SQL.
+  - **ResultSet:** Retorna os resultados das consultas.
+
+**Benefícios do JDBC:**
+  - Facilidade de integração com diversos bancos de dados.
+  - API padronizada para diferentes sistemas de gerenciamento de bancos.
+  - Suporte a operações transacionais para maior controle e segurança.
+
 #### Aulas 14.B
 #### Aulas 14.C
 #### Aulas 14.D
