@@ -1200,6 +1200,29 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
   - Conversão de strings para objetos de data e vice-versa.
 
 #### Aulas 13.B
+
+**Formatação e Conversão de Datas em Java:**
+
+**Uso da Classe SimpleDateFormat:**
+  - Classe usada para formatar e converter datas em diferentes formatos.
+  - Permite criar padrões personalizados, como `"dd/MM/yyyy"` e `"yyyy-MM-dd HH:mm:ss"`.
+
+**Conversões Demonstradas:**
+  - **X1:** Data fixa definida manualmente.
+  - **X2:** Data em milissegundos desde 01/01/1970.
+  - **X3:** Conversão de string para data usando o formato definido.
+
+**Observações Importantes:**
+  - O Java utiliza o marco de 01/01/1970 para cálculos de data.
+  - SimpleDateFormat permite múltiplas formatações para a mesma data.
+
+**Benefícios:**
+  - Simplifica a manipulação de datas e formatações.
+  - Adapta-se a diferentes requisitos de apresentação.
+
+**Próximos Passos:**
+  - Explorar a classe **Calendar** para conversões avançadas.
+
 #### Aulas 13.C
 #### Aulas 13.D
 
