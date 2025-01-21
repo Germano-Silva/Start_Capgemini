@@ -1224,7 +1224,38 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
   - Explorar a classe **Calendar** para conversões avançadas.
 
 #### Aulas 13.C
+
+**Trabalhando com a Classe Calendar em Java:**
+
+**Uso Básico da Classe Calendar:**
+  - Permite manipular e obter informações sobre datas e horas.
+  - Suporta métodos para acessar e alterar componentes específicos como ano, mês, dia, hora, minuto e segundo.
+
+**Exemplo de Operações com Calendar:**
+  - **Obter a Data Atual:**
+    ```java
+    Calendar calendar = Calendar.getInstance();
+    System.out.println(calendar.getTime());
+    ```
+  - **Acessar Componentes Específicos:**
+    - Ano: `calendar.get(Calendar.YEAR)`
+    - Dia do mês: `calendar.get(Calendar.DAY_OF_MONTH)`
+  - **Alterar Datas:**
+    ```java
+    calendar.set(Calendar.YEAR, 2023);
+    calendar.set(Calendar.MONTH, Calendar.DECEMBER);
+    calendar.set(Calendar.DAY_OF_MONTH, 12);
+    ```
+
+**Benefícios da Classe Calendar:**
+  - Permite fácil manipulação de componentes individuais de data e hora.
+  - Suporta formatações e ajustes personalizados para diferentes contextos.
+
+**Considerações:**
+  - A classe **Calendar** é flexível, mas em versões modernas do Java, é recomendável usar **java.time** (Java 8+) para maior precisão e simplicidade.
+
 #### Aulas 13.D
+
 
 ## Aula 14 - Persistência de dados
 
