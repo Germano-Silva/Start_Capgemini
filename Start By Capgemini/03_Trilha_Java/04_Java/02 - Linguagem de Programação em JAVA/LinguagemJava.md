@@ -1349,10 +1349,10 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
     ![Diagrama SQL](img/Cadastros_Diagrama.jpeg)
     5. Codigo SQL:
     ```SQL
-    CREATE DATABASE Cadatros;
+    CREATE DATABASE Cadastros;
 
-    CREATE TABLE IF NOT EXISTS pessoa (
-        id_pessoa INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    CREATE TABLE  pessoas (
+        id_pessoa INT NOT NULL PRIMARY KEY,
         nome_pessoa VARCHAR(500) NOT NULL,
         email_pessoa VARCHAR(500) NOT NULL
         );
@@ -1409,6 +1409,48 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
   - Habilita a conexão e execução de comandos SQL no banco de dados.
 
 #### Aulas 14.E
+
+**Desenvolvimento do Projeto de Persistência com JDBC:**
+
+**Estrutura do Projeto:**
+  - **Separação de Camadas:**
+    - **Camada DAO (Data Access Object):** Contém a lógica de persistência (inserção, exclusão, consulta, etc.).
+    - **Camada de Conexão:** Gerencia a conexão com o banco de dados.
+
+**Configuração de Conexão:**
+  - Informações necessárias:
+    - **URL do Banco:** `jdbc:postgresql://localhost:5432/cadastros`
+    - **Usuário:** `postgres`
+    - **Senha:** `admin`
+  - Código de exemplo:
+    ```java
+    String url = "jdbc:postgresql://localhost:5432/cadastros";
+    String user = "postgres";
+    String password = "admin";
+    Connection conn = DriverManager.getConnection(url, user, password);
+    ```
+
+**Tratamento de Exceções:**
+  - **Try-Catch:** Utilizado para gerenciar erros durante a conexão ou execução de comandos SQL.
+  - Exemplos de exceções tratadas:
+    - `SQLException`: Problemas com comandos SQL.
+    - `ClassNotFoundException`: Driver JDBC não encontrado.
+
+**Testando a Conexão:**
+  - Código para validar a conexão:
+    ```java
+    try {
+        Connection conn = DriverManager.getConnection(url, user, password);
+        System.out.println("Conexão estabelecida com sucesso!");
+    } catch (SQLException e) {
+        System.out.println("Erro ao conectar ao banco: " + e.getMessage());
+    }
+    ```
+
+**Importância do Driver JDBC:**
+  - Necessário para que o projeto possa se comunicar com o banco de dados.
+  - Deve estar corretamente configurado em **Referenced Libraries** no Eclipse.
+
 #### Aulas 14.F
 #### Aulas 14.G
 #### Aulas 14.H
