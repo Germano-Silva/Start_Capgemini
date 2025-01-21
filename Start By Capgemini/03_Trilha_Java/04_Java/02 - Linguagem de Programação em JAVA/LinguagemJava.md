@@ -1523,6 +1523,46 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
   - Facilita a interação entre a aplicação e o banco, com métodos encapsulados para manipular atributos.
 
 #### Aulas 14.H
+
+**Análise da Classe PessoaDAO:**
+
+**Finalidade da Classe PessoaDAO:**
+  - Responsável por implementar os métodos de persistência relacionados à tabela `pessoa`.
+  - Centraliza a lógica de inclusão, alteração, exclusão e consulta de dados.
+
+**Estrutura e Funcionalidades:**
+
+- **Conexão com o Banco:**
+  - A classe utiliza métodos da DAO principal para gerenciar conexões, como `open()` e `close()`.
+- **Métodos Implementados:**
+  - **Incluir Pessoa:**
+    - Insere um novo registro na tabela `pessoa`.
+  - **Alterar Pessoa:**
+    - Atualiza os dados de uma pessoa específica com base no `id_pessoa`.
+    - Inclui cláusula `WHERE` para determinar o registro a ser alterado.
+  - **Excluir Pessoa:**
+    - Remove um registro do banco com base no `id_pessoa`.
+  - **Consultar Pessoa (Individual):**
+    - Busca e retorna os dados de uma pessoa específica pelo `id_pessoa`.
+  - **Listar Todas as Pessoas:**
+    - Recupera todos os registros da tabela `pessoa`.
+
+**Detalhes Importantes:**
+
+- **Uso de PreparedStatement:**
+  - Garante segurança contra SQL Injection.
+  - Permite vincular parâmetros utilizando `setInt`, `setString`, etc.
+- **Execução e Fechamento:**
+  - Após cada operação, a conexão é encerrada para liberar recursos.
+
+**Benefícios da Estrutura DAO:**
+
+- **Organização e Manutenção:**
+  - Mantém a lógica de persistência separada da lógica de negócio.
+  - Facilita a adição ou modificação de métodos relacionados ao banco.
+- **Legibilidade:**
+  - Código bem estruturado e modularizado, permitindo fácil entendimento.
+
 #### Aulas 14.I
 #### Aulas 14.J
 #### Aulas 14.K
