@@ -152,6 +152,23 @@ O processo de criação de um projeto Java Web envolve a configuração inicial 
 
 #### Aula 2.E
 
+**Estrutura de Projeto e Integração do Backend**
+
+**Estrutura Inicial do Projeto:**
+
+  - Os arquivos HTML e recursos do site são organizados em pastas específicas.
+  - O backend é estruturado dentro de **Source Packages**, onde ficam as classes em **Java**.
+
+**Criação e Organização de Pacotes e Classes:**
+
+  - Criar pacotes organizados, como `utils`, para agrupar classes específicas.
+  - As classes existentes no backend são importadas e organizadas dentro da estrutura do projeto.
+
+**Exemplo de Organização:**
+
+  - Pacote `utils`: Criado para armazenar classes utilitárias como `Conexao`.
+  - Erros de importação ou referências são corrigidos ao organizar as classes nos pacotes corretos.
+
 #### Aula 2.F
 
 #### Aula 2.G
