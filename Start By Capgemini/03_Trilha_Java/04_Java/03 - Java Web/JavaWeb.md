@@ -138,6 +138,18 @@ O processo de criação de um projeto Java Web envolve a configuração inicial 
 
 #### Aula 2.D
 
+**Conceito de Host e Ambiente Local**
+
+**Host:** Refere-se ao hospedeiro onde um site é armazenado para acesso na web. Para publicar um site, é necessário contratar um serviço de hospedagem.
+
+**Ambiente Local:** Todo computador pode simular um ambiente web através de um **servidor local**, permitindo o desenvolvimento e testes antes da publicação online.
+
+**Servidor Web:** Um servidor, como o **Apache Tomcat**, é utilizado para interpretar linguagens como **HTML**, **CSS** e **JavaScript**, possibilitando o desenvolvimento local de páginas web.
+
+**Fluxo de Trabalho:**
+  - Desenvolvimento e testes são realizados localmente utilizando o servidor configurado.
+  - Após finalizado, o projeto pode ser publicado em um serviço de hospedagem, tornando-o acessível na web.
+
 #### Aula 2.E
 
 #### Aula 2.F
