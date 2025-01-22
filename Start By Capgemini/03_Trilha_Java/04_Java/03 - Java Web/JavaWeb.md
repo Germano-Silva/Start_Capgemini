@@ -86,6 +86,7 @@
 
 #### Aula 2.A
 
+
 #### Aula 2.B
 
 #### Aula 2.C
