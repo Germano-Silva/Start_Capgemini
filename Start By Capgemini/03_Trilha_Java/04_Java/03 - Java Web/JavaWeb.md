@@ -73,6 +73,15 @@
 ---
 #### Aula 1.A
 
+**Objetivo do curso:** Avançado em **Java Web**, ensinando o desenvolvimento de sistemas e páginas web interativas com **Java**.
+
+**Conteúdo abordado:**
+  - Criação de sistemas dinâmicos.
+  - Integração com **bancos de dados** e operações interativas.
+  - Configuração inicial e ferramentas necessárias.
+
+**Foco principal:** Entender como **Java** pode ser utilizado para criar soluções web escaláveis e práticas.
+
 ## Aula 02 - Um projeto Java Web
 
 #### Aula 2.A
