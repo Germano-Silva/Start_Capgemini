@@ -1825,6 +1825,24 @@ System.out.println("Email: " + pessoa.getEmail());
 
 #### Aulas 15.A
 
+**Introdução ao Tratamento de Exceções em Java:**
+
+**O que são Exceções?**
+  - Exceções representam situações inesperadas ou erros que ocorrem durante a execução de um programa.
+  - Exemplo: Falha ao executar um comando SQL, como uma consulta inválida ou problemas de conexão.
+
+**Consequências de Exceções Não Tratadas:**
+  - Se uma exceção não for tratada, o programa será interrompido abruptamente.
+  - Isso pode resultar em perda de dados, falhas no sistema e uma experiência negativa para o usuário.
+
+**Mecanismos de Tratamento de Exceções em Java:**
+  - **Try-Catch:**
+    - Envolve o código que pode gerar uma exceção no bloco `try` e captura erros no bloco `catch`.
+  - **Finally:**
+    - Executa um bloco de código sempre, independentemente de uma exceção ter ocorrido ou não.
+  - **Throws e Throw:**
+    - `throws`: Declara que um método pode lançar uma exceção.
+    - `throw`: Lança manualmente uma exceção.
 
 #### Aulas 15.B
 #### Aulas 15.C
