@@ -1845,6 +1845,73 @@ System.out.println("Email: " + pessoa.getEmail());
     - `throw`: Lança manualmente uma exceção.
 
 #### Aulas 15.B
+
+**Uso do Try e Catch no Tratamento de Exceções em Java:**
+
+**Descrição do Try e Catch:**
+  - **Try:** Bloco que contém o código que pode gerar uma exceção.
+  - **Catch:** Bloco que captura e trata a exceção gerada no bloco `try`.
+
+**Exemplo de Implementação:**
+  - O bloco `try` envolve a execução de um comando propenso a falhas, como uma consulta SQL:
+    ```java
+    try {
+        stmt.executeUpdate();
+    } catch (SQLException e) {
+        System.out.println("Erro ao executar o comando SQL: " + e.getMessage());
+    }
+    ```
+
+**Funcionamento no Exemplo:**
+  1. **Cenário com Erro:**
+     - O comando SQL contém um erro, como o nome incorreto de uma tabela.
+     - A exceção `SQLException` é capturada no bloco `catch`, e uma mensagem de erro é exibida:
+       ```
+       Erro ao executar o comando SQL: Tabela "pessoa" não existe.
+       ```
+  2. **Cenário Sem Erro:**
+     - Quando o comando SQL é executado corretamente, o fluxo do programa segue normalmente.
+     - Mensagem de sucesso:
+       ```
+       Pessoa alterada com sucesso.
+       ```
+
+**Detalhes Adicionais:**
+  - Após o tratamento, recursos como `Statement` e `Connection` devem ser fechados:
+    ```java
+    finally {
+        stmt.close();
+        conn.close();
+    }
+    ```
+  - O método pode retornar um valor para indicar o resultado da operação, como `true` para sucesso e `false` para erro.
+
+**Vantagens do Uso de Try e Catch:**
+  - Previne que o programa seja interrompido abruptamente em caso de erro.
+  - Permite exibir mensagens de erro claras e específicas.
+  - Facilita a identificação e resolução de problemas.
+
+**Exemplo de Código Completo:**
+```java
+public boolean alterarPessoa(Pessoa pessoa) {
+    try {
+        String sql = "UPDATE pessoa SET nome = ?, email = ? WHERE id_pessoa = ?";
+        PreparedStatement stmt = conn.prepareStatement(sql);
+        stmt.setString(1, pessoa.getNome());
+        stmt.setString(2, pessoa.getEmail());
+        stmt.setInt(3, pessoa.getId());
+        stmt.executeUpdate();
+        return true; // Alteração bem-sucedida
+    } catch (SQLException e) {
+        System.out.println("Erro ao alterar pessoa: " + e.getMessage());
+        return false; // Indica falha na operação
+    } finally {
+        stmt.close();
+        conn.close();
+    }
+}
+```
+
 #### Aulas 15.C
 
 ## Aula 16 - Considerações finais
