@@ -26,9 +26,52 @@
 ---
 
 ## Aula 01 - Boas vindas
+**Guia para Configuração do Servidor no Eclipse IDE no Windows 11 com Apache Tomcat**
 
+**Nota:** O processo detalhado de configuração do servidor no Eclipse IDE e Apache Tomcat não foi informado diretamente no curso, sendo necessário complementar o aprendizado com guias e referências externas.
+
+**Link para o vídeo no YouTube:** [Configuração do servidor no Eclipse IDE](https://www.youtube.com/watch?v=GCc4ZQqnmVY)
+
+---
+**Passo 1: Baixar o Apache Tomcat**
+
+1. Acesse o site oficial do Apache Tomcat: [Apache Tomcat 9 Download](https://tomcat.apache.org/download-90.cgi).
+2. Localize a seção **Binary Distributions**:
+   - Escolha a versão **Core**.
+   - Clique no link correspondente ao arquivo **.zip** (Windows).
+3. Após o download, extraia o conteúdo para uma pasta de fácil acesso, como `C:\apache-tomcat-9`.
+---
+**Passo 2: Instalar o Eclipse IDE**
+
+1. Caso ainda não tenha o Eclipse, baixe-o no site oficial: [Eclipse Downloads](https://www.eclipse.org/downloads/).
+2. Escolha a versão **Eclipse IDE for Enterprise Java and Web Developers**.
+3. Instale o Eclipse no Windows 11 seguindo as instruções do instalador.
+---
+**Passo 3: Configurar o Servidor no Eclipse**
+
+1. Abra o Eclipse IDE.
+2. No menu superior, vá até **Window > Show View > Servers**.
+3. Na aba **Servers**:
+   - Clique com o botão direito na área branca e selecione **New > Server**.
+4. Na janela de configuração:
+   - Em **Select the server type**, escolha **Apache > Tomcat v9.0 Server** (ou a versão que você baixou).
+   - Clique em **Next**.
+5. No campo **Tomcat Installation Directory**:
+   - Clique em **Browse** e selecione a pasta onde você extraiu o Apache Tomcat, por exemplo, `C:\apache-tomcat-9`.
+   - Clique em **Finish**.
+---
+**Passo 4: Testar o Servidor no Eclipse**
+
+1. No painel **Servers**, clique com o botão direito no servidor configurado e selecione **Start**.
+2. Abra um navegador e digite: `http://localhost:8080`.
+3. Se o Tomcat estiver funcionando corretamente, você verá a página de boas-vindas.
+---
+**Passo 5: Configurar Projetos Java Web**
+1. Crie ou importe um projeto **Dynamic Web Project** no Eclipse.
+2. Clique com o botão direito no servidor configurado (na aba **Servers**) e selecione **Add and Remove**.
+3. Adicione o projeto à lista de implantação e clique em **Finish**.
+---
 #### Aula 1.A
-
 
 ## Aula 02 - Um projeto Java Web
 
