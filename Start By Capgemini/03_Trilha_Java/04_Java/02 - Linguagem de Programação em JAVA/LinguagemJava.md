@@ -1672,6 +1672,42 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
   - Utiliza boas práticas como o uso de PreparedStatements para evitar SQL Injection.
 
 #### Aulas 14.L
+
+**Teste do Método de Exclusão no Projeto:**
+
+**Descrição do Método de Exclusão:**
+  - Remove um registro específico da tabela `pessoa` no banco de dados.
+  - Utiliza o comando SQL `DELETE` para excluir o registro com base no `id_pessoa`.
+
+**Passos de Execução do Método de Exclusão:**
+
+1. **Preparação do Comando SQL:**
+   - O comando SQL utiliza um parâmetro para identificar o registro:
+     ```sql
+     DELETE FROM pessoa WHERE id_pessoa = ?
+     ```
+   - O parâmetro `?` é preenchido com o valor do `id_pessoa` passado para o método.
+
+2. **Execução do Comando:**
+   - O código monta o comando com o `PreparedStatement` e executa:
+     ```java
+     stmt.setInt(1, pessoa.getId());
+     stmt.executeUpdate();
+     ```
+   - Após a execução, a conexão com o banco é encerrada.
+
+3. **Validação da Exclusão:**
+   - Após o comando, um `SELECT` é realizado para verificar os registros restantes.
+   - No exemplo, o registro com `id_pessoa = 2` foi excluído, deixando apenas o registro com `id_pessoa = 1`.
+
+**Cuidados com o Comando DELETE:**
+  - **Teste com SELECT:** Antes de executar o `DELETE`, é recomendável realizar um `SELECT` com a mesma cláusula `WHERE` para verificar os registros que serão afetados.
+  - **Irreversibilidade:** Após o commit no banco, a exclusão é definitiva. Não é possível reverter o comando.
+
+**Benefícios do Método de Exclusão:**
+  - Mantém o banco de dados atualizado, removendo registros desnecessários.
+  - Utiliza boas práticas, como `PreparedStatement`, para evitar SQL Injection.
+
 #### Aulas 14.M
 #### Aulas 14.N
 
