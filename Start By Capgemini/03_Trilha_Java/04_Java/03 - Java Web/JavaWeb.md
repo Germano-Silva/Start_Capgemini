@@ -193,6 +193,30 @@ O processo de criação de um projeto Java Web envolve a configuração inicial 
 
 #### Aula 2.G
 
+**Funcionamento do Menu e Cadastro de Pessoa**
+
+**Configuração Inicial:**
+
+  - Adicionar a biblioteca do driver de conexão com o banco de dados para viabilizar o acesso ao banco.
+  - Criar um formulário HTML para cadastro com campos como **Nome** e **E-mail**, incluindo validações básicas:
+    - Nome: Máximo de 30 caracteres, convertido para maiúsculas.
+    - E-mail: Máximo de 50 caracteres, validação para formato correto (com "@").
+
+**Processo de Cadastro:**
+
+  - O botão "Cadastrar" envia os dados do formulário via método **POST** para o backend.
+  - Os dados são capturados com `getParameter()` e atribuídos a variáveis correspondentes.
+  - O backend utiliza um método `incluirPessoa` para inserir os dados no banco.
+  - Respostas do sistema:
+    - Sucesso: Exibe mensagem "Pessoa cadastrada".
+    - Erro: Retorna mensagem indicando o problema.
+
+**Execução no Navegador:**
+
+  - Configurar o navegador padrão para executar o projeto.
+  - O **Tomcat** é iniciado e a aplicação é carregada.
+  - O menu apresenta opções como "Cadastrar" e "Consultar". Ao selecionar "Cadastrar", o formulário é exibido para preenchimento.
+
 #### Aula 2.H
 
 #### Aula 2.I
