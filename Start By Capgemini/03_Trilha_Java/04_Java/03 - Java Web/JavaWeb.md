@@ -171,6 +171,26 @@ O processo de criação de um projeto Java Web envolve a configuração inicial 
 
 #### Aula 2.F
 
+**Criação de Menu e Interação com Métodos**
+
+**Objetivo do Menu:**
+
+  - O menu permite acessar métodos específicos dentro das classes para executar tarefas, como:
+    - Cadastrar pessoa.
+    - Consultar pessoa.
+    - Alterar pessoa.
+    - Excluir pessoa.
+
+**Estrutura do Menu:**
+
+  - Construído em **HTML** com formatação básica usando **CSS**.
+  - Cada opção do menu direciona para um arquivo ou endpoint específico, como `cadastrarPessoa.pl` ou `consultarPessoa.pl`.
+
+**Requisitos Técnicos:**
+
+  - Conhecimento básico de **HTML**, **CSS** e **JavaScript** é essencial para criar e estilizar menus funcionais.
+  - **JSP** é mencionado como tecnologia que suporta a integração de HTML, CSS e JavaScript no projeto.
+
 #### Aula 2.G
 
 #### Aula 2.H
