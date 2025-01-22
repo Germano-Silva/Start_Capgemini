@@ -1619,6 +1619,56 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
   - Confirma que o fluxo de inclusão está funcionando corretamente.
 
 #### Aulas 14.K
+
+**Teste do Método de Alteração no Projeto:**
+
+**Descrição do Método de Alteração:**
+  - Atualiza os dados de um registro específico no banco de dados.
+  - Utiliza as funcionalidades do DAO e a lógica de instânciação de objetos da classe Pessoa.
+
+**Passos de Execução do Método de Alteração:**
+
+1. **Identificação do Registro:**
+   - O código busca o registro pelo `id_pessoa` para verificar se ele existe antes de realizar a alteração.
+   - Caso o registro não seja encontrado, uma mensagem de erro é exibida.
+
+2. **Recuperação dos Dados:**
+   - Utiliza um `SELECT` com cláusula `WHERE id_pessoa = ?` para recuperar os dados específicos.
+   - Os dados retornados são armazenados em um objeto `Pessoa`.
+
+3. **Atualização dos Dados:**
+   - Após validar a existência do registro, os campos a serem alterados são definidos:
+     ```java
+     p.setEmail("jose2@email.com");
+     pessoaDAO.alterarPessoa(p);
+     ```
+   - O comando SQL gerado para a atualização:
+     ```sql
+     UPDATE pessoa SET nome_pessoa = ?, email = ? WHERE id_pessoa = ?
+     ```
+
+4. **Execução do Update:**
+   - Os valores dos parâmetros são vinculados ao comando com `setString` e `setInt`.
+   - O comando é executado com `executeUpdate()` e a conexão é encerrada.
+
+**Detalhes do Comportamento:**
+  - A sequência dos parâmetros no comando SQL é crucial para o funcionamento correto.
+  - O sistema utiliza os dados retornados pela consulta para determinar o que será atualizado.
+
+**Validação no Banco de Dados:**
+  - Após a execução, os registros atualizados são listados:
+    ```
+    ID    Nome      Email
+    1     José      jose2@email.com
+    2     João      joao@email.com
+    ```
+  - Os valores refletem as alterações feitas no método.
+
+**Benefícios da Implementação:**
+  - Garante que apenas registros existentes sejam alterados.
+  - Facilita a manutenção do código com uma estrutura modular e organizada.
+  - Utiliza boas práticas como o uso de PreparedStatements para evitar SQL Injection.
+
 #### Aulas 14.L
 #### Aulas 14.M
 #### Aulas 14.N
