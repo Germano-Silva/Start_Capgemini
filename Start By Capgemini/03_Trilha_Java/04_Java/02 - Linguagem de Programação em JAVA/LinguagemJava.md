@@ -1577,6 +1577,47 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
   - Melhora a organização ao separar responsabilidades entre as classes.
 
 #### Aulas 14.J
+
+**Execução e Teste do Projeto com Debug no Eclipse:**
+
+**Configuração de Debug:**
+  - Alterada a perspectiva do Eclipse para **Debug** para acompanhar a execução passo a passo.
+  - Adicionado **breakpoint** no método que monta o `PreparedStatement`, permitindo visualizar a montagem do comando SQL.
+
+**Passos de Execução:**
+  1. **Instanciação de Objetos:**
+     - Criados dois objetos `Pessoa` com os dados:
+       - `Pessoa p1 = new Pessoa(1, "José", "jose@exemplo.com");`
+       - `Pessoa p2 = new Pessoa(2, "João", "joao@exemplo.com");`
+  2. **Inclusão de Dados:**
+     - Chamado o método `incluirPessoa` para cada objeto:
+       ```java
+       pessoaDAO.incluirPessoa(p1);
+       pessoaDAO.incluirPessoa(p2);
+       ```
+
+**Observação da Execução:**
+  - Durante a execução do método:
+    - O comando SQL `INSERT INTO pessoa` é montado gradualmente.
+    - Para cada campo (`id`, `nome`, `email`), os valores são definidos no `PreparedStatement` usando os métodos `setInt` e `setString`.
+    - Após o comando ser montado, o método `execute` insere os dados no banco.
+    - A conexão é encerrada com o método `close`.
+
+**Validação no Banco de Dados:**
+  - Após a execução, realizada uma consulta no banco para confirmar a inclusão:
+    - Registros esperados:
+      ```
+      ID    Nome      Email
+      1     José      jose@exemplo.com
+      2     João      joao@exemplo.com
+      ```
+  - Os dados exibidos no banco coincidem com os valores passados no código.
+
+**Benefícios do Debug:**
+  - Permite acompanhar a construção e execução dos comandos SQL.
+  - Facilita a identificação de problemas em tempo de execução.
+  - Confirma que o fluxo de inclusão está funcionando corretamente.
+
 #### Aulas 14.K
 #### Aulas 14.L
 #### Aulas 14.M

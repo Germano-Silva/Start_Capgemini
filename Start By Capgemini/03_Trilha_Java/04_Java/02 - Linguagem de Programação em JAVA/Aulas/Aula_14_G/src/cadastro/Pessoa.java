@@ -2,30 +2,23 @@ package cadastro;
 
 public class Pessoa {
 	private int id_pessoa;
-	private String nome_Pessoa;
-	private String email_Pessoa;
+	private String nome_pessoa;
+	private String email_pessoa;
+
+    public Pessoa(String email_pessoa, int id_pessoa, String nome_pessoa) {
+        this.email_pessoa = email_pessoa;
+        this.id_pessoa = id_pessoa;
+        this.nome_pessoa = nome_pessoa;
+    }
+
+    public Pessoa(String email_pessoa, String nome_pessoa) {
+        this.email_pessoa = email_pessoa;
+        this.nome_pessoa = nome_pessoa;
+    }
+
+    public Pessoa() {
+    }
 	
-	public Pessoa() {
-	}
-
-	@Override
-	public String toString() {
-		return "Pessoa [id_pessoa=" + id_pessoa + ", nome_Pessoa=" + nome_Pessoa + ", email_Pessoa=" + email_Pessoa
-				+ "]";
-	}
-
-	public Pessoa(int id_pessoa, String nome_Pessoa, String email_Pessoa) {
-		super();
-		this.id_pessoa = id_pessoa;
-		this.nome_Pessoa = nome_Pessoa;
-		this.email_Pessoa = email_Pessoa;
-	}
-
-	public Pessoa(String nome_Pessoa, String email_Pessoa) {
-		super();
-		this.nome_Pessoa = nome_Pessoa;
-		this.email_Pessoa = email_Pessoa;
-	}
 	
 	public int getId_pessoa() {
 		return id_pessoa;
@@ -33,19 +26,29 @@ public class Pessoa {
 	public void setId_pessoa(int id_pessoa) {
 		this.id_pessoa = id_pessoa;
 	}
-	public String getNome_Pessoa() {
-		return nome_Pessoa;
+	public String getNome_pessoa() {
+		return nome_pessoa;
 	}
-	public void setNome_Pessoa(String nome_Pessoa) {
-		this.nome_Pessoa = nome_Pessoa;
+	public void setNome_pessoa(String nome_pessoa) {
+		this.nome_pessoa = nome_pessoa;
 	}
-	public String getEmail_Pessoa() {
-		return email_Pessoa;
+	public String getEmail_pessoa() {
+		return email_pessoa;
 	}
-	public void setEmail_Pessoa(String email_Pessoa) {
-		this.email_Pessoa = email_Pessoa;
+	public void setEmail_pessoa(String email_pessoa) {
+		this.email_pessoa = email_pessoa;
 	}
-	
-	
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Pessoa{");
+        sb.append("id_pessoa=").append(id_pessoa);
+        sb.append(", nome_pessoa=").append(nome_pessoa);
+        sb.append(", email_pessoa=").append(email_pessoa);
+        sb.append('}');
+        return sb.toString();
+    }
+
+	
 }
