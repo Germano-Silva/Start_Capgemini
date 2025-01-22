@@ -1709,7 +1709,61 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
   - Utiliza boas práticas, como `PreparedStatement`, para evitar SQL Injection.
 
 #### Aulas 14.M
+
+**Teste do Método de Consulta Individual no Projeto:**
+
+**Descrição do Método de Consulta Individual:**
+  - Busca um único registro na tabela `pessoa` utilizando o `id_pessoa` como parâmetro.
+  - Retorna um objeto `Pessoa` com os dados do registro encontrado.
+
+**Passos de Execução:**
+
+1. **Preparação do Comando SQL:**
+   - O comando utiliza o `SELECT` com cláusula `WHERE` para filtrar o registro pelo `id_pessoa`:
+     ```sql
+     SELECT * FROM pessoa WHERE id_pessoa = ?
+     ```
+   - O parâmetro `?` é preenchido com o valor do ID fornecido.
+
+2. **Execução da Consulta:**
+   - O método cria e executa o `PreparedStatement`:
+     ```java
+     stmt.setInt(1, idPessoa);
+     ResultSet rs = stmt.executeQuery();
+     ```
+   - Se o registro for encontrado, os dados são carregados no objeto `Pessoa`.
+
+3. **Retorno do Objeto Pessoa:**
+   - Após carregar os dados, o método retorna o objeto `Pessoa` preenchido:
+     ```java
+     if (rs.next()) {
+         pessoa.setId(rs.getInt("id_pessoa"));
+         pessoa.setNome(rs.getString("nome_pessoa"));
+         pessoa.setEmail(rs.getString("email"));
+     }
+     ```
+
+**Validação no Banco de Dados:**
+  - Executando a consulta para um ID existente, os dados correspondentes são retornados:
+    ```
+    ID    Nome      Email
+    1     José      jose@email.com
+    ```
+
+**Exemplo de Uso:**
+```java
+Pessoa pessoa = pessoaDAO.consultarPessoaIndividual(1);
+System.out.println("ID: " + pessoa.getId());
+System.out.println("Nome: " + pessoa.getNome());
+System.out.println("Email: " + pessoa.getEmail());
+```
+
+**Benefícios do Método de Consulta Individual:**
+  - Garante a recuperação precisa de um registro específico.
+  - Pode ser utilizado como base para verificações antes de realizar alterações ou exclusões.
+
 #### Aulas 14.N
+
 
 ## Aula 15 - Exceções e controle de erros
 
