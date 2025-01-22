@@ -1914,6 +1914,62 @@ public boolean alterarPessoa(Pessoa pessoa) {
 
 #### Aulas 15.C
 
+**Uso do Throws e Throw no Tratamento de Exceções em Java:**
+
+**Descrição do Throws e Throw:**
+  - **Throws:** Declara que um método pode lançar uma ou mais exceções, obrigando quem o chama a tratar ou propagar as exceções.
+  - **Throw:** Lança manualmente uma exceção específica dentro de um método.
+
+**Exemplo de Uso de Throws:**
+  - Declaração de que o método pode lançar uma exceção:
+    ```java
+    public void executarMetodo() throws NullPointerException {
+        String texto = null;
+        System.out.println(texto.length()); // Pode lançar NullPointerException
+    }
+    ```
+  - Quem chama o método deve tratá-lo com `try-catch`:
+    ```java
+    try {
+        executarMetodo();
+    } catch (NullPointerException e) {
+        System.out.println("Erro capturado: " + e.getMessage());
+    }
+    ```
+
+**Exemplo de Uso de Throw:**
+  - Lançando uma exceção manualmente:
+    ```java
+    public void validarEntrada(String entrada) {
+        if (entrada == null || entrada.isEmpty()) {
+            throw new IllegalArgumentException("Entrada inválida.");
+        }
+    }
+    ```
+  - A exceção personalizada pode ser capturada por quem chama o método:
+    ```java
+    try {
+        validarEntrada("");
+    } catch (IllegalArgumentException e) {
+        System.out.println("Erro: " + e.getMessage());
+    }
+    ```
+
+**Criação de Exceções Personalizadas:**
+  - É possível definir novas exceções estendendo a classe `Exception`:
+    ```java
+    public class MinhaExcecao extends Exception {
+        public MinhaExcecao(String mensagem) {
+            super(mensagem);
+        }
+    }
+    ```
+
+**Vantagens do Uso de Throws e Throw:**
+  - Permitem propagar ou lançar exceções específicas para diferentes cenários.
+  - Facilitam a criação de exceções personalizadas para melhorar a legibilidade e manutenção do código.
+  - Oferecem maior controle sobre o fluxo de execução em situações de erro.
+
 ## Aula 16 - Considerações finais
 
 #### Aulas 16.A
