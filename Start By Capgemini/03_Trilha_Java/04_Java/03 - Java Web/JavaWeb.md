@@ -114,6 +114,28 @@ Essas ferramentas possibilitam a criação de sistemas modernos e interativos, a
 
 #### Aula 2.C
 
+**Criação de Projeto Java Web com Tomcat**
+
+O processo de criação de um projeto Java Web envolve a configuração inicial do ambiente e a integração com um servidor como o **Apache Tomcat**. Seguem os passos detalhados mencionados:
+
+1. **Configuração Inicial do Projeto:**
+   - Criar um novo projeto web no **NetBeans**.
+   - Escolher a categoria **Java Web** e o tipo de projeto **Web Application**.
+   - Nomear o projeto (ex.: `PessoaWeb`) e definir a pasta de destino.
+
+2. **Configuração do Servidor:**
+   - Adicionar o servidor **Apache Tomcat** ao projeto.
+   - Selecionar o diretório onde o Tomcat foi previamente instalado.
+   - Confirmar a configuração do servidor para o projeto.
+
+3. **Estrutura Inicial do Projeto:**
+   - Após a criação, o projeto já inclui um arquivo **index.html** na estrutura web.
+   - O servidor Tomcat é integrado automaticamente ao projeto.
+
+4. **Dependências:**
+   - Garantir a presença do driver de conexão com o banco de dados, como o **PostgreSQL**.
+   - Organizar os arquivos do projeto dentro das pastas adequadas para manter a estrutura clara.
+
 #### Aula 2.D
 
 #### Aula 2.E
