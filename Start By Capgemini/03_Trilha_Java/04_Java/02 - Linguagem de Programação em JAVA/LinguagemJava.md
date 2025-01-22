@@ -1351,11 +1351,13 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
     ```SQL
     CREATE DATABASE Cadastros;
 
-    CREATE TABLE  pessoas (
-        id_pessoa INT NOT NULL PRIMARY KEY,
-        nome_pessoa VARCHAR(500) NOT NULL,
-        email_pessoa VARCHAR(500) NOT NULL
-        );
+    CREATE TABLE pessoa(
+      idpessoa INTEGER PRIMARY KEY,
+      nomepessoa VARCHAR(50),
+      email VARCHAR(50)
+    );
+
+    SELECT * FROM pessoa;
     ```
 #### Aulas 14.C
 

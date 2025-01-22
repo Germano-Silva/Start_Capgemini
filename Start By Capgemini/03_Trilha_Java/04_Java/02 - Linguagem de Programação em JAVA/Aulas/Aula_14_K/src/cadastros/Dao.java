@@ -14,9 +14,9 @@ public class Dao {
 	CallableStatement call; // Procedures e Function
 	
 	public void open() throws Exception{
-	    String url = "jdbc:postgresql://localhost:5432/cadastros";
+	    String url = "jdbc:postgresql://localhost:5432/CadastrosJDBC";
 	    String user = "postgres";
-	    String password = "admin";
+	    String password = "Seilaputis?1";
 	    try {
 	        Class.forName("org.postgresql.Driver");
 	        con = DriverManager.getConnection(url, user, password);      

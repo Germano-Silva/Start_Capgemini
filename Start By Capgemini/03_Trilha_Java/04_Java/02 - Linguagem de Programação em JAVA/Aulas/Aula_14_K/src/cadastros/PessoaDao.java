@@ -20,7 +20,7 @@ public class PessoaDao extends Dao {
 	
 	public void alterarPessoa(Pessoa p) throws Exception {
 		open();
-		stmt = con.prepareStatement("update Pessoa set nomepessoa = ?, email = ? where idPessoa = ?");
+		stmt = con.prepareStatement("update pessoa set nomepessoa = ?, email = ? where idpessoa = ?");
 		stmt.setString(1, p.getNomePessoa());
 		stmt.setString(2, p.getEmail());
 		stmt.setInt(3, p.getIdPessoa());
@@ -32,7 +32,7 @@ public class PessoaDao extends Dao {
 	public void excluirPessoa(Pessoa p) throws Exception {
 
 		open();
-		stmt = con.prepareStatement("delete from Pessoa where idPessoa = ?");
+		stmt = con.prepareStatement("delete from pessoa where idpessoa = ?");
 		stmt.setInt(1, p.getIdPessoa());
 		stmt.execute();
 		stmt.close();
@@ -42,7 +42,7 @@ public class PessoaDao extends Dao {
 	// retornando um objeto
 	public Pessoa consultarPessoaIndividual(int cod) throws Exception {
 			open();
-			stmt = con.prepareStatement("select * from pessoas where idPessoa = ? ");
+			stmt = con.prepareStatement("select * from pessoa where idpessoa = ? ");
 			stmt.setInt(1, cod);
 			try {
 				rs = stmt.executeQuery();			
@@ -52,15 +52,15 @@ public class PessoaDao extends Dao {
 //		        System.out.println("Falha ao recuperar o registro. Contate TI");
 			}
 			finally {
-				System.out.println("Fechando a conex�o com banco de dados no Finally");
+				System.out.println("Fechando a conexão com banco de dados no Finally");
 				close();
 			}
 			Pessoa p = null;
 			if (rs != null) {
 				if (rs.next()) {
 					p = new Pessoa();
-					p.setIdPessoa(rs.getInt("idPessoa"));
-					p.setNomePessoa(rs.getString("nomePessoa"));
+					p.setIdPessoa(rs.getInt("idpessoa"));
+					p.setNomePessoa(rs.getString("nomepessoa"));
 					p.setEmail(rs.getString("email"));				
 				}
 			}
@@ -76,8 +76,8 @@ public class PessoaDao extends Dao {
 	        List<Pessoa> listaPessoas = new ArrayList<>();
 			while (rs.next()) {
 				Pessoa p = new Pessoa();
-				p.setIdPessoa(rs.getInt("idPessoa"));
-				p.setNomePessoa(rs.getString("nomePessoa"));
+				p.setIdPessoa(rs.getInt("idpessoa"));
+				p.setNomePessoa(rs.getString("nomepessoa"));
 				p.setEmail(rs.getString("email"));
 				listaPessoas.add(p);
 			}
