@@ -86,6 +86,15 @@
 
 #### Aula 2.A
 
+**Definição de projeto web:** Um projeto web em Java utiliza uma arquitetura padrão, como **MVC** ou **DAO**.
+
+**Integração:** O backend, previamente desenvolvido e testado, é integrado ao projeto web.
+
+**Ferramentas destacadas:** Além do **Eclipse**, o **NetBeans** foi apresentado como uma alternativa viável para desenvolvimento de projetos Java Web.
+
+**Objetivo do projeto:** Criar telas para interação com o usuário e executar métodos no backend a partir das entradas fornecidas.
+
+**Processo de desenvolvimento:** Desenho das telas no frontend e envio de dados ao backend para operações específicas.
 
 #### Aula 2.B
 
