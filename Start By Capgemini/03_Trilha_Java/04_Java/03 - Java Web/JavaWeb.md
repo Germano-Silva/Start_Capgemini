@@ -98,6 +98,20 @@
 
 #### Aula 2.B
 
+**HTML, JSP e Dinamismo em Páginas Web**
+
+O uso de **HTML** e **JSP** é destacado como essencial para o desenvolvimento de páginas web dinâmicas. Essas tecnologias permitem a integração de **JavaScript**, **CSS** e **HTML**, proporcionando maior interatividade e funcionalidade.
+
+- **HTML e CSS:** Responsáveis pela estrutura e estilização das páginas web.
+- **JSP:** Utilizado para incorporar lógica Java diretamente nas páginas HTML, gerando conteúdo dinâmico no lado do servidor.
+
+As principais funcionalidades abordadas incluem:
+- Comunicação eficiente com o servidor.
+- Atualização de dados em bancos de dados.
+- Apresentação de informações dinâmicas para os usuários.
+
+Essas ferramentas possibilitam a criação de sistemas modernos e interativos, alinhados aos padrões de sites amplamente utilizados atualmente.
+
 #### Aula 2.C
 
 #### Aula 2.D
