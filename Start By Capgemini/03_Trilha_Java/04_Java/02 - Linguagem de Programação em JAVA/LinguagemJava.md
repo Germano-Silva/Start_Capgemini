@@ -1974,3 +1974,14 @@ public boolean alterarPessoa(Pessoa pessoa) {
 
 #### Aulas 16.A
 
+**Conclusão do Curso de Java Intermediário:**
+
+- **Objetivo Alcançado:**
+  - Capacitar o aluno a implementar funcionalidades de cadastro, alteração, consulta e exclusão de dados utilizando Java.
+  - Preparar o aluno para aplicar o conhecimento adquirido em projetos reais.
+
+- **Habilidades Desenvolvidas:**
+  - Manipulação de dados em bancos de dados com JDBC.
+  - Implementação de operações CRUD (Create, Read, Update, Delete).
+  - Uso de práticas modernas de programação, como tratamento de exceções e organização por camadas.
+
