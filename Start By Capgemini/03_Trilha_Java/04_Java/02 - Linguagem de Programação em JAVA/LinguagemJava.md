@@ -1564,6 +1564,18 @@ Bem-vindo ao curso de Linguagem de Programação em JAVA! Este curso foi desenvo
   - Código bem estruturado e modularizado, permitindo fácil entendimento.
 
 #### Aulas 14.I
+
+**Análise da Classe Principal:**
+
+**Finalidade da Classe Principal:**
+  - Controla a execução do projeto, utilizando as classes DAO e Pessoa para manipular dados.
+  - Implementa métodos para testar as operações de inclusão, alteração e exclusão.
+
+**Benefícios da Implementação:**
+  - Testa todas as operações de CRUD de forma prática.
+  - Garante a integridade dos métodos implementados nas classes DAO.
+  - Melhora a organização ao separar responsabilidades entre as classes.
+
 #### Aulas 14.J
 #### Aulas 14.K
 #### Aulas 14.L
