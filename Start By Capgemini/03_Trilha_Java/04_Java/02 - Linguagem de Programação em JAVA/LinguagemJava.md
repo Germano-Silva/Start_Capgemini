@@ -1764,6 +1764,62 @@ System.out.println("Email: " + pessoa.getEmail());
 
 #### Aulas 14.N
 
+**Teste do Método de Consulta com Retorno de Lista:**
+
+**Descrição do Método de Consulta com Lista:**
+  - Recupera todos os registros da tabela `pessoa` e os retorna em uma lista de objetos `Pessoa`.
+  - Cada registro no banco de dados é representado como um objeto dentro da lista.
+
+**Passos de Execução do Método:**
+
+1. **Preparação do Comando SQL:**
+   - O comando SQL utilizado para selecionar todos os registros:
+     ```sql
+     SELECT * FROM pessoa ORDER BY id_pessoa;
+     ```
+   - O resultado é armazenado em um `ResultSet`.
+
+2. **Criação da Lista de Objetos:**
+   - Uma lista do tipo `ArrayList` é instanciada para armazenar os objetos `Pessoa`.
+   - Para cada linha do `ResultSet`, um objeto `Pessoa` é criado e seus atributos são preenchidos:
+     ```java
+     while (rs.next()) {
+         Pessoa pessoa = new Pessoa();
+         pessoa.setId(rs.getInt("id_pessoa"));
+         pessoa.setNome(rs.getString("nome_pessoa"));
+         pessoa.setEmail(rs.getString("email"));
+         listaPessoas.add(pessoa);
+     }
+     ```
+
+3. **Retorno da Lista:**
+   - A lista preenchida com os objetos `Pessoa` é retornada pelo método.
+
+**Iteração sobre a Lista:**
+  - Após receber a lista, um laço **for-each** percorre os objetos para exibição:
+    ```java
+    for (Pessoa p : listaPessoas) {
+        System.out.println("ID: " + p.getId());
+        System.out.println("Nome: " + p.getNome());
+        System.out.println("Email: " + p.getEmail());
+        System.out.println("------------------------");
+    }
+    ```
+
+**Validação no Banco de Dados:**
+  - Após a execução, os registros exibidos no console correspondem aos registros armazenados:
+    ```
+    ID    Nome      Email
+    1     José      jose@email.com
+    2     João      joao@email.com
+    3     Maria     maria@email.com
+    4     Ana       ana@email.com
+    ```
+
+**Benefícios do Método de Consulta com Lista:**
+  - Permite recuperar múltiplos registros de maneira eficiente.
+  - Facilita a exibição dos dados em interfaces gráficas ou relatórios.
+  - Segue boas práticas, como uso de `PreparedStatement` e encapsulamento dos dados em objetos.
 
 ## Aula 15 - Exceções e controle de erros
 
