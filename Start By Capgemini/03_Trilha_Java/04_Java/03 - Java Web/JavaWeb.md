@@ -219,6 +219,23 @@ O processo de criação de um projeto Java Web envolve a configuração inicial 
 
 #### Aula 2.H
 
+**Consulta de Registros e Interatividade**
+
+**Consulta de Registros:**
+
+  - O método `consultarPessoas` é utilizado para buscar múltiplos registros no banco de dados.
+  - A classe `Pessoa` é instanciada e uma lista (`listaPessoas`) é criada para armazenar os registros consultados.
+  - Utiliza-se um loop para iterar sobre os resultados do banco de dados, adicionando-os à lista de objetos.
+
+**Apresentação dos Dados:**
+
+  - A lista de registros é consumida por meio de um script que exibe os dados na tela.
+  - Cada registro inclui:
+    - Nome.
+    - E-mail.
+    - Botão "Editar" para alterar o registro, passando o código da pessoa.
+    - Botão "Excluir" para remover o registro, também utilizando o código da pessoa.
+
 #### Aula 2.I
 
 #### Aula 2.J
