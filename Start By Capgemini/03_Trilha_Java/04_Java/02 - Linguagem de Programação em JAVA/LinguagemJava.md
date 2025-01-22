@@ -1824,6 +1824,8 @@ System.out.println("Email: " + pessoa.getEmail());
 ## Aula 15 - Exceções e controle de erros
 
 #### Aulas 15.A
+
+
 #### Aulas 15.B
 #### Aulas 15.C
 
