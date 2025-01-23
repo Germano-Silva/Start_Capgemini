@@ -242,22 +242,22 @@ O processo de criação de um projeto Java Web envolve a configuração inicial 
 
 **Funcionamento da Edição:**
 
-  - Na consulta de registros, cada linha possui um botão "Editar" associado a um código único da pessoa.
-  - Ao clicar em "Editar":
+  Na consulta de registros, cada linha possui um botão "Editar" associado a um código único da pessoa.
+  Ao clicar em "Editar":
     - O código da pessoa é passado como parâmetro na URL.
     - Um método é chamado para buscar os dados correspondentes no banco, populando os campos do formulário de edição.
 
 **Formulário de Edição:**
 
-  - Os campos do formulário incluem:
+  Os campos do formulário incluem:
     - Nome.
     - E-mail.
-  - Os dados são preenchidos automaticamente com base nos valores obtidos do banco.
+  Os dados são preenchidos automaticamente com base nos valores obtidos do banco.
 
 **Alteração dos Dados:**
 
-  - Após realizar as alterações, o botão "Alterar" envia os novos valores ao backend via método **POST**.
-  - O backend:
+  Após realizar as alterações, o botão "Alterar" envia os novos valores ao backend via método **POST**.
+  O backend:
     - Captura os valores dos campos com `getParameter()`.
     - Atualiza os atributos da classe `Pessoa`.
     - Chama o método `alterarPessoa` para atualizar os dados no banco.
@@ -269,7 +269,22 @@ O processo de criação de um projeto Java Web envolve a configuração inicial 
 
 #### Aula 2.J
 
+**Exclusão de Registros no Sistema**
 
+- **Funcionamento do Botão "Excluir":**
+  - Cada linha da consulta possui um botão "Excluir" associado ao código único da pessoa.
+  - Ao clicar no botão:
+    - O código da pessoa é enviado como parâmetro para o backend.
+    - Um método de exclusão é chamado para processar o pedido.
+
+- **Processo de Exclusão:**
+  - O backend utiliza `getParameter()` para capturar o código da pessoa enviado.
+  - A classe `Pessoa` é instanciada e o método `excluirPessoa` é acionado.
+  - O método executa um comando **DELETE** no banco de dados baseado no código da pessoa.
+
+- **Respostas do Sistema:**
+  - Sucesso: Exibe mensagem confirmando que a pessoa foi removida com sucesso.
+  - Falha: Retorna mensagem indicando o problema ocorrido.
 
 ## Aula 03 - Considerações finais
 
