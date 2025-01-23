@@ -289,3 +289,14 @@ O processo de criação de um projeto Java Web envolve a configuração inicial 
 ## Aula 03 - Considerações finais
 
 #### Aula 3.A
+
+**Encerramento do Curso Java Web**
+
+**Objetivo do Curso:**
+  - Oferecer uma introdução objetiva e prática ao desenvolvimento de projetos Java Web simples.
+  - Proporcionar conhecimentos básicos para reproduzir o desenvolvimento de sistemas web.
+
+**Mensagem Final:**
+  - O curso destacou conceitos essenciais e práticas fundamentais para o desenvolvimento Java Web.
+
+**Conclusão:** Finaliza-se o aprendizado com a base necessária para implementar sistemas web básicos utilizando Java.
