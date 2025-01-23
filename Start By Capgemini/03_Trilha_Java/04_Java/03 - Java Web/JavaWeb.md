@@ -289,4 +289,3 @@ O processo de criação de um projeto Java Web envolve a configuração inicial 
 ## Aula 03 - Considerações finais
 
 #### Aula 3.A
-
