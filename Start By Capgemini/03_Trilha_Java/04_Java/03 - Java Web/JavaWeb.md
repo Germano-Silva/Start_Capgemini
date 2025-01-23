@@ -1,7 +1,34 @@
 # Curso: Java - Web
 
 **Professor:** Marcelo  
-**Curso:** Java - Web  
+
+# Introdução ao Curso Java - Web
+
+Este curso foi desenvolvido para introduzir os conceitos e práticas fundamentais no desenvolvimento de aplicações **Java Web**, focando em uma abordagem prática e objetiva. Ao longo do curso, você aprenderá desde a configuração inicial do ambiente até a criação e gestão de projetos completos com tecnologias como **HTML**, **JSP**, e **Apache Tomcat**.
+
+**Objetivos do Curso**
+
+- Apresentar as principais ferramentas e metodologias para o desenvolvimento Java Web.
+- Ensinar a integração entre frontend e backend utilizando uma arquitetura moderna, como **MVC**.
+- Capacitar na criação de sistemas dinâmicos e interativos com suporte a banco de dados.
+
+**Principais Temas Abordados**
+
+- Configuração do ambiente de desenvolvimento com **Eclipse** e **Apache Tomcat**.
+- Criação de projetos web dinâmicos com **HTML**, **CSS**, e **JSP**.
+- Integração de projetos com bases de dados utilizando métodos eficientes para consulta, edição, e exclusão de registros.
+- Organização e estruturação de código utilizando boas práticas de desenvolvimento.
+
+**Público-Alvo**
+
+Este curso é indicado para estudantes e profissionais interessados em ingressar no universo do desenvolvimento web com Java, especialmente aqueles que buscam construir sistemas web escaláveis e práticos.
+
+**Requisitos**
+
+Para um melhor aproveitamento do curso, é recomendado:
+- Conhecimento básico de **Java**.
+- Noções de **HTML**, **CSS**, e **JavaScript**.
+- Familiaridade com sistemas de banco de dados.
 
 ---
 
