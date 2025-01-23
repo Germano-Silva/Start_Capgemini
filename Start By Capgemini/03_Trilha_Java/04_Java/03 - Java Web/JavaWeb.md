@@ -238,7 +238,38 @@ O processo de criação de um projeto Java Web envolve a configuração inicial 
 
 #### Aula 2.I
 
+**Edição de Registros no Sistema**
+
+**Funcionamento da Edição:**
+
+  - Na consulta de registros, cada linha possui um botão "Editar" associado a um código único da pessoa.
+  - Ao clicar em "Editar":
+    - O código da pessoa é passado como parâmetro na URL.
+    - Um método é chamado para buscar os dados correspondentes no banco, populando os campos do formulário de edição.
+
+**Formulário de Edição:**
+
+  - Os campos do formulário incluem:
+    - Nome.
+    - E-mail.
+  - Os dados são preenchidos automaticamente com base nos valores obtidos do banco.
+
+**Alteração dos Dados:**
+
+  - Após realizar as alterações, o botão "Alterar" envia os novos valores ao backend via método **POST**.
+  - O backend:
+    - Captura os valores dos campos com `getParameter()`.
+    - Atualiza os atributos da classe `Pessoa`.
+    - Chama o método `alterarPessoa` para atualizar os dados no banco.
+
+**Validação e Respostas:**
+
+  - Sucesso: Exibe mensagem confirmando que a pessoa foi alterada com sucesso.
+  - Falha: Mostra mensagem de erro indicando o problema.
+
 #### Aula 2.J
+
+
 
 ## Aula 03 - Considerações finais
 
