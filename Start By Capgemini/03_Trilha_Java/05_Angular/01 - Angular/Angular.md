@@ -249,6 +249,54 @@ Com isso, o ambiente de desenvolvimento está pronto.
 
 #### Aula 4.A
 
+**Criação do Primeiro Componente Angular**
+
+1. **O que é um Componente Angular**:
+   - Um **componente** é uma classe que define a lógica de uma parte específica da aplicação.
+   - Segue a convenção de nomeação: `nome-do-componente.component.ts`.
+
+2. **Criando o Componente**:
+   - No diretório `app`, crie o arquivo `primeiro-componente.component.ts`.
+   - Defina a classe do componente e adicione o decorador `@Component`:
+     ```typescript
+     import { Component } from '@angular/core';
+
+     @Component({
+       selector: 'app-primeiro-componente',
+       template: '<h2>Meu Primeiro Componente</h2>',
+       styles: ['h2 { color: red; }']
+     })
+     export class PrimeiroComponente {}
+     ```
+   - **Detalhes**:
+     - **Selector**: Identifica o componente como uma tag HTML.
+     - **Template**: Define o conteúdo exibido na interface (HTML inline ou arquivo externo).
+     - **Styles**: Contém os estilos associados ao componente.
+
+3. **Registrando o Componente**:
+   - No arquivo `app.module.ts`, adicione o componente à seção `declarations`:
+     ```typescript
+     import { PrimeiroComponente } from './primeiro-componente.component';
+
+     @NgModule({
+       declarations: [
+         AppComponent,
+         PrimeiroComponente
+       ],
+       // outras configurações...
+     })
+     export class AppModule {}
+     ```
+
+4. **Utilizando o Componente**:
+   - No arquivo `app.component.html`, utilize o selector do componente:
+     ```html
+     <app-primeiro-componente></app-primeiro-componente>
+     ```
+
+5. **Visualização no Navegador**:
+   - Ao salvar e recarregar a aplicação no navegador, o conteúdo do componente será exibido:  
+     **"Meu Primeiro Componente"** com a cor definida no estilo.
 
 #### Aula 4.B
 
