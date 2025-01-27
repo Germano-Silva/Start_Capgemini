@@ -142,6 +142,35 @@ Nesta aula, será explicado como configurar o ambiente de desenvolvimento e inst
     - [Node.js](https://nodejs.org/en/)
     - [Visual Studio Code](https://code.visualstudio.com/)
 
+**Configuração do Ambiente de Desenvolvimento**
+
+Durante o próximo ano, utilizaremos diversas ferramentas essenciais. Abaixo está o passo a passo para instalação e configuração:
+
+1. **Visual Studio Code**:
+   - Acesse o site oficial e clique no botão de **Download**.
+   - Após o download, abra o instalador, aceite os termos, configure as opções sugeridas e clique em **Instalar**.
+   - O processo é simples, mas, como já tenho o software instalado, não prosseguirei com a instalação.
+
+2. **Node.js**:
+   - Acesse o site oficial: [nodejs.org](https://nodejs.org).
+   - Escolha a versão **LTS** (recomendada por ser estável).
+   - Baixe o instalador e siga os passos: **Next**, aceite os termos e finalize a instalação.
+   - Para verificar a instalação:
+     - Abra o terminal (**cmd**).
+     - Digite `node -v` para confirmar a versão instalada.
+     - Verifique também o **NPM** (gerenciador de pacotes do Node) com o comando `npm -v`.
+
+3. **Instalação do Angular**:
+   - Instale o Angular CLI de forma global com o comando:  
+     `npm install -g @angular/cli`.
+   - Após a instalação, o Angular estará disponível globalmente para uso em projetos.
+
+4. **Extensão para Visual Studio Code**:
+   - No Visual Studio Code, instale a extensão **Angular Language Service**.
+   - Essa extensão facilita o desenvolvimento, oferecendo suporte como **autocompletar** e **dicas de código**.
+
+Com isso, o ambiente de desenvolvimento está pronto.
+
 ---
 
 ## Aula 03
