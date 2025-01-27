@@ -177,6 +177,39 @@ Com isso, o ambiente de desenvolvimento está pronto.
 
 #### Aula 3.A
 
+**Criação de um Novo Projeto no Angular com CLI**
+
+1. **Configuração Inicial**:
+   - Certifique-se de que o **Angular CLI** está instalado (como feito na aula anterior).
+   - No **Visual Studio Code**, abra o terminal integrado e navegue até o diretório onde deseja criar o projeto.
+
+2. **Comando para Criar o Projeto**:
+   - Use o comando `ng new` seguido do nome do projeto. Exemplo:  
+     ```bash
+     ng new fundamentos-angular
+     ```
+   - Durante o processo:
+     - Será solicitado adicionar o **Angular Routing** (roteamento). Escolha **Yes**.
+     - Escolha o formato de estilo preferido (**CSS**, **SCSS**, **SASS**, ou **LESS**). Neste caso, foi selecionado **CSS**.
+
+3. **Estrutura do Projeto**:
+   - Após a criação, a estrutura do projeto estará disponível no diretório especificado.
+   - Certifique-se de estar na pasta correta do projeto com o comando:  
+     ```bash
+     cd fundamentos-angular
+     ```
+
+4. **Execução do Projeto**:
+   - Para rodar a aplicação, utilize o comando:  
+     ```bash
+     npm start
+     ```
+   - O servidor será iniciado e a aplicação estará acessível em:  
+     **http://localhost:4200**
+
+5. **Visualização da Aplicação**:
+   - Acesse a URL mencionada para visualizar a aplicação Angular recém-criada.
+
 #### Aula 3.B
 
 ---
