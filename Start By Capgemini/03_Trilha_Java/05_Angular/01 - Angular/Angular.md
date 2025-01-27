@@ -300,6 +300,56 @@ Com isso, o ambiente de desenvolvimento está pronto.
 
 #### Aula 4.B
 
+**Criação de Componentes com Angular CLI**
+
+1. **Gerando um Novo Componente**:
+   - No terminal, execute o comando:
+     ```bash
+     ng generate component segundo-componente
+     ```
+   - O Angular CLI criará uma pasta com os seguintes arquivos:
+     - **.component.ts**: Classe principal do componente.
+     - **.component.html**: Template (HTML) do componente.
+     - **.component.css** ou **.component.scss**: Estilos associados ao template.
+     - **.component.spec.ts**: Arquivo para testes do componente.
+
+2. **Configurações do Novo Componente**:
+   - O decorador `@Component` referencia:
+     - **templateUrl**: Caminho para o arquivo HTML.
+     - **styleUrls**: Caminho para o arquivo de estilos.
+
+3. **Removendo Configurações Desnecessárias**:
+   - Métodos de ciclo de vida, como `ngOnInit`, podem ser removidos caso ainda não sejam necessários.
+   - Exemplo atualizado do componente:
+     ```typescript
+     import { Component } from '@angular/core';
+
+     @Component({
+       selector: 'app-segundo-componente',
+       templateUrl: './segundo-componente.component.html',
+       styleUrls: ['./segundo-componente.component.css']
+     })
+     export class SegundoComponente {
+       nome: string = 'Universidade Angular';
+     }
+     ```
+
+4. **Interpolação de Texto**:
+   - A interpolação é usada para exibir valores de propriedades da classe no template.
+   - Exemplo no arquivo **.component.html**:
+     ```html
+     <h2>{{ nome }}</h2>
+     ```
+   - Resultado: O valor da propriedade `nome` será exibido na tela.
+
+5. **Uso de Pipes**:
+   - Pipes formatam dados exibidos na tela.
+   - Exemplo de uso para converter texto para maiúsculas:
+     ```html
+     <h2>{{ nome | uppercase }}</h2>
+     ```
+   - O texto exibido será formatado de acordo com o pipe utilizado.
+
 #### Aula 4.C
 
 #### Aula 4.D
