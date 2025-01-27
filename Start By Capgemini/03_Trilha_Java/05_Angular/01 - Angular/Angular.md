@@ -94,6 +94,12 @@ Para um melhor aproveitamento do curso, recomenda-se que tenha:
 
 #### Aula 1.A
 
+**Apresentação do Curso EAD Proway**
+
+- **Instrutor:** William, analista de projetos.
+- **Experiência do Instrutor:** 
+  - Ministrou cursos de **React**, **React Native**, **Vue** e **Node**.
+
 #### Aula 1.B
 
 ---
