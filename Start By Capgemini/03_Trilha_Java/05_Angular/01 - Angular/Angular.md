@@ -102,6 +102,15 @@ Para um melhor aproveitamento do curso, recomenda-se que tenha:
 
 #### Aula 1.B
 
+**Introdução ao Angular**
+
+O Angular é uma **plataforma de desenvolvimento front-end** para aplicações web. Ele inclui:  
+- Um **framework** baseado em **componentes**.  
+- Diversas **bibliotecas** para auxiliar no desenvolvimento.  
+- Ferramentas integradas para **build** e **testes** de projetos.
+
+Além disso, o Angular conta com uma **comunidade ativa**, sendo ideal para desenvolvedores **front-end** e **full-stack**.
+
 ---
 
 ## Aula 02
