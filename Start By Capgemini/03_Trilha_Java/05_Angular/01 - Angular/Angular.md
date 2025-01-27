@@ -352,6 +352,83 @@ Com isso, o ambiente de desenvolvimento está pronto.
 
 #### Aula 4.C
 
+**Trabalhando com Pipes no Angular**
+
+1. **Conceito de Pipes**:
+   - Pipes são utilizados para **formatar** ou **transformar** dados exibidos no template.
+   - [**Ducumentação**](https://angular.dev/guide/templates/pipes#creating-custom-pipes)
+   - O Angular já oferece vários pipes prontos, como:
+     - **uppercase**: Converte texto para maiúsculas.
+     - **date**: Formata datas.
+     - **currency**: Exibe valores monetários.
+     - **percent**: Formata números como porcentagens.
+
+2. **Utilizando Pipes Embutidos**:
+   - Para formatar uma data com o pipe `date`:
+     ```html
+     <p>Data de nascimento: {{ dataNascimento | date:'dd/MM/yyyy' }}</p>
+     ```
+   - Neste exemplo:
+     - `dataNascimento` é uma propriedade da classe.
+     - O pipe `date` formata a data no formato `dia/mês/ano`.
+
+3. **Criando Pipes Personalizados**:
+   - Para situações específicas, é possível criar um pipe customizado.  
+   - Comando para criar o pipe:
+     ```bash
+     ng generate pipe multiplica-por
+     ```
+   - O Angular CLI cria um arquivo com estrutura básica para o pipe.
+
+4. **Implementação do Pipe**:
+   - No arquivo do pipe (`multiplica-por.pipe.ts`):
+     ```typescript
+     import { Pipe, PipeTransform } from '@angular/core';
+
+     @Pipe({
+       name: 'multiplicaPor'
+     })
+     export class MultiplicaPorPipe implements PipeTransform {
+       transform(valor: number, multiplicador: number): number {
+         return valor * multiplicador;
+       }
+     }
+     ```
+   - Detalhes:
+     - O método `transform` recebe o valor e os argumentos necessários.
+     - Retorna o valor transformado.
+
+5. **Registrando e Utilizando o Pipe**:
+   - O pipe é automaticamente registrado no módulo (`app.module.ts`).
+   - Para utilizá-lo no template:
+     ```html
+     <p>{{ 10 | multiplicaPor:2 }}</p>
+     ```
+   - Resultado: O valor `10` será multiplicado por `2`, exibindo `20`.
+
+6. **Criando um Componente para Demonstrar o Pipe**:
+   - Comando para gerar um novo componente:
+     ```bash
+     ng generate component exemplo-pipes
+     ```
+   - No arquivo HTML do componente, utilize o pipe:
+     ```html
+     <p>10 x 2 = {{ 10 | multiplicaPor:2 }}</p>
+     <p>5 x 3 = {{ 5 | multiplicaPor:3 }}</p>
+     ```
+
+7. **Exibindo o Componente na Tela**:
+   - No arquivo `app.component.html`, adicione o seletor do componente:
+     ```html
+     <app-exemplo-pipes></app-exemplo-pipes>
+     ```
+
+8. **Resultado no Navegador**:
+   - O aplicativo exibirá os valores formatados ou calculados pelos pipes.  
+   - Por exemplo:
+     - `10 x 2 = 20`
+     - `5 x 3 = 15`
+
 #### Aula 4.D
 
 #### Aula 4.E
