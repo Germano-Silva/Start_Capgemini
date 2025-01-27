@@ -212,6 +212,37 @@ Com isso, o ambiente de desenvolvimento está pronto.
 
 #### Aula 3.B
 
+**Estrutura de um Projeto Angular**
+
+1. **Arquivos e Pastas Principais**:
+   - **Angular.json**: Arquivo de configuração principal com metadados utilizados pela aplicação. Inclui:
+     - **Prefix**: Define o prefixo dos componentes da aplicação.
+     - Configurações de bibliotecas e navegadores suportados.
+   - **Package.json**: Lista dependências e scripts da aplicação.
+   - **Pasta `src`**: Contém os arquivos principais da aplicação.
+
+2. **Pasta `app`**:
+   - Local onde estão os componentes principais da aplicação.
+   - **app.component.ts**: Arquivo principal do componente. Contém:
+     - Decorador `@Component`, que especifica:
+       - **Selector**: Prefixo utilizado para chamar o componente.
+       - **TemplateUrl**: Local do arquivo HTML.
+       - **StyleUrls**: Arquivo(s) de estilo associado(s).
+
+3. **Estrutura de um Componente Angular**:
+   - **Template**: Arquivo HTML que define o conteúdo exibido na interface.
+   - **Classe**: Controlador que contém dados e métodos utilizados no template.
+   - **Estilos**: Arquivo(s) CSS para definir o design da página.
+
+4. **Conexão entre Arquivos**:
+   - O **selector** no `app.component.ts` usa o prefixo definido no `Angular.json`.
+   - A classe atua como um controlador, ligando métodos e propriedades ao template.
+
+5. **Resumo do Fluxo**:
+   - **HTML** exibe o conteúdo.
+   - **Classe** gerencia dados e lógica da página.
+   - **CSS** estiliza a interface.
+
 ---
 
 ## Aula 04
