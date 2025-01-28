@@ -431,7 +431,64 @@ Com isso, o ambiente de desenvolvimento está pronto.
 
 #### Aula 4.D
 
+**Trabalhando com Property Binding e Event Binding no Angular**
+
+1. **Property Binding**:
+   - Permite ligar uma propriedade de um elemento HTML a uma propriedade da classe do componente.
+   - Exemplo:
+     - No componente:
+       ```typescript
+       export class AppComponent {
+         urlImagem: string = './assets/joao.jpg';
+       }
+       ```
+     - No template:
+       ```html
+       <img [src]="urlImagem" width="300" height="200">
+       ```
+   - Resultado: A imagem é exibida na tela utilizando o valor da propriedade `urlImagem`.
+
+2. **Event Binding**:
+   - Permite associar eventos HTML (como cliques de botão) a métodos do componente.
+   - Exemplo:
+     - No componente:
+       ```typescript
+       export class AppComponent {
+         dataNascimento: string = '01/01/1995';
+
+         mostrarDataNascimento(): void {
+           alert(`Data de Nascimento: ${this.dataNascimento}`);
+         }
+       }
+       ```
+     - No template:
+       ```html
+       <button (click)="mostrarDataNascimento()">Mostrar Data de Nascimento</button>
+       ```
+   - Resultado: Ao clicar no botão, o método `mostrarDataNascimento` é executado, exibindo um alerta com a data de nascimento.
+
+3. **Estilização Global**:
+   - Estilos podem ser aplicados globalmente em arquivos como `styles.css` ou `styles.scss`.
+   - Exemplo:
+     ```css
+     button {
+       background-color: #4CAF50;
+       color: white;
+       border: none;
+       padding: 10px 20px;
+       cursor: pointer;
+     }
+     ```
+
+4. **Resumo dos Conceitos**:
+   - **Property Binding**: Liga propriedades HTML a propriedades do componente.
+   - **Event Binding**: Liga eventos HTML a métodos do componente.
+
+Esses conceitos são fundamentais para criar interatividade e dinamismo em aplicações Angular.
+
 #### Aula 4.E
+
+
 
 #### Aula 4.F
 
