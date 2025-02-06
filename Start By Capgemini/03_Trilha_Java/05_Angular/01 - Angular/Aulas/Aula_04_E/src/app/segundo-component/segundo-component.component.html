@@ -1,0 +1,24 @@
+<h2>segundo-component!</h2>
+<p>Interpolação de texto.</p>
+<p>{{ nome | uppercase }}</p>
+<p>Data Nascimento {{ dataNascimento | date:"dd/MM/yyyy" }} </p>
+<p>Criando o propio Pipe " | " </p>
+<p>Tabuada do 2 </p>
+<p>0 X 2 = {{ 0 | multiplicaPor: 2 }}</p>
+<p>1 X 2 = {{ 1 | multiplicaPor: 2 }}</p>
+<p>2 X 2 = {{ 2 | multiplicaPor: 2 }}</p>
+<p>3 X 2 = {{ 3 | multiplicaPor: 2 }}</p>
+<p>4 X 2 = {{ 4 | multiplicaPor: 2 }}</p>
+<p>5 X 2 = {{ 5 | multiplicaPor: 2 }}</p>
+<p>6 X 2 = {{ 6 | multiplicaPor: 2 }}</p>
+<p>7 X 2 = {{ 7 | multiplicaPor: 2 }}</p>
+<p>8 X 2 = {{ 8 | multiplicaPor: 2 }}</p>
+<p>9 X 2 = {{ 9 | multiplicaPor: 2 }}</p>
+<p>10 X 2 = {{ 10 | multiplicaPor: 2 }}</p>
+<p>Property Binding</p>
+<img [src]="urlImage" alt="Imagem de anime de menino de quimono azul com agua ao redor" width="300">
+<br>
+<p>testando imagem direto na tag img</p>
+<img src="/assets/1354097.jpeg" alt="Imagem de anime de menino de quimono azul com agua ao redor" width="300">
+<p>Ivent Binding</p>
+<button type="button" (click)="mostrarDataNascimento()">Clique Aqui!</button>

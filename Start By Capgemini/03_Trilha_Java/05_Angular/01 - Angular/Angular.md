@@ -488,7 +488,53 @@ Esses conceitos são fundamentais para criar interatividade e dinamismo em aplic
 
 #### Aula 4.E
 
+**Two-Way Data Binding no Angular**
 
+1. **O que é Two-Way Data Binding?**  
+   - É um **vínculo bidirecional** entre a propriedade de um **componente** e um **elemento do template**.
+   - Permite que as alterações no input do usuário **atualizem a propriedade da classe**, e vice-versa.
+
+2. **Criando um Componente para Exemplo**  
+   - No terminal, crie um novo componente:
+     ```bash
+     ng generate component two-way-binding
+     ```
+   - No arquivo `two-way-binding.component.ts`, defina uma propriedade:
+     ```typescript
+     export class TwoWayBindingComponent {
+       nome: string = '';
+     }
+     ```
+
+3. **Ligação no Template (HTML)**  
+   - No arquivo `two-way-binding.component.html`, utilize `ngModel` para conectar a propriedade ao input:
+     ```html
+     <h2>Two-Way Binding</h2>
+     <input type="text" [(ngModel)]="nome">
+     <p>Nome digitado: {{ nome }}</p>
+     ```
+   - **Explicação**:
+     - `[(ngModel)]="nome"` faz a **ligação bidirecional** entre o input e a propriedade `nome`.
+     - O conteúdo do `<p>` será atualizado conforme o usuário digita no campo.
+
+4. **Habilitando o `FormsModule`**  
+   - O Angular não reconhece `ngModel` por padrão.  
+   - É necessário importar o **FormsModule** no `app.module.ts`:
+     ```typescript
+     import { FormsModule } from '@angular/forms';
+
+     @NgModule({
+       imports: [FormsModule]
+     })
+     export class AppModule { }
+     ```
+   - Agora, o **Two-Way Binding** funcionará corretamente.
+
+5. **Testando a Ligação Bidirecional**  
+   - Quando o usuário digita no input, a propriedade `nome` é atualizada.
+   - Se a propriedade `nome` já tiver um valor inicial, ele será exibido no input ao carregar a página.
+
+O **Two-Way Data Binding** é fundamental para manipulação dinâmica de formulários no Angular.  
 
 #### Aula 4.F
 

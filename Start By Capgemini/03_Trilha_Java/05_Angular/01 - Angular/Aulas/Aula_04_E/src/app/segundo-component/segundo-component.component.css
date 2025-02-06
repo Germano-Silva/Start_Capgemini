@@ -1,0 +1,29 @@
+h2 {
+    color: blueviolet;
+}
+
+button {
+    background-color: #333;
+    /* Cor de fundo preta */
+    color: white;
+    /* Cor do texto branca */
+    border: none;
+    /* Remove a borda padrão */
+    padding: 10px 20px;
+    /* Espaciamento interno do botão */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    cursor: pointer;
+    /* Cursor padrão de clique */
+    transition: background-color 0.3s, transform 0.2s;
+    /* Transição suave para o fundo e efeito de transformação */
+}
+
+button:hover {
+    background-color: black;
+    /* Cor de fundo mais clara quando o mouse passa em cima */
+    transform: scale(1.1);
+    /* Aumenta o tamanho do botão para 110% */
+    cursor: pointer;
+    /* Muda o cursor para indicar que o botão pode ser clicado */
+}
