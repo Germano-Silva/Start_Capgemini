@@ -538,6 +538,95 @@ O **Two-Way Data Binding** é fundamental para manipulação dinâmica de formul
 
 #### Aula 4.F
 
+**Renderização de Listas e Diretivas no Angular**
+
+1. **Criação do Componente**  
+   - No terminal, execute:
+     ```bash
+     ng generate component renderizando-listas
+     ```
+   - O componente será criado e configurado para exibir uma lista de itens.
+
+2. **Criando a Tipagem para os Itens**  
+   - Para definir a estrutura dos objetos, crie uma **interface**:
+     ```typescript
+     export interface Celular {
+       id: number;
+       nome: string;
+       descricao?: string;
+       esgotado: boolean;
+     }
+     ```
+   - O campo `descricao` foi definido como **opcional**.
+
+3. **Definição da Lista no Componente**  
+   - No arquivo `renderizando-listas.component.ts`, adicione uma lista de celulares:
+     ```typescript
+     import { Component } from '@angular/core';
+     import { Celular } from '../types/celular';
+
+     @Component({
+       selector: 'app-renderizando-listas',
+       templateUrl: './renderizando-listas.component.html',
+       styleUrls: ['./renderizando-listas.component.css']
+     })
+     export class RenderizandoListasComponent {
+       celulares: Celular[] = [
+         { id: 1, nome: 'Celular XL', descricao: 'Celular grande', esgotado: false },
+         { id: 2, nome: 'Celular Normal', esgotado: false },
+         { id: 3, nome: 'Celular Mini', descricao: 'Celular pequeno', esgotado: true }
+       ];
+     }
+     ```
+
+4. **Renderizando a Lista no Template**  
+   - No arquivo `renderizando-listas.component.html`, utilize a diretiva `*ngFor` para exibir os celulares:
+     ```html
+     <h2>Renderizando uma lista de dados</h2>
+     <ul class="lista-produtos">
+       <li *ngFor="let celular of celulares">
+         <strong>{{ celular.nome }}</strong>
+         <p *ngIf="celular.descricao">{{ celular.descricao }}</p>
+         <span [ngClass]="{ 'esgotado': celular.esgotado }">
+           {{ celular.esgotado ? 'Esgotado' : 'Disponível' }}
+         </span>
+       </li>
+     </ul>
+     ```
+   - **Explicação**:
+     - `*ngFor="let celular of celulares"`: Itera sobre a lista exibindo cada item.
+     - `*ngIf="celular.descricao"`: Só exibe a descrição se ela existir.
+     - `[ngClass]`: Adiciona a classe `"esgotado"` caso o celular esteja indisponível.
+
+5. **Aplicando Estilos com Classes Condicionais**  
+   - No arquivo `renderizando-listas.component.css`, adicione estilos:
+     ```css
+     .lista-produtos {
+       list-style: none;
+       padding: 0;
+     }
+     .lista-produtos li {
+       padding: 10px;
+       border-bottom: 1px solid #ccc;
+     }
+     .esgotado {
+       color: red;
+       font-weight: bold;
+     }
+     ```
+
+6. **Exibindo o Componente no Aplicativo**  
+   - No arquivo `app.component.html`, adicione o seletor:
+     ```html
+     <app-renderizando-listas></app-renderizando-listas>
+     ```
+
+7. **Resultado no Navegador**  
+   - A lista será renderizada com os produtos.
+   - Se um item estiver esgotado, aparecerá em **vermelho**.
+
+Essa abordagem permite a renderização dinâmica de listas e a personalização de estilos com **ngClass**.
+
 #### Aula 4.G
 
 #### Aula 4.H
