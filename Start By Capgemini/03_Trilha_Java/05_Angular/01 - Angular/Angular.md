@@ -629,6 +629,59 @@ Essa abordagem permite a renderização dinâmica de listas e a personalização
 
 #### Aula 4.G
 
+**Utilizando o Decorador `@Input` para Personalizar Componentes no Angular**
+
+1. **O que é o `@Input`?**  
+   - O `@Input` permite **passar dados de um componente pai para um componente filho**.
+   - Isso possibilita a criação de componentes reutilizáveis e personalizáveis.
+
+2. **Criando o Componente Personalizado**  
+   - No terminal, execute:
+     ```bash
+     ng generate component componente-personalizado
+     ```
+   - No arquivo `componente-personalizado.component.ts`, defina as propriedades:
+     ```typescript
+     import { Component, Input } from '@angular/core';
+
+     @Component({
+       selector: 'app-componente-personalizado',
+       templateUrl: './componente-personalizado.component.html',
+       styleUrls: ['./componente-personalizado.component.css']
+     })
+     export class ComponentePersonalizadoComponent {
+       @Input() nome: string = '';
+       @Input() sobrenome: string = '';
+     }
+     ```
+
+3. **Criando o Template do Componente**  
+   - No arquivo `componente-personalizado.component.html`, utilize as propriedades:
+     ```html
+     <p>{{ nome }} {{ sobrenome }}</p>
+     ```
+
+4. **Estilizando o Componente**  
+   - No arquivo `componente-personalizado.component.css`, adicione estilos:
+     ```css
+     p {
+       color: blue;
+       font-size: 22px;
+     }
+     ```
+
+5. **Utilizando o Componente no `app.component.html`**  
+   - O componente pode ser reutilizado com diferentes valores:
+     ```html
+     <app-componente-personalizado nome="João" sobrenome="da Silva"></app-componente-personalizado>
+     <app-componente-personalizado nome="Maria" sobrenome="da Silva"></app-componente-personalizado>
+     ```
+
+6. **Resultado no Navegador**  
+   - O componente será exibido com os valores passados como entrada.
+
+O `@Input` permite criar **componentes reutilizáveis** e **personalizados**.  
+
 #### Aula 4.H
 
 #### Aula 4.I
