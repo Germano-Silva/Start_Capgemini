@@ -1,0 +1,19 @@
+.lista-produtos {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-produtos li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.esgotado {
+    color: red;
+    font-weight: bold;
+}
+
+.nao-esgotado {
+    color: green;
+    font-weight: bold;
+}

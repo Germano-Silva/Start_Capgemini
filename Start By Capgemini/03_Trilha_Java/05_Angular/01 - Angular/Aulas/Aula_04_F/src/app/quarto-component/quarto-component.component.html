@@ -1,0 +1,11 @@
+<h2>Renderizando uma lista de dados</h2>
+<ul class="lista-produtos">
+    <li *ngFor="let celular of celulares">
+        <strong>{{ celular.nome }}</strong>
+        <p *ngIf="celular.descricao">{{ celular.descricao }}</p>
+        <span [ngClass]="{ 'esgotado': celular.esgotado, 
+                        'nao-esgotado': !celular.esgotado }">
+            {{ celular.esgotado ? 'Esgotado' : 'Disponível' }}
+        </span>
+    </li>
+</ul>
