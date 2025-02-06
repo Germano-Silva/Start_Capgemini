@@ -3,9 +3,9 @@
 **/.settings/
 
 # dependencies
-/node_modules
-/.pnp
-/coverage
+**/node_modules
+**/.pnp
+**/coverage
 
 
 
