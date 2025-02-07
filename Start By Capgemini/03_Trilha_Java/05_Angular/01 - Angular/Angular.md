@@ -684,6 +684,126 @@ O `@Input` permite criar **componentes reutilizáveis** e **personalizados**.
 
 #### Aula 4.H
 
+**Comunicação entre Componentes no Angular**
+
+**Interação do Componente Pai para o Componente Filho (`@Input`)**
+  - O `@Input` permite passar **propriedades** do **componente pai** para o **componente filho**.
+
+**Criando os Componentes**
+  - No terminal, execute:
+    ```bash
+    ng generate component componente-pai
+    ng generate component componente-filho
+    ```
+
+**Definição do Componente Pai (`componente-pai.component.ts`)**
+  - Define uma propriedade `sobrenome`:
+    ```typescript
+    import { Component } from '@angular/core';
+
+    @Component({
+      selector: 'app-componente-pai',
+      templateUrl: './componente-pai.component.html',
+      styleUrls: ['./componente-pai.component.css']
+    })
+    export class ComponentePaiComponent {
+      sobrenome: string = 'da Silva';
+    }
+    ```
+
+**Passando a Propriedade para o Filho (`componente-pai.component.html`)**
+  - Usa a diretiva `@Input` para passar o sobrenome:
+    ```html
+    <h2>Interação entre Componentes</h2>
+    <h3>O sobrenome está definido no elemento pai: {{ sobrenome }}</h3>
+
+    <app-componente-filho [sobrenome]="sobrenome"></app-componente-filho>
+    ```
+
+**Recebendo a Propriedade no Componente Filho (`componente-filho.component.ts`)**
+  - Usa `@Input` para receber `sobrenome`:
+    ```typescript
+    import { Component, Input } from '@angular/core';
+
+    @Component({
+      selector: 'app-componente-filho',
+      templateUrl: './componente-filho.component.html',
+      styleUrls: ['./componente-filho.component.css']
+    })
+    export class ComponenteFilhoComponent {
+      @Input() sobrenome: string = '';
+      nome: string = '';
+    }
+    ```
+
+**Exibindo a Propriedade no Componente Filho (`componente-filho.component.html`)**
+  - Mostra a propriedade recebida:
+    ```html
+    <h3>O sobrenome veio do elemento pai: {{ sobrenome }}</h3>
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" [(ngModel)]="nome">
+    ```
+
+**Interação do Componente Filho para o Componente Pai (`@Output`)**
+  - O `@Output` permite que o **componente filho** envie **eventos** para o **componente pai**.
+
+**Criando um Método no Componente Pai (`componente-pai.component.ts`)**
+  - Exibe o nome completo:
+    ```typescript
+    mostraNomeCompleto(nomeCompleto: string) {
+      alert(`Nome Completo: ${nomeCompleto}`);
+    }
+    ```
+
+**Criando o `@Output` no Componente Filho (`componente-filho.component.ts`)**
+  - Usa `@Output` e `EventEmitter` para emitir eventos:
+    ```typescript
+    import { Component, Input, Output, EventEmitter } from '@angular/core';
+
+    @Component({
+      selector: 'app-componente-filho',
+      templateUrl: './componente-filho.component.html',
+      styleUrls: ['./componente-filho.component.css']
+    })
+    export class ComponenteFilhoComponent {
+      @Input() sobrenome: string = '';
+      @Output() mostraNome = new EventEmitter<string>();
+
+      nome: string = '';
+
+      emitirNomeCompleto() {
+        this.mostraNome.emit(`${this.nome} ${this.sobrenome}`);
+      }
+    }
+    ```
+
+**Chamando o Evento no Template do Componente Filho (`componente-filho.component.html`)**
+  - Cria um botão para disparar o evento:
+    ```html
+    <button (click)="emitirNomeCompleto()">Mostrar Nome Completo</button>
+    ```
+
+**Escutando o Evento no Componente Pai (`componente-pai.component.html`)**
+  - Usa `@Output` no **pai** para escutar o evento do **filho**:
+    ```html
+    <app-componente-filho [sobrenome]="sobrenome" (mostraNome)="mostraNomeCompleto($event)"></app-componente-filho>
+    ```
+
+**Usando uma Variável de Template**
+  - O **pai** pode acessar propriedades do **filho** diretamente:
+    ```html
+    <app-componente-filho #filho [sobrenome]="sobrenome"></app-componente-filho>
+    <p>Nome completo: {{ filho.nome }} {{ sobrenome }}</p>
+    ```
+
+**Resumo**
+  - O **componente pai** passa `sobrenome` para o **filho** com `@Input`.
+  - O **componente filho** envia eventos para o **pai** com `@Output`.
+  - A variável de template permite o **pai** acessar diretamente propriedades do **filho**.
+
+Dessa forma, é possível criar uma comunicação bidirecional eficiente entre componentes no Angular.
+
 #### Aula 4.I
 
 #### Aula 4.J
