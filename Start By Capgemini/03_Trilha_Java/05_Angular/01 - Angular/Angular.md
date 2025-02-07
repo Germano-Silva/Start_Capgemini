@@ -806,6 +806,118 @@ Dessa forma, é possível criar uma comunicação bidirecional eficiente entre c
 
 #### Aula 4.I
 
+**Serviços no Angular e Injeção de Dependências**
+
+**O que são Serviços no Angular?**
+  - Serviços são classes que contêm **lógica reutilizável** e podem ser compartilhadas entre múltiplos componentes.
+  - Permitem manter a separação de responsabilidades, evitando duplicação de código.
+
+**Criando um Serviço no Angular**
+  - No terminal, crie um serviço chamado `logger`:
+    ```bash
+    ng generate service logger
+    ```
+  - O Angular cria automaticamente o arquivo `logger.service.ts`.
+
+**Implementando o Serviço (`logger.service.ts`)**
+  - O serviço usará o `@Injectable()` para ser injetado nos componentes.
+    ```typescript
+    import { Injectable } from '@angular/core';
+
+    @Injectable({
+      providedIn: 'root'
+    })
+    export class LoggerService {
+      private mensagens: string[] = [];
+
+      logar(mensagem: string): void {
+        this.mensagens.push(mensagem);
+        console.log(mensagem);
+      }
+
+      exibirTodosOsLogs(): void {
+        console.log(this.mensagens);
+      }
+    }
+    ```
+
+**Criando Componentes para Utilizar o Serviço**
+  - No terminal, crie dois componentes:
+    ```bash
+    ng generate component exemplo-servicos1
+    ng generate component exemplo-servicos2
+    ```
+
+**Utilizando o Serviço no `ExemploServicos1Component`**
+  - O serviço é injetado no **constructor**:
+    ```typescript
+    import { Component } from '@angular/core';
+    import { LoggerService } from '../logger.service';
+
+    @Component({
+      selector: 'app-exemplo-servicos1',
+      templateUrl: './exemplo-servicos1.component.html',
+      styleUrls: ['./exemplo-servicos1.component.css']
+    })
+    export class ExemploServicos1Component {
+      nome: string = '';
+
+      constructor(private logger: LoggerService) {}
+
+      adicionarNome(): void {
+        this.logger.logar(`O nome ${this.nome} foi adicionado.`);
+      }
+    }
+    ```
+  - No template (`exemplo-servicos1.component.html`), adicione:
+    ```html
+    <h2>Serviço 1</h2>
+    <label for="nome">Seu Nome:</label>
+    <input type="text" id="nome" [(ngModel)]="nome">
+    <button (click)="adicionarNome()">Adicionar Nome</button>
+    ```
+
+**Utilizando o Serviço no `ExemploServicos2Component`**
+  - O serviço também pode ser injetado e usado da mesma forma:
+    ```typescript
+    import { Component } from '@angular/core';
+    import { LoggerService } from '../logger.service';
+
+    @Component({
+      selector: 'app-exemplo-servicos2',
+      templateUrl: './exemplo-servicos2.component.html',
+      styleUrls: ['./exemplo-servicos2.component.css']
+    })
+    export class ExemploServicos2Component {
+      descricao: string = '';
+
+      constructor(private logger: LoggerService) {}
+
+      adicionarProduto(): void {
+        this.logger.logar(`O produto "${this.descricao}" foi adicionado.`);
+      }
+    }
+    ```
+  - No template (`exemplo-servicos2.component.html`), adicione:
+    ```html
+    <h2>Serviço 2</h2>
+    <label for="descricao">Nome do Produto:</label>
+    <input type="text" id="descricao" [(ngModel)]="descricao">
+    <button (click)="adicionarProduto()">Adicionar Produto</button>
+    <button (click)="logger.exibirTodosOsLogs()">Exibir Logs</button>
+    ```
+
+**Resultado**
+  - Quando o usuário digita um nome ou produto e clica no botão, o serviço **armazenará e exibirá** os logs.
+  - O botão "Exibir Logs" listará todos os itens adicionados.
+
+**Vantagens do Uso de Serviços**
+  - **Reutilização** de código entre diferentes componentes.
+  - **Facilidade na manutenção**, separando a lógica de negócios dos componentes.
+  - **Compartilhamento de estado** entre múltiplos componentes.
+
+Os serviços são fundamentais para a **arquitetura escalável** do Angular.
+
 #### Aula 4.J
 
 #### Aula 4.K
