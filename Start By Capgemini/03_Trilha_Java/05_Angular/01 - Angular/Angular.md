@@ -920,7 +920,58 @@ Os serviços são fundamentais para a **arquitetura escalável** do Angular.
 
 #### Aula 4.J
 
+**Ciclo de Vida dos Componentes no Angular**
+
+**`ngOnInit` - Inicialização do Componente**  
+  - Executado assim que o componente é criado.  
+  - Utilizado para inicializar variáveis e configurar lógica antes da renderização.  
+  - Exemplo: Iniciar um relógio que atualiza a cada segundo.  
+
+**`ngOnChanges` - Detectando Alterações**  
+  - Chamado quando uma propriedade marcada com `@Input()` sofre alteração.  
+  - Permite monitorar mudanças em tempo real dentro do componente.  
+  - Exemplo: Atualizar um valor sempre que o usuário digita em um campo de entrada.  
+
+**`ngOnDestroy` - Finalização do Componente**  
+  - Executado antes do componente ser removido da tela.  
+  - Essencial para limpar **subscriptions**, **timers** e evitar erros de referência.  
+  - Exemplo: Parar um intervalo (`setInterval`) para evitar atualizações em um componente inexistente.  
+
+**Importância do Gerenciamento do Ciclo de Vida**  
+  - **Evita vazamento de memória** ao limpar eventos e assinaturas de serviços.  
+  - **Garante atualizações corretas** ao detectar mudanças em propriedades do componente.  
+  - **Facilita a depuração**, permitindo entender em que momento cada evento ocorre.  
+
+Os ciclos de vida são fundamentais para o controle da renderização e da comunicação entre componentes no Angular.  
+
 #### Aula 4.K
+
+**Utilizando `ng-content` no Angular**
+
+**O que é `ng-content`?**  
+  - Elemento utilizado para criar **componentes reutilizáveis**.  
+  - Permite que um componente encapsule um layout, mantendo a flexibilidade para receber **conteúdo dinâmico**.  
+
+**Benefícios do `ng-content`**  
+  - **Evita duplicação de código**, permitindo reutilização de estrutura visual.  
+  - **Facilita a organização da aplicação**, agrupando elementos dentro de um layout padronizado.  
+  - **Mantém a flexibilidade**, permitindo passar qualquer tipo de conteúdo ao componente.  
+
+**Exemplo de Aplicação - Criando um Card Genérico**  
+  - Um **componente de card** foi criado para organizar visualmente os conteúdos.  
+  - O card recebe um **título** e uma **cor de fundo**, tornando-se **personalizável**.  
+  - O `ng-content` permite que o conteúdo do card seja **definido dinamicamente** pelo componente pai.  
+
+**Uso do `ng-style`**  
+  - O `ng-style` foi utilizado para modificar a **cor do background**, tornando o componente mais flexível.  
+
+**Aplicação do Card na Estrutura da Aplicação**  
+  - Cada componente da aplicação foi envolvido por um **card**, mantendo um layout uniforme.  
+  - O título do card substituiu os títulos individuais dos componentes, centralizando a informação.  
+
+**Resultado Final**  
+  - Todos os componentes ficaram organizados dentro dos cards, separados visualmente.  
+  - O `ng-content` possibilitou um contêiner genérico e reutilizável, tornando a aplicação mais **estruturada e modular**.  
 
 ---
 
