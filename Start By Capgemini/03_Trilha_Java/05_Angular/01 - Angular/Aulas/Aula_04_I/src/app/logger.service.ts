@@ -4,6 +4,15 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class LoggerService {
+  mensagems: string[] = [];
 
-  constructor() { }
+  logar(mensagem: string) {
+    console.log(mensagem);
+    this.mensagems.push(mensagem)
+  }
+
+  exibeLogs() {
+    console.log(this.mensagems);
+  }
+
 }
