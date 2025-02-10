@@ -1134,6 +1134,68 @@ Essa abordagem permite criar aplicações Angular com uma navegação fluida e e
 
 #### Aula 5.C
 
+**Redirecionamento de Rotas e Página 404 no Angular**
+
+**Redirecionamento Automático para uma Página Inicial**
+
+- Quando acessamos a aplicação sem uma **rota definida**, podemos redirecionar o usuário automaticamente para uma página padrão.
+- No arquivo `app-routing.module.ts`, adicionamos a seguinte configuração:
+
+```typescript
+const routes: Routes = [
+  { path: '', redirectTo: 'primeira-pagina', pathMatch: 'full' },
+  { path: 'primeira-pagina', component: PrimeiraPaginaComponent },
+];
+```
+
+**Explicação**
+
+- **`path: ''`**: Define o caminho vazio, ou seja, a raiz da aplicação.
+- **`redirectTo: 'primeira-pagina'`**: Redireciona para a primeira página.
+- **`pathMatch: 'full'`**: Garante que a correspondência da URL deve ser exata.
+
+Agora, ao acessar a **raiz da aplicação**, o usuário será automaticamente redirecionado para a primeira página.
+
+**Criando uma Página 404 - "Não Encontrada"**
+
+- Se o usuário digitar uma **URL inválida**, podemos exibir uma página personalizada de erro.
+- Criamos um **novo componente** para a página 404:
+
+```bash
+ng generate component pagina-nao-encontrada
+```
+
+- No arquivo `pagina-nao-encontrada.component.html`, definimos o conteúdo da página:
+
+```html
+<h2>404 - Página Não Encontrada</h2>
+```
+
+- Agora, adicionamos essa rota ao `app-routing.module.ts`:
+
+```typescript
+const routes: Routes = [
+  { path: '', redirectTo: 'primeira-pagina', pathMatch: 'full' },
+  { path: 'primeira-pagina', component: PrimeiraPaginaComponent },
+  { path: '**', component: PaginaNaoEncontradaComponent }
+];
+```
+
+**Explicação**
+
+- **`path: '**'`**: Corresponde a qualquer **rota não definida**.
+- **`component: PaginaNaoEncontradaComponent`**: Carrega o componente de erro.
+
+Agora, sempre que o usuário acessar **uma URL inexistente**, a página de **erro 404** será exibida.
+
+**Resumo**
+
+- **Redirecionamento automático**: Define um redirecionamento para a página inicial quando não há uma rota na URL.
+- **Página 404 personalizada**: Exibe uma página de erro para **URLs inválidas** usando `path: '**'`.
+- **Melhor experiência do usuário**: Evita telas em branco e melhora a navegação.
+
+Esse processo melhora a **usabilidade da aplicação Angular**, tornando a navegação mais intuitiva e eficiente.
+
 #### Aula 5.D
 
 #### Aula 5.E
