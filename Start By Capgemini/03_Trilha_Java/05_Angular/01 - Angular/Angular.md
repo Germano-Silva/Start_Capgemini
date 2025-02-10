@@ -979,7 +979,85 @@ Os ciclos de vida são fundamentais para o controle da renderização e da comun
 
 #### Aula 5.A
 
- 
+**Roteamento no Angular com Angular Router**
+
+**Introdução ao Angular Router**
+
+- O **Angular Router** é uma biblioteca utilizada para gerenciar a navegação entre páginas em aplicações Angular.
+- Permite definir **rotas dinâmicas**, associando caminhos de URL a componentes específicos.
+
+**Passos para Configurar o Roteamento**
+
+1. **Criar o Projeto Angular**
+```bash
+ng new roteamento
+cd roteamento
+```
+- **Não adicionar Angular Routing automaticamente**, pois a configuração será feita manualmente.
+
+2. **Instalar o Angular Router**
+```bash
+npm install @angular/router
+```
+- Essa biblioteca permite o gerenciamento de rotas na aplicação.
+
+3. **Criar o Módulo de Rotas**
+```bash
+ng generate module app-routing --flat --module=app
+```
+- A flag `--flat` evita a criação de uma pasta adicional.
+- A flag `--module=app` adiciona automaticamente esse módulo ao `AppModule`.
+
+**Configuração do Arquivo de Rotas (`app-routing.module.ts`)**
+```typescript
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { PrimeiraPaginaComponent } from './primeira-pagina/primeira-pagina.component';
+
+const routes: Routes = [
+  { path: 'primeira-pagina', component: PrimeiraPaginaComponent }
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
+```
+- **`RouterModule.forRoot(routes)`**: Configura o roteamento principal da aplicação.
+- **Exportação do `RouterModule`**: Permite que o módulo de rotas seja acessado em toda a aplicação.
+
+4. **Criar um Componente para a Primeira Página**
+```bash
+ng generate component primeira-pagina
+```
+- O componente será acessado ao navegar para `/primeira-pagina`.
+
+**Conteúdo do Template (`primeira-pagina.component.html`)**
+```html
+<h2>Primeira Página</h2>
+```
+
+5. **Integrar o `RouterOutlet`**
+- No arquivo `app.component.html`, substituir o conteúdo pelo `RouterOutlet`:
+```html
+<router-outlet></router-outlet>
+```
+- Esse elemento permite que os componentes sejam carregados dinamicamente com base na URL acessada.
+
+6. **Executar a Aplicação**
+```bash
+ng serve --open
+```
+- Acessar `http://localhost:4200/primeira-pagina` para visualizar o componente carregado.
+
+**Resumo**
+- **O Angular Router** permite definir **rotas associadas a componentes**.
+- **O `RouterOutlet`** carrega dinamicamente os componentes com base na URL.
+- **Configuração manual do roteamento** melhora o entendimento do funcionamento do Angular Router.
+
+Essa abordagem facilita a navegação estruturada e modular dentro de aplicações Angular.
+
 
 #### Aula 5.B
 
