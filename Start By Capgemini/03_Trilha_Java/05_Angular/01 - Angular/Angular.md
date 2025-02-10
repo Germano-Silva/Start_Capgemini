@@ -979,6 +979,8 @@ Os ciclos de vida são fundamentais para o controle da renderização e da comun
 
 #### Aula 5.A
 
+ 
+
 #### Aula 5.B
 
 #### Aula 5.C
