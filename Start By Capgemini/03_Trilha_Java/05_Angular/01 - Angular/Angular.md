@@ -1061,6 +1061,77 @@ Essa abordagem facilita a navegação estruturada e modular dentro de aplicaçõ
 
 #### Aula 5.B
 
+**Navegação entre Páginas no Angular com Angular Router**
+
+**Criando um Menu de Navegação**
+- Para navegar entre páginas, é necessário criar um **menu fixo** utilizando o **RouterLink**.
+- No arquivo `app.component.html`, adicionamos um **navbar** com **links para as páginas**.
+- Exemplo:
+```html
+<nav>
+  <ul>
+    <li><a routerLink="/primeira-pagina">Primeira Página</a></li>
+    <li><a routerLink="/segunda-pagina">Segunda Página</a></li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>
+```
+- **O `RouterOutlet`** carrega dinamicamente o componente correspondente à URL.
+
+**Criando um Novo Componente e Rota**
+
+1. Criar o componente **Segunda Página**:
+```bash
+ng generate component segunda-pagina
+```
+2. No arquivo `segunda-pagina.component.html`, definir o conteúdo:
+```html
+<h2>Segunda Página</h2>
+```
+3. Adicionar a nova rota no `app-routing.module.ts`:
+```typescript
+import { SegundaPaginaComponent } from './segunda-pagina/segunda-pagina.component';
+
+const routes: Routes = [
+  { path: 'primeira-pagina', component: PrimeiraPaginaComponent },
+  { path: 'segunda-pagina', component: SegundaPaginaComponent }
+];
+```
+- Agora, ao clicar no link da **Segunda Página**, o Angular Router carrega o componente correto.
+
+**Navegação com Botão e Código**
+- Além do `RouterLink`, podemos navegar entre páginas através de **funções programáticas**.
+- Para isso, injetamos o serviço **Router** no componente.
+- Exemplo de botão para redirecionar para a Segunda Página (`primeira-pagina.component.html`):
+```html
+<button (click)="moverParaSegundaPagina()">Ir para Segunda Página</button>
+```
+- Implementação da função em `primeira-pagina.component.ts`:
+```typescript
+import { Router } from '@angular/router';
+
+export class PrimeiraPaginaComponent {
+  constructor(private router: Router) {}
+
+  moverParaSegundaPagina() {
+    this.router.navigate(['/segunda-pagina']);
+  }
+}
+```
+- **O método `navigate(['/rota'])`** permite redirecionar o usuário programaticamente.
+
+**Mantendo o Menu Fixo**
+- O **menu permanece visível** porque foi colocado **antes do `<router-outlet>`** no `app.component.html`.
+- Isso garante que a navegação carregue os componentes sem afetar o layout do menu.
+
+**Resumo**
+- **O `RouterLink`** é usado para criar links de navegação diretamente no HTML.
+- **O serviço `Router`** permite navegar entre páginas via código.
+- **O `RouterOutlet`** carrega dinamicamente os componentes correspondentes à URL.
+- **Menus fixos** são mantidos ao serem colocados **antes do `RouterOutlet`**.
+
+Essa abordagem permite criar aplicações Angular com uma navegação fluida e estruturada.
+
 #### Aula 5.C
 
 #### Aula 5.D
