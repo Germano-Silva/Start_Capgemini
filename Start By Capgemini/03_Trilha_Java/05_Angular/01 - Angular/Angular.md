@@ -1536,6 +1536,41 @@ Essa abordagem garante **segurança e controle de acesso** nas aplicações Angu
 
 #### Aula 6.A
 
+**Resumo - Projeto ProA-Computers (E-commerce com Angular)**  
+
+**Visão Geral do Projeto**  
+- O projeto **ProA-Computers** será um **e-commerce de computadores**, onde os usuários poderão **comprar produtos, adicionar ao carrinho e gerenciar suas compras**.  
+- A aplicação será **estruturada de forma modular**, utilizando **componentes e módulos** para melhorar a organização do código.  
+
+**Funcionalidades Principais**  
+
+**1. Estrutura Modular da Aplicação** 
+
+A aplicação será organizada com:  
+- **Cabeçalho:** Barra de navegação e pesquisa de produtos.  
+- **Corpo:** Exibição de produtos, página de contato e carrinho de compras.  
+- **Rodapé:** Informações gerais da loja.  
+
+**2. Carrinho de Compras**  
+
+- Usuário pode **adicionar produtos**, especificar a quantidade e **visualizar o carrinho**.  
+- Permite **aumentar, diminuir ou remover produtos do carrinho**.  
+- Simulação de compra finalizada, **limpando o carrinho e redirecionando para a página inicial**.  
+
+**3. Formulário de Contato (Forms Reativos)**  
+
+- Implementação de **validações dinâmicas** conforme o usuário preenche os campos.  
+- Exibição de **mensagens de erro automáticas** para campos inválidos.  
+
+**4. Barra de Pesquisa Global**  
+
+- Permite **pesquisar produtos de qualquer página** da aplicação.  
+- Ao pesquisar, a aba de produtos será filtrada para mostrar **apenas os itens correspondentes**.  
+
+**Objetivo do Projeto**  
+
+- **Explorar conceitos fundamentais do Angular**, como **componentes, módulos, roteamento, formulários reativos e manipulação de estados**.  
+- Criar uma aplicação **completa e funcional**, com navegação dinâmica e interação do usuário.
 
 #### Aula 6.B
 
