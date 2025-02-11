@@ -1369,6 +1369,167 @@ export class LazyLoadingRoutingModule { }
 - O uso de Lazy Loading melhora **tempo de resposta** e **uso eficiente de recursos**.
 
 #### Aula 5.F
+
+**Guards de Rotas no Angular: Protegendo Rotas com Autenticação**
+
+**O que são Guards no Angular?**
+- **Guards** são utilizados para proteger rotas e impedir que usuários não autorizados acessem determinadas páginas.
+- O **`CanActivate`** é um dos principais Guards usados para restringir o acesso com base na autenticação do usuário.
+
+**Criando a Página Protegida**
+
+**1. Gerar o Componente da Página Protegida**
+```bash
+ng generate component pagina-protegida
+```
+- Criar um **botão de logout** no template (`pagina-protegida.component.html`):
+```html
+<h2>Página Protegida</h2>
+<button (click)="logout()">Logout</button>
+```
+
+**2. Definir a Rota Protegida**
+
+Adicionar a rota no `app-routing.module.ts`:
+```typescript
+const routes: Routes = [
+  { path: 'pagina-protegida', component: PaginaProtegidaComponent, canActivate: [AuthGuard] }
+];
+```
+- O **`canActivate: [AuthGuard]`** impede o acesso de usuários não autenticados.
+
+**3. Criando o Guard de Autenticação**
+
+**Gerar o Guard**
+```bash
+ng generate guard auth
+```
+Selecionar `CanActivate` como a opção de proteção.
+
+**Configuração do Guard (`auth.guard.ts`)**
+```typescript
+@Injectable({
+  providedIn: 'root'
+})
+export class AuthGuard implements CanActivate {
+  constructor(private authService: AuthService, private router: Router) {}
+
+  canActivate(): boolean {
+    if (!this.authService.estaAutenticado()) {
+      this.router.navigate(['/login']);
+      return false;
+    }
+    return true;
+  }
+}
+```
+- Se o usuário **não estiver autenticado**, ele será **redirecionado para a página de login**.
+
+**4. Criando a Página de Login**
+
+**Gerar o Componente de Login**
+```bash
+ng generate component login
+```
+Criar o formulário no `login.component.html`:
+```html
+<h2>Login</h2>
+<label>Email</label>
+<input type="text" [(ngModel)]="email">
+<label>Senha</label>
+<input type="password" [(ngModel)]="senha">
+<button (click)="login()">Entrar</button>
+```
+- **Necessário importar `FormsModule` no `app.module.ts`**:
+```typescript
+import { FormsModule } from '@angular/forms';
+
+@NgModule({
+  imports: [FormsModule]
+})
+```
+**5. Criando o Serviço de Autenticação**
+
+**Gerar o Serviço**
+```bash
+ng generate service auth
+```
+Configurar a autenticação em `auth.service.ts`:
+```typescript
+@Injectable({
+  providedIn: 'root'
+})
+export class AuthService {
+  private tokenKey = 'access_token';
+
+  estaAutenticado(): boolean {
+    return !!sessionStorage.getItem(this.tokenKey);
+  }
+
+  login(email: string, senha: string): boolean {
+    if (email === 'admin@admin.com' && senha === '123456') {
+      sessionStorage.setItem(this.tokenKey, 'TOKEN_SIMULADO');
+      return true;
+    }
+    return false;
+  }
+
+  logout(): void {
+    sessionStorage.removeItem(this.tokenKey);
+  }
+}
+```
+- **Salva o token no `sessionStorage` e verifica a autenticação**.
+- **O token é removido no logout**.
+
+**6. Implementando a Lógica de Login**
+No `login.component.ts`:
+```typescript
+export class LoginComponent {
+  email = '';
+  senha = '';
+
+  constructor(private authService: AuthService, private router: Router) {}
+
+  login(): void {
+    if (this.authService.login(this.email, this.senha)) {
+      this.router.navigate(['/pagina-protegida']);
+    } else {
+      alert('Login inválido');
+    }
+  }
+}
+```
+- Se o login for **válido**, o usuário é redirecionado para a página protegida.
+- Se for **inválido**, aparece um alerta de erro.
+
+**7. Implementando o Logout**
+No `pagina-protegida.component.ts`:
+```typescript
+export class PaginaProtegidaComponent {
+  constructor(private authService: AuthService, private router: Router) {}
+
+  logout(): void {
+    this.authService.logout();
+    this.router.navigate(['/login']);
+  }
+}
+```
+- Quando o usuário **faz logout**, ele é redirecionado para a página de login.
+
+**8. Testando a Proteção da Rota**
+1. **Acessar `/pagina-protegida` sem estar autenticado** → Redireciona para `/login`.
+2. **Fazer login com `admin@admin.com` e senha `123456`** → Acessa `/pagina-protegida`.
+3. **Clicar no botão Logout** → Redireciona para `/login` e limpa a sessão.
+
+**Resumo**
+- **`CanActivate`** impede o acesso a páginas protegidas.
+- **`AuthService`** gerencia o login, autenticação e logout.
+- **Token é armazenado no `sessionStorage`**.
+- **Usuário é redirecionado conforme seu status de autenticação**.
+
+Essa abordagem garante **segurança e controle de acesso** nas aplicações Angular.
+
 ---
 
 ## Aula 06
