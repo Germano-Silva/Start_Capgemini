@@ -1536,6 +1536,7 @@ Essa abordagem garante **segurança e controle de acesso** nas aplicações Angu
 
 #### Aula 6.A
 
+
 #### Aula 6.B
 
 #### Aula 6.C
