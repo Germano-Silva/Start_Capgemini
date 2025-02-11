@@ -4,6 +4,8 @@ import { SegundaPaginaComponent } from './segunda-pagina/segunda-pagina.componen
 import { AppComponent } from './app.component';
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
 import { PaginaComParametrosComponent } from './pagina-com-parametros/pagina-com-parametros.component';
+import { PaginaProtegidaComponent } from './pagina-protegida/pagina-protegida.component';
+import { AuthGuard } from './auth.guard';
 
 export const routes: Routes = [
     { path: '', component: AppComponent },
@@ -14,5 +16,6 @@ export const routes: Routes = [
         path: 'lazy-loading',
         loadChildren: () => import('./lazy-loading/lazy-loading.module').then(m => m.LazyLoadingModule)
     },
+    { path: 'pagina-protegida', component: PaginaProtegidaComponent, canActivate: [AuthGuard] },
     { path: '**', component: PaginaNaoEncontradaComponent }
 ];
