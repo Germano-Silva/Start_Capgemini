@@ -1301,6 +1301,73 @@ ngOnInit() {
 
 #### Aula 5.E
 
+**Lazy Loading no Angular**
+
+**O que é Lazy Loading?**
+- **Lazy Loading** é uma técnica que carrega um **módulo ou componente** apenas quando necessário.
+- Evita que a aplicação carregue **todos os módulos de uma vez**, otimizando **tempo de carregamento** e **uso de recursos**.
+- Diferente do **Eager Loading**, onde todos os arquivos são baixados **logo no início**.
+
+**Por que usar Lazy Loading?**
+✔ **Melhora o desempenho da aplicação**  
+✔ **Diminui o tempo de carregamento inicial**  
+✔ **Reduz o consumo de memória**  
+✔ **Carrega apenas os módulos necessários no momento certo**  
+
+**Criando um Módulo com Lazy Loading**
+
+**1. Gerar um Módulo**
+
+```bash
+ng generate module lazy-loading --route lazy-loading --module=app
+```
+- O módulo `lazy-loading` é criado e registrado automaticamente no `app-routing.module.ts`.
+- O `--route lazy-loading` já configura a rota para esse módulo.
+- O `--module=app` atrela esse módulo ao `AppModule`.
+
+**2. Configuração da Rota para Lazy Loading**
+- No arquivo `app-routing.module.ts`, o Angular configura o **carregamento assíncrono** do módulo:
+```typescript
+const routes: Routes = [
+  { 
+    path: 'lazy-loading', 
+    loadChildren: () => import('./lazy-loading/lazy-loading.module').then(m => m.LazyLoadingModule) 
+  }
+];
+```
+**Explicação**
+- `loadChildren`: Importa o módulo **somente quando necessário**.
+- `import('./lazy-loading/lazy-loading.module')`: Carrega dinamicamente o módulo `LazyLoadingModule`.
+
+**3. Configuração das Rotas Dentro do Módulo Lazy**
+- O Angular cria automaticamente o arquivo `lazy-loading-routing.module.ts`:
+```typescript
+const routes: Routes = [
+  { path: '', component: LazyLoadingComponent }
+];
+
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
+})
+export class LazyLoadingRoutingModule { }
+```
+**Explicação**
+- O caminho `path: ''` significa que essa rota é **o ponto de entrada** do módulo.
+- `RouterModule.forChild(routes)`: Registra as rotas **somente dentro do módulo Lazy Loading**.
+
+**4. Verificando o Lazy Loading na Prática**
+1. **Abrir as ferramentas do desenvolvedor (F12)**
+2. **Ir para a aba Network**
+3. **Recarregar a aplicação (F5)**
+4. **Navegar para `lazy-loading` e observar o carregamento dinâmico dos arquivos.**
+
+**Resumo**
+- O **Lazy Loading** permite carregar módulos **sob demanda**, evitando downloads desnecessários.
+- A configuração é feita através do **`loadChildren`** no `app-routing.module.ts`.
+- As rotas dentro do módulo Lazy são registradas com **`RouterModule.forChild()`**.
+- O uso de Lazy Loading melhora **tempo de resposta** e **uso eficiente de recursos**.
+
 #### Aula 5.F
 ---
 
