@@ -10,5 +10,9 @@ export const routes: Routes = [
     { path: 'primeira-pagina', component: PrimeiraPaginaComponent },
     { path: 'segunda-pagina', component: SegundaPaginaComponent },
     { path: 'pagina-com-parametros/:id', component: PaginaComParametrosComponent },
+    {
+        path: 'lazy-loading',
+        loadChildren: () => import('./lazy-loading/lazy-loading.module').then(m => m.LazyLoadingModule)
+    },
     { path: '**', component: PaginaNaoEncontradaComponent }
 ];
