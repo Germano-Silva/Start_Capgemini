@@ -233,6 +233,379 @@ Esse processo melhora a **usabilidade da aplicação Angular**, tornando a naveg
 
 ---
 
+# **Trabalhando com Parâmetros de Rota e Query Params no Angular**
+
+## **Introdução**
+- No Angular, podemos **passar parâmetros** na URL para buscar informações específicas.
+- Existem **dois tipos principais de parâmetros**:
+  1. **Parâmetros de Rota**: Passados diretamente na URL (`/produtos/1`).
+  2. **Query Params**: Passados após uma interrogação (`/produtos?id=1&nome=João`).
+
+---
+
+## **Criando um Componente para Trabalhar com Parâmetros**
+```bash
+ng generate component pagina-com-parametros
+```
+
+### **Definição da Rota com Parâmetro**
+- No arquivo `app-routing.module.ts`, adicionamos a rota que aceita um parâmetro:
+```typescript
+const routes: Routes = [
+  { path: 'pagina-com-parametros/:id', component: PaginaComParametrosComponent }
+];
+```
+- O **`:id`** representa um valor dinâmico que pode ser passado pela URL.
+
+---
+
+## **Obtendo Parâmetros de Rota**
+- Para acessar os **parâmetros da rota**, utilizamos o **`ActivatedRoute`**.
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
+@Component({
+  selector: 'app-pagina-com-parametros',
+  templateUrl: './pagina-com-parametros.component.html',
+  styleUrls: ['./pagina-com-parametros.component.css']
+})
+export class PaginaComParametrosComponent implements OnInit {
+  id: number | null = null;
+
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit() {
+    this.route.paramMap.subscribe(params => {
+      this.id = Number(params.get('id'));
+    });
+  }
+}
+```
+### **Explicação**
+- **`ActivatedRoute`**: Serviço do Angular Router usado para acessar informações da rota ativa.
+- **`paramMap.subscribe()`**: Obtém o **ID** da URL e o converte para número.
+
+---
+
+## **Exibindo o Parâmetro no Template**
+```html
+<h2>Parâmetro da Rota: {{ id }}</h2>
+```
+- Ao acessar `http://localhost:4200/pagina-com-parametros/5`, será exibido:
+  ```
+  Parâmetro da Rota: 5
+  ```
+
+---
+
+## **Trabalhando com Query Params**
+- Query Params são usados para **filtrar** informações em uma URL (`?nome=João&idade=23`).
+- Atualizamos a rota no `app-routing.module.ts` para aceitar **query parameters**:
+```typescript
+const routes: Routes = [
+  { path: 'pagina-com-parametros/:id', component: PaginaComParametrosComponent }
+];
+```
+
+### **Obtendo Query Params no Componente**
+```typescript
+nome: string = '';
+idade: number | null = null;
+
+ngOnInit() {
+  this.route.paramMap.subscribe(params => {
+    this.id = Number(params.get('id'));
+  });
+
+  this.route.queryParamMap.subscribe(params => {
+    this.nome = params.get('nome') || '';
+    this.idade = Number(params.get('idade'));
+  });
+}
+```
+
+---
+
+## **Exibindo os Query Params no Template**
+```html
+<p *ngIf="nome">Nome: {{ nome }}</p>
+<p *ngIf="idade">Idade: {{ idade }}</p>
+```
+- Agora, ao acessar `http://localhost:4200/pagina-com-parametros/5?nome=João&idade=23`, será exibido:
+  ```
+  Parâmetro da Rota: 5
+  Nome: João
+  Idade: 23
+  ```
+
+---
+
+## **Resumo**
+- **Parâmetros de Rota (`:id`)** são usados para identificar um item específico.
+- **Query Params (`?nome=João&idade=23`)** são usados para filtros e buscas.
+- **O `ActivatedRoute`** é a classe usada para capturar esses valores.
+- **Sempre verificar e converter os valores** quando necessário.
+
+Agora a aplicação está preparada para lidar com URLs dinâmicas de forma eficiente!
+
+---
+
+# **Lazy Loading no Angular**
+
+## **O que é Lazy Loading?**
+- **Lazy Loading** é uma técnica que carrega um **módulo ou componente** apenas quando necessário.
+- Evita que a aplicação carregue **todos os módulos de uma vez**, otimizando **tempo de carregamento** e **uso de recursos**.
+- Diferente do **Eager Loading**, onde todos os arquivos são baixados **logo no início**.
+
+---
+
+## **Por que usar Lazy Loading?**
+✔ **Melhora o desempenho da aplicação**  
+✔ **Diminui o tempo de carregamento inicial**  
+✔ **Reduz o consumo de memória**  
+✔ **Carrega apenas os módulos necessários no momento certo**  
+
+---
+
+## **Criando um Módulo com Lazy Loading**
+### **1. Gerar um Módulo**
+```bash
+ng generate module lazy-loading --route lazy-loading --module=app
+```
+- O módulo `lazy-loading` é criado e registrado automaticamente no `app-routing.module.ts`.
+- O `--route lazy-loading` já configura a rota para esse módulo.
+- O `--module=app` atrela esse módulo ao `AppModule`.
+
+---
+
+## **2. Configuração da Rota para Lazy Loading**
+- No arquivo `app-routing.module.ts`, o Angular configura o **carregamento assíncrono** do módulo:
+```typescript
+const routes: Routes = [
+  { 
+    path: 'lazy-loading', 
+    loadChildren: () => import('./lazy-loading/lazy-loading.module').then(m => m.LazyLoadingModule) 
+  }
+];
+```
+### **Explicação**
+- `loadChildren`: Importa o módulo **somente quando necessário**.
+- `import('./lazy-loading/lazy-loading.module')`: Carrega dinamicamente o módulo `LazyLoadingModule`.
+
+---
+
+## **3. Configuração das Rotas Dentro do Módulo Lazy**
+- O Angular cria automaticamente o arquivo `lazy-loading-routing.module.ts`:
+```typescript
+const routes: Routes = [
+  { path: '', component: LazyLoadingComponent }
+];
+
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
+})
+export class LazyLoadingRoutingModule { }
+```
+### **Explicação**
+- O caminho `path: ''` significa que essa rota é **o ponto de entrada** do módulo.
+- `RouterModule.forChild(routes)`: Registra as rotas **somente dentro do módulo Lazy Loading**.
+
+---
+
+## **4. Verificando o Lazy Loading na Prática**
+1. **Abrir as ferramentas do desenvolvedor (F12)**
+2. **Ir para a aba Network**
+3. **Recarregar a aplicação (F5)**
+4. **Navegar para `lazy-loading` e observar o carregamento dinâmico dos arquivos.**
+
+---
+
+## **Resumo**
+- O **Lazy Loading** permite carregar módulos **sob demanda**, evitando downloads desnecessários.
+- A configuração é feita através do **`loadChildren`** no `app-routing.module.ts`.
+- As rotas dentro do módulo Lazy são registradas com **`RouterModule.forChild()`**.
+- O uso de Lazy Loading melhora **tempo de resposta** e **uso eficiente de recursos**.
+
+Dessa forma, a aplicação se torna mais **rápida, modular e escalável**. 🚀
+
+---
+
+# **Guards de Rotas no Angular: Protegendo Rotas com Autenticação**
+
+## **O que são Guards no Angular?**
+- **Guards** são utilizados para proteger rotas e impedir que usuários não autorizados acessem determinadas páginas.
+- O **`CanActivate`** é um dos principais Guards usados para restringir o acesso com base na autenticação do usuário.
+
+---
+
+## **Criando a Página Protegida**
+### **1. Gerar o Componente da Página Protegida**
+```bash
+ng generate component pagina-protegida
+```
+- Criar um **botão de logout** no template (`pagina-protegida.component.html`):
+```html
+<h2>Página Protegida</h2>
+<button (click)="logout()">Logout</button>
+```
+
+---
+
+## **2. Definir a Rota Protegida**
+Adicionar a rota no `app-routing.module.ts`:
+```typescript
+const routes: Routes = [
+  { path: 'pagina-protegida', component: PaginaProtegidaComponent, canActivate: [AuthGuard] }
+];
+```
+- O **`canActivate: [AuthGuard]`** impede o acesso de usuários não autenticados.
+
+---
+
+## **3. Criando o Guard de Autenticação**
+### **Gerar o Guard**
+```bash
+ng generate guard auth
+```
+Selecionar `CanActivate` como a opção de proteção.
+
+### **Configuração do Guard (`auth.guard.ts`)**
+```typescript
+@Injectable({
+  providedIn: 'root'
+})
+export class AuthGuard implements CanActivate {
+  constructor(private authService: AuthService, private router: Router) {}
+
+  canActivate(): boolean {
+    if (!this.authService.estaAutenticado()) {
+      this.router.navigate(['/login']);
+      return false;
+    }
+    return true;
+  }
+}
+```
+- Se o usuário **não estiver autenticado**, ele será **redirecionado para a página de login**.
+
+---
+
+## **4. Criando a Página de Login**
+### **Gerar o Componente de Login**
+```bash
+ng generate component login
+```
+Criar o formulário no `login.component.html`:
+```html
+<h2>Login</h2>
+<label>Email</label>
+<input type="text" [(ngModel)]="email">
+<label>Senha</label>
+<input type="password" [(ngModel)]="senha">
+<button (click)="login()">Entrar</button>
+```
+- **Necessário importar `FormsModule` no `app.module.ts`**:
+```typescript
+import { FormsModule } from '@angular/forms';
+
+@NgModule({
+  imports: [FormsModule]
+})
+```
+
+---
+
+## **5. Criando o Serviço de Autenticação**
+### **Gerar o Serviço**
+```bash
+ng generate service auth
+```
+Configurar a autenticação em `auth.service.ts`:
+```typescript
+@Injectable({
+  providedIn: 'root'
+})
+export class AuthService {
+  private tokenKey = 'access_token';
+
+  estaAutenticado(): boolean {
+    return !!sessionStorage.getItem(this.tokenKey);
+  }
+
+  login(email: string, senha: string): boolean {
+    if (email === 'admin@admin.com' && senha === '123456') {
+      sessionStorage.setItem(this.tokenKey, 'TOKEN_SIMULADO');
+      return true;
+    }
+    return false;
+  }
+
+  logout(): void {
+    sessionStorage.removeItem(this.tokenKey);
+  }
+}
+```
+- **Salva o token no `sessionStorage` e verifica a autenticação**.
+- **O token é removido no logout**.
+
+---
+
+## **6. Implementando a Lógica de Login**
+No `login.component.ts`:
+```typescript
+export class LoginComponent {
+  email = '';
+  senha = '';
+
+  constructor(private authService: AuthService, private router: Router) {}
+
+  login(): void {
+    if (this.authService.login(this.email, this.senha)) {
+      this.router.navigate(['/pagina-protegida']);
+    } else {
+      alert('Login inválido');
+    }
+  }
+}
+```
+- Se o login for **válido**, o usuário é redirecionado para a página protegida.
+- Se for **inválido**, aparece um alerta de erro.
+
+---
+
+## **7. Implementando o Logout**
+No `pagina-protegida.component.ts`:
+```typescript
+export class PaginaProtegidaComponent {
+  constructor(private authService: AuthService, private router: Router) {}
+
+  logout(): void {
+    this.authService.logout();
+    this.router.navigate(['/login']);
+  }
+}
+```
+- Quando o usuário **faz logout**, ele é redirecionado para a página de login.
+
+---
+
+## **8. Testando a Proteção da Rota**
+1. **Acessar `/pagina-protegida` sem estar autenticado** → Redireciona para `/login`.
+2. **Fazer login com `admin@admin.com` e senha `123456`** → Acessa `/pagina-protegida`.
+3. **Clicar no botão Logout** → Redireciona para `/login` e limpa a sessão.
+
+---
+
+## **Resumo**
+- **`CanActivate`** impede o acesso a páginas protegidas.
+- **`AuthService`** gerencia o login, autenticação e logout.
+- **Token é armazenado no `sessionStorage`**.
+- **Usuário é redirecionado conforme seu status de autenticação**.
+
+Essa abordagem garante **segurança e controle de acesso** nas aplicações Angular. 🔐🚀
+
 ---
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
