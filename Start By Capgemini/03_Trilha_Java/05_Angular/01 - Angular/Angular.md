@@ -1198,6 +1198,107 @@ Esse processo melhora a **usabilidade da aplicação Angular**, tornando a naveg
 
 #### Aula 5.D
 
+**Trabalhando com Parâmetros de Rota e Query Params no Angular**
+
+**Introdução**
+- No Angular, podemos **passar parâmetros** na URL para buscar informações específicas.
+- Existem **dois tipos principais de parâmetros**:
+  1. **Parâmetros de Rota**: Passados diretamente na URL (`/produtos/1`).
+  2. **Query Params**: Passados após uma interrogação (`/produtos?id=1&nome=João`).
+
+**Criando um Componente para Trabalhar com Parâmetros**
+```bash
+ng generate component pagina-com-parametros
+```
+
+**Definição da Rota com Parâmetro**
+- No arquivo `app-routing.module.ts`, adicionamos a rota que aceita um parâmetro:
+```typescript
+const routes: Routes = [
+  { path: 'pagina-com-parametros/:id', component: PaginaComParametrosComponent }
+];
+```
+- O **`:id`** representa um valor dinâmico que pode ser passado pela URL.
+
+**Obtendo Parâmetros de Rota**
+- Para acessar os **parâmetros da rota**, utilizamos o **`ActivatedRoute`**.
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
+@Component({
+  selector: 'app-pagina-com-parametros',
+  templateUrl: './pagina-com-parametros.component.html',
+  styleUrls: ['./pagina-com-parametros.component.css']
+})
+export class PaginaComParametrosComponent implements OnInit {
+  id: number | null = null;
+
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit() {
+    this.route.paramMap.subscribe(params => {
+      this.id = Number(params.get('id'));
+    });
+  }
+}
+```
+**Explicação**
+- **`ActivatedRoute`**: Serviço do Angular Router usado para acessar informações da rota ativa.
+- **`paramMap.subscribe()`**: Obtém o **ID** da URL e o converte para número.
+
+**Exibindo o Parâmetro no Template**
+```html
+<h2>Parâmetro da Rota: {{ id }}</h2>
+```
+- Ao acessar `http://localhost:4200/pagina-com-parametros/5`, será exibido:
+  ```
+  Parâmetro da Rota: 5
+  ```
+
+**Trabalhando com Query Params**
+- Query Params são usados para **filtrar** informações em uma URL (`?nome=João&idade=23`).
+- Atualizamos a rota no `app-routing.module.ts` para aceitar **query parameters**:
+```typescript
+const routes: Routes = [
+  { path: 'pagina-com-parametros/:id', component: PaginaComParametrosComponent }
+];
+```
+
+**Obtendo Query Params no Componente**
+```typescript
+nome: string = '';
+idade: number | null = null;
+
+ngOnInit() {
+  this.route.paramMap.subscribe(params => {
+    this.id = Number(params.get('id'));
+  });
+
+  this.route.queryParamMap.subscribe(params => {
+    this.nome = params.get('nome') || '';
+    this.idade = Number(params.get('idade'));
+  });
+}
+```
+**Exibindo os Query Params no Template**
+```html
+<p *ngIf="nome">Nome: {{ nome }}</p>
+<p *ngIf="idade">Idade: {{ idade }}</p>
+```
+- Agora, ao acessar `http://localhost:4200/pagina-com-parametros/5?nome=João&idade=23`, será exibido:
+  ```
+  Parâmetro da Rota: 5
+  Nome: João
+  Idade: 23
+  ```
+
+**Resumo**
+- **Parâmetros de Rota (`:id`)** são usados para identificar um item específico.
+- **Query Params (`?nome=João&idade=23`)** são usados para filtros e buscas.
+- **O `ActivatedRoute`** é a classe usada para capturar esses valores.
+- **Sempre verificar e converter os valores** quando necessário.
+
 #### Aula 5.E
 
 #### Aula 5.F
