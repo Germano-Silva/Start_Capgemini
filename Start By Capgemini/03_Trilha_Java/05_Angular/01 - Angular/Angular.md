@@ -1536,10 +1536,10 @@ Essa abordagem garante **segurança e controle de acesso** nas aplicações Angu
 
 #### Aula 6.A
 
-**Resumo - Projeto ProA-Computers (E-commerce com Angular)**  
+**Resumo - Projeto ProWay-Computers (E-commerce com Angular)**  
 
 **Visão Geral do Projeto**  
-- O projeto **ProA-Computers** será um **e-commerce de computadores**, onde os usuários poderão **comprar produtos, adicionar ao carrinho e gerenciar suas compras**.  
+- O projeto **ProWay-Computers** será um **e-commerce de computadores**, onde os usuários poderão **comprar produtos, adicionar ao carrinho e gerenciar suas compras**.  
 - A aplicação será **estruturada de forma modular**, utilizando **componentes e módulos** para melhorar a organização do código.  
 
 **Funcionalidades Principais**  
