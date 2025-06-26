@@ -1639,6 +1639,38 @@ A aplicação será organizada com:
 
 #### Aula 6.D
 
+**Resumo: Implementação de Rotas no Angular**
+
+**1. Objetivo da Aula**  
+- Adicionar **navegação entre páginas** (produtos, carrinho, contato).  
+- Garantir que o conteúdo das páginas seja carregado **entre o cabeçalho (`header`) e o rodapé (`footer`)**.  
+
+**2. Passos Realizados**  
+
+1. **Criação do Módulo de Rotas**:  
+   - Comando: `ng generate module app-routing --flat --module app.module`  
+     - `--flat`: Mantém o arquivo na raiz do projeto (sem pasta própria).  
+   - Arquivo gerado: `app-routing.module.ts`.
+   - Dempendendo da versão do node e do Angular pode ser que quando criar o projeto esse arquivo já exista na rais do projeto configurado corretamente.  
+
+2. **Configuração Básica das Rotas**:  
+   - No arquivo `app-routing.module.ts`:  
+     - Importação do `RouterModule` e definição de um array vazio (`routes`) para as rotas futuras.  
+     - Configuração do módulo para usar as rotas no root (`RouterModule.forRoot(routes)`).  
+     - Exportação do `RouterModule` para uso em outros componentes.  
+
+3. **Integração com o Template Principal**:  
+   - No `app.component.html`:  
+     - Adição da diretiva `<router-outlet>` **entre o cabeçalho e o rodapé**.  
+ 
+     - **Funcionalidade**:  
+       - O conteúdo das páginas (produtos, carrinho, etc.) será renderizado no lugar do `<router-outlet>`.  
+       - Cabeçalho e rodapé permanecem fixos em todas as páginas.
+
+**Observação**:  
+- O uso de `--flat` simplifica a organização para projetos pequenos.  
+- O `<router-outlet>` é essencial para o carregamento dinâmico de páginas no Angular.
+
 #### Aula 6.E
 
 #### Aula 6.F
