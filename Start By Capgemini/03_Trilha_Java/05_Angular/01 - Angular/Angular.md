@@ -1574,6 +1574,34 @@ A aplicação será organizada com:
 
 #### Aula 6.B
 
+**Resumo: Cabeçalho com Font Awesome**  
+
+**1. Criando o Componente `Header`**  
+- Comando: `ng generate component header`  
+- Adicionado ao módulo principal (`app.module.ts`) para reutilização global.  
+
+**2. Estrutura Básica**  
+- **Título**: "Pro-Ai Computers" com estilos CSS personalizados.  
+- **Links**: Produtos, Carrinho, Home e redes sociais (ícones).  
+
+**3. Passo a Passo: Font Awesome**  
+1. **Acesse o [Site do Font Awesome](https://fontawesome.com/)**.  
+2. Clique em **"Start for Free"** e cadastre-se com e-mail.  
+3. Após login, vá em **"Kits"** e crie um novo kit.  
+4. Copie o **script HTML** gerado e cole no `<head>` do `index.html` da sua aplicação.  
+5. **Procure ícones** (ex: "shopping cart", "facebook") e copie o código (ex: `<i class="fas fa-cart-shopping"></i>`).  
+6. Cole os códigos no template do componente `Header`.  
+
+**4. Estilização**  
+- Classes CSS aplicadas para título, links e barra de pesquisa.  
+- Exemplo:  
+  ```html
+  <span class="menu-title-blue">Pro-Ai</span>
+  <span class="menu-title-orange">Computers</span>
+  ```  
+ 
+**Dica**: Use o [Font Awesome CDN](https://cdnjs.com/libraries/font-awesome) se preferir instalação rápida sem cadastro.
+
 #### Aula 6.C
 
 #### Aula 6.D
