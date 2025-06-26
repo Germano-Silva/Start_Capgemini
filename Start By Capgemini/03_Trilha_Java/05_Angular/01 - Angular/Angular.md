@@ -1604,6 +1604,39 @@ A aplicação será organizada com:
 
 #### Aula 6.C
 
+**Resumo: Criação do Rodapé (Footer)**  
+
+**1. Criando o Componente `Footer`**  
+- Comando: `ng generate component footer`  
+- Adicionado ao template principal (`app.component.html`) para aparecer em **todas as páginas**.  
+
+**2. Estrutura Básica**  
+- **Divisão principal**:  
+  - **Seção "Sobre"**:  
+    - Título (`<h2>`) com classe `footer-title`.  
+    - Texto descritivo (placeholder *Lorem ipsum*).  
+  - **Seção "Contato"**:  
+    - Título (`<h2>`) e lista com ícones (telefone, e-mail, WhatsApp).  
+    - Ícones adicionados via **Font Awesome** (ex: `fa-envelope`, `fa-phone`, `fa-whatsapp`).  
+  - **Seção "Copyright"**:  
+    - Texto padrão ("Todos os direitos reservados").  
+
+**3. Passo a Passo: Font Awesome**  
+1. **Procure ícones** no site [Font Awesome](https://fontawesome.com/).  
+2. Copie o código do ícone (ex: `<i class="fas fa-phone"></i>`).  
+3. Cole no template do `footer` (dentro das listas de contato).  
+
+**4. Estilização**  
+- Classes CSS aplicadas para:  
+  - Alinhamento do conteúdo.  
+  - Formatação de títulos (`footer-title`).  
+  - Espaçamento e cores dos ícones.  
+
+**Resultado**  
+- Rodapé funcional com informações de contato e copyright, pronto para integração com o restante da aplicação.  
+
+**Observação**: O CSS foi disponibilizado pelo professor para estilização rápida.
+
 #### Aula 6.D
 
 #### Aula 6.E
