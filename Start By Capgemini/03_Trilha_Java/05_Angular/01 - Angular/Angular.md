@@ -1673,6 +1673,59 @@ A aplicação será organizada com:
 
 #### Aula 6.E
 
+**Resumo: Implementação da Página de Produtos**  
+
+**1. Objetivo**  
+- Criar a página de produtos com exibição dinâmica dos itens.  
+- Configurar rotas para navegação entre produtos.  
+
+**2. Passos Realizados**  
+
+1. **Criação do Módulo de Produtos**  
+   - Comando: `ng generate module produtos --route produtos --module app.module` 
+    -`ng generate module produtos` — Cria um novo módulo Angular chamado `produtos`.
+    -`--route produtos` — Cria uma rota `/produtos` e um componente associado (`ProdutosComponent`), com configuração de **lazy loading**.
+    -`--module app.module` — Adiciona a nova rota ao `AppRoutingModule`, vinculando ao `AppModule`.
+ 
+   - Objetivo: Organizar tudo relacionado a produtos em um módulo separado para melhor desempenho e manutenção.  
+
+2. **Configuração da Rota de Produtos**  
+   - Rota principal: `/produtos`  
+   - Redirecionamento da raiz (`/`) para `/produtos` usando:  
+     ```typescript
+     { path: '', redirectTo: 'produtos', pathMatch: 'full' }
+     ```  
+
+3. **Estrutura do Template (`produtos.component.html`)**  
+   - Seção principal com classe `product-list`.  
+   - Cards de produtos com:  
+     - Imagem (`<img>`).  
+     - Nome (`<h2 class="product-item-name">`).  
+     - Preço formatado em BRL (`{{ produto.preco | currency:'BRL' }}`).  
+     - Descrição (`<p class="product-item-description">`).  
+     - Botão "Comprar".  
+
+4. **Dados dos Produtos**  
+   - Criação de uma interface `Produto`
+   - Lista mockada de produtos em `produtos.ts` (simulando um backend).  
+   - Imagens salvas na pasta `assets/`.  
+
+5. **Exibição Dinâmica com `*ngFor`**  
+   - Uso da diretiva para iterar sobre a lista de produtos:  
+     ```html
+     <div *ngFor="let produto of produtos" class="product-list-card">
+       <!-- Conteúdo do card -->
+     </div>
+     ```  
+
+6. **Navegação para Detalhes do Produto**  
+   - Configuração de `routerLink` para redirecionar para `/produtos/{{produto.id}}` (a ser implementado).  
+
+7. **Estilização**  
+   - CSS aplicado para cards, preços e botões (arquivo `produtos.component.css`).  
+
+**Dica**: Use `currency:'BRL'` para formatar preços em Reais (R$).
+
 #### Aula 6.F
 
 #### Aula 6.G
