@@ -1766,6 +1766,54 @@ Criar uma página personalizada para rotas inexistentes (erro 404) no projeto An
 
 #### Aula 6.G
 
+**Resumo: Criação da Página de Detalhes do Produto**
+
+**1. Objetivo**  
+Desenvolver a página de detalhes de um produto, permitindo que os usuários visualizem informações específicas, selecionem a quantidade e adicionem itens ao carrinho.
+
+**2. Passos Realizados**  
+
+1. **Geração do Componente**  
+   - Comando: `ng g component produtos/detalhes-produto --module produtos.module`  
+     - O componente foi criado dentro da pasta `produtos` e automaticamente declarado no módulo de produtos.
+
+2. **Configuração da Rota**  
+   - Adição da rota dinâmica no módulo de produtos (`produtos-routing.module.ts`):  
+     ```typescript
+     { path: ':id', component: DetalhesProdutoComponent }
+     ```  
+   - A rota captura o ID do produto na URL (ex: `/produtos/1`).
+
+3. **Estrutura do Template (`detalhes-produto.component.html`)**  
+   - **Seção Principal**:  
+     - Divisão para a imagem do produto (`<div class="produto-imagem-container">`).  
+     - Exemplo: `<img src="/assets/monitor-1.jpg">`.  
+   - **Seção de Informações**:  
+     - Nome do produto (`<h2 class="produto-nome">`).  
+     - Preço (`<h3 class="produto-preco">`).  
+     - Quantidade em estoque (`<p class="produto-estoque">10 unidades</p>`).  
+     - Input para seleção de quantidade (`<input type="number">`).  
+     - Botão "Adicionar ao carrinho".
+
+**Dica**:
+  - Faça modificações no arquivo CSS baixado para utilizar trocando de:
+    ```CSS
+    /* Firefox */
+    input[type=number] {
+        appearance: textfield;
+    }
+    ```
+    Para:
+
+    ```CSS
+    /* Firefox */
+    input[type=number] {
+        appearance: textfield;
+    }
+    ```
+
+ - Troque tambem o nome da class de `product-deion__container` para `product-description__container`.
+
 #### Aula 6.H
 
 #### Aula 6.I
