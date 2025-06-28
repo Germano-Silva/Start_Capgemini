@@ -1728,6 +1728,42 @@ A aplicação será organizada com:
 
 #### Aula 6.F
 
+**Resumo: Implementação da Página "Não Encontrada" (404)**  
+
+**1. Objetivo**  
+Criar uma página personalizada para rotas inexistentes (erro 404) no projeto Angular.  
+
+**2. Passos Realizados**  
+
+1. **Geração do Componente**  
+   - Comando: `ng generate component pagina-nao-encontrada`  
+   - Componente criado para exibir mensagens de "página não encontrada".  
+
+2. **Configuração da Rota**  
+   - Adição da rota **curinga (`**`)** no `app-routing.module.ts`:  
+     ```typescript
+     { path: '**', component: PaginaNaoEncontradaComponent }
+     ```  
+   - Essa rota captura **qualquer URL não mapeada** e redireciona para o componente.  
+
+3. **Personalização do Template**  
+   - Estrutura básica:  
+     ```html
+     <section class="pagina-nao-encontrada">
+       <i class="fas fa-times"></i> <!-- Ícone de "X" do Font Awesome -->
+       <h2>404 - Página não encontrada</h2>
+     </section>
+     ```  
+   - Uso do **Font Awesome** para ícone de erro.  
+
+**3. Funcionalidade**  
+- Quando um usuário acessa uma rota não existente (ex: `/produto-inexistente`), a página 404 é exibida **automaticamente**.  
+
+
+**Observação**:  
+- A rota curinga (`**`) deve ser a **última** no array de rotas para funcionar corretamente.  
+- Ícones do Font Awesome requerem a instalação prévia (via kit ou CDN).  
+
 #### Aula 6.G
 
 #### Aula 6.H
