@@ -1815,6 +1815,52 @@ Desenvolver a página de detalhes de um produto, permitindo que os usuários vis
  - Troque tambem o nome da class de `product-deion__container` para `product-description__container`.
 
 #### Aula 6.H
+**Resumo: Implementação da Lógica da Página de Detalhes do Produto**
+
+**1. Objetivo**  
+Implementar a lógica para carregar os detalhes de um produto específico na página de detalhes, permitindo a seleção de quantidade e preparando a integração com o carrinho de compras.
+
+**2. Principais Passos Realizados**
+
+1. **Criação do Serviço de Produtos**  
+   - Comando: `ng generate service produtos/produto`  
+   - Responsabilidade:  
+     - `getAll()`: Retorna a lista completa de produtos.  
+     - `getById(id: number)`: Retorna um produto específico com base no ID.  
+
+2. **Integração com o Componente de Detalhes**  
+   - Injeção de dependências:  
+     - `ProdutoService` para obter dados do produto.  
+     - `ActivatedRoute` para capturar o ID da rota.  
+   - Lógica no `ngOnInit()`:  
+     ```typescript
+     this.produto = this.produtoService.getById(
+       Number(this.activatedRoute.snapshot.paramMap.get('id'))
+     );
+     ```  
+     - Converte o parâmetro da rota (string) para número.  
+
+3. **Template Dinâmico**  
+   - Bindings no HTML:  
+     - Imagem: `[src]="'/assets/' + produto.imagem"`  
+     - Nome e preço: `{{ produto.nome }}`, `{{ produto.preco | currency:'BRL' }}`  
+     - Estoque: `{{ produto.quantidadeEstoque }} unidades`  
+   - Two-way binding para quantidade:  
+     ```html
+     <input type="number" [(ngModel)]="quantidade" min="1" [max]="produto.quantidadeEstoque">
+     ```  
+
+4. **Melhorias nos Dados**  
+   - Adição da propriedade `quantidadeEstoque` na interface `Produto`.  
+   - Atualização da lista mockada (`produtos.ts`) com valores de estoque.  
+
+5. **Configuração do Módulo**  
+   - Importação de `FormsModule` no módulo de produtos para habilitar `ngModel`.  
+
+**3. Funcionalidades Pendentes**  
+- **Adicionar ao Carrinho**: Lógica para enviar o produto selecionado (com quantidade) ao carrinho (próxima aula).  
+- **Validação Avançada**: Impedir quantidade superior ao estoque.  
+
 
 #### Aula 6.I
 
