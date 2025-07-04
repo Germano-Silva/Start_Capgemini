@@ -1861,6 +1861,46 @@ Implementar a lógica para carregar os detalhes de um produto específico na pá
 - **Adicionar ao Carrinho**: Lógica para enviar o produto selecionado (com quantidade) ao carrinho (próxima aula).  
 - **Validação Avançada**: Impedir quantidade superior ao estoque.  
 
+**4. Estava tendo erro no meu codigo ao acessar rotas com ID diferentes**
+
+Explicando a solução, bati muito minha cabeça espero que goste:
+
+**Diferença entre os códigos de `ngOnInit`**
+
+A principal diferença entre os dois códigos está em como eles lidam com os parâmetros da rota no Angular:
+
+**4.1. Primeiro Código (usando `snapshot`)**
+```typescript
+ngOnInit(): void {
+    const routeParams = this.route.snapshot.paramMap;
+    const produtoId = Number(routeParams.get("id"));
+    this.produto = this.ProdutosService.getOne(produtoId);
+}
+```
+
+- **Acesso único**: Usa `snapshot` para pegar os parâmetros uma única vez quando o componente é inicializado
+- **Estático**: Se os parâmetros da rota mudarem enquanto o componente estiver ativo, essas mudanças não serão detectadas
+- **Mais simples**: Adequado para casos onde você sabe que os parâmetros não mudarão durante o tempo de vida do componente
+
+**4.2. Segundo Código (usando `subscribe`)**
+```typescript
+ngOnInit(): void {
+    this.route.paramMap.subscribe(params => {
+        const produtoId = Number(params.get("id"));
+        this.produto = this.ProdutosService.getOne(produtoId);
+    });
+}
+```
+
+- **Reativo**: Inscreve-se para receber atualizações sempre que os parâmetros da rota mudarem
+- **Dinâmico**: Se o usuário navegar para a mesma rota mas com um ID diferente (sem recarregar o componente), o código será executado novamente
+- **Mais complexo**: Requer gerenciamento de subscriptions (idealmente com operadores como `takeUntil` para evitar memory leaks)
+
+**Quando usar cada um:**
+- Use `snapshot` quando os parâmetros não mudarão durante o tempo de vida do componente
+- Use `subscribe` quando você precisa reagir a mudanças nos parâmetros enquanto o componente está ativo
+
+O segundo abordagem é geralmente mais segura e recomendada para a maioria dos casos, especialmente em aplicações com navegação mais complexa.
 
 #### Aula 6.I
 

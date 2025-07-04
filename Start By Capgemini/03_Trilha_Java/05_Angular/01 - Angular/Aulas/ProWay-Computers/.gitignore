@@ -8,8 +8,10 @@
 
 # Node
 /node_modules
+/memory-bank
 npm-debug.log
 yarn-error.log
+.clinerules
 
 # IDEs and editors
 .idea/
