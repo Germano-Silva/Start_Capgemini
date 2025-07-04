@@ -1902,6 +1902,27 @@ ngOnInit(): void {
 
 O segundo abordagem é geralmente mais segura e recomendada para a maioria dos casos, especialmente em aplicações com navegação mais complexa.
 
+Troque também produtos-service corrigir comparação de ID em `getOne`
+
+de: 
+```javascript
+  getOne(produtoId: number) {
+    return this.produtos.find(produto => produto.id = produtoId);
+  }
+```
+para:
+
+de: 
+```javascript
+  getOne(produtoId: number) {
+    return this.produtos.find(produto => produto.id === produtoId);
+  }
+```
+
+Substitui operador de atribuição (`=`) por comparação estrita (`===`) na busca por ID.
+Desta maneira vai parar de dar o erro que fica somente 1 ID aparecendo mesmo mudando a rota.
+
+
 #### Aula 6.I
 
 #### Aula 6.J
