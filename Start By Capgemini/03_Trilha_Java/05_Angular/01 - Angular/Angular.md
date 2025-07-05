@@ -1922,8 +1922,44 @@ de:
 Substitui operador de atribuição (`=`) por comparação estrita (`===`) na busca por ID.
 Desta maneira vai parar de dar o erro que fica somente 1 ID aparecendo mesmo mudando a rota.
 
-
 #### Aula 6.I
+
+**Resumo: Implementação de Notificações com Angular Material**  
+
+**Objetivo da Aula:**  
+Implementar uma funcionalidade de notificação em uma aplicação Angular utilizando a biblioteca Angular Material, especificamente o componente `SnackBar`.  
+
+**Passos Principais:**  
+
+1. **Instalação do Angular Material:**  
+   - Utilizou-se o comando `ng add @angular/material` para instalar a biblioteca.  
+   - Durante a instalação, foram configurados:  
+     - **Tema de cores:** Optou-se pelo tema padrão (indigo-pink).  
+     - **Tipografia:** Habilitada para usar fontes padrão do Angular Material.  
+     - **Animações:** Ativadas para melhor experiência do usuário.  
+
+2. **Reinicialização do Servidor:**  
+   - Após a instalação, reiniciou-se o servidor local para garantir que as mudanças fossem aplicadas corretamente.  
+
+3. **Configuração do Módulo:**  
+   - No arquivo `app.module.ts`, importou-se o módulo `MatSnackBarModule` do Angular Material e adicionou-o à lista de imports.  
+
+4. **Criação do Serviço de Notificação:**  
+   - Gerou-se um serviço chamado `NotificacaoService` usando o comando `ng generate service notificacao`.  
+   - No serviço:  
+     - Injetou-se o `MatSnackBar` para exibir as notificações.  
+     - Criou-se um método `notificar` que recebe uma mensagem e exibe um `SnackBar` com:  
+       - **Mensagem:** Texto a ser exibido.  
+       - **Ação:** Botão "OK".  
+       - **Configurações:** Duração de 2 segundos, posição no topo e centro da tela.  
+
+5. **Integração com o Componente:**  
+   - No componente `detalhes-produto`, criou-se um método `adicionarAoCarrinho` que, por enquanto, apenas chama o método `notificar` do serviço para exibir a mensagem "Produto foi adicionado ao carrinho".  
+   - Associou-se o método ao evento de clique de um botão no template.  
+
+**Links Importantes:**  
+- [Documentação do Angular](https://material.angular.io/)  
+- [Guia Oficial do SnackBar](https://material.angular.io/components/snack-bar/overview)
 
 #### Aula 6.J
 
