@@ -1963,6 +1963,59 @@ Implementar uma funcionalidade de notificação em uma aplicação Angular utili
 
 #### Aula 6.J
 
+**Resumo da Aula:** Implementação de Carrinho de Compras com Angular e LocalStorage
+
+**Objetivo da Aula:**
+Desenvolver um serviço completo de carrinho de compras em Angular com persistência de dados utilizando localStorage, incluindo funcionalidades de adição, remoção e atualização de itens, além da exibição do conteúdo do carrinho.
+
+**Passos Principais:**
+
+**1. Criação do CarrinhoService:**
+- Utilizou-se o comando `ng generate service carrinho` para criar o serviço
+- Definimos a interface `ItemCarrinho` com propriedades:
+  - `id`: Identificador único do produto
+  - `nome`: Nome do produto
+  - `preco`: Valor unitário
+  - `quantidade`: Quantidade selecionada
+
+**2. Configuração do LocalStorage:**
+- Implementou-se os métodos para persistência de dados:
+  - `salvarCarrinho()`: Converte o carrinho para JSON e armazena
+  - `carregarCarrinho()`: Recupera e parseia os dados, com fallback para array vazio
+- Criou-se a chave 'app_carrinho' para identificação no storage
+
+**3. Métodos do Serviço:**
+- `adicionarItem()`:
+  - Verifica se item já existe no carrinho
+  - Atualiza quantidade ou adiciona novo registro
+  - Chama `salvarCarrinho()` após modificações
+- `obterCarrinho()`: 
+  - Retorna todos os itens via `carregarCarrinho()`
+  - Inclui cálculo do total (preço × quantidade)
+- `limparCarrinho()`:
+  - Remove todos os itens
+  - Atualiza o storage
+
+**4. Integração com Componentes:**
+- No componente de produtos:
+  - Implementou-se `adicionarAoCarrinho()` que chama o serviço
+  - Adicionou-se feedback visual usando MatSnackBar
+- No componente do carrinho:
+  - Criou-se tabela para exibir itens
+  - Implementou-se remoção individual de itens
+  - Adicionou-se cálculo do total geral
+
+**5. Tratamento de Erros:**
+- Validação de dados ao carregar do storage
+- Mensagens de erro para casos de storage cheio
+- Fallback para array vazio quando dados inválidos
+
+**Links Úteis:**
+- [Documentação Oficial do LocalStorage](https://developer.mozilla.org/pt-BR/docs/Web/API/Window/localStorage)
+- [Guia de Serviços Angular](https://angular.io/guide/architecture-services)
+- [Trabalhando com JSON no JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/JSON)
+- [Injeção de Dependência Angular](https://angular.io/guide/dependency-injection)
+
 #### Aula 6.K
 
 #### Aula 6.L
