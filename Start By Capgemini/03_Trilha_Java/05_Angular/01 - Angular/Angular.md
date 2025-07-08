@@ -2018,6 +2018,57 @@ Desenvolver um serviço completo de carrinho de compras em Angular com persistê
 
 #### Aula 6.K
 
+**Resumo da Aula:** Criação da Página de Carrinho com Angular
+
+**Objetivo da Aula:**
+Desenvolver a página de carrinho de compras com estrutura HTML, estilização CSS e integração inicial com o serviço de carrinho criado anteriormente.
+
+**Passos Principais:**
+
+**1. Criação do Módulo de Carrinho:**
+- Utilizou-se o comando `ng generate module carrinho --route carrinho  --module app.module` para criar:
+  - Um novo módulo dedicado ao carrinho
+  - Rota automática '/carrinho'
+  - Integração com o módulo principal da aplicação
+
+**2. Estruturação do Template:**
+- Implementou-se a estrutura básica com:
+  - Título principal (h2) com classe 'cart-title'
+  - Div container para listagem de produtos:
+    - Imagem do produto (placeholder inicial)
+    - Descrição do produto (parágrafo)
+    - Preço unitário (parágrafo fixo temporário)
+    - Input para quantidade (tipo number)
+    - Botão de remoção com ícone 'x-mark' do Font Awesome
+
+**3. Adição de Estilos CSS:**
+- Criou-se classes específicas para:
+  - Botão principal (.buy-button)
+  - Botão de remoção (.remove-button)
+  - Seção de total (.total-part)
+- Aplicou-se estilos para:
+  - Layout responsivo dos itens
+  - Espaçamento e margens
+  - Formatação de preços e quantidades
+
+**4. Integração Inicial:**
+- Preparou-se a estrutura para:
+  - Exibição dinâmica dos produtos (a ser implementado)
+  - Cálculo automático do total (a ser implementado)
+  - Funcionalidade de remoção (a ser implementado)
+
+**5. Próximos Passos (Preview):**
+- Implementação da ligação com o CarrinhoService
+- Carregamento dinâmico dos produtos
+- Cálculo em tempo real do total
+- Funcionalidade completa de remoção de itens
+
+**Links Úteis:**
+- [Documentação de Módulos Angular](https://angular.io/guide/architecture-modules)
+- [Guia de Rotas Angular](https://angular.io/guide/router)
+- [Font Awesome Icons](https://fontawesome.com/icons)
+- [CSS Flexbox Layout](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout)
+
 #### Aula 6.L
 
 #### Aula 6.M
