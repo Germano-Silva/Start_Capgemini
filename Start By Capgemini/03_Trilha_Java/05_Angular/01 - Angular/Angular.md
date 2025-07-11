@@ -2071,6 +2071,53 @@ Desenvolver a página de carrinho de compras com estrutura HTML, estilização C
 
 #### Aula 6.L
 
+**Resumo da Aula:** Implementação das Funcionalidades do Carrinho de Compras
+
+**Objetivo da Aula:**
+Completar a implementação da página de carrinho com todas as funcionalidades necessárias, incluindo:
+- Carregamento dinâmico dos produtos
+- Cálculo automático do total
+- Remoção de itens
+- Finalização de compra
+
+**Passos Principais:**
+
+**1. Integração com o CarrinhoService:**
+- Injetou-se o serviço no componente do carrinho
+- Criou-se a propriedade `itensCarrinho` para armazenar os produtos
+- Implementou-se o carregamento inicial dos itens usando `obterCarrinho()`
+
+**2. Exibição Dinâmica dos Produtos:**
+- Utilizou-se `*ngFor` para listar os itens do carrinho
+- Formatou-se os preços usando pipe de moeda (BRL)
+- Implementou-se exibição condicional com `*ngIf` para mostrar mensagem quando o carrinho está vazio
+
+**3. Funcionalidade de Remoção:**
+- Criou-se método `removerProdutoCarrinho()` no serviço:
+  - Filtra os itens pelo ID
+  - Atualiza o localStorage
+- Implementou-se botão de remoção com ícone (x-mark)
+- Adicionou-se atualização automática da lista e do total após remoção
+
+**4. Cálculo do Total:**
+- Desenvolveu-se método `calcularTotal()`:
+  - Usa `reduce()` para somar (preço × quantidade) de todos os itens
+  - Atualiza automaticamente ao modificar quantidades
+- Conectou-se ao evento `(change)` do input de quantidade
+
+**5. Finalização de Compra:**
+- Implementou-se método `comprar()` que:
+  - Exibe mensagem de confirmação
+  - Limpa o carrinho via serviço
+  - Redireciona para página de produtos usando `Router.navigate()`
+- Adicionou-se tratamento para carrinho vazio
+
+**Links Úteis:**
+- [Documentação de Pipes no Angular](https://angular.io/guide/pipes)
+- [Guia de NgFor](https://angular.io/guide/built-in-directives#ngFor)
+- [Manipulação de Arrays com Reduce](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+- [Navegação com Router](https://angular.io/guide/router)
+
 #### Aula 6.M
 
 #### Aula 6.N
