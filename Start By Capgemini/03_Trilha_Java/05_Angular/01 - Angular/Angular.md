@@ -2120,6 +2120,53 @@ Completar a implementação da página de carrinho com todas as funcionalidades 
 
 #### Aula 6.M
 
+**Resumo da Aula:** Criação da Página de Contato com Formulário e Mapa
+
+**Objetivo da Aula:**
+Desenvolver a página de contato com um formulário funcional e integração com mapa, incluindo estrutura HTML e estilização básica.
+
+**Passos Principais:**
+
+**1. Criação do Módulo de Contato:**
+- Utilizou-se `ng generate module contato --route contato --module app.module` para:
+  - Criar um módulo dedicado
+  - Configurar rota automática '/contato'
+  - Integrar com o módulo principal
+
+**2. Estrutura do Template:**
+- Implementou-se:
+  - Título principal (h2) com classe 'contact-title'
+  - Seção container com formulário:
+    - Inputs para: Nome, Assunto, Telefone e Email
+    - Textarea para Mensagem (com maxlength)
+    - Botão de envio
+  - Tag address com informações de localização
+  - Incorporação de iframe com mapa do Google Maps
+
+**3. Configuração Inicial:**
+- Adicionou-se:
+  - Placeholders em todos os campos
+  - Atributos básicos de acessibilidade
+  - Estrutura semântica HTML5
+
+**4. Estilização Básica:**
+- Aplicou-se CSS inicial para:
+  - Formatação do formulário
+  - Espaçamento dos elementos
+  - Visualização do mapa incorporado
+
+**Próximos Passos (Preview):**
+- Validação de formulário
+- Formatação específica para campos (telefone, email)
+- Integração com serviços backend
+- Melhorias de acessibilidade
+
+**Links Úteis:**
+- [Documentação de Módulos Angular](https://angular.io/guide/architecture-modules)
+- [Formulários Template-driven no Angular](https://angular.io/guide/forms)
+- [Incorporação de Mapas Google](https://developers.google.com/maps/documentation/embed/embedding-map)
+- [HTML Semântico](https://developer.mozilla.org/pt-BR/docs/Glossary/Semantics)
+
 #### Aula 6.N
 
 #### Aula 6.O
