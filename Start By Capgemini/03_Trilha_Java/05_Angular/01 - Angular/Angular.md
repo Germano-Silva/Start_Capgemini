@@ -2169,6 +2169,52 @@ Desenvolver a página de contato com um formulário funcional e integração com
 
 #### Aula 6.N
 
+**Resumo da Aula:** Implementação de Validações em Formulários Reativos no Angular  
+
+**Objetivo da Aula:**  
+Desenvolver um formulário reativo com validações em tempo real, máscara para campos específicos (como telefone) e feedback visual para o usuário, utilizando Reactive Forms e a biblioteca `ngx-mask`.  
+
+**Passos Principais:**  
+
+**1. Configuração Inicial:**  
+- Importação do `ReactiveFormsModule` no módulo de contato para habilitar formulários reativos.  
+- Uso do `FormBuilder` no componente para criar um grupo de controles de formulário (`FormGroup`).  
+
+**2. Definição dos Campos e Validações:**  
+- Criação de um objeto no `FormGroup` com os campos:  
+  - **Nome**: Validações `required` e `minLength(4)`.  
+  - **Assunto**: Validações `required` e `minLength(10)`.  
+  - **Telefone**: Validações `required`, `minLength(11)` e aplicação de máscara com `ngx-mask`.  
+  - **Email**: Validações `required` e `email` (validador padrão do Angular).  
+  - **Mensagem**: Validações `required` e `minLength(20)`.  
+
+**3. Template e Validação Visual:**  
+- Vinculação dos campos do `FormGroup` aos inputs no HTML usando `formControlName`.  
+- Aplicação de classes CSS condicionais:  
+  - `class.valid`: Borda verde quando o campo é válido.  
+  - `class.invalid`: Borda vermelha quando o campo é inválido e tocado (`touched` ou `dirty`).  
+- Mensagens de erro dinâmicas com `*ngIf`:  
+  - Exibição de erros específicos (ex: `minlength`, `required`) abaixo de cada campo.  
+
+**4. Máscara para Telefone:**  
+- Instalação da biblioteca `ngx-mask` via npm.  
+- Configuração da máscara `(00) 00000-0000` no campo de telefone usando a diretiva `mask`.  
+
+**5. Controle do Botão de Envio:**  
+- Desabilitação do botão quando o formulário é inválido (`[disabled]="formContato.invalid"`).  
+
+**6. Método de Envio e Reset:**  
+- Implementação do método `enviarFormulario()` para:  
+  - Exibir um alerta de sucesso (simulação).  
+  - Resetar o formulário (`formContato.reset()`).  
+- Associação do método ao evento `(ngSubmit)` do formulário.   
+
+**Links Úteis:**  
+- [Documentação Reactive Forms (Angular)](https://angular.io/guide/reactive-forms)  
+- [Biblioteca ngx-mask](https://www.npmjs.com/package/ngx-mask)  
+- [Validações Customizadas no Angular](https://angular.io/guide/form-validation#custom-validators)  
+- [Gerenciamento de Estado em Formulários](https://blog.angular-university.io/angular-forms/)  
+
 #### Aula 6.O
 
 ---
