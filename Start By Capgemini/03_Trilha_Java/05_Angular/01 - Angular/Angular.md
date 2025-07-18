@@ -2217,6 +2217,57 @@ Desenvolver um formulário reativo com validações em tempo real, máscara para
 
 #### Aula 6.O
 
+**Resumo da Aula:** Implementação da Barra de Pesquisa com Angular
+
+**Objetivo da Aula:**
+Desenvolver uma barra de pesquisa funcional que filtra produtos com base nos parâmetros da URL e mantém a consistência entre diferentes páginas da aplicação.
+
+**Passos Principais:**
+
+**1. Extração de Parâmetros da Rota:**
+- Substituiu-se `ngOnInit` por `ActivatedRoute.paramMap.subscribe()`
+- Implementou-se a captura do parâmetro "descricao" da URL:
+  ```typescript
+  this.route.paramMap.subscribe(params => {
+    const descricao = params.get('descricao')?.toLowerCase();
+    // Filtra produtos
+  });
+  ```
+
+**2. Filtragem de Produtos:**
+- Criou-se lógica para filtrar produtos baseados na descrição:
+  ```typescript
+  this.produtos = this.produtosFiltrados.filter(produto => 
+    produto.descricao.toLowerCase().includes(descricao)
+  );
+  ```
+
+**3. Criação do Componente de Pesquisa:**
+- Gerou-se novo componente `barra-pesquisa` via Angular CLI
+- Moveu-se o formulário de pesquisa para o novo componente
+- Transferiu-se os estilos CSS específicos
+
+**4. Implementação do Two-Way Binding:**
+- Adicionou-se `FormsModule` no módulo principal
+- Implementou-se `[(ngModel)]="descricao"` no input de pesquisa
+
+**5. Navegação Programática:**
+- Configurou-se redirecionamento para página de produtos com parâmetros:
+  ```typescript
+  pesquisar() {
+    if (this.descricao) {
+      this.router.navigate(['/produtos'], { 
+        queryParams: { descricao: this.descricao } 
+      });
+    }
+  }
+  ```
+
+**Links Úteis:**
+- [ActivatedRoute Documentation](https://angular.io/api/router/ActivatedRoute)
+- [Two-Way Binding Guide](https://angular.io/guide/two-way-binding)
+- [Router Navigation](https://angular.io/guide/router#navigating-programmatically)
+
 ---
 
 ## Aula 07
