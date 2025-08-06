@@ -2507,6 +2507,64 @@ Configurar o Bootstrap em um projeto Angular para utilização de componentes es
 
 #### Aula 10.A
 
+**Resumo da Aula:** Desafio Prático de Angular - Sistema de Notas Escolares
+
+**Objetivo do Desafio:**
+Criar uma aplicação Angular completa para gerenciamento de notas escolares, aplicando todos os conceitos aprendidos no curso (componentes, serviços, formulários e data binding).
+
+**Requisitos do Sistema:**
+
+1. **Formulário de Cadastro:**
+   - Campos: Nome do aluno, Nota 1 e Nota 2
+   - Validações: Todos campos obrigatórios, notas entre 0 e 10
+
+2. **Tabela de Resultados:**
+   - Colunas: Nome, Média (calculada), Situação (Aprovado/Reprovado)
+   - Condição: Média ≥ 7 = Aprovado, < 7 = Reprovado
+
+3. **Funcionalidades:**
+   - Botão "Editar" para alterar dados do aluno
+   - Botão "Excluir" para remover registros
+   - Armazenamento dos dados em array (simulando backend)
+
+**Dicas de Implementação:**
+
+```typescript
+// Exemplo de estrutura de dados
+alunos: Array<{
+  nome: string,
+  nota1: number,
+  nota2: number,
+  media?: number,
+  situacao?: string
+}> = [];
+
+// Cálculo da média
+calcularMedia(nota1: number, nota2: number): number {
+  return (nota1 + nota2) / 2;
+}
+```
+
+**Extras Opcionais:**
+- Roteamento para página separada
+- Estilização com Bootstrap/ng-bootstrap
+- Modal para confirmação de exclusão
+- Animations API do Angular
+
+**Links Úteis:**
+- [Angular Forms](https://angular.io/guide/forms-overview)
+- [Directives para Tabelas](https://angular.io/api/common/NgForOf)
+- [ng-bootstrap Modal](https://ng-bootstrap.github.io/#/components/modal/examples)
+
+**Critérios de Avaliação:**
+1. Funcionamento correto do cálculo de médias
+2. Atualização em tempo real da situação
+3. Validação adequada do formulário
+4. Responsividade da interface
+5. Organização do código (componentes/services)
+
+Boa sorte no desafio! Lembre-se de revisar a aula sobre serviços caso tenha dúvidas na implementação.
+
 ---
 
 ## Aula 11
