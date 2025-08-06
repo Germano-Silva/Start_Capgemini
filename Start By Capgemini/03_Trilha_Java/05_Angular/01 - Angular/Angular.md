@@ -2465,6 +2465,43 @@ Continue seus estudos em Angular, uma das tecnologias mais demandadas no mercado
 
 #### Aula 9.A
 
+**Resumo da Aula:** Integração do Bootstrap com Angular
+
+**Objetivo da Aula:**
+Configurar o Bootstrap em um projeto Angular para utilização de componentes estilizados e responsivos, explorando tanto a versão CSS tradicional quanto a versão específica para Angular (ng-bootstrap).
+
+**Passos Principais:**
+
+1. **Instalação do Bootstrap:**
+   ```bash
+   npm install bootstrap
+   ```
+
+2. **Configuração no Angular:**
+   - Adicionar o caminho do CSS no arquivo `angular.json`:
+     ```json
+     "styles": [
+       "node_modules/bootstrap/dist/css/bootstrap.min.css"
+     ]
+     ```
+   - Reiniciar o servidor de desenvolvimento após a modificação
+
+3. **Verificação da Instalação:**
+   - Mudança visível na tipografia padrão (fonte)
+   - Componentes básicos já estilizados automaticamente
+
+4. **Alternativa para Componentes Dinâmicos:**
+   - Instalação do ng-bootstrap (para versões Angular 4+):
+     ```bash
+     npm install @ng-bootstrap/ng-bootstrap
+     ```
+   - Oferece componentes com comportamento nativo em TypeScript
+
+**Links Úteis:**
+- [Documentação Oficial Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+- [ng-bootstrap GitHub](https://github.com/ng-bootstrap/ng-bootstrap)
+- [Angular Styling Guide](https://angular.io/guide/component-styles)
+
 ---
 ## Aula 10
 
