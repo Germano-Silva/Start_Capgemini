@@ -1,0 +1,46 @@
+<div class="container">
+    <h2>Cadastro de Alunos</h2>
+
+    <div class="form-group">
+        <label>Nome:</label>
+        <input [(ngModel)]="novoAluno.nome" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label>Matrícula:</label>
+        <input [(ngModel)]="novoAluno.matricula" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label>Turma:</label>
+        <input [(ngModel)]="novoAluno.turma" class="form-control">
+    </div>
+
+    <button (click)="adicionarAluno()" class="btn btn-primary">Adicionar</button>
+
+    <h3>Lista de Alunos</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Matrícula</th>
+                <th>Turma</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let aluno of alunos">
+                <td>{{ aluno.id }}</td>
+                <td>{{ aluno.nome }}</td>
+                <td>{{ aluno.matricula }}</td>
+                <td>{{ aluno.turma }}</td>
+                <td>
+                    <button (click)="excluirAluno(aluno.id)" class="btn btn-danger btn-sm">
+                        Excluir
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

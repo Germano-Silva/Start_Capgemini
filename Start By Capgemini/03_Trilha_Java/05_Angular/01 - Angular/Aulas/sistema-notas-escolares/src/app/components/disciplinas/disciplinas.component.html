@@ -1,0 +1,134 @@
+<div class="container">
+    <h2>Relatório de Disciplinas</h2>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4>Disciplinas</h4>
+                <button class="btn btn-primary btn-sm" (click)="toggleFormulario()">
+                    {{ mostrarFormulario ? 'Cancelar' : 'Nova Disciplina' }}
+                </button>
+            </div>
+
+            <!-- Formulário para adicionar disciplina -->
+            <div *ngIf="mostrarFormulario" class="card mb-3">
+                <div class="card-body">
+                    <h6 class="card-title">Adicionar Disciplina</h6>
+                    <div class="form-group mb-2">
+                        <label>Nome:</label>
+                        <input [(ngModel)]="novaDisciplina.nome" class="form-control form-control-sm"
+                            placeholder="Ex: História">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label>Carga Horária:</label>
+                        <input type="number" [(ngModel)]="novaDisciplina.cargaHoraria"
+                            class="form-control form-control-sm" placeholder="Ex: 80">
+                    </div>
+                    <button (click)="adicionarDisciplina()" class="btn btn-success btn-sm">
+                        Adicionar
+                    </button>
+                </div>
+            </div>
+
+            <div class="list-group">
+                <div *ngFor="let disciplina of disciplinas" class="list-group-item list-group-item-action"
+                    [class.active]="disciplinaSelecionada?.id === disciplina.id">
+                    <div class="d-flex w-100 justify-content-between align-items-center">
+                        <div (click)="!mostrarFormulario && selecionarDisciplina(disciplina)"
+                            [style.cursor]="!mostrarFormulario ? 'pointer' : 'default'" style="flex-grow: 1;">
+                            <h6 class="mb-1">{{ disciplina.nome }}</h6>
+                            <small>{{ disciplina.cargaHoraria }}h</small>
+                        </div>
+                        <button *ngIf="mostrarFormulario" (click)="excluirDisciplina(disciplina.id)"
+                            class="btn btn-danger ml-2" style="padding: 8px 12px;">
+                            🗑️
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8" *ngIf="disciplinaSelecionada">
+            <h4>{{ disciplinaSelecionada.nome }}</h4>
+            <p class="text-muted">Carga Horária: {{ disciplinaSelecionada.cargaHoraria }} horas</p>
+
+            <div *ngIf="alunosComMedia.length > 0; else semNotas">
+                <h5>Desempenho dos Alunos</h5>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Aluno</th>
+                            <th>Matrícula</th>
+                            <th>Turma</th>
+                            <th>Média</th>
+                            <th>Situação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of alunosComMedia"
+                            [class.table-success]="item.situacao === 'Aprovado' && item.media > 0"
+                            [class.table-danger]="item.situacao === 'Reprovado' && item.media > 0">
+                            <td>
+                                <strong>{{ item.aluno.nome }}</strong>
+                            </td>
+                            <td>{{ item.aluno.matricula }}</td>
+                            <td>{{ item.aluno.turma }}</td>
+                            <td>
+                                <span [class]="getSituacaoClass(item.situacao)" class="font-weight-bold">
+                                    {{ item.media > 0 ? item.media : 'Sem notas' }}
+                                </span>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-sm text-white"
+                                    [class.btn-success]="item.situacao === 'Aprovado'"
+                                    [class.btn-danger]="item.situacao === 'Reprovado'"
+                                    [class.btn-primary]="item.situacao === 'Incompleto' || item.situacao === 'Sem avaliação'"
+                                    style="cursor: default; pointer-events: none;">
+                                    {{ item.situacao }}
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Estatísticas -->
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-success">Aprovados</h5>
+                                <h2 class="text-success">
+                                    {{ getAprovados() }}
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-danger">Reprovados</h5>
+                                <h2 class="text-danger">
+                                    {{ getReprovados() }}
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ng-template #semNotas>
+                <div class="alert alert-info">
+                    <h5>Nenhuma nota lançada</h5>
+                    <p>Ainda não há notas lançadas para esta disciplina.</p>
+                </div>
+            </ng-template>
+        </div>
+    </div>
+
+    <div *ngIf="!disciplinaSelecionada" class="col-md-8">
+        <div class="alert alert-secondary">
+            <h5>Selecione uma disciplina</h5>
+            <p>Escolha uma disciplina na lista ao lado para ver o relatório de desempenho dos alunos.</p>
+        </div>
+    </div>
+</div>

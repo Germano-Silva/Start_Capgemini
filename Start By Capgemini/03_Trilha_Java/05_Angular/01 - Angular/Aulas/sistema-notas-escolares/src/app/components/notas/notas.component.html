@@ -1,0 +1,54 @@
+<div class="container">
+    <h2>Lançamento de Notas</h2>
+
+    <div class="form-group">
+        <label>Aluno:</label>
+        <select [(ngModel)]="novaNota.alunoId" (change)="alunoSelecionadoId = +novaNota.alunoId" class="form-control">
+            <option [value]="0">Selecione um aluno</option>
+            <option *ngFor="let aluno of alunos" [value]="aluno.id">{{ aluno.nome }}</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Disciplina:</label>
+        <select [(ngModel)]="novaNota.disciplinaId" class="form-control">
+            <option [value]="0">Selecione uma disciplina</option>
+            <option *ngFor="let disciplina of disciplinas" [value]="disciplina.id">{{ disciplina.nome }}</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Bimestre:</label>
+        <select [(ngModel)]="novaNota.bimestre" class="form-control">
+            <option value="1">1º Bimestre</option>
+            <option value="2">2º Bimestre</option>
+            <option value="3">3º Bimestre</option>
+            <option value="4">4º Bimestre</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Nota:</label>
+        <input type="number" [(ngModel)]="novaNota.valor" class="form-control" min="0" max="10">
+    </div>
+
+    <button (click)="adicionarNota()" class="btn btn-primary">Lançar Nota</button>
+
+    <h3 *ngIf="alunoSelecionadoId > 0">Notas do Aluno: {{ getNomeAluno(alunoSelecionadoId) }}</h3>
+    <table *ngIf="alunoSelecionadoId > 0" class="table">
+        <thead>
+            <tr>
+                <th>Disciplina</th>
+                <th>Bimestre</th>
+                <th>Nota</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let nota of getNotasAluno()">
+                <td>{{ getNomeDisciplina(nota.disciplinaId) }}</td>
+                <td>{{ nota.bimestre }}º</td>
+                <td>{{ nota.valor }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
