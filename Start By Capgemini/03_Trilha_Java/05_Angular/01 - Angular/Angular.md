@@ -2274,6 +2274,40 @@ Desenvolver uma barra de pesquisa funcional que filtra produtos com base nos par
 
 #### Aula 7.A
 
+**Resumo da Aula:** Publicação da Aplicação Angular no GitHub Pages
+
+**Objetivo da Aula:**
+Preparar a aplicação Angular para publicação no GitHub Pages, gerando os arquivos de build e configurando o ambiente para deploy.
+
+**Passos Principais:**
+
+**1. Geração do Build de Produção:**
+- Executou-se o comando `ng build` com as flags específicas para GitHub Pages:
+  ```bash
+  ng build --base-href https://[seu-usuario].github.io/[nome-do-repositorio]/
+  ```
+- Configurou-se no `angular.json` o output path como `docs/`
+
+**2. Estrutura dos Arquivos Gerados:**
+- Arquivos otimizados na pasta `docs/` contendo:
+  - `index.html` (único arquivo HTML)
+  - Arquivos JavaScript minificados
+  - CSS otimizado (sem espaços/comentários)
+  - Assets (imagens e recursos estáticos)
+
+**3. Configuração para GitHub Pages:**
+- Especificou-se a URL base correta para o repositório:
+  ```bash
+  https://[seu-usuario].github.io/[nome-do-repositorio]/
+  ```
+- O build adapta automaticamente para compatibilidade com navegadores antigos
+- Todo o código TypeScript é convertido para JavaScript otimizado
+
+**Links Úteis:**
+- [Documentação Oficial ng build](https://angular.io/cli/build)
+- [Configuração GitHub Pages](https://docs.github.com/pt/pages)
+- [Otimização de Build Angular](https://angular.io/guide/deployment#optimize-the-build)
+
 #### Aula 7.B
 
 #### Aula 7.C
