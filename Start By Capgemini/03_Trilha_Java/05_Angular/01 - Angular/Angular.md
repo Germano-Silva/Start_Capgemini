@@ -2343,6 +2343,62 @@ Realizar a configuração básica do Git localmente para preparar o ambiente de 
 
 #### Aula 7.C
 
+**Resumo da Aula:** Publicação da Aplicação Angular no GitHub Pages
+
+**Objetivo da Aula:**
+Realizar o deploy completo da aplicação Angular no GitHub Pages, tornando-a acessível publicamente através de uma URL.
+
+**Passos Principais:**
+
+1. **Criação do Repositório no GitHub:**
+   - Criar novo repositório com nome específico (ex: `projeto-computers`)
+   - O nome deve corresponder ao usado no comando `ng build` (base-href)
+
+2. **Ajustes Pré-deploy:**
+   - Modificou-se os caminhos das imagens no código:
+     ```typescript
+     // De: '/assets/...'
+     // Para: './assets/...'
+     ```
+   - Rebuild da aplicação com o comando:
+     ```bash
+     ng build --base-href https://[usuario].github.io/[repositorio]/
+     ```
+
+3. **Configuração do Git Local:**
+   - Inicialização do repositório:
+     ```bash
+     git init
+     ```
+   - Adição dos arquivos:
+     ```bash
+     git add .
+     ```
+   - Primeiro commit:
+     ```bash
+     git commit -m "build inicial"
+     ```
+
+4. **Integração com GitHub:**
+   - Vinculação do repositório remoto:
+     ```bash
+     git remote add origin [url-do-repositorio]
+     ```
+   - Push dos arquivos:
+     ```bash
+     git push -u origin main
+     ```
+
+5. **Configuração do GitHub Pages:**
+   - Acessar Settings > Pages no repositório
+   - Selecionar branch `main` e pasta `/docs` como source
+   - Aguardar o processamento do deploy (1-2 minutos)
+
+**Links Úteis:**
+- [GitHub Pages Documentation](https://docs.github.com/pt/pages)
+- [Angular Deployment Guide](https://angular.io/guide/deployment)
+- [Git Basic Commands](https://git-scm.com/docs/gittutorial)
+
 #### Aula 7.D
 
 ---
