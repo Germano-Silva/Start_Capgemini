@@ -2310,6 +2310,37 @@ Preparar a aplicação Angular para publicação no GitHub Pages, gerando os arq
 
 #### Aula 7.B
 
+**Resumo da Aula:** Configuração Inicial do Git para Publicação no GitHub
+
+**Objetivo da Aula:**
+Realizar a configuração básica do Git localmente para preparar o ambiente de versionamento e posterior publicação da aplicação no GitHub Pages.
+
+**Passos Principais:**
+
+1. **Instalação do Git:**
+   - Baixar o instalador oficial em [git-scm.com](https://git-scm.com/)
+   - Executar o instalador com todas as configurações padrão
+   - Verificar a instalação com `git --version` no terminal
+
+2. **Configuração Inicial:**
+   - Definir identidade do usuário (obrigatório para commits):
+     ```bash
+     git config --global user.name "Seu Nome"
+     git config --global user.email "seu@email.com"
+     ```
+   - As configurações ficam armazenadas no arquivo `.gitconfig` do usuário
+
+3. **Próximos Passos (Preview):**
+   - Criar repositório no GitHub
+   - Inicializar repositório local (`git init`)
+   - Fazer primeiro commit dos arquivos
+   - Conectar repositório local ao remoto
+
+**Links Úteis:**
+- [Download do Git](https://git-scm.com/downloads)
+- [Documentação de Configuração](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+- [GitHub Pages Guide](https://pages.github.com/)
+
 #### Aula 7.C
 
 #### Aula 7.D
