@@ -116,6 +116,41 @@ Explicar o conceito de APIs como intermediárias entre aplicações frontend e b
 
 #### Aula 1.B
 
+**Título: Configuração do Ambiente de Desenvolvimento para Aplicações PHP e Angular**
+
+**Objetivo da Aula:**
+Explicar os requisitos e processo de configuração do ambiente de desenvolvimento para criar aplicações web utilizando PHP com banco de dados MySQL e Angular.
+
+**Temas Abordados**
+
+1. **Requisitos do Ambiente de Desenvolvimento**
+   - PHP (versão 7.2.10 ou superior)
+   - Node.js (necessário para executar aplicações Angular)
+   - Angular CLI (ferramenta para criação de projetos Angular)
+   - Editor de código (Visual Studio Code recomendado)
+
+2. **Processo de Instalação**
+   - **PHP e MySQL**: Ambiente integrado XAMPP/WAMP para desenvolvimento local
+   - **Node.js**: Instalação simples via pacote oficial
+   - **Angular CLI**: Instalado via npm (gerenciador de pacotes do Node.js)
+   - **Editores de Código**: Opções como VS Code, Sublime Text ou Atom
+
+3. **Configuração Inicial**
+   - Verificação das instalações via terminal/linha de comando
+   - Criação do primeiro projeto Angular usando Angular CLI
+   - Preparação do ambiente PHP para integração futura
+
+4. **Recomendações**
+   - Uso do Visual Studio Code como editor principal
+   - Verificação de compatibilidade entre versões dos softwares
+   - Atualizações futuras serão disponibilizadas conforme necessário
+
+**Links Úteis**
+- [Documentação oficial do PHP](https://www.php.net/docs.php)
+- [Guia de instalação do Node.js](https://nodejs.org/en/docs/)
+- [Angular CLI Overview](https://angular.io/cli)
+- [Download Visual Studio Code](https://code.visualstudio.com/)
+
 #### Aula 1.C
 
 ---
