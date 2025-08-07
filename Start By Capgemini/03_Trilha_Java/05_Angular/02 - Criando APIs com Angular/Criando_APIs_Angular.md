@@ -82,6 +82,38 @@ Para um melhor aproveitamento do curso, recomenda-se que tenha:
 
 #### Aula 1.A
 
+**Título**: **Introdução a APIs RESTful: Conceitos Básicos e Métodos HTTP**  
+
+**Objetivo da Aula**:  
+Explicar o conceito de APIs como intermediárias entre aplicações frontend e bancos de dados, com foco nos métodos HTTP (GET, POST, PUT, DELETE) e seu funcionamento básico.
+
+**Temas Abordados**  
+
+1. **Definição e Propósito de APIs**  
+   - Sistemas desenvolvidos em linguagens web que permitem comunicação entre aplicações  
+   - Funcionam como ponte entre frontend (interface) e banco de dados  
+   - Acessíveis via URLs específicas para operações de dados  
+
+2. **Métodos HTTP Principais**  
+   - **GET**: Solicita dados (operações de leitura)  
+   - **POST**: Envia dados para criação de registros  
+   - **PUT**: Atualiza dados existentes  
+   - **DELETE**: Remove registros  
+   - Cada método desencadeia ação específica no servidor
+
+3. **Arquitetura Cliente-Servidor**  
+   - Fluxo básico: Frontend → Requisição HTTP → Backend → Banco de Dados  
+   - Exemplo prático: Formulário web envia dados via POST para cadastro  
+
+4. **Tecnologias Envolvidas**  
+   - Frontend: Angular, React, Vue  
+   - Backend: PHP, Java (Spring), C# (ASP.NET)  
+   - Destaque do curso: Combinação Angular + PHP puro
+
+### **Links Úteis**  
+- [Documentação Oficial HTTP Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)  
+- [Guia Angular HTTP](https://angular.io/guide/http)  
+
 #### Aula 1.B
 
 #### Aula 1.C
