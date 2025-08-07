@@ -153,6 +153,35 @@ Explicar os requisitos e processo de configuração do ambiente de desenvolvimen
 
 #### Aula 1.C
 
+**Título**: Configuração Inicial de um Projeto Angular com PHP e Banco de Dados  
+
+**Objetivo**:  
+Preparar o ambiente para desenvolvimento de um projeto Angular, integrado com PHP e banco de dados, incluindo a criação da estrutura inicial e configurações básicas.  
+
+**Pontos Principais**:  
+
+1. **Configuração do Ambiente**:  
+   - Ativação de opções necessárias para execução do PHP e funcionamento do banco de dados.  
+   - Criação de uma pasta chamada `api` dentro de `htdocs` para armazenar os arquivos do projeto.  
+
+2. **Inicialização do Projeto Angular**:  
+   - Uso do comando `ng new` para criar um novo projeto Angular (exemplo: `ng new projeto-api`).  
+   - Seleção de configurações padrão durante a inicialização (CSS como pré-processador).  
+
+3. **Ferramentas Utilizadas**:  
+   - Visual Studio Code (VS Code) como editor principal.  
+   - Terminal integrado do VS Code para execução de comandos, direcionado automaticamente para a pasta do projeto (`htdocs/api`).  
+
+4. **Próximos Passos**:  
+   - Na próxima aula, será iniciado o desenvolvimento do HTML e a integração com Angular.  
+
+**Links Úteis**:  
+- [Documentação Oficial do Angular - ng new](https://angular.io/cli/new)  
+- [Configuração do PHP para Desenvolvimento](https://www.php.net/manual/pt_BR/install.php)  
+
+**Observações**:  
+- O processo de criação do projeto Angular pode variar conforme a velocidade da internet devido ao download de dependências.  
+
 ---
  
 ## Aula 02 - Configurar .htaccess
