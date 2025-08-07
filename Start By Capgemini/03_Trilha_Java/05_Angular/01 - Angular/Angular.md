@@ -12,8 +12,85 @@
 
 **Objetivos do Curso**
 
+Este curso tem como objetivo capacitar os alunos a desenvolverem aplicações web modernas e escaláveis utilizando o framework Angular. Os principais objetivos incluem:
+
+- **Dominar os Fundamentos do Angular**: Compreender a arquitetura baseada em componentes, serviços, injeção de dependências e data binding
+- **Desenvolver Aplicações Completas**: Criar projetos reais como e-commerce (ProWay-Computers) e sistema de gestão escolar
+- **Implementar Navegação e Roteamento**: Configurar sistemas de rotas, guards de autenticação e lazy loading
+- **Trabalhar com Formulários**: Dominar tanto formulários template-driven quanto reativos com validações
+- **Integrar Bibliotecas Modernas**: Utilizar Angular Material, Bootstrap e outras ferramentas do ecossistema
+- **Preparar para Produção**: Aprender processos de build, otimização e deploy em GitHub Pages
+- **Aplicar Boas Práticas**: Seguir padrões de arquitetura, organização modular e desenvolvimento profissional
 
 **Principais Temas Abordados**
+
+O curso abrange uma ampla gama de tópicos essenciais para o desenvolvimento Angular moderno:
+
+**Fundamentos e Configuração:**
+- Configuração do ambiente de desenvolvimento (Node.js, Angular CLI, VS Code)
+- Estrutura de projetos Angular e arquitetura de componentes
+- TypeScript e suas vantagens no desenvolvimento frontend
+
+**Componentes e Comunicação:**
+- Criação e ciclo de vida de componentes
+- Data binding (interpolação, property binding, event binding, two-way binding)
+- Comunicação entre componentes (@Input, @Output, EventEmitter)
+- Uso de template reference variables
+
+**Serviços e Injeção de Dependências:**
+- Criação de serviços para lógica de negócio
+- Padrão singleton e injeção de dependências
+- Gerenciamento de estado com serviços
+
+**Roteamento e Navegação:**
+- Configuração de rotas e navegação programática
+- Parâmetros de rota e query parameters
+- Lazy loading para otimização de performance
+- Guards de rota para proteção e autenticação
+- Tratamento de páginas 404
+
+**Formulários e Validação:**
+- Formulários template-driven vs reativos
+- Validações em tempo real com feedback visual
+- Máscaras de input e formatação de dados
+- Integração com bibliotecas como ngx-mask
+
+**Integração com Bibliotecas:**
+- Angular Material para componentes de UI
+- Bootstrap para design responsivo
+- Font Awesome para ícones
+- Notificações com SnackBar
+
+**Gerenciamento de Estado:**
+- Persistência de dados com localStorage
+- Padrões de estado em aplicações SPA
+- Comunicação entre componentes via serviços
+
+**Projetos Práticos:**
+- **ProWay-Computers**: E-commerce completo com carrinho de compras, catálogo de produtos, formulário de contato e sistema de busca.
+- **Sistema de Notas Escolares**: Aplicação para gestão de notas com CRUD completo.
+- Múltiplos exemplos de roteamento e navegação.
+
+**Deploy e Produção:**
+- Build de produção com otimizações
+- Deploy no GitHub Pages
+- Configuração de base href e assets
+- Versionamento com Git e GitHub
+
+**Resumo do Curso**
+
+Este curso oferece uma jornada completa no desenvolvimento Angular, desde conceitos básicos até aplicações prontas para produção. Com 11 aulas estruturadas, os alunos desenvolvem competências práticas através de projetos reais que simulam cenários do mercado de trabalho.
+
+O diferencial do curso está na abordagem hands-on, onde cada conceito é imediatamente aplicado em projetos funcionais. Os alunos não apenas aprendem teoria, mas constroem um portfólio sólido com aplicações deployadas e prontas para demonstração profissional.
+
+Ao final do curso, os participantes estarão preparados para:
+- Desenvolver aplicações Angular completas e escaláveis
+- Implementar arquiteturas modernas e boas práticas de desenvolvimento
+- Trabalhar com ferramentas profissionais do ecossistema Angular
+- Fazer deploy de aplicações em ambientes de produção
+- Continuar evoluindo suas habilidades em tecnologias frontend modernas
+
+O curso prepara desenvolvedores para o mercado atual, onde Angular é uma das tecnologias mais demandadas para desenvolvimento frontend, fornecendo uma base sólida para crescimento profissional e especialização contínua.
 
 
 **Público-Alvo**
