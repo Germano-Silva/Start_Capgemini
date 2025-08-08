@@ -188,6 +188,73 @@ Preparar o ambiente para desenvolvimento de um projeto Angular, integrado com PH
 
 #### Aula 2.A
 
+**Título**: Configuração de API Backend com Angular e Regras de .htaccess  
+
+**Objetivo**:  
+Explicar a configuração de um arquivo `.htaccess` para:  
+1. Remover a extensão `.php` das URLs.  
+2. Habilitar CORS para comunicação entre um frontend Angular (localhost:4200) e uma API PHP.  
+
+---  
+
+**Pontos Principais**  
+
+**1. Remoção da Extensão .php**  
+- **Regras do Apache**:  
+  ```apache
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^([^\.]+)$ $1.php [NC,L]
+  ```  
+  - **Funcionamento**:  
+    - `RewriteEngine On`: Ativa o módulo de reescrita.  
+    - `RewriteCond`: Verifica se a URL **não** corresponde a um arquivo físico.  
+    - `RewriteRule`: Redireciona URLs sem extensão (ex: `/api`) para o arquivo `.php` correspondente (ex: `/api.php`).  
+    - `[NC,L]`: Ignora maiúsculas/minúsculas (`NC`) e encerra outras regras (`L`).  
+
+**2. Configuração de CORS para API RESTful**  
+- **Cabeçalhos HTTP**:  
+  ```apache
+  Header always set Access-Control-Allow-Origin "http://localhost:4200"
+  Header always set Access-Control-Max-Age "1000"
+  Header always set Access-Control-Allow-Headers "X-Requested-With, Content-Type, Origin, Authorization, Accept, Client-Security-Token, Accept-Encoding"
+  Header always set Access-Control-Allow-Methods "POST, GET, OPTIONS, DELETE, PUT"
+  ```  
+  - **Propósito**:  
+    - Permite requisições do frontend Angular (em `localhost:4200`).  
+    - Define métodos HTTP permitidos (GET, POST, PUT, DELETE, OPTIONS).  
+    - Habilita cabeçalhos customizados (como `Authorization` para autenticação).  
+
+**3. Contexto da Aula**  
+- **Integração Angular + PHP**:  
+  - O `.htaccess` é essencial para:  
+    - URLs limpas (sem `.php`).  
+    - Evitar erros de CORS durante o desenvolvimento.  
+- **Próximos Passos**:  
+  - Utilizar o arquivo configurado na próxima aula para conectar o frontend Angular ao backend PHP.  
+
+---  
+
+**Links Úteis**  
+- [Documentação Oficial do Apache mod_rewrite](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html)  
+- [Guia de CORS (MDN)](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/CORS)  
+- [Exemplos práticos de .htaccess para APIs](https://enable-cors.org/server_apache.html)  
+
+---  
+
+**Dicas de Implementação**  
+1. **Para Angular**:  
+   - Use `HttpClient` para consumir a API:  
+     ```typescript
+     this.http.get('http://localhost/api').subscribe(...);
+     ```  
+2. **Para PHP**:  
+   - Certifique-se de que o servidor Apache está com o módulo `mod_headers` e `mod_rewrite` ativados.  
+
+---  
+
+**Observação**: O arquivo `.htaccess` deve estar na raiz do projeto PHP (ex: `htdocs/api/`).
+
 #### Aula 2.B
 
 #### Aula 2.C
