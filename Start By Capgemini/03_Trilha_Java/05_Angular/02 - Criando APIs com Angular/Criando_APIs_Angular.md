@@ -257,7 +257,117 @@ Explicar a configuração de um arquivo `.htaccess` para:
 
 #### Aula 2.B
 
+**Título**: Configuração de API RESTful com Angular e Regras de .htaccess  
+
+**Objetivo**:  
+Explicar a configuração de um arquivo `.htaccess` para permitir:  
+1. Remoção da extensão `.php` em URLs  
+2. Habilitação de métodos HTTP (POST, GET, PUT, DELETE) para uma API RESTful  
+3. Comunicação entre frontend Angular e backend PHP  
+
+---  
+
+**Pontos Principais**  
+
+**1. Estrutura do Projeto**  
+- **Pasta `ATINY`**:  
+  - Diretório principal do projeto dentro de `htdocs`  
+  - Contém:  
+    - Frontend Angular  
+    - Backend API (pasta `PODAPAXAS` com arquivos PHP)  
+
+**2. Configuração do .htaccess**  
+```apache
+# Habilita métodos HTTP
+Header always set Access-Control-Allow-Methods "POST, GET, OPTIONS, DELETE, PUT"
+
+# Remove extensão .php
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+```
+
+**Funcionamento**:  
+- Permite requisições RESTful (POST, GET, PUT, DELETE)  
+- Transforma URLs como `/api/endpoint` → `/api/endpoint.php`  
+- OPTIONS é incluído para compatibilidade completa  
+
+**3. Benefícios**  
+- URLs limpas (sem `.php`)  
+- Comunicação simplificada entre Angular e PHP  
+- Não requer configurações complexas de servidor  
+
+---  
+
+**Exemplo de Uso**  
+**Frontend Angular (HTTP Request)**:  
+```typescript
+this.http.post('http://localhost/ATINY/api/usuarios', dados)
+```
+
+**Backend PHP**:  
+Arquivo `api/usuarios.php` processa a requisição  
+
+---  
+
+**Links Úteis**  
+- [Documentação Oficial Apache mod_rewrite](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html)  
+- [Guia de CORS para APIs](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/CORS)   
+
 #### Aula 2.C
+
+**Título**: Configuração de Banco de Dados MySQL para Integração com API  
+
+**Objetivo**:  
+Criar e configurar um banco de dados MySQL para armazenar informações de cursos, preparando a base para integração com uma API futuramente.  
+
+---  
+
+**Pontos Principais**  
+
+**1. Configuração Inicial**  
+- **Acesso ao Banco de Dados**:  
+  - Utilizando um cliente MySQL (como phpMyAdmin ou MySQL Workbench).  
+  - Conexão via `localhost` (porta padrão ou personalizada, como `:8080` mencionado).  
+
+**2. Criação do Banco de Dados e Tabela**  
+- **Banco de Dados**:  
+  - Nome: `API` (provavelmente em referência ao projeto de API).  
+- **Tabela `cursos`**:  
+  ```sql
+  CREATE TABLE cursos (
+      id_curso INT AUTO_INCREMENT PRIMARY KEY,
+      nome_curso VARCHAR(30) NOT NULL,
+      valor_curso DECIMAL(10,2) NOT NULL
+  );
+  ```  
+  - **Campos**:  
+    - `id_curso`: Chave primária com autoincremento.  
+    - `nome_curso`: Texto (30 caracteres).  
+    - `valor_curso`: Decimal (10 dígitos, 2 casas decimais).  
+
+**3. Inserção de Dados de Exemplo**  
+- **Comando SQL**:  
+  ```sql
+  INSERT INTO cursos (nome_curso, valor_curso) VALUES ('Angular', 85.00);
+  ```  
+- **Verificação**:  
+  - Os dados aparecem na tabela `cursos` com `id_curso` incrementado automaticamente. 
+
+---  
+
+**Termos Contextualizados**  
+- **"Chão"**: Servidor local (ex: XAMPP/WAMP).  
+- **"Bordo de dados"**: Banco de dados (MySQL).  
+- **"Ptg a ter mais de mim"**: Possivelmente "porta 8080" ou credenciais de acesso (usuário/senha).  
+- **"Algo-ard"**: Nome do curso inserido (exemplo genérico).  
+
+---  
+
+**Links Úteis**  
+- [Documentação MySQL](https://dev.mysql.com/doc/)  
+- [Guia de CREATE TABLE](https://www.w3schools.com/sql/sql_create_table.asp)  
+- [Tutorial de INSERT INTO](https://www.mysqltutorial.org/mysql-insert-statement.aspx)  
 
 #### Aula 2.D
 
