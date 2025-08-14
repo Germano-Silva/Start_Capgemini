@@ -525,6 +525,58 @@ Explicar o fluxo de manipulação de dados recebidos de um formulário (via POST
 
 #### Aula 2.G
 
+**Título**: Processamento de Dados e Estruturação para Integração com Banco de Dados  
+
+**Objetivo**:  
+Explicar o fluxo de preparação e estruturação de dados recebidos de um formulário (possivelmente via API ou frontend) para integração com um banco de dados, destacando a manipulação de variáveis e validação.  
+
+---  
+
+**Pontos Principais**  
+
+**1. Contexto Geral**  
+- **Dados Recebidos**:  
+  - Campos como `nome_curso` e `valor_curso` (extraídos de um formulário ou API).  
+  - Menção a "AAC" (possivelmente um sistema ou módulo de autenticação/acesso).  
+
+- **Alterações na Estrutura**:  
+  - Os dados não dependem mais do "AAC" para operação, indicando uma mudança na arquitetura.  
+
+**2. Processamento dos Dados**  
+- **Variáveis-Chave**:  
+  - `nome_curso`: Texto (ex: "JavaScript Avançado").  
+  - `valor_curso`: Valor numérico (ex: 299.99).  
+
+- **Validação**:  
+  - Verificar se os campos estão preenchidos e em formato correto.  
+  - Exemplo em PHP:  
+    ```php
+    if (empty($_POST['nome_curso'])) {
+        die("Nome do curso é obrigatório!");
+    }
+    ```
+
+**3. Preparação para o Banco de Dados**  
+- **Estruturação**:  
+  - Os dados são organizados em variáveis antes da inserção (ex: `$nome = $_POST['nome_curso']`).  
+  - Uso de **prepared statements** para segurança:  
+    ```php
+    $stmt = $conexao->prepare("INSERT INTO cursos (nome_curso, valor_curso) VALUES (?, ?)");
+    $stmt->bind_param("sd", $nome_curso, $valor_curso);
+    $stmt->execute();
+    ```
+
+**4. Fluxo de Trabalho**  
+1. **Receber Dados**: Via POST (formulário ou API).  
+2. **Validar**: Checar campos obrigatórios e formatos.  
+3. **Estruturar**: Atribuir a variáveis (`$nome_curso`, `$valor_curso`).  
+4. **Inserir no Banco**: Usando MySQLi ou PDO.  
+---  
+
+**Links Úteis**  
+- [Documentação Oficial MySQLi](https://www.php.net/manual/pt_BR/book.mysqli.php)  
+- [Validação de Formulários em PHP](https://www.w3schools.com/php/php_form_validation.asp) 
+
 #### Aula 2.H
 
 
