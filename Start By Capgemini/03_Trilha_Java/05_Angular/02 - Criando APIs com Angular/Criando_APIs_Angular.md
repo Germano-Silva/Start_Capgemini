@@ -579,6 +579,54 @@ Explicar o fluxo de preparação e estruturação de dados recebidos de um formu
 
 #### Aula 2.H
 
+**Título**: Explicação sobre Retorno de Funções e Variáveis em Programação  
+
+**Objetivo**:  
+Esclarecer o conceito de retorno em funções e o uso de variáveis, com foco em situações onde uma função não precisa retornar valores.  
+
+---  
+
+**Pontos Principais**  
+
+**1. Funções sem Retorno**  
+- **Contexto**:  
+  - Uma função (ou método) pode executar uma ação sem retornar um valor explícito.  
+  - Exemplo: Uma função que apenas imprime um resultado ou modifica um estado interno.  
+
+- **Exemplo em JavaScript**:  
+  ```javascript
+  function exibirMensagem() {
+      console.log("Esta função não retorna nada!");
+  }
+  ```  
+
+**2. Variáveis e Atribuição**  
+- **Declaração vs. Retorno**:  
+  - Uma variável pode ser atribuída sem estar vinculada a um retorno de função.  
+  - Exemplo:  
+    ```javascript
+    let professor = "João"; // Atribuição direta, sem função
+    ```  
+
+**3. Caso de Uso Prático**  
+- **Quando Não Retornar?**  
+  - Funções que realizam operações side-effect (ex: salvar dados no banco, logar ações).  
+  - Funções que modificam variáveis globais ou parâmetros por referência.  
+
+- **Exemplo em PHP**:  
+  ```php
+  function atualizarBancoDeDados($dados) {
+      // Modifica o banco sem retornar nada
+      global $conexao;
+      $conexao->query("UPDATE tabela SET campo = '$dados'");
+  }
+  ```  
+
+---  
+
+**Links Úteis**  
+- [Funções em JavaScript (MDN)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Functions)  
+- [Side Effects em Programação](https://en.wikipedia.org/wiki/Side_effect_(computer_science)) 
 
 #### Aula 2.I
 
