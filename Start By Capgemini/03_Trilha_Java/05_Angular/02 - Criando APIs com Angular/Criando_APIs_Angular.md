@@ -630,6 +630,62 @@ Esclarecer o conceito de retorno em funções e o uso de variáveis, com foco em
 
 #### Aula 2.I
 
+**Título**: Tratamento de Caracteres Especiais em Conexões com Banco de Dados  
+
+**Objetivo**:  
+Ensinar como configurar a conexão com o banco de dados para evitar problemas com caracteres especiais (como ç, ~, á, é), garantindo compatibilidade entre frontend (Angular) e backend (PHP/MySQL).  
+
+---  
+
+**Pontos Principais**  
+
+**1. Problema Comum**  
+- **Caracteres Especiais**:  
+  - Letras acentuadas (á, é, ã), cedilha (ç), til (~) e outros podem causar erros de codificação.  
+  - Exemplo: "São Paulo" pode virar "S�o Paulo" no banco de dados.  
+
+**2. Solução: Configuração UTF-8**  
+- **UTF-8**:  
+  - Padrão de codificação que suporta todos os caracteres especiais.  
+  - Deve ser definido **tanto no banco de dados** quanto **na conexão PHP**.  
+
+- **Código PHP (MySQLi)**:  
+  ```php
+  $conexao = mysqli_connect("localhost", "usuario", "senha", "nome_do_banco");
+  mysqli_set_charset($conexao, "utf8"); // Define a codificação
+  ```  
+
+**3. Implementação Prática**  
+1. **No Banco de Dados**:  
+   - Certifique-se de que as tabelas usam collation `utf8_general_ci` ou `utf8mb4_unicode_ci`.  
+
+2. **No PHP (Conexão)**:  
+   - Use `mysqli_set_charset()` ou PDO com opções UTF-8:  
+     ```php
+     $pdo = new PDO("mysql:host=localhost;dbname=nome_do_banco;charset=utf8", "usuario", "senha");
+     ```  
+
+3. **No HTML/Angular**:  
+   - Defina o charset no `<head>`:  
+     ```html
+     <meta charset="UTF-8">
+     ```  
+
+**4. Comando Citado (`xar 7`)**  
+- Provavelmente referência ao `mysqli_set_charset($conexao, "utf8")` (7 pode ser um erro de transcrição para "utf8").  
+
+---   
+
+**Por que isso é importante?**  
+- Evita **"�"** ou **"?"** no lugar de caracteres especiais.  
+- Garante que dados como "você", "não", "avião" sejam armazenados corretamente.  
+
+---  
+
+### **Links Úteis**  
+- [Documentação Oficial MySQL: UTF-8](https://dev.mysql.com/doc/refman/8.0/en/charset-unicode-utf8.html)  
+- [Configuração UTF-8 no PHP](https://www.php.net/manual/pt_BR/function.mb-internal-encoding.php)  
+
 ---
  
 ## Aula 03 - Configurar Angular
