@@ -465,9 +465,68 @@ echo "Conectado!";
 
 #### Aula 2.F
 
+**Título**: Processamento de Dados e Integração com Banco de Dados  
+
+**Objetivo**:  
+Explicar o fluxo de manipulação de dados recebidos de um formulário (via POST) e sua integração com um banco de dados MySQL, incluindo validação e inserção.  
+
+---  
+
+**Pontos Principais**  
+
+**1. Captura de Dados do Formulário**  
+- **Método HTTP**: POST (envio de dados sensíveis, como cadastro).  
+- **Variáveis Recebidas**:  
+  - `nome_curso`: Nome do curso (ex: "JavaScript Básico").  
+  - `valor_curso`: Valor monetário (ex: 299.99).  
+
+**2. Validação e Sanitização**  
+- **Processo**:  
+  - Verificar se os campos não estão vazios.  
+  - Filtrar caracteres especiais (ex: `htmlspecialchars()` no PHP).  
+  - Converter o valor para formato decimal (ex: `floatval()`).  
+
+**3. Manipulação dos Dados**  
+- **Exemplo de Código (PHP)**:  
+  ```php
+  $nome_curso = $_POST['nome_curso'];  
+  $valor_curso = floatval($_POST['valor_curso']);  
+
+  // Validação básica
+  if (empty($nome_curso)) {
+      die("Nome do curso é obrigatório!");
+  }
+  ```  
+
+**4. Inserção no Banco de Dados**  
+- **Comando SQL**:  
+  ```sql
+  INSERT INTO cursos (nome_curso, valor_curso) VALUES (?, ?);
+  ```  
+- **Uso de Prepared Statements (MySQLi)**:  
+  ```php
+  $stmt = $conexao->prepare("INSERT INTO cursos (nome_curso, valor_curso) VALUES (?, ?)");
+  $stmt->bind_param("sd", $nome_curso, $valor_curso); // "s" = string, "d" = double
+  $stmt->execute();
+  ```  
+
+**5. Fluxo Completo**  
+1. Receber dados via POST.  
+2. Validar e sanitizar.  
+3. Conectar ao banco de dados (`mysqli_connect`).  
+4. Inserir dados com prepared statements.  
+5. Retornar feedback (ex: mensagem de sucesso/erro).  
+
+---  
+
+**Links Úteis**  
+- [Documentação MySQLi Prepared Statements](https://www.php.net/manual/pt_BR/mysqli.quickstart.prepared-statements.php)  
+- [Validação de Formulários em PHP](https://www.w3schools.com/php/php_form_validation.asp)  
+
 #### Aula 2.G
 
 #### Aula 2.H
+
 
 #### Aula 2.I
 
