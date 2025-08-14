@@ -407,6 +407,62 @@ $bancoDados = "API"; // Nome do banco de dados criado anteriormente
 
 #### Aula 2.E
 
+**Título**: Configuração de Conexão PHP com Banco de Dados MySQL  
+
+**Objetivo**:  
+Estabelecer uma conexão entre um script PHP e um banco de dados MySQL (local) para manipulação de dados via API.  
+
+---  
+
+**Pontos Principais**  
+
+**1. Estrutura do Projeto**  
+- **Pasta `PHP`**:  
+  - Diretório principal para arquivos PHP.  
+  - Arquivo criado: `conexao.php` (sem caracteres especiais no nome).  
+
+**2. Parâmetros de Conexão**  
+Variáveis necessárias para conexão:  
+```php
+$url = "localhost";  // URL do servidor MySQL
+$usuario = "root";   // Usuário padrão
+$senha = "";         // Senha vazia (configuração padrão)
+$bancoDados = "API"; // Nome do banco de dados criado anteriormente
+```
+
+**3. Método de Conexão**  
+- **Função `SQL_connect()`**:  
+  ```php
+  $conexao = SQL_connect($url, $usuario, $senha, $bancoDados);
+  ```  
+  - Observação: O termo `SQL_connect` sugere o uso de uma biblioteca específica ou função personalizada (possivelmente `mysqli_connect` ou PDO).  
+
+**4. Fluxo de Trabalho**  
+1. Criar arquivo `conexao.php` na pasta `PHP`.  
+2. Definir variáveis com credenciais do banco de dados.  
+3. Estabelecer conexão usando a função apropriada.  
+4. Testar acesso à tabela `cursos` (criada anteriormente).  
+
+---  
+
+**Exemplo de Código para Apresentar erro caso ocorra**  
+Conexão usando **MySQL Padão PHP**:  
+```php
+<?php
+$conexao = mysqli_connect("localhost", "root", "", "API");
+if (!$conexao) {
+    die("Erro: " . mysqli_connect_error());
+}
+echo "Conectado!";
+?>
+```
+
+---  
+
+**Links Úteis**  
+- [Documentação MySQLi](https://www.php.net/manual/pt_BR/book.mysqli.php)  
+- [Tutorial de PDO](https://www.w3schools.com/php/php_mysql_connect.asp)  
+
 #### Aula 2.F
 
 #### Aula 2.G
